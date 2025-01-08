@@ -1,0 +1,101 @@
+import 'package:flutter/material.dart';
+
+class TextScreen extends StatelessWidget {
+  const TextScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Text Showcase"),
+      ),
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text("Text - Default", style: TextStyle(fontSize: 16)),
+              Text("This is a default text widget."),
+              SizedBox(height: 20),
+              Text("Text - Red Color", style: TextStyle(color: Colors.red, fontSize: 16)),
+              Text("This text is red."),
+              SizedBox(height: 20),
+              Text("Text - Bold", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+              Text("This text is bold."),
+              SizedBox(height: 20),
+              Text("Text - Italic", style: TextStyle(fontStyle: FontStyle.italic, fontSize: 16)),
+              Text("This text is italic."),
+              SizedBox(height: 20),
+              Text("Text - Large Size", style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+              Text("This text is large and bold."),
+              SizedBox(height: 20),
+              Text("Text - Small Size", style: TextStyle(fontSize: 12)),
+              Text("This text is small."),
+              SizedBox(height: 20),
+              Text("Text - Multi-line", style: TextStyle(fontSize: 16)),
+              Text("This is a longer text that spans multiple lines. It demonstrates how the text widget handles wrapping.",
+                softWrap: true,
+              ),
+              SizedBox(height: 20),
+              Text("Text - With Overflow Ellipsis", style: TextStyle(fontSize: 16)),
+              SizedBox(
+                width: 200,
+                child: Text("This is a very long text that will overflow and be truncated with ellipsis.",
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 1,
+                ),
+              ),
+              SizedBox(height: 20),
+              Text("Text - With Specific Alignment", style: TextStyle(fontSize: 16)),
+              Container(
+                width: 200,
+                alignment: Alignment.centerRight,
+                child: Text("Right Aligned Text", textAlign: TextAlign.right),
+              ),
+              SizedBox(height: 20),
+              Text("Text - With Letter Spacing", style: TextStyle(fontSize: 16, letterSpacing: 2.0)),
+              Text("This text has letter spacing."),
+              SizedBox(height: 20),
+              Text("Text - With Line Height", style: TextStyle(fontSize: 16, height: 2.0)),
+              Text("This text has increased line height."),
+              SizedBox(height: 20),
+              Text("Text - With Shadow", style: TextStyle(fontSize: 16, shadows: [Shadow(color: Colors.grey, offset: Offset(2,2), blurRadius: 3)])),
+              Text("This text has a shadow."),
+              SizedBox(height: 20),
+              Text("Text - With Decoration", style: TextStyle(fontSize: 16, decoration: TextDecoration.underline, decorationColor: Colors.blue)),
+              Text("This text is underlined."),
+              SizedBox(height: 20),
+              Text("Text - With Decoration Line Through", style: TextStyle(fontSize: 16, decoration: TextDecoration.lineThrough, decorationColor: Colors.red)),
+              Text("This text has a line through."),
+              SizedBox(height: 20),
+              Text("Text - With Decoration Overline", style: TextStyle(fontSize: 16, decoration: TextDecoration.overline, decorationColor: Colors.green)),
+              Text("This text has an overline."),
+              SizedBox(height: 20),
+              Text("Text - With Word Spacing", style: TextStyle(fontSize: 16, wordSpacing: 5.0)),
+              Text("This text has word spacing."),
+              SizedBox(height: 20),
+              Text("Text - With Background Color", style: TextStyle(fontSize: 16, backgroundColor: Colors.yellow)),
+              Text("This text has a background color."),
+              SizedBox(height: 20),
+              Text("Text - With Font Family", style: TextStyle(fontSize: 16, fontFamily: 'Roboto')),
+              Text("This text uses the Roboto font (if available)."),
+              SizedBox(height: 20),
+              Text("Text - With Locale", style: TextStyle(fontSize: 16)),
+              Text("This text is in English.", locale: Locale('en', 'US')),
+              SizedBox(height: 20),
+              Text("Text - With Max Lines and Ellipsis", style: TextStyle(fontSize: 16)),
+              SizedBox(
+                width: 200,
+                child: Text("This is a long text that will be truncated to two lines with an ellipsis.",
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}

@@ -1,0 +1,206 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+class CupertinoColorsScreen extends StatelessWidget {
+  const CupertinoColorsScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("CupertinoColors Showcase"),
+      ),
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Text("CupertinoColors.activeBlue", style: TextStyle(fontWeight: FontWeight.bold)),
+              const SizedBox(height: 8),
+              Container(
+                color: CupertinoColors.activeBlue,
+                padding: const EdgeInsets.all(16),
+                child: const Text("Active Blue", style: TextStyle(color: CupertinoColors.white)),
+              ),
+              const SizedBox(height: 16),
+              const Text("CupertinoColors.activeGreen", style: TextStyle(fontWeight: FontWeight.bold)),
+              const SizedBox(height: 8),
+              Container(
+                color: CupertinoColors.activeGreen,
+                padding: const EdgeInsets.all(16),
+                child: const Text("Active Green", style: TextStyle(color: CupertinoColors.white)),
+              ),
+              const SizedBox(height: 16),
+              const Text("CupertinoColors.activeOrange", style: TextStyle(fontWeight: FontWeight.bold)),
+              const SizedBox(height: 8),
+              Container(
+                color: CupertinoColors.activeOrange,
+                padding: const EdgeInsets.all(16),
+                child: const Text("Active Orange", style: TextStyle(color: CupertinoColors.white)),
+              ),
+              const SizedBox(height: 16),
+              const Text("CupertinoColors.destructiveRed", style: TextStyle(fontWeight: FontWeight.bold)),
+              const SizedBox(height: 8),
+              Container(
+                color: CupertinoColors.destructiveRed,
+                padding: const EdgeInsets.all(16),
+                child: const Text("Destructive Red", style: TextStyle(color: CupertinoColors.white)),
+              ),
+              const SizedBox(height: 16),
+              const Text("CupertinoColors.systemBackground", style: TextStyle(fontWeight: FontWeight.bold)),
+              const SizedBox(height: 8),
+              Container(
+                color: CupertinoColors.systemBackground,
+                padding: const EdgeInsets.all(16),
+                child: const Text("System Background", style: TextStyle(color: CupertinoColors.label)),
+              ),
+              const SizedBox(height: 16),
+              const Text("CupertinoColors.secondarySystemBackground", style: TextStyle(fontWeight: FontWeight.bold)),
+              const SizedBox(height: 8),
+              Container(
+                color: CupertinoColors.secondarySystemBackground,
+                padding: const EdgeInsets.all(16),
+                child: const Text("Secondary System Background", style: TextStyle(color: CupertinoColors.label)),
+              ),
+              const SizedBox(height: 16),
+              const Text("CupertinoColors.tertiarySystemBackground", style: TextStyle(fontWeight: FontWeight.bold)),
+              const SizedBox(height: 8),
+              Container(
+                color: CupertinoColors.tertiarySystemBackground,
+                padding: const EdgeInsets.all(16),
+                child: const Text("Tertiary System Background", style: TextStyle(color: CupertinoColors.label)),
+              ),
+              const SizedBox(height: 16),
+              const Text("CupertinoColors.systemGrey", style: TextStyle(fontWeight: FontWeight.bold)),
+              const SizedBox(height: 8),
+              Container(
+                color: CupertinoColors.systemGrey,
+                padding: const EdgeInsets.all(16),
+                child: const Text("System Grey", style: TextStyle(color: CupertinoColors.white)),
+              ),
+              const SizedBox(height: 16),
+              const Text("CupertinoColors.systemGrey2", style: TextStyle(fontWeight: FontWeight.bold)),
+              const SizedBox(height: 8),
+              Container(
+                color: CupertinoColors.systemGrey2,
+                padding: const EdgeInsets.all(16),
+                child: const Text("System Grey 2", style: TextStyle(color: CupertinoColors.white)),
+              ),
+              const SizedBox(height: 16),
+              const Text("CupertinoColors.systemGrey3", style: TextStyle(fontWeight: FontWeight.bold)),
+              const SizedBox(height: 8),
+              Container(
+                color: CupertinoColors.systemGrey3,
+                padding: const EdgeInsets.all(16),
+                child: const Text("System Grey 3", style: TextStyle(color: CupertinoColors.white)),
+              ),
+              const SizedBox(height: 16),
+              const Text("CupertinoColors.systemGrey4", style: TextStyle(fontWeight: FontWeight.bold)),
+              const SizedBox(height: 8),
+              Container(
+                color: CupertinoColors.systemGrey4,
+                padding: const EdgeInsets.all(16),
+                child: const Text("System Grey 4", style: TextStyle(color: CupertinoColors.white)),
+              ),
+              const SizedBox(height: 16),
+              const Text("CupertinoColors.systemGrey5", style: TextStyle(fontWeight: FontWeight.bold)),
+              const SizedBox(height: 8),
+              Container(
+                color: CupertinoColors.systemGrey5,
+                padding: const EdgeInsets.all(16),
+                child: const Text("System Grey 5", style: TextStyle(color: CupertinoColors.white)),
+              ),
+              const SizedBox(height: 16),
+              const Text("CupertinoColors.systemGrey6", style: TextStyle(fontWeight: FontWeight.bold)),
+              const SizedBox(height: 8),
+              Container(
+                color: CupertinoColors.systemGrey6,
+                padding: const EdgeInsets.all(16),
+                child: const Text("System Grey 6", style: TextStyle(color: CupertinoColors.white)),
+              ),
+              const SizedBox(height: 16),
+              const Text("CupertinoColors.label", style: TextStyle(fontWeight: FontWeight.bold)),
+              const SizedBox(height: 8),
+              Container(
+                color: CupertinoColors.white,
+                padding: const EdgeInsets.all(16),
+                child: const Text("Label", style: TextStyle(color: CupertinoColors.label)),
+              ),
+              const SizedBox(height: 16),
+              const Text("CupertinoColors.secondaryLabel", style: TextStyle(fontWeight: FontWeight.bold)),
+              const SizedBox(height: 8),
+              Container(
+                color: CupertinoColors.white,
+                padding: const EdgeInsets.all(16),
+                child: const Text("Secondary Label", style: TextStyle(color: CupertinoColors.secondaryLabel)),
+              ),
+              const SizedBox(height: 16),
+              const Text("CupertinoColors.tertiaryLabel", style: TextStyle(fontWeight: FontWeight.bold)),
+              const SizedBox(height: 8),
+              Container(
+                color: CupertinoColors.white,
+                padding: const EdgeInsets.all(16),
+                child: const Text("Tertiary Label", style: TextStyle(color: CupertinoColors.tertiaryLabel)),
+              ),
+              const SizedBox(height: 16),
+              const Text("CupertinoColors.quaternaryLabel", style: TextStyle(fontWeight: FontWeight.bold)),
+              const SizedBox(height: 8),
+              Container(
+                color: CupertinoColors.white,
+                padding: const EdgeInsets.all(16),
+                child: const Text("Quaternary Label", style: TextStyle(color: CupertinoColors.quaternaryLabel)),
+              ),
+              const SizedBox(height: 16),
+              const Text("CupertinoColors.placeholderText", style: TextStyle(fontWeight: FontWeight.bold)),
+              const SizedBox(height: 8),
+              Container(
+                color: CupertinoColors.white,
+                padding: const EdgeInsets.all(16),
+                child: const Text("Placeholder Text", style: TextStyle(color: CupertinoColors.placeholderText)),
+              ),
+              const SizedBox(height: 16),
+              const Text("CupertinoColors.separator", style: TextStyle(fontWeight: FontWeight.bold)),
+              const SizedBox(height: 8),
+              Container(
+                height: 1,
+                color: CupertinoColors.separator,
+              ),
+              const SizedBox(height: 16),
+              const Text("CupertinoColors.opaqueSeparator", style: TextStyle(fontWeight: FontWeight.bold)),
+              const SizedBox(height: 8),
+              Container(
+                height: 1,
+                color: CupertinoColors.opaqueSeparator,
+              ),
+              const SizedBox(height: 16),
+              const Text("CupertinoColors.link", style: TextStyle(fontWeight: FontWeight.bold)),
+              const SizedBox(height: 8),
+              Container(
+                color: CupertinoColors.link,
+                padding: const EdgeInsets.all(16),
+                child: const Text("Link", style: TextStyle(color: CupertinoColors.white)),
+              ),
+              const SizedBox(height: 16),
+              const Text("CupertinoColors.white", style: TextStyle(fontWeight: FontWeight.bold)),
+              const SizedBox(height: 8),
+              Container(
+                color: CupertinoColors.white,
+                padding: const EdgeInsets.all(16),
+                child: const Text("White", style: TextStyle(color: CupertinoColors.black)),
+              ),
+              const SizedBox(height: 16),
+              const Text("CupertinoColors.black", style: TextStyle(fontWeight: FontWeight.bold)),
+              const SizedBox(height: 8),
+              Container(
+                color: CupertinoColors.black,
+                padding: const EdgeInsets.all(16),
+                child: const Text("Black", style: TextStyle(color: CupertinoColors.white)),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
