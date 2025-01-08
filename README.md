@@ -1,6 +1,6 @@
 # flutter_widgets
 
-A collection of Flutter widgets and their variations, demonstrating various UI components and animations.
+A collection of Flutter widgets and some variations, demonstrating various UI components.
 This is for learning Flutter purpose, Code is generated, check carefully before use.
 
 Flutter 3.27.1
