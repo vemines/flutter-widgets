@@ -15,14 +15,16 @@ class OutlinedButtonThemeDataScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("OutlinedButtonThemeData - Default", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("OutlinedButtonThemeData - Default",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               OutlinedButton(
                 onPressed: () {},
                 child: const Text('Default Button'),
               ),
               const SizedBox(height: 20),
-              const Text("OutlinedButtonThemeData - Custom Theme", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("OutlinedButtonThemeData - Custom Theme",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Theme(
                 data: ThemeData(
@@ -30,9 +32,11 @@ class OutlinedButtonThemeDataScreen extends StatelessWidget {
                     style: ButtonStyle(
                       backgroundColor: WidgetStateProperty.all(Colors.blue[100]),
                       foregroundColor: WidgetStateProperty.all(Colors.blue[900]),
-                      padding: WidgetStateProperty.all(const EdgeInsets.symmetric(horizontal: 20, vertical: 10)),
+                      padding: WidgetStateProperty.all(
+                          const EdgeInsets.symmetric(horizontal: 20, vertical: 10)),
                       side: WidgetStateProperty.all(const BorderSide(color: Colors.blue, width: 2)),
-                      shape: WidgetStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(10))),
+                      shape: WidgetStateProperty.all(
+                          RoundedRectangleBorder(borderRadius: BorderRadius.circular(10))),
                     ),
                   ),
                 ),
@@ -42,15 +46,18 @@ class OutlinedButtonThemeDataScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("OutlinedButtonThemeData - Custom Theme with Text Style", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("OutlinedButtonThemeData - Custom Theme with Text Style",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Theme(
                 data: ThemeData(
                   outlinedButtonTheme: OutlinedButtonThemeData(
                     style: ButtonStyle(
-                      textStyle: WidgetStateProperty.all(const TextStyle(fontSize: 18, fontWeight: FontWeight.bold, fontStyle: FontStyle.italic)),
+                      textStyle: WidgetStateProperty.all(const TextStyle(
+                          fontSize: 18, fontWeight: FontWeight.bold, fontStyle: FontStyle.italic)),
                       foregroundColor: WidgetStateProperty.all(Colors.green[900]),
-                      side: WidgetStateProperty.all(const BorderSide(color: Colors.green, width: 1)),
+                      side:
+                          WidgetStateProperty.all(const BorderSide(color: Colors.green, width: 1)),
                     ),
                   ),
                 ),
@@ -60,7 +67,8 @@ class OutlinedButtonThemeDataScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("OutlinedButtonThemeData - Custom Theme with Padding and Margin", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("OutlinedButtonThemeData - Custom Theme with Padding and Margin",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Theme(
                 data: ThemeData(
@@ -81,14 +89,22 @@ class OutlinedButtonThemeDataScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("OutlinedButtonThemeData - Custom Theme with Different Border", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("OutlinedButtonThemeData - Custom Theme with BorderStyle.solid",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Theme(
                 data: ThemeData(
                   outlinedButtonTheme: OutlinedButtonThemeData(
                     style: ButtonStyle(
-                      side: WidgetStateProperty.all(const BorderSide(color: Colors.purple, width: 4, style: BorderStyle.dashed)),
-                      shape: WidgetStateProperty.all(const BeveledRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(5)))),
+                      side: WidgetStateProperty.all(const BorderSide(
+                          color: Colors.purple, width: 4, style: BorderStyle.solid)),
+                      shape: WidgetStateProperty.all(
+                        const BeveledRectangleBorder(
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(5),
+                          ),
+                        ),
+                      ),
                     ),
                   ),
                 ),
@@ -98,14 +114,16 @@ class OutlinedButtonThemeDataScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("OutlinedButtonThemeData - Custom Theme with Fixed Size", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("OutlinedButtonThemeData - Custom Theme with Fixed Size",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Theme(
                 data: ThemeData(
                   outlinedButtonTheme: OutlinedButtonThemeData(
                     style: ButtonStyle(
                       fixedSize: WidgetStateProperty.all(const Size(150, 50)),
-                      side: WidgetStateProperty.all(const BorderSide(color: Colors.orange, width: 2)),
+                      side:
+                          WidgetStateProperty.all(const BorderSide(color: Colors.orange, width: 2)),
                     ),
                   ),
                 ),
@@ -115,7 +133,8 @@ class OutlinedButtonThemeDataScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("OutlinedButtonThemeData - Custom Theme with Icon", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("OutlinedButtonThemeData - Custom Theme with Icon",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Theme(
                 data: ThemeData(
@@ -133,15 +152,18 @@ class OutlinedButtonThemeDataScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("OutlinedButtonThemeData - Custom Theme with Icon and Text Style", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("OutlinedButtonThemeData - Custom Theme with Icon and Text Style",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Theme(
                 data: ThemeData(
                   outlinedButtonTheme: OutlinedButtonThemeData(
                     style: ButtonStyle(
-                      textStyle: WidgetStateProperty.all(const TextStyle(fontSize: 16, fontWeight: FontWeight.w500)),
+                      textStyle: WidgetStateProperty.all(
+                          const TextStyle(fontSize: 16, fontWeight: FontWeight.w500)),
                       foregroundColor: WidgetStateProperty.all(Colors.brown[900]),
-                      side: WidgetStateProperty.all(const BorderSide(color: Colors.brown, width: 1)),
+                      side:
+                          WidgetStateProperty.all(const BorderSide(color: Colors.brown, width: 1)),
                     ),
                   ),
                 ),

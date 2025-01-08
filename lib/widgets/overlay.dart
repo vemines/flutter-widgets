@@ -35,10 +35,10 @@ class OverlayExample extends StatefulWidget {
   const OverlayExample({super.key});
 
   @override
-  _OverlayExampleState createState() => _OverlayExampleState();
+  OverlayExampleState createState() => OverlayExampleState();
 }
 
-class _OverlayExampleState extends State<OverlayExample> {
+class OverlayExampleState extends State<OverlayExample> {
   OverlayEntry? _overlayEntry;
 
   void _showOverlay(BuildContext context) {
@@ -89,10 +89,10 @@ class OverlayExampleWithContainer extends StatefulWidget {
   const OverlayExampleWithContainer({super.key});
 
   @override
-  _OverlayExampleWithContainerState createState() => _OverlayExampleWithContainerState();
+  OverlayExampleWithContainerState createState() => OverlayExampleWithContainerState();
 }
 
-class _OverlayExampleWithContainerState extends State<OverlayExampleWithContainer> {
+class OverlayExampleWithContainerState extends State<OverlayExampleWithContainer> {
   OverlayEntry? _overlayEntry;
 
   void _showOverlay(BuildContext context) {

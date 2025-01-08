@@ -1,7 +1,16 @@
 import 'package:flutter/material.dart';
 
-class ShowTimePickerScreen extends StatelessWidget {
+class ShowTimePickerScreen extends StatefulWidget {
   const ShowTimePickerScreen({super.key});
+
+  @override
+  State<ShowTimePickerScreen> createState() => _ShowTimePickerScreenState();
+}
+
+class _ShowTimePickerScreenState extends State<ShowTimePickerScreen> {
+  void showSnakeBar(TimeOfDay timeOfDay) {
+    ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(timeOfDay.format(context))));
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +32,7 @@ class ShowTimePickerScreen extends StatelessWidget {
                   initialTime: TimeOfDay.now(),
                 );
                 if (selectedTime != null) {
-                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Selected time: ${selectedTime.format(context)}')));
+                  showSnakeBar(selectedTime);
                 }
               },
               child: Text("Show Time Picker"),
@@ -46,13 +55,14 @@ class ShowTimePickerScreen extends StatelessWidget {
                   },
                 );
                 if (selectedTime != null) {
-                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Selected time: ${selectedTime.format(context)}')));
+                  showSnakeBar(selectedTime);
                 }
               },
               child: Text("Show Time Picker (Green)"),
             ),
             SizedBox(height: 20),
-            Text("ShowTimePicker - With Initial Time", style: TextStyle(fontWeight: FontWeight.bold)),
+            Text("ShowTimePicker - With Initial Time",
+                style: TextStyle(fontWeight: FontWeight.bold)),
             SizedBox(height: 8),
             ElevatedButton(
               onPressed: () async {
@@ -61,7 +71,7 @@ class ShowTimePickerScreen extends StatelessWidget {
                   initialTime: TimeOfDay(hour: 14, minute: 30),
                 );
                 if (selectedTime != null) {
-                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Selected time: ${selectedTime.format(context)}')));
+                  showSnakeBar(selectedTime);
                 }
               },
               child: Text("Show Time Picker (Initial 2:30 PM)"),
@@ -83,7 +93,7 @@ class ShowTimePickerScreen extends StatelessWidget {
                   },
                 );
                 if (selectedTime != null) {
-                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Selected time: ${selectedTime.format(context)}')));
+                  showSnakeBar(selectedTime);
                 }
               },
               child: Text("Show Time Picker (24 Hour)"),
@@ -99,7 +109,7 @@ class ShowTimePickerScreen extends StatelessWidget {
                   helpText: "Select a time",
                 );
                 if (selectedTime != null) {
-                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Selected time: ${selectedTime.format(context)}')));
+                  showSnakeBar(selectedTime);
                 }
               },
               child: Text("Show Time Picker (Help Text)"),

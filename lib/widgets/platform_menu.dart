@@ -309,10 +309,10 @@ class PlatformMenu extends StatefulWidget {
   });
 
   @override
-  _PlatformMenuState createState() => _PlatformMenuState();
+  PlatformMenuState createState() => PlatformMenuState();
 }
 
-class _PlatformMenuState extends State<PlatformMenu> {
+class PlatformMenuState extends State<PlatformMenu> {
   final GlobalKey _menuKey = GlobalKey();
   Offset _menuPosition = Offset.zero;
 

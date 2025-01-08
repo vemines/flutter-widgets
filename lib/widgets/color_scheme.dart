@@ -30,13 +30,15 @@ class ColorSchemeScreen extends StatelessWidget {
               const Text("ColorScheme - Custom Secondary Color"),
               const SizedBox(height: 8),
               ColorSchemeExample(
-                colorScheme: ColorScheme.fromSeed(seedColor: Colors.purple, secondary: Colors.orange),
+                colorScheme:
+                    ColorScheme.fromSeed(seedColor: Colors.purple, secondary: Colors.orange),
               ),
               const SizedBox(height: 20),
               const Text("ColorScheme - Dark Theme"),
               const SizedBox(height: 8),
               ColorSchemeExample(
-                colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue, brightness: Brightness.dark),
+                colorScheme:
+                    ColorScheme.fromSeed(seedColor: Colors.blue, brightness: Brightness.dark),
               ),
               const SizedBox(height: 20),
               const Text("ColorScheme - Custom Error Color"),
@@ -48,13 +50,15 @@ class ColorSchemeScreen extends StatelessWidget {
               const Text("ColorScheme - Custom Surface Color"),
               const SizedBox(height: 8),
               ColorSchemeExample(
-                colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal, surface: Colors.grey[300]!),
+                colorScheme:
+                    ColorScheme.fromSeed(seedColor: Colors.teal, surface: Colors.grey[300]!),
               ),
               const SizedBox(height: 20),
               const Text("ColorScheme - Custom Background Color"),
               const SizedBox(height: 8),
               ColorSchemeExample(
-                colorScheme: ColorScheme.fromSeed(seedColor: Colors.pink, background: Colors.lightBlue[100]!),
+                colorScheme:
+                    ColorScheme.fromSeed(seedColor: Colors.pink, surface: Colors.lightBlue[100]!),
               ),
               const SizedBox(height: 20),
               const Text("ColorScheme - Custom OnPrimary Color"),
@@ -66,7 +70,8 @@ class ColorSchemeScreen extends StatelessWidget {
               const Text("ColorScheme - Custom OnSecondary Color"),
               const SizedBox(height: 8),
               ColorSchemeExample(
-                colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo, onSecondary: Colors.white),
+                colorScheme:
+                    ColorScheme.fromSeed(seedColor: Colors.indigo, onSecondary: Colors.white),
               ),
             ],
           ),

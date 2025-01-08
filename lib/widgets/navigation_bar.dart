@@ -77,27 +77,6 @@ class NavigationBarScreen extends StatelessWidget {
                     ),
                   ),
                   _buildNavigationBarVariation(
-                    label: "NavigationBar - Custom Text Style",
-                    child: NavigationBar(
-                      destinations: [
-                        NavigationDestination(
-                          icon: Icon(Icons.home),
-                          label: 'Home',
-                        ),
-                        NavigationDestination(
-                          icon: Icon(Icons.search),
-                          label: 'Search',
-                        ),
-                        NavigationDestination(
-                          icon: Icon(Icons.person),
-                          label: 'Profile',
-                        ),
-                      ],
-                      labelTextStyle: WidgetStateProperty.all(
-                          TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
-                    ),
-                  ),
-                  _buildNavigationBarVariation(
                     label: "NavigationBar - Elevation",
                     child: NavigationBar(
                       elevation: 10,

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/scheduler/ticker.dart';
+import 'package:flutter/scheduler.dart';
 
 class SlideTransitionScreen extends StatelessWidget {
   const SlideTransitionScreen({super.key});

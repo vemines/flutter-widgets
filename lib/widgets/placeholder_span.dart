@@ -15,15 +15,16 @@ class PlaceholderSpanScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("PlaceholderSpan Variations:", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              const Text("PlaceholderSpan Variations:",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               const SizedBox(height: 16),
               Wrap(
                 spacing: 16,
                 runSpacing: 16,
                 children: [
                   _buildPlaceholderSpanVariation(
-                    "Default PlaceholderSpan",
-                    PlaceholderSpan(
+                    "Default WidgetSpan",
+                    WidgetSpan(
                       child: Container(
                         width: 20,
                         height: 20,
@@ -34,8 +35,8 @@ class PlaceholderSpanScreen extends StatelessWidget {
                     ),
                   ),
                   _buildPlaceholderSpanVariation(
-                    "PlaceholderSpan - Top Alignment",
-                    PlaceholderSpan(
+                    "WidgetSpan - Top Alignment",
+                    WidgetSpan(
                       child: Container(
                         width: 30,
                         height: 30,
@@ -46,8 +47,8 @@ class PlaceholderSpanScreen extends StatelessWidget {
                     ),
                   ),
                   _buildPlaceholderSpanVariation(
-                    "PlaceholderSpan - Middle Alignment",
-                    PlaceholderSpan(
+                    "WidgetSpan - Middle Alignment",
+                    WidgetSpan(
                       child: Container(
                         width: 40,
                         height: 40,
@@ -58,8 +59,8 @@ class PlaceholderSpanScreen extends StatelessWidget {
                     ),
                   ),
                   _buildPlaceholderSpanVariation(
-                    "PlaceholderSpan - Baseline Alignment",
-                    PlaceholderSpan(
+                    "WidgetSpan - Baseline Alignment",
+                    WidgetSpan(
                       child: Container(
                         width: 25,
                         height: 25,
@@ -70,8 +71,8 @@ class PlaceholderSpanScreen extends StatelessWidget {
                     ),
                   ),
                   _buildPlaceholderSpanVariation(
-                    "PlaceholderSpan - Different Baseline",
-                    PlaceholderSpan(
+                    "WidgetSpan - Different Baseline",
+                    WidgetSpan(
                       child: Container(
                         width: 35,
                         height: 35,
@@ -82,8 +83,8 @@ class PlaceholderSpanScreen extends StatelessWidget {
                     ),
                   ),
                   _buildPlaceholderSpanVariation(
-                    "PlaceholderSpan - Larger Container",
-                    PlaceholderSpan(
+                    "WidgetSpan - Larger Container",
+                    WidgetSpan(
                       child: Container(
                         width: 50,
                         height: 50,
@@ -94,8 +95,8 @@ class PlaceholderSpanScreen extends StatelessWidget {
                     ),
                   ),
                   _buildPlaceholderSpanVariation(
-                    "PlaceholderSpan - Smaller Container",
-                    PlaceholderSpan(
+                    "WidgetSpan - Smaller Container",
+                    WidgetSpan(
                       child: Container(
                         width: 10,
                         height: 10,
@@ -114,17 +115,19 @@ class PlaceholderSpanScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildPlaceholderSpanVariation(String label, PlaceholderSpan span) {
+  Widget _buildPlaceholderSpanVariation(String label, WidgetSpan span) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Tooltip(message: label, child: Text(label, style: const TextStyle(fontWeight: FontWeight.bold))),
+        Tooltip(
+            message: label,
+            child: Text(label, style: const TextStyle(fontWeight: FontWeight.bold))),
         const SizedBox(height: 8),
         RichText(
           text: TextSpan(
             children: [
               const TextSpan(text: "Text before "),
-              WidgetSpan(child: span),
+              span,
               const TextSpan(text: " text after"),
             ],
           ),

@@ -1,3 +1,5 @@
+// ignore_for_file: unused_local_variable
+
 import 'package:flutter/material.dart';
 
 class RangeSliderTrackShapeScreen extends StatelessWidget {
@@ -20,7 +22,7 @@ class RangeSliderTrackShapeScreen extends StatelessWidget {
               const SizedBox(height: 8),
               SliderTheme(
                 data: SliderTheme.of(context).copyWith(
-                  trackShape: const RoundedRectRangeSliderTrackShape(),
+                  rangeTrackShape: const RoundedRectRangeSliderTrackShape(),
                 ),
                 child: RangeSlider(
                   values: const RangeValues(0.2, 0.8),
@@ -33,7 +35,7 @@ class RangeSliderTrackShapeScreen extends StatelessWidget {
               const SizedBox(height: 8),
               SliderTheme(
                 data: SliderTheme.of(context).copyWith(
-                  trackShape: const RoundedRectRangeSliderTrackShape(),
+                  rangeTrackShape: const RoundedRectRangeSliderTrackShape(),
                 ),
                 child: RangeSlider(
                   values: const RangeValues(0.2, 0.8),
@@ -46,7 +48,7 @@ class RangeSliderTrackShapeScreen extends StatelessWidget {
               const SizedBox(height: 8),
               SliderTheme(
                 data: SliderTheme.of(context).copyWith(
-                  trackShape: RectangularRangeSliderTrackShape(
+                  rangeTrackShape: RectangularRangeSliderTrackShape(
                     trackHeight: 10,
                     trackColor: Colors.blue.shade200,
                   ),
@@ -62,7 +64,7 @@ class RangeSliderTrackShapeScreen extends StatelessWidget {
               const SizedBox(height: 8),
               SliderTheme(
                 data: SliderTheme.of(context).copyWith(
-                  trackShape: RectangularRangeSliderTrackShape(
+                  rangeTrackShape: RectangularRangeSliderTrackShape(
                     activeTrackColor: Colors.green,
                     inactiveTrackColor: Colors.grey.shade300,
                   ),
@@ -78,7 +80,7 @@ class RangeSliderTrackShapeScreen extends StatelessWidget {
               const SizedBox(height: 8),
               SliderTheme(
                 data: SliderTheme.of(context).copyWith(
-                  trackShape: const RoundedRectRangeSliderTrackShape(
+                  rangeTrackShape: const RoundedRectRangeSliderTrackShape(
                     trackHeight: 15,
                     radius: 8,
                   ),
@@ -94,7 +96,7 @@ class RangeSliderTrackShapeScreen extends StatelessWidget {
               const SizedBox(height: 8),
               SliderTheme(
                 data: SliderTheme.of(context).copyWith(
-                  trackShape: RectangularRangeSliderTrackShape(
+                  rangeTrackShape: RectangularRangeSliderTrackShape(
                     overlayColor: Colors.purple.withValues(alpha: 255 * 0.3),
                   ),
                 ),
@@ -140,11 +142,10 @@ class RoundedRectRangeSliderTrackShape extends RangeSliderTrackShape {
     required SliderThemeData sliderTheme,
     required Animation<double> enableAnimation,
     required TextDirection textDirection,
-    required Offset thumbCenter,
-    Offset? secondaryThumbCenter,
+    required Offset startThumbCenter,
+    required Offset endThumbCenter,
     bool isEnabled = false,
     bool isDiscrete = false,
-    required Paint paint,
   }) {
     if (sliderTheme.trackHeight == null || sliderTheme.trackShape == null) {
       return;
@@ -172,51 +173,37 @@ class RoundedRectRangeSliderTrackShape extends RangeSliderTrackShape {
 
     final double radius = this.radius;
 
-    final Rect activeRect = Rect.fromLTRB(
+    final Rect activesRect = Rect.fromLTRB(
       trackRect.left,
       trackRect.top,
-      thumbCenter.dx,
+      startThumbCenter.dx,
       trackRect.bottom,
     );
 
-    final Rect inactiveRect = Rect.fromLTRB(
-      thumbCenter.dx,
+    final Rect activeRangeRect = Rect.fromLTRB(
+      startThumbCenter.dx,
+      trackRect.top,
+      endThumbCenter.dx,
+      trackRect.bottom,
+    );
+    final Rect leftInactiveRect = Rect.fromLTRB(
+      trackRect.left,
+      trackRect.top,
+      startThumbCenter.dx,
+      trackRect.bottom,
+    );
+    final Rect rightInactiveRect = Rect.fromLTRB(
+      endThumbCenter.dx,
       trackRect.top,
       trackRect.right,
       trackRect.bottom,
     );
-
-    if (secondaryThumbCenter != null) {
-      final Rect activeRangeRect = Rect.fromLTRB(
-        thumbCenter.dx,
-        trackRect.top,
-        secondaryThumbCenter.dx,
-        trackRect.bottom,
-      );
-      final Rect leftInactiveRect = Rect.fromLTRB(
-        trackRect.left,
-        trackRect.top,
-        thumbCenter.dx,
-        trackRect.bottom,
-      );
-      final Rect rightInactiveRect = Rect.fromLTRB(
-        secondaryThumbCenter.dx,
-        trackRect.top,
-        trackRect.right,
-        trackRect.bottom,
-      );
-      context.canvas.drawRRect(
-          RRect.fromRectAndRadius(leftInactiveRect, Radius.circular(radius)), inactivePaint);
-      context.canvas.drawRRect(
-          RRect.fromRectAndRadius(activeRangeRect, Radius.circular(radius)), activePaint);
-      context.canvas.drawRRect(
-          RRect.fromRectAndRadius(rightInactiveRect, Radius.circular(radius)), inactivePaint);
-    } else {
-      context.canvas
-          .drawRRect(RRect.fromRectAndRadius(activeRect, Radius.circular(radius)), activePaint);
-      context.canvas
-          .drawRRect(RRect.fromRectAndRadius(inactiveRect, Radius.circular(radius)), inactivePaint);
-    }
+    context.canvas.drawRRect(
+        RRect.fromRectAndRadius(leftInactiveRect, Radius.circular(radius)), inactivePaint);
+    context.canvas
+        .drawRRect(RRect.fromRectAndRadius(activeRangeRect, Radius.circular(radius)), activePaint);
+    context.canvas.drawRRect(
+        RRect.fromRectAndRadius(rightInactiveRect, Radius.circular(radius)), inactivePaint);
 
     if (sliderTheme.overlayColor != null) {
       final Rect overlayRect = Rect.fromLTWH(
@@ -269,11 +256,10 @@ class RectangularRangeSliderTrackShape extends RangeSliderTrackShape {
     required SliderThemeData sliderTheme,
     required Animation<double> enableAnimation,
     required TextDirection textDirection,
-    required Offset thumbCenter,
-    Offset? secondaryThumbCenter,
+    required Offset startThumbCenter,
+    required Offset endThumbCenter,
     bool isEnabled = false,
     bool isDiscrete = false,
-    required Paint paint,
   }) {
     if (sliderTheme.trackHeight == null || sliderTheme.trackShape == null) {
       return;
@@ -302,43 +288,38 @@ class RectangularRangeSliderTrackShape extends RangeSliderTrackShape {
     final Rect activeRect = Rect.fromLTRB(
       trackRect.left,
       trackRect.top,
-      thumbCenter.dx,
+      startThumbCenter.dx,
       trackRect.bottom,
     );
 
     final Rect inactiveRect = Rect.fromLTRB(
-      thumbCenter.dx,
+      startThumbCenter.dx,
       trackRect.top,
       trackRect.right,
       trackRect.bottom,
     );
 
-    if (secondaryThumbCenter != null) {
-      final Rect activeRangeRect = Rect.fromLTRB(
-        thumbCenter.dx,
-        trackRect.top,
-        secondaryThumbCenter.dx,
-        trackRect.bottom,
-      );
-      final Rect leftInactiveRect = Rect.fromLTRB(
-        trackRect.left,
-        trackRect.top,
-        thumbCenter.dx,
-        trackRect.bottom,
-      );
-      final Rect rightInactiveRect = Rect.fromLTRB(
-        secondaryThumbCenter.dx,
-        trackRect.top,
-        trackRect.right,
-        trackRect.bottom,
-      );
-      context.canvas.drawRect(leftInactiveRect, inactivePaint);
-      context.canvas.drawRect(activeRangeRect, activePaint);
-      context.canvas.drawRect(rightInactiveRect, inactivePaint);
-    } else {
-      context.canvas.drawRect(activeRect, activePaint);
-      context.canvas.drawRect(inactiveRect, inactivePaint);
-    }
+    final Rect activeRangeRect = Rect.fromLTRB(
+      startThumbCenter.dx,
+      trackRect.top,
+      endThumbCenter.dx,
+      trackRect.bottom,
+    );
+    final Rect leftInactiveRect = Rect.fromLTRB(
+      trackRect.left,
+      trackRect.top,
+      startThumbCenter.dx,
+      trackRect.bottom,
+    );
+    final Rect rightInactiveRect = Rect.fromLTRB(
+      endThumbCenter.dx,
+      trackRect.top,
+      trackRect.right,
+      trackRect.bottom,
+    );
+    context.canvas.drawRect(leftInactiveRect, inactivePaint);
+    context.canvas.drawRect(activeRangeRect, activePaint);
+    context.canvas.drawRect(rightInactiveRect, inactivePaint);
 
     if (overlayColor != null) {
       final Rect overlayRect = Rect.fromLTWH(

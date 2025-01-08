@@ -16,7 +16,8 @@ class CupertinoSegmentedControlScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("Basic CupertinoSegmentedControl", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Basic CupertinoSegmentedControl",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               _buildSegmentedControl(
                 {0: "Option 1", 1: "Option 2", 2: "Option 3"},
@@ -25,7 +26,8 @@ class CupertinoSegmentedControlScreen extends StatelessWidget {
                 "Basic Control",
               ),
               const SizedBox(height: 20),
-              const Text("Segmented Control with Different Colors", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Segmented Control with Different Colors",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               _buildSegmentedControl(
                 {0: "Option A", 1: "Option B", 2: "Option C"},
@@ -36,7 +38,8 @@ class CupertinoSegmentedControlScreen extends StatelessWidget {
                 unselectedColor: CupertinoColors.systemGrey,
               ),
               const SizedBox(height: 20),
-              const Text("Segmented Control with Padding", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Segmented Control with Padding",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               _buildSegmentedControl(
                 {0: "One", 1: "Two", 2: "Three"},
@@ -46,7 +49,8 @@ class CupertinoSegmentedControlScreen extends StatelessWidget {
                 padding: const EdgeInsets.all(10),
               ),
               const SizedBox(height: 20),
-              const Text("Segmented Control with Border Radius", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Segmented Control with Border Radius",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               _buildSegmentedControl(
                 {0: "Item 1", 1: "Item 2", 2: "Item 3"},
@@ -56,7 +60,8 @@ class CupertinoSegmentedControlScreen extends StatelessWidget {
                 borderRadius: const BorderRadius.all(Radius.circular(15)),
               ),
               const SizedBox(height: 20),
-              const Text("Segmented Control with Different Text Styles", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Segmented Control with Different Text Styles",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               _buildSegmentedControl(
                 {0: "First", 1: "Second", 2: "Third"},
@@ -66,7 +71,8 @@ class CupertinoSegmentedControlScreen extends StatelessWidget {
                 textStyle: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 20),
-              const Text("Segmented Control with Custom Text Colors", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Segmented Control with Custom Text Colors",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               _buildSegmentedControl(
                 {0: "Red", 1: "Green", 2: "Blue"},
@@ -77,7 +83,8 @@ class CupertinoSegmentedControlScreen extends StatelessWidget {
                 unselectedTextStyle: const TextStyle(color: Colors.black),
               ),
               const SizedBox(height: 20),
-              const Text("Segmented Control with Custom Text Colors and Background", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Segmented Control with Custom Text Colors and Background",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               _buildSegmentedControl(
                 {0: "Red", 1: "Green", 2: "Blue"},
@@ -90,7 +97,9 @@ class CupertinoSegmentedControlScreen extends StatelessWidget {
                 unselectedColor: Colors.grey[300],
               ),
               const SizedBox(height: 20),
-              const Text("Segmented Control with Custom Text Colors and Background and Border Radius", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text(
+                  "Segmented Control with Custom Text Colors and Background and Border Radius",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               _buildSegmentedControl(
                 {0: "Red", 1: "Green", 2: "Blue"},
@@ -111,34 +120,27 @@ class CupertinoSegmentedControlScreen extends StatelessWidget {
   }
 
   Widget _buildSegmentedControl(
-    Map<int, String> children,
-    int groupValue,
-    ValueChanged<int> onValueChanged,
-    String label,
-    {Color? selectedColor,
-    Color? unselectedColor,
-    EdgeInsetsGeometry? padding,
-    BorderRadius? borderRadius,
-    TextStyle? textStyle,
-    TextStyle? selectedTextStyle,
-    TextStyle? unselectedTextStyle}
-  ) {
+      Map<int, String> children, int groupValue, ValueChanged<int> onValueChanged, String label,
+      {Color? selectedColor,
+      Color? unselectedColor,
+      EdgeInsetsGeometry? padding,
+      BorderRadius? borderRadius,
+      TextStyle? textStyle,
+      TextStyle? selectedTextStyle,
+      TextStyle? unselectedTextStyle}) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(label),
         const SizedBox(height: 4),
         CupertinoSegmentedControl<int>(
-          children: children,
+          children: children.map((key, value) => MapEntry(key, Text(value))),
           groupValue: groupValue,
           onValueChanged: onValueChanged,
           selectedColor: selectedColor,
           unselectedColor: unselectedColor,
           padding: padding ?? const EdgeInsets.all(8),
-          borderRadius: borderRadius ?? const BorderRadius.all(Radius.circular(8)),
-          textStyle: textStyle,
-          selectedTextStyle: selectedTextStyle,
-          unselectedTextStyle: unselectedTextStyle,
+          pressedColor: selectedColor?.withAlpha((0.2 * 255).floor()),
         ),
         const SizedBox(height: 10),
       ],

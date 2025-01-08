@@ -37,7 +37,7 @@ class FormFieldValidatorScreen extends StatelessWidget {
                     'Email Validator',
                     (value) {
                       if (value == null || value.isEmpty) return null;
-                      if (!RegExp(r'^[a-zA-Z0-9.!#').hasMatch(value)) {
+                      if (!RegExp(r'^[a-zA-Z0-9.!#@$%^&*()_+{}|:"<>?`~=-]+$').hasMatch(value)) {
                         return 'Invalid email format';
                       }
                       return null;
@@ -567,10 +567,8 @@ class FormFieldValidatorScreen extends StatelessWidget {
                     'Credit Card Track3 Validator',
                     (value) {
                       if (value == null || value.isEmpty) return null;
-                      if (!RegExp(r'^?[A-Z0-9\s.#:-_(),;{}![]+=><'
-                              ']+?|^(0[1-9]|1[0-2])/?([0-9]{2})|^(visa|mastercard|amex|discover)|^d{4}|^%[A-Z0-9s.#:-_(),;{}![]+=><'
-                              ']+?|^?[A-Z0-9s.#:-_(),;{}![]+=><'
-                              ']+?')
+                      if (!RegExp(
+                              r'^[A-Z0-9\s.#:-_(),;{}![\]%=<>]+$|^(0[1-9]|1[0-2])/?([0-9]{2})$|^(visa|mastercard|amex|discover)$|^\d{4}$|^%[A-Z0-9\s.#:-_(),;{}![\]%=<>]+$')
                           .hasMatch(value)) {
                         return 'Invalid International Bank Account Number';
                       }

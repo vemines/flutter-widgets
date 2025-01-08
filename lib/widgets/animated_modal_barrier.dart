@@ -26,11 +26,11 @@ class AnimatedModalBarrierScreen extends StatelessWidget {
                     'Default Barrier',
                     AnimatedModalBarrier(
                       color: AlwaysStoppedAnimation<Color>(
-                          Colors.black.withAlpha((255 * 0.5).round().round())),
+                          Colors.black.withAlpha((255 * 0.5).floor())),
                       dismissible: true,
                       onDismiss: () {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(content: Text('Barrier Dismissed')));
+                        ScaffoldMessenger.of(context)
+                            .showSnackBar(const SnackBar(content: Text('Barrier Dismissed')));
                       },
                     ),
                     context,
@@ -38,8 +38,8 @@ class AnimatedModalBarrierScreen extends StatelessWidget {
                   _buildBarrierVariation(
                     'Red Barrier',
                     AnimatedModalBarrier(
-                      color: AlwaysStoppedAnimation<Color>(
-                          Colors.red.withAlpha((255 * 0.7).round().round())),
+                      color:
+                          AlwaysStoppedAnimation<Color>(Colors.red.withAlpha((255 * 0.7).floor())),
                       dismissible: false,
                     ),
                     context,
@@ -48,11 +48,11 @@ class AnimatedModalBarrierScreen extends StatelessWidget {
                     'Green Barrier',
                     AnimatedModalBarrier(
                       color: AlwaysStoppedAnimation<Color>(
-                          Colors.green.withAlpha((255 * 0.3).round().round())),
+                          Colors.green.withAlpha((255 * 0.3).floor())),
                       dismissible: true,
                       onDismiss: () {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(content: Text('Barrier Dismissed')));
+                        ScaffoldMessenger.of(context)
+                            .showSnackBar(const SnackBar(content: Text('Barrier Dismissed')));
                       },
                     ),
                     context,
@@ -60,8 +60,8 @@ class AnimatedModalBarrierScreen extends StatelessWidget {
                   _buildBarrierVariation(
                     'Blue Barrier',
                     AnimatedModalBarrier(
-                      color: AlwaysStoppedAnimation<Color>(
-                          Colors.blue.withAlpha((255 * 0.9).round().round())),
+                      color:
+                          AlwaysStoppedAnimation<Color>(Colors.blue.withAlpha((255 * 0.9).floor())),
                       dismissible: false,
                     ),
                     context,
@@ -72,8 +72,8 @@ class AnimatedModalBarrierScreen extends StatelessWidget {
                       color: AlwaysStoppedAnimation<Color>(Colors.transparent),
                       dismissible: true,
                       onDismiss: () {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(content: Text('Barrier Dismissed')));
+                        ScaffoldMessenger.of(context)
+                            .showSnackBar(const SnackBar(content: Text('Barrier Dismissed')));
                       },
                     ),
                     context,
@@ -82,11 +82,11 @@ class AnimatedModalBarrierScreen extends StatelessWidget {
                     'Barrier with Opacity 0.1',
                     AnimatedModalBarrier(
                       color: AlwaysStoppedAnimation<Color>(
-                          Colors.black.withAlpha((255 * 0.1).round())),
+                          Colors.black.withAlpha((255 * 0.1).floor())),
                       dismissible: true,
                       onDismiss: () {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(content: Text('Barrier Dismissed')));
+                        ScaffoldMessenger.of(context)
+                            .showSnackBar(const SnackBar(content: Text('Barrier Dismissed')));
                       },
                     ),
                     context,
@@ -95,11 +95,11 @@ class AnimatedModalBarrierScreen extends StatelessWidget {
                     'Barrier with Opacity 0.9',
                     AnimatedModalBarrier(
                       color: AlwaysStoppedAnimation<Color>(
-                          Colors.black.withAlpha((255 * 0.9).round())),
+                          Colors.black.withAlpha((255 * 0.9).floor())),
                       dismissible: true,
                       onDismiss: () {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(content: Text('Barrier Dismissed')));
+                        ScaffoldMessenger.of(context)
+                            .showSnackBar(const SnackBar(content: Text('Barrier Dismissed')));
                       },
                     ),
                     context,
@@ -115,12 +115,11 @@ class AnimatedModalBarrierScreen extends StatelessWidget {
                         ),
                         AnimatedModalBarrier(
                           color: AlwaysStoppedAnimation<Color>(
-                              Colors.black.withAlpha((255 * 0.5).round())),
+                              Colors.black.withAlpha((255 * 0.5).floor())),
                           dismissible: true,
                           onDismiss: () {
-                            ScaffoldMessenger.of(context).showSnackBar(
-                                const SnackBar(
-                                    content: Text('Barrier Dismissed')));
+                            ScaffoldMessenger.of(context)
+                                .showSnackBar(const SnackBar(content: Text('Barrier Dismissed')));
                           },
                         ),
                       ],
@@ -136,8 +135,7 @@ class AnimatedModalBarrierScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildBarrierVariation(
-      String name, Widget barrier, BuildContext context) {
+  Widget _buildBarrierVariation(String name, Widget barrier, BuildContext context) {
     return Tooltip(
       message: name,
       child: GestureDetector(

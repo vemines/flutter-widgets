@@ -15,7 +15,8 @@ class MaterialButtonScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("MaterialButton Variations:", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              const Text("MaterialButton Variations:",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               const SizedBox(height: 16),
               Wrap(
                 spacing: 16,
@@ -101,8 +102,12 @@ class MaterialButtonScreen extends StatelessWidget {
                     description: "MaterialButton with an icon.",
                     child: MaterialButton(
                       onPressed: () {},
-                      icon: const Icon(Icons.add),
-                      label: const Text("Add"),
+                      child: Row(
+                        children: const [
+                          Icon(Icons.add),
+                          Text("Add"),
+                        ],
+                      ),
                     ),
                   ),
                   _buildMaterialButtonVariation(
@@ -110,9 +115,13 @@ class MaterialButtonScreen extends StatelessWidget {
                     description: "MaterialButton with an icon and custom color.",
                     child: MaterialButton(
                       onPressed: () {},
-                      icon: const Icon(Icons.favorite, color: Colors.red),
-                      label: const Text("Favorite", style: TextStyle(color: Colors.white)),
                       color: Colors.blue,
+                      child: Row(
+                        children: const [
+                          Icon(Icons.favorite, color: Colors.red),
+                          Text("Favorite", style: TextStyle(color: Colors.white)),
+                        ],
+                      ),
                     ),
                   ),
                   _buildMaterialButtonVariation(
@@ -120,7 +129,9 @@ class MaterialButtonScreen extends StatelessWidget {
                     description: "MaterialButton with custom text style.",
                     child: MaterialButton(
                       onPressed: () {},
-                      child: const Text("Custom Text", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.purple)),
+                      child: const Text("Custom Text",
+                          style: TextStyle(
+                              fontSize: 18, fontWeight: FontWeight.bold, color: Colors.purple)),
                     ),
                   ),
                   _buildMaterialButtonVariation(
@@ -137,7 +148,8 @@ class MaterialButtonScreen extends StatelessWidget {
                     description: "MaterialButton with a custom border side.",
                     child: MaterialButton(
                       onPressed: () {},
-                      shape: OutlineInputBorder(borderSide: const BorderSide(color: Colors.black, width: 2)),
+                      shape: OutlineInputBorder(
+                          borderSide: const BorderSide(color: Colors.black, width: 2)),
                       child: const Text("Border Side"),
                     ),
                   ),
@@ -150,7 +162,8 @@ class MaterialButtonScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildMaterialButtonVariation({required String label, required String description, required Widget child}) {
+  Widget _buildMaterialButtonVariation(
+      {required String label, required String description, required Widget child}) {
     return Tooltip(
       message: description,
       child: Column(

@@ -22,7 +22,8 @@ class CupertinoSwitchScreen extends StatelessWidget {
                 title: "Basic Switch",
               ),
               const SizedBox(height: 20),
-              const Text("CupertinoSwitch with different colors", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CupertinoSwitch with different colors",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               const CupertinoSwitchExample(
                 title: "Active Color Blue",
@@ -34,21 +35,24 @@ class CupertinoSwitchScreen extends StatelessWidget {
                 thumbColor: Colors.red,
               ),
               const SizedBox(height: 20),
-              const Text("CupertinoSwitch with different sizes", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CupertinoSwitch with different sizes",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               const CupertinoSwitchExample(
                 title: "Larger Switch",
                 scale: 1.5,
               ),
               const SizedBox(height: 20),
-              const Text("CupertinoSwitch with different track color", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CupertinoSwitch with different track color",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               const CupertinoSwitchExample(
                 title: "Track Color Grey",
                 trackColor: Colors.grey,
               ),
               const SizedBox(height: 20),
-              const Text("CupertinoSwitch with different active and thumb color", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CupertinoSwitch with different active and thumb color",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               const CupertinoSwitchExample(
                 title: "Active Color Green, Thumb Color Yellow",
@@ -80,10 +84,10 @@ class CupertinoSwitchExample extends StatefulWidget {
   });
 
   @override
-  _CupertinoSwitchExampleState createState() => _CupertinoSwitchExampleState();
+  CupertinoSwitchExampleState createState() => CupertinoSwitchExampleState();
 }
 
-class _CupertinoSwitchExampleState extends State<CupertinoSwitchExample> {
+class CupertinoSwitchExampleState extends State<CupertinoSwitchExample> {
   bool _switchValue = false;
 
   @override

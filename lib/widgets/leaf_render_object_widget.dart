@@ -118,7 +118,7 @@ class LeafRenderObjectWidget extends LeafRenderObjectWidgetBase {
 
   @override
   RenderObject createRenderObject(BuildContext context) {
-    return _LeafRenderObject(
+    return LeafRenderObject(
       color: color,
       size: size,
       borderWidth: borderWidth,
@@ -130,10 +130,10 @@ class LeafRenderObjectWidget extends LeafRenderObjectWidgetBase {
   }
 
   @override
-  void updateRenderObject(BuildContext context, _LeafRenderObject renderObject) {
+  void updateRenderObject(BuildContext context, LeafRenderObject renderObject) {
     renderObject
       ..color = color
-      ..size = size
+      ..size = Size(size, size)
       ..borderWidth = borderWidth
       ..borderColor = borderColor
       ..borderRadius = borderRadius
@@ -141,7 +141,6 @@ class LeafRenderObjectWidget extends LeafRenderObjectWidgetBase {
       ..margin = margin;
   }
 
-  @override
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.all(padding),
@@ -149,14 +148,19 @@ class LeafRenderObjectWidget extends LeafRenderObjectWidgetBase {
       child: child,
     );
   }
+
+  @override
+  RenderObjectElement createElement() {
+    return _LeafRenderObjectElement(this);
+  }
 }
 
 abstract class LeafRenderObjectWidgetBase extends RenderObjectWidget {
   const LeafRenderObjectWidgetBase({super.key});
 }
 
-class _LeafRenderObject extends RenderBox {
-  _LeafRenderObject({
+class LeafRenderObject extends RenderBox {
+  LeafRenderObject({
     required Color color,
     required double size,
     required double borderWidth,
@@ -173,7 +177,7 @@ class _LeafRenderObject extends RenderBox {
         _margin = margin;
 
   Color _color;
-  double _size;
+  final double _size;
   double _borderWidth;
   Color _borderColor;
   double _borderRadius;
@@ -188,9 +192,9 @@ class _LeafRenderObject extends RenderBox {
   }
 
   @override
-  set size(double value) {
-    if (_size != value) {
-      _size = value;
+  set size(Size value) {
+    if (size != value) {
+      super.size = value;
       markNeedsLayout();
     }
   }
@@ -264,5 +268,42 @@ class _LeafRenderObject extends RenderBox {
       RRect.fromRectAndRadius(rect, Radius.circular(_borderRadius)),
       paint,
     );
+  }
+}
+
+class _LeafRenderObjectElement extends RenderObjectElement {
+  _LeafRenderObjectElement(LeafRenderObjectWidget super.widget);
+
+  @override
+  void update(LeafRenderObjectWidget newWidget) {
+    super.update(newWidget);
+    (renderObject as LeafRenderObject)
+      ..color = newWidget.color
+      ..size = Size(newWidget.size, newWidget.size)
+      ..borderWidth = newWidget.borderWidth
+      ..borderColor = newWidget.borderColor
+      ..borderRadius = newWidget.borderRadius
+      ..padding = newWidget.padding
+      ..margin = newWidget.margin;
+  }
+
+  @override
+  void insertRenderObjectChild(covariant RenderObject child, covariant Object? slot) {
+    // Leaf render objects do not have children so nothing needs to be done
+    // if something gets inserted unexpectedly, an assertion will show the error
+    assert(false, 'Leaf render object cannot have children');
+  }
+
+  @override
+  void moveRenderObjectChild(
+      covariant RenderObject child, covariant Object? oldSlot, covariant Object? newSlot) {
+    // Leaf render objects do not have children so nothing needs to be done
+    assert(false, 'Leaf render object cannot have children');
+  }
+
+  @override
+  void removeRenderObjectChild(covariant RenderObject child, covariant Object? slot) {
+    // Leaf render objects do not have children so nothing needs to be done
+    assert(false, 'Leaf render object cannot have children');
   }
 }

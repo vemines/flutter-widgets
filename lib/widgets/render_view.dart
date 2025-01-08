@@ -168,20 +168,24 @@ class RenderCustomRenderView extends RenderProxyBox {
     final BoxConstraints constraints = this.constraints;
     final EdgeInsets resolvedPadding = padding?.resolve(TextDirection.ltr) ?? EdgeInsets.zero;
     final EdgeInsets resolvedMargin = margin?.resolve(TextDirection.ltr) ?? EdgeInsets.zero;
-    final BoxConstraints childConstraints = constraints.deflate(resolvedPadding + resolvedMargin);
+    final BoxConstraints childConstraints =
+        constraints.deflate(resolvedPadding).deflate(resolvedMargin);
 
     if (child != null) {
       child!.layout(childConstraints, parentUsesSize: true);
-      size = constraints
-          .constrain(resolvedPadding.collapsedSize + resolvedMargin.collapsedSize + child!.size);
+      size = constraints.constrain(Size(
+          resolvedPadding.horizontal + resolvedMargin.horizontal + child!.size.width,
+          resolvedPadding.vertical + resolvedMargin.vertical + child!.size.height));
     } else {
-      size = constraints.constrain(resolvedPadding.collapsedSize + resolvedMargin.collapsedSize);
+      size = constraints.constrain(Size(resolvedPadding.horizontal + resolvedMargin.horizontal,
+          resolvedPadding.vertical + resolvedMargin.vertical));
     }
-
     if (child != null) {
-      final Offset childOffset = _alignment.alongSize(size - child!.size) +
-          resolvedPadding.topLeft +
-          resolvedMargin.topLeft;
+      final Offset childOffset =
+          _alignment.resolve(TextDirection.ltr).withinRect(Offset.zero & size) -
+              Offset(child!.size.width / 2, child!.size.height / 2) +
+              resolvedPadding.topLeft +
+              resolvedMargin.topLeft;
       final BoxParentData childParentData = child!.parentData as BoxParentData;
       childParentData.offset = childOffset;
     }

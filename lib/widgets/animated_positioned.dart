@@ -15,27 +15,33 @@ class AnimatedPositionedScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("AnimatedPositioned - Basic Example", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("AnimatedPositioned - Basic Example",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               AnimatedPositionedExample(),
               SizedBox(height: 20),
-              Text("AnimatedPositioned - Different Duration", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("AnimatedPositioned - Different Duration",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               AnimatedPositionedExample(duration: Duration(seconds: 2)),
               SizedBox(height: 20),
-              Text("AnimatedPositioned - Different Curve", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("AnimatedPositioned - Different Curve",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               AnimatedPositionedExample(curve: Curves.bounceOut),
               SizedBox(height: 20),
-              Text("AnimatedPositioned - Different Top and Left", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("AnimatedPositioned - Different Top and Left",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               AnimatedPositionedExample(top: 100, left: 100),
               SizedBox(height: 20),
-              Text("AnimatedPositioned - Different Width and Height", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("AnimatedPositioned - Different Width and Height",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               AnimatedPositionedExample(width: 150, height: 150),
               SizedBox(height: 20),
-              Text("AnimatedPositioned - With Container", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("AnimatedPositioned - With Container",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               AnimatedPositionedWithContainer(),
               SizedBox(height: 20),
@@ -59,7 +65,8 @@ class AnimatedPositionedExample extends StatefulWidget {
   final double? width;
   final double? height;
 
-  const AnimatedPositionedExample({super.key, 
+  const AnimatedPositionedExample({
+    super.key,
     this.duration = const Duration(milliseconds: 500),
     this.curve = Curves.linear,
     this.top,
@@ -69,10 +76,10 @@ class AnimatedPositionedExample extends StatefulWidget {
   });
 
   @override
-  _AnimatedPositionedExampleState createState() => _AnimatedPositionedExampleState();
+  AnimatedPositionedExampleState createState() => AnimatedPositionedExampleState();
 }
 
-class _AnimatedPositionedExampleState extends State<AnimatedPositionedExample> {
+class AnimatedPositionedExampleState extends State<AnimatedPositionedExample> {
   bool _selected = false;
 
   @override
@@ -111,10 +118,10 @@ class AnimatedPositionedWithContainer extends StatefulWidget {
   const AnimatedPositionedWithContainer({super.key});
 
   @override
-  _AnimatedPositionedWithContainerState createState() => _AnimatedPositionedWithContainerState();
+  AnimatedPositionedWithContainerState createState() => AnimatedPositionedWithContainerState();
 }
 
-class _AnimatedPositionedWithContainerState extends State<AnimatedPositionedWithContainer> {
+class AnimatedPositionedWithContainerState extends State<AnimatedPositionedWithContainer> {
   bool _selected = false;
 
   @override

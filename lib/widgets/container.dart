@@ -15,7 +15,8 @@ class ContainerScreen extends StatelessWidget {
           children: [
             const Padding(
               padding: EdgeInsets.all(8.0),
-              child: Text("Container Variations:", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              child: Text("Container Variations:",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
             ),
             Wrap(
               spacing: 10,
@@ -23,9 +24,7 @@ class ContainerScreen extends StatelessWidget {
               children: [
                 Tooltip(
                   message: "Container - Default",
-                  child: Container(
-                    child: const Center(child: Text("Default")),
-                  ),
+                  child: const Center(child: Text("Default")),
                 ),
                 Tooltip(
                   message: "Container - Red Background",
@@ -39,7 +38,9 @@ class ContainerScreen extends StatelessWidget {
                   child: Container(
                     color: Colors.blue,
                     padding: const EdgeInsets.all(20),
-                    child: const Center(child: Text("Blue Background with Padding", style: TextStyle(color: Colors.white))),
+                    child: const Center(
+                        child: Text("Blue Background with Padding",
+                            style: TextStyle(color: Colors.white))),
                   ),
                 ),
                 Tooltip(
@@ -58,7 +59,8 @@ class ContainerScreen extends StatelessWidget {
                       color: Colors.orange,
                       borderRadius: BorderRadius.circular(10),
                     ),
-                    child: const Center(child: Text("Rounded Corners", style: TextStyle(color: Colors.white))),
+                    child: const Center(
+                        child: Text("Rounded Corners", style: TextStyle(color: Colors.white))),
                   ),
                 ),
                 Tooltip(
@@ -67,7 +69,8 @@ class ContainerScreen extends StatelessWidget {
                     width: 150,
                     height: 80,
                     color: Colors.purple,
-                    child: const Center(child: Text("Specific Size", style: TextStyle(color: Colors.white))),
+                    child: const Center(
+                        child: Text("Specific Size", style: TextStyle(color: Colors.white))),
                   ),
                 ),
                 Tooltip(
@@ -75,7 +78,8 @@ class ContainerScreen extends StatelessWidget {
                   child: Container(
                     margin: const EdgeInsets.all(20),
                     color: Colors.teal,
-                    child: const Center(child: Text("With Margin", style: TextStyle(color: Colors.white))),
+                    child: const Center(
+                        child: Text("With Margin", style: TextStyle(color: Colors.white))),
                   ),
                 ),
                 Tooltip(
@@ -90,7 +94,8 @@ class ContainerScreen extends StatelessWidget {
             ),
             const Padding(
               padding: EdgeInsets.all(8.0),
-              child: Text("Container as a Wrapper:", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              child: Text("Container as a Wrapper:",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
             ),
             // Container without wrapping another widget is not very useful, so we show it with a child.
             // Container(

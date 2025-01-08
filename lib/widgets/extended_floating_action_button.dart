@@ -39,8 +39,7 @@ class ExtendedFloatingActionButtonScreen extends StatelessWidget {
                       const Text("Primary Color"),
                       ExtendedFloatingActionButton(
                         onPressed: () {},
-                        text: const Text("Primary Color",
-                            style: TextStyle(color: Colors.white)),
+                        text: const Text("Primary Color", style: TextStyle(color: Colors.white)),
                         icon: const Icon(Icons.add, color: Colors.white),
                         backgroundColor: Theme.of(context).primaryColor,
                       ),
@@ -52,11 +51,9 @@ class ExtendedFloatingActionButtonScreen extends StatelessWidget {
                       const Text("Secondary Color"),
                       ExtendedFloatingActionButton(
                         onPressed: () {},
-                        text: const Text("Secondary Color",
-                            style: TextStyle(color: Colors.white)),
+                        text: const Text("Secondary Color", style: TextStyle(color: Colors.white)),
                         icon: const Icon(Icons.add, color: Colors.white),
-                        backgroundColor:
-                            Theme.of(context).colorScheme.secondary,
+                        backgroundColor: Theme.of(context).colorScheme.secondary,
                       ),
                     ],
                   ),
@@ -66,8 +63,7 @@ class ExtendedFloatingActionButtonScreen extends StatelessWidget {
                       const Text("Custom Colors"),
                       ExtendedFloatingActionButton(
                         onPressed: () {},
-                        text: const Text("Custom Colors",
-                            style: TextStyle(color: Colors.black)),
+                        text: const Text("Custom Colors", style: TextStyle(color: Colors.black)),
                         icon: const Icon(Icons.add, color: Colors.black),
                         backgroundColor: Colors.yellow,
                       ),
@@ -81,8 +77,7 @@ class ExtendedFloatingActionButtonScreen extends StatelessWidget {
                         onPressed: () {},
                         text: const Text("Custom Size"),
                         icon: const Icon(Icons.add),
-                        extendedPadding: const EdgeInsets.symmetric(
-                            horizontal: 32, vertical: 16),
+                        extendedPadding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
                       ),
                     ],
                   ),
@@ -94,8 +89,7 @@ class ExtendedFloatingActionButtonScreen extends StatelessWidget {
                         onPressed: () {},
                         text: const Text("Custom Shape"),
                         icon: const Icon(Icons.add),
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20)),
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
                       ),
                     ],
                   ),
@@ -106,8 +100,7 @@ class ExtendedFloatingActionButtonScreen extends StatelessWidget {
                       ExtendedFloatingActionButton(
                         onPressed: () {},
                         text: const Text("Custom Text Style",
-                            style: TextStyle(
-                                fontSize: 18, fontWeight: FontWeight.bold)),
+                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
                         icon: const Icon(Icons.add),
                       ),
                     ],
@@ -246,27 +239,21 @@ class ExtendedFloatingActionButton extends StatefulWidget {
   });
 
   @override
-  ExtendedFloatingActionButtonState createState() =>
-      ExtendedFloatingActionButtonState();
+  ExtendedFloatingActionButtonState createState() => ExtendedFloatingActionButtonState();
 }
 
-class ExtendedFloatingActionButtonState
-    extends State<ExtendedFloatingActionButton> {
-  bool _isHovering = false;
-  bool _isFocused = false;
-  bool _isPressed = false;
-
+class ExtendedFloatingActionButtonState extends State<ExtendedFloatingActionButton> {
   @override
   Widget build(BuildContext context) {
     return MouseRegion(
-      onEnter: (_) => setState(() => _isHovering = true),
-      onExit: (_) => setState(() => _isHovering = false),
+      onEnter: (_) => print("onEnter"),
+      onExit: (_) => print("onExit"),
       child: Focus(
-        onFocusChange: (hasFocus) => setState(() => _isFocused = hasFocus),
+        onFocusChange: (hasFocus) => print("hasFocus: $hasFocus"),
         child: GestureDetector(
-          onTapDown: (_) => setState(() => _isPressed = true),
-          onTapUp: (_) => setState(() => _isPressed = false),
-          onTapCancel: () => setState(() => _isPressed = false),
+          onTapDown: (_) => print("onTapDown"),
+          onTapUp: (_) => print("onTapUp"),
+          onTapCancel: () => print("onTapCancel"),
           onTap: widget.onPressed,
           child: AnimatedContainer(
             duration: const Duration(milliseconds: 100),
@@ -274,8 +261,7 @@ class ExtendedFloatingActionButtonState
             padding: widget.extendedPadding ??
                 const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
             decoration: ShapeDecoration(
-              color: widget.backgroundColor ??
-                  Theme.of(context).colorScheme.primary,
+              color: widget.backgroundColor ?? Theme.of(context).colorScheme.primary,
               shape: widget.shape ?? const StadiumBorder(),
               shadows: [
                 if (widget.elevation != null)
@@ -290,14 +276,12 @@ class ExtendedFloatingActionButtonState
               mainAxisSize: MainAxisSize.min,
               children: [
                 IconTheme(
-                  data: IconThemeData(
-                      color: widget.textStyle?.color ?? Colors.white),
+                  data: IconThemeData(color: widget.textStyle?.color ?? Colors.white),
                   child: widget.icon,
                 ),
                 const SizedBox(width: 8.0),
                 DefaultTextStyle(
-                  style:
-                      widget.textStyle ?? const TextStyle(color: Colors.white),
+                  style: widget.textStyle ?? const TextStyle(color: Colors.white),
                   child: widget.text,
                 ),
               ],

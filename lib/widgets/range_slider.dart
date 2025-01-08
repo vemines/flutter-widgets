@@ -50,10 +50,11 @@ class RangeSliderScreen extends StatelessWidget {
           onChanged: (RangeValues values) {},
         ),
         SizedBox(height: 20),
-        Text("RangeSlider - Thumb Color Green", style: TextStyle(fontWeight: FontWeight.bold)),
+        Text("RangeSlider - Thumb activeColor Green",
+            style: TextStyle(fontWeight: FontWeight.bold)),
         RangeSlider(
           values: RangeValues(0.4, 0.6),
-          thumbColor: Colors.green,
+          activeColor: Colors.green,
           onChanged: (RangeValues values) {},
         ),
         SizedBox(height: 20),

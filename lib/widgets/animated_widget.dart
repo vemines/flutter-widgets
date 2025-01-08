@@ -15,57 +15,45 @@ class AnimatedWidgetScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("AnimatedWidget Variations:", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              const Text("AnimatedWidget Variations:",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               const SizedBox(height: 16),
               Wrap(
                 spacing: 16,
                 runSpacing: 16,
                 children: [
+                  _buildAnimatedWidgetVariation("Default", AnimatedWidgetExample(),
+                      "Default AnimatedWidget with no modifications."),
                   _buildAnimatedWidgetVariation(
-                    "Default",
-                    AnimatedWidgetExample(),
-                    "Default AnimatedWidget with no modifications."
-                  ),
+                      "Custom Color",
+                      AnimatedWidgetExample(color: Colors.blue),
+                      "AnimatedWidget with a blue color."),
+                  _buildAnimatedWidgetVariation("Custom Size", AnimatedWidgetExample(size: 100),
+                      "AnimatedWidget with a larger size."),
                   _buildAnimatedWidgetVariation(
-                    "Custom Color",
-                    AnimatedWidgetExample(color: Colors.blue),
-                    "AnimatedWidget with a blue color."
-                  ),
+                      "Custom Duration",
+                      AnimatedWidgetExample(duration: Duration(seconds: 2)),
+                      "AnimatedWidget with a longer animation duration."),
                   _buildAnimatedWidgetVariation(
-                    "Custom Size",
-                    AnimatedWidgetExample(size: 100),
-                    "AnimatedWidget with a larger size."
-                  ),
+                      "Custom Curve",
+                      AnimatedWidgetExample(curve: Curves.bounceIn),
+                      "AnimatedWidget with a bounce-in animation curve."),
                   _buildAnimatedWidgetVariation(
-                    "Custom Duration",
-                    AnimatedWidgetExample(duration: Duration(seconds: 2)),
-                    "AnimatedWidget with a longer animation duration."
-                  ),
+                      "Custom Child",
+                      AnimatedWidgetExample(child: Icon(Icons.star, size: 30, color: Colors.white)),
+                      "AnimatedWidget with a custom child widget."),
                   _buildAnimatedWidgetVariation(
-                    "Custom Curve",
-                    AnimatedWidgetExample(curve: Curves.bounceIn),
-                    "AnimatedWidget with a bounce-in animation curve."
-                  ),
+                      "Custom Border Radius",
+                      AnimatedWidgetExample(borderRadius: BorderRadius.circular(20)),
+                      "AnimatedWidget with a custom border radius."),
                   _buildAnimatedWidgetVariation(
-                    "Custom Child",
-                    AnimatedWidgetExample(child: Icon(Icons.star, size: 30, color: Colors.white)),
-                    "AnimatedWidget with a custom child widget."
-                  ),
+                      "Custom Padding",
+                      AnimatedWidgetExample(padding: EdgeInsets.all(20)),
+                      "AnimatedWidget with custom padding."),
                   _buildAnimatedWidgetVariation(
-                    "Custom Border Radius",
-                    AnimatedWidgetExample(borderRadius: BorderRadius.circular(20)),
-                    "AnimatedWidget with a custom border radius."
-                  ),
-                  _buildAnimatedWidgetVariation(
-                    "Custom Padding",
-                    AnimatedWidgetExample(padding: EdgeInsets.all(20)),
-                    "AnimatedWidget with custom padding."
-                  ),
-                  _buildAnimatedWidgetVariation(
-                    "Custom Margin",
-                    AnimatedWidgetExample(margin: EdgeInsets.all(20)),
-                    "AnimatedWidget with custom margin."
-                  ),
+                      "Custom Margin",
+                      AnimatedWidgetExample(margin: EdgeInsets.all(20)),
+                      "AnimatedWidget with custom margin."),
                 ],
               ),
             ],
@@ -113,10 +101,11 @@ class AnimatedWidgetExample extends StatefulWidget {
   });
 
   @override
-  _AnimatedWidgetExampleState createState() => _AnimatedWidgetExampleState();
+  AnimatedWidgetExampleState createState() => AnimatedWidgetExampleState();
 }
 
-class _AnimatedWidgetExampleState extends State<AnimatedWidgetExample> with SingleTickerProviderStateMixin {
+class AnimatedWidgetExampleState extends State<AnimatedWidgetExample>
+    with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _animation;
 
@@ -156,7 +145,8 @@ class _AnimatedWidgetExampleState extends State<AnimatedWidgetExample> with Sing
           alignment: Alignment.center,
           child: Transform.scale(
             scale: 1 + _animation.value * 0.2,
-            child: widget.child ?? const Text("A", style: TextStyle(color: Colors.white, fontSize: 20)),
+            child: widget.child ??
+                const Text("A", style: TextStyle(color: Colors.white, fontSize: 20)),
           ),
         );
       },

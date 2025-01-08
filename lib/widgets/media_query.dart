@@ -17,7 +17,8 @@ class MediaQueryScreen extends StatelessWidget {
             children: [
               const Text("MediaQuery - Default"),
               const SizedBox(height: 8),
-              const Text("MediaQuery is used to get information about the screen. It doesn't render anything on its own."),
+              const Text(
+                  "MediaQuery is used to get information about the screen. It doesn't render anything on its own."),
               const SizedBox(height: 16),
               const Text("MediaQuery - With Container"),
               const SizedBox(height: 8),
@@ -28,19 +29,6 @@ class MediaQueryScreen extends StatelessWidget {
                   child: const Padding(
                     padding: EdgeInsets.all(8.0),
                     child: Text("Text with increased scale factor"),
-                  ),
-                ),
-              ),
-              const SizedBox(height: 16),
-              const Text("MediaQuery - With different orientation"),
-              const SizedBox(height: 8),
-              Container(
-                color: Colors.grey[200],
-                child: MediaQuery(
-                  data: MediaQuery.of(context).copyWith(orientation: Orientation.landscape),
-                  child: const Padding(
-                    padding: EdgeInsets.all(8.0),
-                    child: Text("Landscape orientation"),
                   ),
                 ),
               ),
@@ -76,7 +64,8 @@ class MediaQueryScreen extends StatelessWidget {
               Container(
                 color: Colors.grey[200],
                 child: MediaQuery(
-                  data: MediaQuery.of(context).copyWith(viewInsets: const EdgeInsets.only(bottom: 50)),
+                  data: MediaQuery.of(context)
+                      .copyWith(viewInsets: const EdgeInsets.only(bottom: 50)),
                   child: const Padding(
                     padding: EdgeInsets.all(8.0),
                     child: Text("ViewInsets changed"),

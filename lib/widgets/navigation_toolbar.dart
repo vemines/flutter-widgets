@@ -15,44 +15,33 @@ class NavigationToolbarScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("NavigationToolbar Variations:", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              const Text("NavigationToolbar Variations:",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               const SizedBox(height: 20),
               const Text("NavigationToolbar - Default"),
               NavigationToolbar(
                 middle: const Text("Default Toolbar"),
               ),
               const SizedBox(height: 20),
-              const Text("NavigationToolbar - Custom Height"),
-              NavigationToolbar(
-                middle: const Text("Custom Height Toolbar"),
-                height: 80,
-              ),
-              const SizedBox(height: 20),
-              const Text("NavigationToolbar - Custom Background Color"),
-              NavigationToolbar(
-                middle: const Text("Custom Background Toolbar"),
-                backgroundColor: Colors.blue[100],
-              ),
-              const SizedBox(height: 20),
-              const Text("NavigationToolbar - Custom Leading and Actions"),
+              const Text("NavigationToolbar - Custom Leading and Trailing"),
               NavigationToolbar(
                 leading: IconButton(
                   icon: const Icon(Icons.menu),
                   onPressed: () {},
                 ),
                 middle: const Text("Custom Leading/Actions"),
-                actions: [
-                  IconButton(
-                    icon: const Icon(Icons.search),
-                    onPressed: () {},
-                  ),
-                ],
+                trailing: IconButton(
+                  icon: const Icon(Icons.search),
+                  onPressed: () {},
+                ),
               ),
               const SizedBox(height: 20),
               const Text("NavigationToolbar - Custom Text Style"),
               NavigationToolbar(
-                middle: const Text("Custom Text Style", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
-                backgroundColor: Colors.black,
+                middle: const Text(
+                  "Custom Text Style",
+                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                ),
               ),
               const SizedBox(height: 20),
               const Text("NavigationToolbar - Custom Padding"),

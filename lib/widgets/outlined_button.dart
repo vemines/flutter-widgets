@@ -15,7 +15,8 @@ class OutlinedButtonScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("OutlinedButton Variations", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              const Text("OutlinedButton Variations",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               const SizedBox(height: 16),
               Wrap(
                 spacing: 16,
@@ -68,7 +69,6 @@ class OutlinedButtonScreen extends StatelessWidget {
                     label: "OutlinedButton - Icon and Text",
                     description: "With an icon and text",
                     icon: Icons.favorite,
-                    label: "Like",
                     onPressed: () {},
                   ),
                   _buildOutlinedButton(
@@ -108,7 +108,9 @@ class OutlinedButtonScreen extends StatelessWidget {
       child: OutlinedButton(
         onPressed: onPressed,
         style: OutlinedButton.styleFrom(
-          side: borderColor != null ? BorderSide(color: borderColor, width: borderWidth ?? 1.0) : null,
+          side: borderColor != null
+              ? BorderSide(color: borderColor, width: borderWidth ?? 1.0)
+              : null,
           padding: padding,
           shape: borderRadius != null ? RoundedRectangleBorder(borderRadius: borderRadius) : null,
           foregroundColor: textColor,

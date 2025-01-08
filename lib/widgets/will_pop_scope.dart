@@ -17,10 +17,10 @@ class WillPopScopeScreen extends StatelessWidget {
             children: [
               Text("WillPopScope - Basic Usage", style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
-              WillPopScope(
-                onWillPop: () async {
-                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Back button pressed!")));
-                  return false;
+              PopScope(
+                onPopInvokedWithResult: (isPop, object) async {
+                  ScaffoldMessenger.of(context)
+                      .showSnackBar(SnackBar(content: Text("Back button pressed!")));
                 },
                 child: Container(
                   padding: EdgeInsets.all(16),
@@ -29,12 +29,13 @@ class WillPopScopeScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-              Text("WillPopScope - With a different message", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("WillPopScope - With a different message",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
-              WillPopScope(
-                onWillPop: () async {
-                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Custom back button message!")));
-                  return false;
+              PopScope(
+                onPopInvokedWithResult: (isPop, object) async {
+                  ScaffoldMessenger.of(context)
+                      .showSnackBar(SnackBar(content: Text("Custom back button message!")));
                 },
                 child: Container(
                   padding: EdgeInsets.all(16),
@@ -43,12 +44,13 @@ class WillPopScopeScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-              Text("WillPopScope - Allowing back navigation", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("WillPopScope - Allowing back navigation",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
-              WillPopScope(
-                onWillPop: () async {
-                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Back navigation allowed!")));
-                  return true;
+              PopScope(
+                onPopInvokedWithResult: (isPop, object) async {
+                  ScaffoldMessenger.of(context)
+                      .showSnackBar(SnackBar(content: Text("Back navigation allowed!")));
                 },
                 child: Container(
                   padding: EdgeInsets.all(16),
@@ -57,12 +59,13 @@ class WillPopScopeScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-              Text("WillPopScope - Wrapped around a Text Widget", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("WillPopScope - Wrapped around a Text Widget",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
-              WillPopScope(
-                onWillPop: () async {
-                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Back button pressed on text!")));
-                  return false;
+              PopScope(
+                onPopInvokedWithResult: (isPop, object) async {
+                  ScaffoldMessenger.of(context)
+                      .showSnackBar(SnackBar(content: Text("Back button pressed on text!")));
                 },
                 child: Text("This is a text widget wrapped in WillPopScope"),
               ),
@@ -73,7 +76,7 @@ class WillPopScopeScreen extends StatelessWidget {
               // WillPopScope(
               //   onWillPop: () async {
               //     ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Back button pressed!")));
-              //     return false;
+              //
               //   },
               // ),
             ],

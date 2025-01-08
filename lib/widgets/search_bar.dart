@@ -122,10 +122,10 @@ class SearchBar extends StatefulWidget {
   });
 
   @override
-  _SearchBarState createState() => _SearchBarState();
+  SearchBarState createState() => SearchBarState();
 }
 
-class _SearchBarState extends State<SearchBar> {
+class SearchBarState extends State<SearchBar> {
   late TextEditingController _controller;
 
   @override

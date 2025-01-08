@@ -16,9 +16,11 @@ class KeyboardListenerScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("KeyboardListener - Basic Usage:", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("KeyboardListener - Basic Usage:",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
-              const Text("This KeyboardListener captures raw key events. The output is printed to the console."),
+              const Text(
+                  "This KeyboardListener captures raw key events. The output is printed to the console."),
               Focus(
                 child: KeyboardListener(
                   focusNode: FocusNode(),
@@ -28,7 +30,7 @@ class KeyboardListenerScreen extends StatelessWidget {
                     } else if (event is KeyUpEvent) {
                       print('Key Up: ${event.logicalKey}');
                     }
-                    return KeyEventResult.handled;
+                    // return KeyEventResult.handled;
                   },
                   child: Container(
                     padding: const EdgeInsets.all(16),
@@ -38,7 +40,8 @@ class KeyboardListenerScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("KeyboardListener - With FocusNode:", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("KeyboardListener - With FocusNode:",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               const Text("This KeyboardListener uses a FocusNode to control focus."),
               Focus(
@@ -53,7 +56,7 @@ class KeyboardListenerScreen extends StatelessWidget {
                         } else if (event is KeyUpEvent) {
                           print('Key Up (FocusNode): ${event.logicalKey}');
                         }
-                        return KeyEventResult.handled;
+                        // return KeyEventResult.handled;
                       },
                       child: Container(
                         padding: const EdgeInsets.all(16),
@@ -65,19 +68,20 @@ class KeyboardListenerScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("KeyboardListener - With Raw Key Events:", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("KeyboardListener - With Raw Key Events:",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               const Text("This KeyboardListener captures raw key events and prints the data."),
               Focus(
                 child: KeyboardListener(
                   focusNode: FocusNode(),
                   onKeyEvent: (KeyEvent event) {
-                    if (event is RawKeyDownEvent) {
-                      print('Raw Key Down: ${event.data}');
-                    } else if (event is RawKeyUpEvent) {
-                      print('Raw Key Up: ${event.data}');
+                    if (event is KeyDownEvent) {
+                      print('Raw Key Down: ${event.physicalKey}');
+                    } else if (event is KeyUpEvent) {
+                      print('Raw Key Up: ${event.physicalKey}');
                     }
-                    return KeyEventResult.handled;
+                    // return KeyEventResult.handled;
                   },
                   child: Container(
                     padding: const EdgeInsets.all(16),
@@ -87,7 +91,8 @@ class KeyboardListenerScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("KeyboardListener - With Custom Focus:", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("KeyboardListener - With Custom Focus:",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               const Text("This KeyboardListener uses a custom FocusNode and requests focus."),
               Builder(
@@ -107,7 +112,7 @@ class KeyboardListenerScreen extends StatelessWidget {
                           } else if (event is KeyUpEvent) {
                             print('Key Up (Custom Focus): ${event.logicalKey}');
                           }
-                          return KeyEventResult.handled;
+                          // return KeyEventResult.handled;
                         },
                         child: Container(
                           padding: const EdgeInsets.all(16),

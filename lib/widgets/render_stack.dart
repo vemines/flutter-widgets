@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
@@ -31,7 +32,8 @@ class RenderStackScreen extends StatelessWidget {
                         Positioned(
                           top: 20,
                           left: 20,
-                          child: SizedBox(width: 50, height: 50, child: ColoredBox(color: Colors.red)),
+                          child:
+                              SizedBox(width: 50, height: 50, child: ColoredBox(color: Colors.red)),
                         ),
                       ],
                     ),
@@ -45,7 +47,8 @@ class RenderStackScreen extends StatelessWidget {
                         Positioned(
                           top: 20,
                           left: 20,
-                          child: SizedBox(width: 50, height: 50, child: ColoredBox(color: Colors.yellow)),
+                          child: SizedBox(
+                              width: 50, height: 50, child: ColoredBox(color: Colors.yellow)),
                         ),
                       ],
                     ),
@@ -59,7 +62,8 @@ class RenderStackScreen extends StatelessWidget {
                         Positioned(
                           top: 80,
                           left: 80,
-                          child: SizedBox(width: 50, height: 50, child: ColoredBox(color: Colors.orange)),
+                          child: SizedBox(
+                              width: 50, height: 50, child: ColoredBox(color: Colors.orange)),
                         ),
                       ],
                     ),
@@ -73,7 +77,8 @@ class RenderStackScreen extends StatelessWidget {
                         Positioned(
                           top: 80,
                           left: 80,
-                          child: SizedBox(width: 50, height: 50, child: ColoredBox(color: Colors.pink)),
+                          child: SizedBox(
+                              width: 50, height: 50, child: ColoredBox(color: Colors.pink)),
                         ),
                       ],
                     ),
@@ -86,7 +91,8 @@ class RenderStackScreen extends StatelessWidget {
                         Positioned(
                           top: 10,
                           left: 10,
-                          child: SizedBox(width: 30, height: 30, child: ColoredBox(color: Colors.grey)),
+                          child: SizedBox(
+                              width: 30, height: 30, child: ColoredBox(color: Colors.grey)),
                         ),
                       ],
                     ),
@@ -99,12 +105,14 @@ class RenderStackScreen extends StatelessWidget {
                         Positioned(
                           top: 10,
                           left: 10,
-                          child: SizedBox(width: 20, height: 20, child: ColoredBox(color: Colors.lime)),
+                          child: SizedBox(
+                              width: 20, height: 20, child: ColoredBox(color: Colors.lime)),
                         ),
                         Positioned(
                           bottom: 10,
                           right: 10,
-                          child: SizedBox(width: 20, height: 20, child: ColoredBox(color: Colors.cyan)),
+                          child: SizedBox(
+                              width: 20, height: 20, child: ColoredBox(color: Colors.cyan)),
                         ),
                       ],
                     ),
@@ -268,10 +276,10 @@ class RenderStackBox extends RenderBox
           maxHeight = childParentData.height;
         }
         childConstraints = BoxConstraints(
-          minWidth: minWidth,
-          maxWidth: maxWidth,
-          minHeight: minHeight,
-          maxHeight: maxHeight,
+          minWidth: minWidth!,
+          maxWidth: maxWidth!,
+          minHeight: minHeight!,
+          maxHeight: maxHeight!,
         );
       } else {
         childConstraints = BoxConstraints.loose(size);
@@ -301,7 +309,9 @@ class RenderStackBox extends RenderBox
       } else if (childParentData.right != null) {
         childOffset = Offset(size.width - childSize.width - childParentData.right!, childOffset.dy);
       } else {
-        childOffset = resolvedAlignment.alongOffset(stackRect.size - childSize);
+        final Offset offsetSize = Offset(stackRect.size.width, stackRect.size.height);
+        final Offset offsetChildSize = Offset(childSize.width, childSize.height);
+        childOffset = resolvedAlignment.alongOffset(offsetSize - offsetChildSize);
       }
 
       if (childParentData.top != null && childParentData.bottom != null) {

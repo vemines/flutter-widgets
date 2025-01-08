@@ -51,46 +51,6 @@ class MergeSemanticsScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              const SizedBox(height: 20),
-              const Text("MergeSemantics - With Explicit Merging"),
-              MergeSemantics(
-                mergeAllDescendants: true,
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Container(
-                      padding: const EdgeInsets.all(10),
-                      color: Colors.orange[100],
-                      child: const Text("Child 1"),
-                    ),
-                    Container(
-                      padding: const EdgeInsets.all(10),
-                      color: Colors.purple[100],
-                      child: const Text("Child 2"),
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 20),
-              const Text("MergeSemantics - With Explicit No Merging"),
-              MergeSemantics(
-                mergeAllDescendants: false,
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Container(
-                      padding: const EdgeInsets.all(10),
-                      color: Colors.red[100],
-                      child: const Text("Child 1"),
-                    ),
-                    Container(
-                      padding: const EdgeInsets.all(10),
-                      color: Colors.teal[100],
-                      child: const Text("Child 2"),
-                    ),
-                  ],
-                ),
-              ),
             ],
           ),
         ),

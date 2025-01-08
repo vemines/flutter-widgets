@@ -1,7 +1,16 @@
 import 'package:flutter/material.dart';
 
-class NavigatorScreen extends StatelessWidget {
+class NavigatorScreen extends StatefulWidget {
   const NavigatorScreen({super.key});
+
+  @override
+  State<NavigatorScreen> createState() => _NavigatorScreenState();
+}
+
+class _NavigatorScreenState extends State<NavigatorScreen> {
+  void showSnakeBar(String text) {
+    ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(text)));
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -71,9 +80,11 @@ class NavigatorScreen extends StatelessWidget {
               ElevatedButton(
                 onPressed: () {
                   if (Navigator.canPop(context)) {
-                    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Can Pop")));
+                    ScaffoldMessenger.of(context)
+                        .showSnackBar(const SnackBar(content: Text("Can Pop")));
                   } else {
-                    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Cannot Pop")));
+                    ScaffoldMessenger.of(context)
+                        .showSnackBar(const SnackBar(content: Text("Cannot Pop")));
                   }
                 },
                 child: const Text("Check Can Pop"),
@@ -83,7 +94,7 @@ class NavigatorScreen extends StatelessWidget {
               ElevatedButton(
                 onPressed: () async {
                   final result = await Navigator.maybePop(context);
-                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Maybe Pop Result: $result")));
+                  showSnakeBar("Maybe Pop Result: $result");
                 },
                 child: const Text("Check Maybe Pop"),
               ),
@@ -102,7 +113,9 @@ class SecondScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("Second Screen")),
-      body: Center(child: ElevatedButton(onPressed: () => Navigator.pop(context), child: const Text("Go Back"))),
+      body: Center(
+          child: ElevatedButton(
+              onPressed: () => Navigator.pop(context), child: const Text("Go Back"))),
     );
   }
 }
@@ -114,7 +127,9 @@ class ThirdScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("Third Screen")),
-      body: Center(child: ElevatedButton(onPressed: () => Navigator.pop(context), child: const Text("Go Back"))),
+      body: Center(
+          child: ElevatedButton(
+              onPressed: () => Navigator.pop(context), child: const Text("Go Back"))),
     );
   }
 }
@@ -126,7 +141,9 @@ class PopScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("Pop Screen")),
-      body: Center(child: ElevatedButton(onPressed: () => Navigator.pop(context), child: const Text("Go Back"))),
+      body: Center(
+          child: ElevatedButton(
+              onPressed: () => Navigator.pop(context), child: const Text("Go Back"))),
     );
   }
 }
@@ -138,7 +155,9 @@ class NamedScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("Named Screen")),
-      body: Center(child: ElevatedButton(onPressed: () => Navigator.pop(context), child: const Text("Go Back"))),
+      body: Center(
+          child: ElevatedButton(
+              onPressed: () => Navigator.pop(context), child: const Text("Go Back"))),
     );
   }
 }
@@ -150,7 +169,10 @@ class PopUntilScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("Pop Until Screen")),
-      body: Center(child: ElevatedButton(onPressed: () => Navigator.popUntil(context, ModalRoute.withName('/')), child: const Text("Pop Until Root"))),
+      body: Center(
+          child: ElevatedButton(
+              onPressed: () => Navigator.popUntil(context, ModalRoute.withName('/')),
+              child: const Text("Pop Until Root"))),
     );
   }
 }

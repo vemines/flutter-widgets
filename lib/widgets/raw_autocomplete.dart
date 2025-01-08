@@ -64,6 +64,33 @@ class _BasicRawAutocomplete extends StatelessWidget {
       onSelected: (String selection) {
         print('You selected $selection');
       },
+      optionsViewBuilder: (BuildContext context, AutocompleteOnSelected<String> onSelected,
+          Iterable<String> options) {
+        return Align(
+          alignment: Alignment.topLeft,
+          child: Material(
+            elevation: 4.0,
+            child: SizedBox(
+              height: 200.0,
+              child: ListView.builder(
+                padding: const EdgeInsets.all(8.0),
+                itemCount: options.length,
+                itemBuilder: (BuildContext context, int index) {
+                  final String option = options.elementAt(index);
+                  return GestureDetector(
+                    onTap: () {
+                      onSelected(option);
+                    },
+                    child: ListTile(
+                      title: Text(option),
+                    ),
+                  );
+                },
+              ),
+            ),
+          ),
+        );
+      },
     );
   }
 }
@@ -85,14 +112,34 @@ class _StyledRawAutocomplete extends StatelessWidget {
       onSelected: (String selection) {
         print('You selected $selection');
       },
-      textStyle: const TextStyle(color: Colors.blue, fontSize: 16),
       focusNode: FocusNode(),
-      decoration: InputDecoration(
-        border: const OutlineInputBorder(),
-        hintText: 'Search fruits...',
-        filled: true,
-        fillColor: Colors.grey[200],
-      ),
+      optionsViewBuilder: (BuildContext context, AutocompleteOnSelected<String> onSelected,
+          Iterable<String> options) {
+        return Align(
+          alignment: Alignment.topLeft,
+          child: Material(
+            elevation: 4.0,
+            child: SizedBox(
+              height: 200.0,
+              child: ListView.builder(
+                padding: const EdgeInsets.all(8.0),
+                itemCount: options.length,
+                itemBuilder: (BuildContext context, int index) {
+                  final String option = options.elementAt(index);
+                  return GestureDetector(
+                    onTap: () {
+                      onSelected(option);
+                    },
+                    child: ListTile(
+                      title: Text(option),
+                    ),
+                  );
+                },
+              ),
+            ),
+          ),
+        );
+      },
     );
   }
 }
@@ -115,6 +162,33 @@ class _OptionsBuilderRawAutocomplete extends StatelessWidget {
       },
       onSelected: (String selection) {
         print('You selected $selection');
+      },
+      optionsViewBuilder: (BuildContext context, AutocompleteOnSelected<String> onSelected,
+          Iterable<String> options) {
+        return Align(
+          alignment: Alignment.topLeft,
+          child: Material(
+            elevation: 4.0,
+            child: SizedBox(
+              height: 200.0,
+              child: ListView.builder(
+                padding: const EdgeInsets.all(8.0),
+                itemCount: options.length,
+                itemBuilder: (BuildContext context, int index) {
+                  final String option = options.elementAt(index);
+                  return GestureDetector(
+                    onTap: () {
+                      onSelected(option);
+                    },
+                    child: ListTile(
+                      title: Text(option),
+                    ),
+                  );
+                },
+              ),
+            ),
+          ),
+        );
       },
     );
   }
@@ -153,6 +227,33 @@ class _CustomTextFieldRawAutocomplete extends StatelessWidget {
           ),
         );
       },
+      optionsViewBuilder: (BuildContext context, AutocompleteOnSelected<String> onSelected,
+          Iterable<String> options) {
+        return Align(
+          alignment: Alignment.topLeft,
+          child: Material(
+            elevation: 4.0,
+            child: SizedBox(
+              height: 200.0,
+              child: ListView.builder(
+                padding: const EdgeInsets.all(8.0),
+                itemCount: options.length,
+                itemBuilder: (BuildContext context, int index) {
+                  final String option = options.elementAt(index);
+                  return GestureDetector(
+                    onTap: () {
+                      onSelected(option);
+                    },
+                    child: ListTile(
+                      title: Text(option),
+                    ),
+                  );
+                },
+              ),
+            ),
+          ),
+        );
+      },
     );
   }
 }
@@ -179,6 +280,34 @@ class _CustomDisplayStringRawAutocomplete extends StatelessWidget {
       displayStringForOption: (Map<String, String> option) => option['name'] ?? '',
       onSelected: (Map<String, String> selection) {
         print('You selected ${selection['name']} with id ${selection['id']}');
+      },
+      optionsViewBuilder: (BuildContext context,
+          AutocompleteOnSelected<Map<String, String>> onSelected,
+          Iterable<Map<String, String>> options) {
+        return Align(
+          alignment: Alignment.topLeft,
+          child: Material(
+            elevation: 4.0,
+            child: SizedBox(
+              height: 200.0,
+              child: ListView.builder(
+                padding: const EdgeInsets.all(8.0),
+                itemCount: options.length,
+                itemBuilder: (BuildContext context, int index) {
+                  final Map<String, String> option = options.elementAt(index);
+                  return GestureDetector(
+                    onTap: () {
+                      onSelected(option);
+                    },
+                    child: ListTile(
+                      title: Text(option.toString()),
+                    ),
+                  );
+                },
+              ),
+            ),
+          ),
+        );
       },
     );
   }

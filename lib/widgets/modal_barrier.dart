@@ -15,7 +15,8 @@ class ModalBarrierScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("ModalBarrier Variations:", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              const Text("ModalBarrier Variations:",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               const SizedBox(height: 20),
               const Text("ModalBarrier - Default"),
               const SizedBox(height: 8),
@@ -96,13 +97,14 @@ class ModalBarrierScreen extends StatelessWidget {
                       Container(
                         color: Colors.grey[300],
                       ),
-                      const ModalBarrier(color: Colors.black54, opacity: 0.5),
+                      ModalBarrier(color: Colors.black54.withAlpha((0.5 * 255).floor())),
                     ],
                   ),
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("ModalBarrier - With a child (Not applicable, ModalBarrier doesn't take a child)"),
+              const Text(
+                  "ModalBarrier - With a child (Not applicable, ModalBarrier doesn't take a child)"),
               const SizedBox(height: 8),
             ],
           ),
