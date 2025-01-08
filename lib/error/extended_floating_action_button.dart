@@ -39,7 +39,8 @@ class ExtendedFloatingActionButtonScreen extends StatelessWidget {
                       const Text("Primary Color"),
                       ExtendedFloatingActionButton(
                         onPressed: () {},
-                        text: const Text("Primary Color", style: TextStyle(color: Colors.white)),
+                        text: const Text("Primary Color",
+                            style: TextStyle(color: Colors.white)),
                         icon: const Icon(Icons.add, color: Colors.white),
                         backgroundColor: Theme.of(context).primaryColor,
                       ),
@@ -51,9 +52,11 @@ class ExtendedFloatingActionButtonScreen extends StatelessWidget {
                       const Text("Secondary Color"),
                       ExtendedFloatingActionButton(
                         onPressed: () {},
-                        text: const Text("Secondary Color", style: TextStyle(color: Colors.white)),
+                        text: const Text("Secondary Color",
+                            style: TextStyle(color: Colors.white)),
                         icon: const Icon(Icons.add, color: Colors.white),
-                        backgroundColor: Theme.of(context).colorScheme.secondary,
+                        backgroundColor:
+                            Theme.of(context).colorScheme.secondary,
                       ),
                     ],
                   ),
@@ -63,7 +66,8 @@ class ExtendedFloatingActionButtonScreen extends StatelessWidget {
                       const Text("Custom Colors"),
                       ExtendedFloatingActionButton(
                         onPressed: () {},
-                        text: const Text("Custom Colors", style: TextStyle(color: Colors.black)),
+                        text: const Text("Custom Colors",
+                            style: TextStyle(color: Colors.black)),
                         icon: const Icon(Icons.add, color: Colors.black),
                         backgroundColor: Colors.yellow,
                       ),
@@ -77,7 +81,8 @@ class ExtendedFloatingActionButtonScreen extends StatelessWidget {
                         onPressed: () {},
                         text: const Text("Custom Size"),
                         icon: const Icon(Icons.add),
-                        extendedPadding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
+                        extendedPadding: const EdgeInsets.symmetric(
+                            horizontal: 32, vertical: 16),
                       ),
                     ],
                   ),
@@ -89,7 +94,8 @@ class ExtendedFloatingActionButtonScreen extends StatelessWidget {
                         onPressed: () {},
                         text: const Text("Custom Shape"),
                         icon: const Icon(Icons.add),
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20)),
                       ),
                     ],
                   ),
@@ -100,7 +106,8 @@ class ExtendedFloatingActionButtonScreen extends StatelessWidget {
                       ExtendedFloatingActionButton(
                         onPressed: () {},
                         text: const Text("Custom Text Style",
-                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+                            style: TextStyle(
+                                fontSize: 18, fontWeight: FontWeight.bold)),
                         icon: const Icon(Icons.add),
                       ),
                     ],
@@ -239,10 +246,12 @@ class ExtendedFloatingActionButton extends StatefulWidget {
   });
 
   @override
-  _ExtendedFloatingActionButtonState createState() => _ExtendedFloatingActionButtonState();
+  ExtendedFloatingActionButtonState createState() =>
+      ExtendedFloatingActionButtonState();
 }
 
-class _ExtendedFloatingActionButtonState extends State<ExtendedFloatingActionButton> {
+class ExtendedFloatingActionButtonState
+    extends State<ExtendedFloatingActionButton> {
   bool _isHovering = false;
   bool _isFocused = false;
   bool _isPressed = false;
@@ -264,10 +273,11 @@ class _ExtendedFloatingActionButtonState extends State<ExtendedFloatingActionBut
             curve: Curves.easeInOut,
             padding: widget.extendedPadding ??
                 const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
-            decoration: BoxDecoration(
-              color: widget.backgroundColor ?? Theme.of(context).colorScheme.primary,
+            decoration: ShapeDecoration(
+              color: widget.backgroundColor ??
+                  Theme.of(context).colorScheme.primary,
               shape: widget.shape ?? const StadiumBorder(),
-              boxShadow: [
+              shadows: [
                 if (widget.elevation != null)
                   BoxShadow(
                     color: Colors.black.withValues(alpha: 255 * 0.2),
@@ -280,12 +290,14 @@ class _ExtendedFloatingActionButtonState extends State<ExtendedFloatingActionBut
               mainAxisSize: MainAxisSize.min,
               children: [
                 IconTheme(
-                  data: IconThemeData(color: widget.textStyle?.color ?? Colors.white),
+                  data: IconThemeData(
+                      color: widget.textStyle?.color ?? Colors.white),
                   child: widget.icon,
                 ),
                 const SizedBox(width: 8.0),
                 DefaultTextStyle(
-                  style: widget.textStyle ?? const TextStyle(color: Colors.white),
+                  style:
+                      widget.textStyle ?? const TextStyle(color: Colors.white),
                   child: widget.text,
                 ),
               ],

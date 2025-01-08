@@ -16,20 +16,23 @@ class CupertinoTextFormFieldRowScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("Default CupertinoTextFormFieldRow:", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Default CupertinoTextFormFieldRow:",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               CupertinoTextFormFieldRow(
                 prefix: const Text('Label'),
               ),
               const SizedBox(height: 20),
-              const Text("CupertinoTextFormFieldRow with Placeholder:", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CupertinoTextFormFieldRow with Placeholder:",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               CupertinoTextFormFieldRow(
                 prefix: const Text('Label'),
                 placeholder: 'Enter text here',
               ),
               const SizedBox(height: 20),
-              const Text("CupertinoTextFormFieldRow with Initial Value:", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CupertinoTextFormFieldRow with Initial Value:",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               CupertinoTextFormFieldRow(
                 prefix: const Text('Label'),
@@ -39,7 +42,8 @@ class CupertinoTextFormFieldRowScreen extends StatelessWidget {
                 },
               ),
               const SizedBox(height: 20),
-              const Text("CupertinoTextFormFieldRow with Keyboard Type:", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CupertinoTextFormFieldRow with Keyboard Type:",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               CupertinoTextFormFieldRow(
                 prefix: const Text('Label'),
@@ -47,15 +51,8 @@ class CupertinoTextFormFieldRowScreen extends StatelessWidget {
                 placeholder: 'Enter number',
               ),
               const SizedBox(height: 20),
-              const Text("CupertinoTextFormFieldRow with Clear Button:", style: TextStyle(fontWeight: FontWeight.bold)),
-              const SizedBox(height: 8),
-              CupertinoTextFormFieldRow(
-                prefix: const Text('Label'),
-                clearButtonMode: OverlayVisibilityMode.editing,
-                placeholder: 'Enter text',
-              ),
-              const SizedBox(height: 20),
-              const Text("CupertinoTextFormFieldRow with Padding:", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CupertinoTextFormFieldRow with Padding:",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Padding(
                 padding: const EdgeInsets.all(10.0),
@@ -65,7 +62,8 @@ class CupertinoTextFormFieldRowScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("CupertinoTextFormFieldRow with Border:", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CupertinoTextFormFieldRow with Border:",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Container(
                 decoration: BoxDecoration(
@@ -78,23 +76,25 @@ class CupertinoTextFormFieldRowScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("CupertinoTextFormFieldRow with Custom Text Style:", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CupertinoTextFormFieldRow with Custom Text Style:",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               CupertinoTextFormFieldRow(
                 prefix: const Text('Label'),
                 placeholder: 'Custom Style',
-                style: const TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
+                style: const TextStyle(
+                    color: Colors.red, fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 20),
-              const Text("CupertinoTextFormFieldRow with Prefix and Suffix:", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CupertinoTextFormFieldRow with Prefix",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               CupertinoTextFormFieldRow(
                 prefix: const Text('Prefix'),
-                suffix: const Icon(CupertinoIcons.info),
-                placeholder: 'With Suffix',
               ),
               const SizedBox(height: 20),
-              const Text("CupertinoTextFormFieldRow with Max Length:", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CupertinoTextFormFieldRow with Max Length:",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               CupertinoTextFormFieldRow(
                 prefix: const Text('Label'),
@@ -102,7 +102,8 @@ class CupertinoTextFormFieldRowScreen extends StatelessWidget {
                 placeholder: 'Max 10 chars',
               ),
               const SizedBox(height: 20),
-              const Text("CupertinoTextFormFieldRow with Disabled State:", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CupertinoTextFormFieldRow with Disabled State:",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               CupertinoTextFormFieldRow(
                 prefix: const Text('Label'),

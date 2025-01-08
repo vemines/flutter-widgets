@@ -15,7 +15,8 @@ class FormFieldBuilderScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("FormFieldBuilder Variations:", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              const Text("FormFieldBuilder Variations:",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               const SizedBox(height: 16),
               Wrap(
                 spacing: 16,
@@ -73,7 +74,8 @@ class FormFieldBuilderScreen extends StatelessWidget {
                   ),
                   _buildFormFieldBuilderVariation(
                     label: "FormFieldBuilder with Custom Decoration",
-                    description: "FormFieldBuilder with custom InputDecoration.",
+                    description:
+                        "FormFieldBuilder with custom InputDecoration.",
                     child: FormFieldBuilder<String>(
                       initialValue: 'Custom Decoration',
                       builder: (FormFieldState<String> field) {
@@ -89,7 +91,8 @@ class FormFieldBuilderScreen extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(10),
                                 ),
                                 focusedBorder: OutlineInputBorder(
-                                  borderSide: const BorderSide(color: Colors.blue, width: 2),
+                                  borderSide: const BorderSide(
+                                      color: Colors.blue, width: 2),
                                   borderRadius: BorderRadius.circular(10),
                                 ),
                                 errorText: field.errorText,
@@ -102,7 +105,8 @@ class FormFieldBuilderScreen extends StatelessWidget {
                   ),
                   _buildFormFieldBuilderVariation(
                     label: "FormFieldBuilder with Initial Value",
-                    description: "FormFieldBuilder with a pre-filled initial value.",
+                    description:
+                        "FormFieldBuilder with a pre-filled initial value.",
                     child: FormFieldBuilder<String>(
                       initialValue: 'Pre-filled Value',
                       builder: (FormFieldState<String> field) {
@@ -134,7 +138,8 @@ class FormFieldBuilderScreen extends StatelessWidget {
                             Text('Value: ${field.value ?? 'null'}'),
                             TextField(
                               keyboardType: TextInputType.number,
-                              onChanged: (value) => field.didChange(int.tryParse(value ?? '')),
+                              onChanged: (value) =>
+                                  field.didChange(int.tryParse(value)),
                               decoration: InputDecoration(
                                 labelText: 'Enter Number',
                                 errorText: field.errorText,
@@ -164,7 +169,8 @@ class FormFieldBuilderScreen extends StatelessWidget {
       children: [
         Tooltip(
           message: description,
-          child: Text(label, style: const TextStyle(fontWeight: FontWeight.bold)),
+          child:
+              Text(label, style: const TextStyle(fontWeight: FontWeight.bold)),
         ),
         const SizedBox(height: 8),
         child,

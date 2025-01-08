@@ -15,7 +15,8 @@ class DropdownButtonScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("DropdownButton Variations", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              Text("DropdownButton Variations",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               SizedBox(height: 20),
               Wrap(
                 spacing: 20,
@@ -33,13 +34,6 @@ class DropdownButtonScreen extends StatelessWidget {
                     dropdownColor: Colors.lightBlue[100],
                     iconColor: Colors.red,
                     textColor: Colors.black,
-                  ),
-                  _buildDropdownButton(
-                    label: "Custom Border",
-                    items: ['Choice X', 'Choice Y', 'Choice Z'],
-                    onChanged: (value) {},
-                    borderColor: Colors.green,
-                    borderRadius: 10,
                   ),
                   _buildDropdownButton(
                     label: "Large Padding",
@@ -66,7 +60,10 @@ class DropdownButtonScreen extends StatelessWidget {
                     label: "Custom Text Style",
                     items: ['Style 1', 'Style 2', 'Style 3'],
                     onChanged: (value) {},
-                    textStyle: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.blueGrey),
+                    textStyle: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blueGrey),
                   ),
                   _buildDropdownButton(
                     label: "Icon Size",
@@ -90,8 +87,6 @@ class DropdownButtonScreen extends StatelessWidget {
     Color? dropdownColor,
     Color? iconColor,
     Color? textColor,
-    Color? borderColor,
-    double? borderRadius,
     EdgeInsetsGeometry? padding,
     Widget? disabledHint,
     Widget? underline,
@@ -99,44 +94,38 @@ class DropdownButtonScreen extends StatelessWidget {
     double? iconSize,
   }) {
     String? selectedValue;
-    return StatefulBuilder(
-      builder: (context, setState) {
-        return Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(label, style: TextStyle(fontWeight: FontWeight.bold)),
-            SizedBox(height: 5),
-            DropdownButton<String>(
-              value: selectedValue,
-              hint: Text("Select"),
-              items: items.map((String item) {
-                return DropdownMenuItem<String>(
-                  value: item,
-                  child: Text(item, style: textStyle),
-                );
-              }).toList(),
-              onChanged: onChanged == null ? null : (value) {
-                setState(() {
-                  selectedValue = value;
-                });
-                onChanged(value);
-              },
-              dropdownColor: dropdownColor,
-              icon: Icon(Icons.arrow_drop_down, color: iconColor, size: iconSize),
-              style: TextStyle(color: textColor),
-              underline: underline,
-              disabledHint: disabledHint,
-              padding: padding,
-              decoration: InputDecoration(
-                border: borderColor != null ? OutlineInputBorder(
-                  borderSide: BorderSide(color: borderColor),
-                  borderRadius: BorderRadius.circular(borderRadius ?? 0),
-                ) : null,
-              ),
-            ),
-          ],
-        );
-      }
-    );
+    return StatefulBuilder(builder: (context, setState) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(label, style: TextStyle(fontWeight: FontWeight.bold)),
+          SizedBox(height: 5),
+          DropdownButton<String>(
+            value: selectedValue,
+            hint: Text("Select"),
+            items: items.map((String item) {
+              return DropdownMenuItem<String>(
+                value: item,
+                child: Text(item, style: textStyle),
+              );
+            }).toList(),
+            onChanged: onChanged == null
+                ? null
+                : (value) {
+                    setState(() {
+                      selectedValue = value;
+                    });
+                    onChanged(value);
+                  },
+            dropdownColor: dropdownColor,
+            icon: Icon(Icons.arrow_drop_down, color: iconColor, size: iconSize),
+            style: TextStyle(color: textColor),
+            underline: underline,
+            disabledHint: disabledHint,
+            padding: padding,
+          ),
+        ],
+      );
+    });
   }
 }

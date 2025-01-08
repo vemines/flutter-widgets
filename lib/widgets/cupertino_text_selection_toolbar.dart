@@ -16,11 +16,14 @@ class CupertinoTextSelectionToolbarScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("Default CupertinoTextSelectionToolbar:", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Default CupertinoTextSelectionToolbar:",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               _ToolbarVariation(
                 name: 'Default',
                 child: CupertinoTextSelectionToolbar(
+                  anchorAbove: Offset(0, 0),
+                  anchorBelow: Offset(0, 0),
                   children: [
                     CupertinoButton(
                       onPressed: () {},
@@ -34,51 +37,41 @@ class CupertinoTextSelectionToolbarScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("Customized CupertinoTextSelectionToolbar:", style: TextStyle(fontWeight: FontWeight.bold)),
-              const SizedBox(height: 8),
-              _ToolbarVariation(
-                name: 'Custom Colors',
-                child: CupertinoTextSelectionToolbar(
-                  backgroundColor: Colors.lightBlue,
-                  toolbarButtonColor: Colors.white,
-                  children: [
-                    CupertinoButton(
-                      onPressed: () {},
-                      child: const Text('Copy', style: TextStyle(color: Colors.white)),
-                    ),
-                    CupertinoButton(
-                      onPressed: () {},
-                      child: const Text('Paste', style: TextStyle(color: Colors.white)),
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 20),
-              const Text("Customized CupertinoTextSelectionToolbar with different button styles:", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text(
+                  "Customized CupertinoTextSelectionToolbar with different button styles:",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               _ToolbarVariation(
                 name: 'Custom Button Styles',
                 child: CupertinoTextSelectionToolbar(
+                  anchorAbove: Offset(0, 0),
+                  anchorBelow: Offset(0, 0),
                   children: [
                     CupertinoButton(
                       onPressed: () {},
-                      child: const Text('Copy', style: TextStyle(fontWeight: FontWeight.bold)),
+                      child: const Text('Copy',
+                          style: TextStyle(fontWeight: FontWeight.bold)),
                     ),
                     CupertinoButton(
                       onPressed: () {},
-                      child: const Icon(CupertinoIcons.doc_on_clipboard, color: Colors.black),
+                      child: const Icon(CupertinoIcons.doc_on_clipboard,
+                          color: Colors.black),
                     ),
                   ],
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("CupertinoTextSelectionToolbar with different alignment:", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text(
+                  "CupertinoTextSelectionToolbar with different alignment:",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               _ToolbarVariation(
                 name: 'Aligned Center',
                 child: Align(
                   alignment: Alignment.center,
                   child: CupertinoTextSelectionToolbar(
+                    anchorAbove: Offset(0, 0),
+                    anchorBelow: Offset(0, 0),
                     children: [
                       CupertinoButton(
                         onPressed: () {},
@@ -93,13 +86,17 @@ class CupertinoTextSelectionToolbarScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("CupertinoTextSelectionToolbar with different padding:", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text(
+                  "CupertinoTextSelectionToolbar with different padding:",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               _ToolbarVariation(
                 name: 'Custom Padding',
                 child: Padding(
                   padding: const EdgeInsets.all(20.0),
                   child: CupertinoTextSelectionToolbar(
+                    anchorAbove: Offset(0, 0),
+                    anchorBelow: Offset(0, 0),
                     children: [
                       CupertinoButton(
                         onPressed: () {},
@@ -114,13 +111,16 @@ class CupertinoTextSelectionToolbarScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("CupertinoTextSelectionToolbar with different margin:", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CupertinoTextSelectionToolbar with different margin:",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               _ToolbarVariation(
                 name: 'Custom Margin',
                 child: Container(
                   margin: const EdgeInsets.all(20.0),
                   child: CupertinoTextSelectionToolbar(
+                    anchorAbove: Offset(0, 0),
+                    anchorBelow: Offset(0, 0),
                     children: [
                       CupertinoButton(
                         onPressed: () {},

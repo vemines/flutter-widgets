@@ -21,7 +21,8 @@ class CupertinoTabViewScreen extends StatelessWidget {
               SizedBox(
                 height: 200,
                 child: CupertinoTabView(
-                  builder: (context) => CupertinoPageScaffold(child: const Center(child: Text("Tab 1 Content"))),
+                  builder: (context) => CupertinoPageScaffold(
+                      child: const Center(child: Text("Tab 1 Content"))),
                 ),
               ),
               const SizedBox(height: 20),
@@ -44,7 +45,10 @@ class CupertinoTabViewScreen extends StatelessWidget {
               SizedBox(
                 height: 200,
                 child: CupertinoTabView(
-                  builder: (context) => CupertinoPageScaffold(child: const Center(child: Icon(CupertinoIcons.heart_fill, size: 50, color: Colors.red))),
+                  builder: (context) => CupertinoPageScaffold(
+                      child: const Center(
+                          child: Icon(CupertinoIcons.heart_fill,
+                              size: 50, color: Colors.red))),
                 ),
               ),
               const SizedBox(height: 20),
@@ -70,29 +74,11 @@ class CupertinoTabViewScreen extends StatelessWidget {
                   builder: (context) => CupertinoPageScaffold(
                     child: Container(
                       color: Colors.green.shade100,
-                      child: const Center(child: Text("Custom Builder Content")),
+                      child:
+                          const Center(child: Text("Custom Builder Content")),
                     ),
                   ),
                   navigatorKey: GlobalKey<NavigatorState>(),
-                ),
-              ),
-              const SizedBox(height: 20),
-              const Text("CupertinoTabView - With Initial Route"),
-              const SizedBox(height: 8),
-              SizedBox(
-                height: 200,
-                child: CupertinoTabView(
-                  routes: {
-                    '/': (context) => CupertinoPageScaffold(child: const Center(child: Text("Initial Route Content"))),
-                    '/second': (context) => CupertinoPageScaffold(child: const Center(child: Text("Second Route Content"))),
-                  },
-                  onGenerateRoute: (settings) {
-                    if (settings.name == '/second') {
-                      return CupertinoPageRoute(builder: (context) => CupertinoPageScaffold(child: const Center(child: Text("Second Route Content"))));
-                    }
-                    return null;
-                  },
-                  initialRoute: '/',
                 ),
               ),
             ],

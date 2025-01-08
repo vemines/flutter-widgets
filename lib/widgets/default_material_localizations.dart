@@ -15,9 +15,11 @@ class DefaultMaterialLocalizationsScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("DefaultMaterialLocalizations is not a visual widget. It provides localized strings for Material widgets. It's not directly rendered on the screen. Therefore, we will demonstrate its usage by showing how to access its properties through the MaterialLocalizations class."),
+              const Text(
+                  "DefaultMaterialLocalizations is not a visual widget. It provides localized strings for Material widgets. It's not directly rendered on the screen. Therefore, we will demonstrate its usage by showing how to access its properties through the MaterialLocalizations class."),
               const SizedBox(height: 20),
-              const Text("Accessing Localized Strings:", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Accessing Localized Strings:",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 10),
               _buildLocalizationExample(context),
             ],
@@ -42,9 +44,8 @@ class DefaultMaterialLocalizationsScreen extends StatelessWidget {
         const SizedBox(height: 5),
         Text("Previous Month Label: ${localizations.previousMonthTooltip}"),
         const SizedBox(height: 5),
-        Text("Select Date Label: ${localizations.selectDateLabel}"),
-        const SizedBox(height: 5),
-        Text("About List Tile Label: ${localizations.aboutListTileTitle('My App')}")
+        Text(
+            "About List Tile Label: ${localizations.aboutListTileTitle('My App')}")
       ],
     );
   }

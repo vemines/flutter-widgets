@@ -16,7 +16,8 @@ class CupertinoTimerPickerScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("CupertinoTimerPicker - Default", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CupertinoTimerPicker - Default",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Center(
                 child: CupertinoTimerPicker(
@@ -24,7 +25,8 @@ class CupertinoTimerPickerScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("CupertinoTimerPicker - With Initial Duration", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CupertinoTimerPicker - With Initial Duration",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Center(
                 child: CupertinoTimerPicker(
@@ -33,7 +35,8 @@ class CupertinoTimerPickerScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("CupertinoTimerPicker - With Mode Hours and Minutes", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CupertinoTimerPicker - With Mode Hours and Minutes",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Center(
                 child: CupertinoTimerPicker(
@@ -42,7 +45,8 @@ class CupertinoTimerPickerScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("CupertinoTimerPicker - With Mode Minutes and Seconds", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CupertinoTimerPicker - With Mode Minutes and Seconds",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Center(
                 child: CupertinoTimerPicker(
@@ -51,7 +55,8 @@ class CupertinoTimerPickerScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("CupertinoTimerPicker - With Background Color", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CupertinoTimerPicker - With Background Color",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Center(
                 child: Container(
@@ -62,13 +67,15 @@ class CupertinoTimerPickerScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("CupertinoTimerPicker - With Text Style", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CupertinoTimerPicker - With Text Style",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Center(
                 child: CupertinoTheme(
                   data: CupertinoThemeData(
                     textTheme: CupertinoTextThemeData(
-                      pickerTextStyle: const TextStyle(color: Colors.blue, fontSize: 20),
+                      pickerTextStyle:
+                          const TextStyle(color: Colors.blue, fontSize: 20),
                     ),
                   ),
                   child: CupertinoTimerPicker(
@@ -77,16 +84,8 @@ class CupertinoTimerPickerScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("CupertinoTimerPicker - With Diameter Ratio", style: TextStyle(fontWeight: FontWeight.bold)),
-              const SizedBox(height: 8),
-              Center(
-                child: CupertinoTimerPicker(
-                  diameterRatio: 1.5,
-                  onTimerDurationChanged: (Duration duration) {},
-                ),
-              ),
-              const SizedBox(height: 20),
-              const Text("CupertinoTimerPicker - With Item Extent", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CupertinoTimerPicker - With Item Extent",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Center(
                 child: CupertinoTimerPicker(
@@ -95,7 +94,8 @@ class CupertinoTimerPickerScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("CupertinoTimerPicker - Wrapped in SizedBox", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CupertinoTimerPicker - Wrapped in SizedBox",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Center(
                 child: SizedBox(

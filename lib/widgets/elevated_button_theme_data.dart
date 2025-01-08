@@ -32,8 +32,10 @@ class ElevatedButtonThemeDataScreen extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.blue,
                       foregroundColor: Colors.white,
-                      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20, vertical: 15),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10)),
                     ),
                   ),
                 ),
@@ -52,9 +54,12 @@ class ElevatedButtonThemeDataScreen extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.green,
                       foregroundColor: Colors.black,
-                      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                      textStyle: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20, vertical: 15),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20)),
+                      textStyle: const TextStyle(
+                          fontSize: 18, fontWeight: FontWeight.bold),
                     ),
                   ),
                 ),
@@ -68,7 +73,8 @@ class ElevatedButtonThemeDataScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("ElevatedButtonThemeData - Custom Theme with Minimum Size",
+              const Text(
+                  "ElevatedButtonThemeData - Custom Theme with Minimum Size",
                   style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Theme(
@@ -87,7 +93,8 @@ class ElevatedButtonThemeDataScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("ElevatedButtonThemeData - Custom Theme with Disabled State",
+              const Text(
+                  "ElevatedButtonThemeData - Custom Theme with Disabled State",
                   style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Theme(
@@ -105,7 +112,8 @@ class ElevatedButtonThemeDataScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("ElevatedButtonThemeData - Custom Theme with Elevation",
+              const Text(
+                  "ElevatedButtonThemeData - Custom Theme with Elevation",
                   style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Theme(
@@ -123,7 +131,8 @@ class ElevatedButtonThemeDataScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("ElevatedButtonThemeData - Custom Theme with Overlay Color",
+              const Text(
+                  "ElevatedButtonThemeData - Custom Theme with Overlay Color",
                   style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Theme(
@@ -140,7 +149,8 @@ class ElevatedButtonThemeDataScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("ElevatedButtonThemeData - Custom Theme with Side Border",
+              const Text(
+                  "ElevatedButtonThemeData - Custom Theme with Side Border",
                   style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Theme(
@@ -157,7 +167,8 @@ class ElevatedButtonThemeDataScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("ElevatedButtonThemeData - Custom Theme with Fixed Size",
+              const Text(
+                  "ElevatedButtonThemeData - Custom Theme with Fixed Size",
                   style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Theme(
@@ -174,14 +185,15 @@ class ElevatedButtonThemeDataScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("ElevatedButtonThemeData - Custom Theme with Mouse Cursor",
+              const Text(
+                  "ElevatedButtonThemeData - Custom Theme with enabledMouseCursor",
                   style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Theme(
                 data: ThemeData(
                   elevatedButtonTheme: ElevatedButtonThemeData(
                     style: ElevatedButton.styleFrom(
-                      mouseCursor: SystemMouseCursors.grab,
+                      enabledMouseCursor: SystemMouseCursors.grab,
                     ),
                   ),
                 ),
