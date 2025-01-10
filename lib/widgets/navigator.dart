@@ -29,7 +29,7 @@ class _NavigatorScreenState extends State<NavigatorScreen> {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const SecondScreen()),
+                    MaterialPageRoute(builder: (context) => const _SecondScreen()),
                   );
                 },
                 child: const Text("Push to Second Screen"),
@@ -106,8 +106,8 @@ class _NavigatorScreenState extends State<NavigatorScreen> {
   }
 }
 
-class SecondScreen extends StatelessWidget {
-  const SecondScreen({super.key});
+class _SecondScreen extends StatelessWidget {
+  const _SecondScreen();
 
   @override
   Widget build(BuildContext context) {

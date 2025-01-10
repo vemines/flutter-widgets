@@ -15,7 +15,8 @@ class ListTileScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("ListTile Variations", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              const Text("ListTile Variations",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               const SizedBox(height: 20),
               const Text("Default ListTile"),
               ListTile(
@@ -74,8 +75,10 @@ class ListTileScreen extends StatelessWidget {
               const SizedBox(height: 20),
               const Text("ListTile - With Custom Text Styles"),
               ListTile(
-                title: const Text('Styled Title', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
-                subtitle: const Text('Styled Subtitle', style: TextStyle(fontStyle: FontStyle.italic, color: Colors.grey)),
+                title: const Text('Styled Title',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
+                subtitle: const Text('Styled Subtitle',
+                    style: TextStyle(fontStyle: FontStyle.italic, color: Colors.grey)),
                 leading: const Icon(Icons.text_fields),
                 trailing: const Icon(Icons.edit),
               ),
@@ -106,10 +109,57 @@ class ListTileScreen extends StatelessWidget {
                 leading: const Icon(Icons.vertical_align_bottom),
                 trailing: const Icon(Icons.vertical_align_top),
               ),
+              const SizedBox(height: 20),
+              const Text("Default ListTile.divideTiles",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
+              const SizedBox(height: 8),
+              _buildListTileDivideTiles(
+                context,
+                "Default",
+                ListTile.divideTiles(
+                  context: context,
+                  tiles: [
+                    const ListTile(title: Text('Item 1')),
+                    const ListTile(title: Text('Item 2')),
+                    const ListTile(title: Text('Item 3')),
+                  ],
+                ).toList(),
+              ),
+              const SizedBox(height: 20),
+              const Text("ListTile.divideTiles with Color",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
+              const SizedBox(height: 8),
+              _buildListTileDivideTiles(
+                context,
+                "Color",
+                ListTile.divideTiles(
+                  context: context,
+                  color: Colors.red,
+                  tiles: [
+                    const ListTile(title: Text('Item 1')),
+                    const ListTile(title: Text('Item 2')),
+                    const ListTile(title: Text('Item 3')),
+                  ],
+                ).toList(),
+              ),
             ],
           ),
         ),
       ),
+    );
+  }
+
+  Widget _buildListTileDivideTiles(BuildContext context, String label, List<Widget> tiles) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(label, style: const TextStyle(fontWeight: FontWeight.bold)),
+        const SizedBox(height: 4),
+        Column(
+          children: tiles,
+        ),
+        const SizedBox(height: 16),
+      ],
     );
   }
 }
