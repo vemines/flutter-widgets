@@ -15,14 +15,15 @@ class RenderClipRRectScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("RenderClipRRect Variations", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              Text("RenderClipRRect Variations",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               SizedBox(height: 20),
               Wrap(
                 spacing: 20,
                 runSpacing: 20,
                 children: [
                   _buildVariation(
-                    "Basic ClipRRect",
+                    "ClipRRect",
                     ClipRRect(
                       borderRadius: BorderRadius.circular(8.0),
                       child: Container(

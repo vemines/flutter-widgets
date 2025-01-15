@@ -15,7 +15,8 @@ class OpacityScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("Opacity Variations:", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              const Text("Opacity Variations:",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               const SizedBox(height: 16),
               Wrap(
                 spacing: 16,
@@ -23,7 +24,7 @@ class OpacityScreen extends StatelessWidget {
                 children: [
                   Column(
                     children: [
-                      const Text("Opacity - 0.25"),
+                      const Text("Opacity - blue 0.25"),
                       Opacity(
                         opacity: 0.25,
                         child: Container(
@@ -36,7 +37,7 @@ class OpacityScreen extends StatelessWidget {
                   ),
                   Column(
                     children: [
-                      const Text("Opacity - 0.5"),
+                      const Text("Opacity - green 0.5"),
                       Opacity(
                         opacity: 0.5,
                         child: Container(
@@ -49,7 +50,7 @@ class OpacityScreen extends StatelessWidget {
                   ),
                   Column(
                     children: [
-                      const Text("Opacity - 0.75"),
+                      const Text("Opacity - red 0.75"),
                       Opacity(
                         opacity: 0.75,
                         child: Container(
@@ -62,20 +63,7 @@ class OpacityScreen extends StatelessWidget {
                   ),
                   Column(
                     children: [
-                      const Text("Opacity - 1.0 (Fully Opaque)"),
-                      Opacity(
-                        opacity: 1.0,
-                        child: Container(
-                          width: 100,
-                          height: 100,
-                          color: Colors.orange,
-                        ),
-                      ),
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      const Text("Opacity - 0.5 with Text"),
+                      const Text("Opacity - 0.5 Text"),
                       Opacity(
                         opacity: 0.5,
                         child: const Text("Hello World", style: TextStyle(fontSize: 20)),
@@ -84,7 +72,7 @@ class OpacityScreen extends StatelessWidget {
                   ),
                   Column(
                     children: [
-                      const Text("Opacity - 0.8 with Icon"),
+                      const Text("Opacity - 0.8 Icon"),
                       Opacity(
                         opacity: 0.8,
                         child: const Icon(Icons.star, size: 50, color: Colors.yellow),
@@ -93,7 +81,7 @@ class OpacityScreen extends StatelessWidget {
                   ),
                   Column(
                     children: [
-                      const Text("Opacity - 0.3 with Container and Padding"),
+                      const Text("Opacity - 0.3 Padding"),
                       Opacity(
                         opacity: 0.3,
                         child: Container(

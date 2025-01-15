@@ -33,16 +33,24 @@ class SpacerScreen extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 20),
-              const Text("Spacer - Flex 3"),
+              const Text("Spacer - Flex 2 between 2 Expanded"),
               Row(
                 children: [
-                  Container(width: 50, height: 50, color: Colors.red),
+                  Expanded(
+                      child: Container(
+                    color: Colors.red,
+                    height: 50,
+                  )),
                   const Spacer(flex: 3),
-                  Container(width: 50, height: 50, color: Colors.blue),
+                  Expanded(
+                      child: Container(
+                    color: Colors.blue,
+                    height: 50,
+                  )),
                 ],
               ),
               const SizedBox(height: 20),
-              const Text("Spacer - Multiple Spacers"),
+              const Text("Spacer - flex 1 and flex 2"),
               Row(
                 children: [
                   Container(width: 50, height: 50, color: Colors.red),

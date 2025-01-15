@@ -15,13 +15,13 @@ class RawChipScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Basic RawChip", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("RawChip", style: TextStyle(fontWeight: FontWeight.bold)),
               Wrap(
                 spacing: 8.0,
                 runSpacing: 8.0,
                 children: [
                   Tooltip(
-                    message: "Basic RawChip",
+                    message: "RawChip",
                     child: RawChip(
                       label: Text('Basic'),
                     ),

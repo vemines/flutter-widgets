@@ -15,7 +15,7 @@ class ScrollControllerScreen extends StatelessWidget {
           children: [
             const Padding(
               padding: EdgeInsets.all(8.0),
-              child: Text("ScrollController - Basic Example"),
+              child: Text("ScrollController - Example"),
             ),
             _buildBasicScrollController(),
             const SizedBox(height: 20),

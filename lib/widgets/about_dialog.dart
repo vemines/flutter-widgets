@@ -15,16 +15,17 @@ class AboutDialogScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("AboutDialog Variations:", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              Text("AboutDialog Variations:",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               SizedBox(height: 20),
-              
+
               Text("AboutDialog - Basic", style: TextStyle(fontWeight: FontWeight.bold)),
               AboutDialog(
                 applicationName: 'My App',
                 applicationVersion: '1.0.0',
                 applicationIcon: FlutterLogo(),
                 children: [
-                  Text('This is a basic about dialog.'),
+                  Text('This is a about dialog.'),
                 ],
               ),
               SizedBox(height: 20),
@@ -53,7 +54,8 @@ class AboutDialogScreen extends StatelessWidget {
               ),
               SizedBox(height: 20),
 
-              Text("AboutDialog - Custom Application Name", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("AboutDialog - Custom Application Name",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               AboutDialog(
                 applicationName: 'Custom App Name',
                 applicationVersion: '1.0.0',
@@ -75,7 +77,8 @@ class AboutDialogScreen extends StatelessWidget {
               ),
               SizedBox(height: 20),
 
-              Text("AboutDialog - With License Button", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("AboutDialog - With License Button",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               ElevatedButton(
                 onPressed: () {
                   showAboutDialog(
@@ -92,8 +95,9 @@ class AboutDialogScreen extends StatelessWidget {
                 child: Text('Show About Dialog with License'),
               ),
               SizedBox(height: 20),
-              
-              Text("AboutDialog - Wrapped in a Container (Demonstrates usage)", style: TextStyle(fontWeight: FontWeight.bold)),
+
+              Text("AboutDialog - Wrapped in a Container (Demonstrates usage)",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               Container(
                 padding: EdgeInsets.all(10),
                 decoration: BoxDecoration(border: Border.all(color: Colors.grey)),
@@ -107,7 +111,7 @@ class AboutDialogScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-              
+
               // AboutDialog without wrapping another widget is not applicable as it's a dialog and needs to be shown using showAboutDialog
               // Text("AboutDialog - Without Wrapping (Not Applicable)", style: TextStyle(fontWeight: FontWeight.bold)),
               // AboutDialog(

@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
@@ -25,7 +24,7 @@ class RenderStackScreen extends StatelessWidget {
                 runSpacing: 20,
                 children: [
                   _buildRenderStackVariation(
-                    "Basic RenderStack",
+                    "RenderStack",
                     const RenderStack(
                       children: [
                         SizedBox(width: 100, height: 100, child: ColoredBox(color: Colors.blue)),

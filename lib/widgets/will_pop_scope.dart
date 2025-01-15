@@ -15,7 +15,7 @@ class WillPopScopeScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("WillPopScope - Basic Usage", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("WillPopScope - Usage", style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               PopScope(
                 onPopInvokedWithResult: (isPop, object) async {

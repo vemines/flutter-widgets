@@ -15,31 +15,36 @@ class DefaultTextStyleScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("DefaultTextStyle - Basic Text", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+              Text("DefaultTextStyle - Text",
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
               DefaultTextStyle(
                 style: TextStyle(color: Colors.black, fontSize: 14),
                 child: Text("This is a default text style."),
               ),
               SizedBox(height: 20),
-              Text("DefaultTextStyle - Red Text", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+              Text("DefaultTextStyle - Red Text",
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
               DefaultTextStyle(
                 style: TextStyle(color: Colors.red, fontSize: 16),
                 child: Text("This text is red."),
               ),
               SizedBox(height: 20),
-              Text("DefaultTextStyle - Bold Text", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+              Text("DefaultTextStyle - Bold Text",
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
               DefaultTextStyle(
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
                 child: Text("This text is bold."),
               ),
               SizedBox(height: 20),
-              Text("DefaultTextStyle - Different Font Size", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+              Text("DefaultTextStyle - Different Font Size",
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
               DefaultTextStyle(
                 style: TextStyle(fontSize: 20),
                 child: Text("This text has a larger font size."),
               ),
               SizedBox(height: 20),
-              Text("DefaultTextStyle - Wrapped Text", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+              Text("DefaultTextStyle - Wrapped Text",
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
               DefaultTextStyle(
                 style: TextStyle(color: Colors.blue, fontSize: 14),
                 child: Container(
@@ -49,7 +54,8 @@ class DefaultTextStyleScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-              Text("DefaultTextStyle - Inherited Style", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+              Text("DefaultTextStyle - Inherited Style",
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
               DefaultTextStyle(
                 style: TextStyle(color: Colors.green, fontSize: 14),
                 child: Column(
@@ -58,13 +64,15 @@ class DefaultTextStyleScreen extends StatelessWidget {
                     Text("This text inherits the green color."),
                     DefaultTextStyle(
                       style: TextStyle(color: Colors.orange, fontSize: 16),
-                      child: Text("This text overrides the color but inherits the font size from the parent DefaultTextStyle."),
+                      child: Text(
+                          "This text overrides the color but inherits the font size from the parent DefaultTextStyle."),
                     ),
                   ],
                 ),
               ),
               SizedBox(height: 20),
-              Text("DefaultTextStyle - Alignment", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+              Text("DefaultTextStyle - Alignment",
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
               DefaultTextStyle(
                 style: TextStyle(color: Colors.purple, fontSize: 14),
                 textAlign: TextAlign.center,
@@ -74,12 +82,14 @@ class DefaultTextStyleScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-              Text("DefaultTextStyle - Max Lines", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+              Text("DefaultTextStyle - Max Lines",
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
               DefaultTextStyle(
                 style: TextStyle(color: Colors.brown, fontSize: 14),
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
-                child: Text("This is a long text that will be truncated if it exceeds the max lines limit. This is a long text that will be truncated if it exceeds the max lines limit."),
+                child: Text(
+                    "This is a long text that will be truncated if it exceeds the max lines limit. This is a long text that will be truncated if it exceeds the max lines limit."),
               ),
             ],
           ),

@@ -18,7 +18,7 @@ class GridTileScreen extends StatelessWidget {
               const Text("GridTile Variations",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               const SizedBox(height: 20),
-              const Text("Basic GridTile", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("GridTile", style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               GridTile(
                 header: const Text("Header"),

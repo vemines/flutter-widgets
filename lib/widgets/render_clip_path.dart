@@ -23,7 +23,7 @@ class RenderClipPathScreen extends StatelessWidget {
                 runSpacing: 16,
                 children: [
                   _buildClipPathVariation(
-                    "Basic ClipPath",
+                    "ClipPath",
                     ClipPath(
                       clipper: _TriangleClipper(),
                       child: Container(

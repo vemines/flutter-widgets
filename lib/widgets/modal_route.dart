@@ -15,7 +15,7 @@ class ModalRouteScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("ModalRoute - Basic Usage", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("ModalRoute - Usage", style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               ElevatedButton(
                 onPressed: () {

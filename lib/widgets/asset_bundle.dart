@@ -16,8 +16,7 @@ class AssetBundleScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("AssetBundle - Basic Usage",
-                  style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("AssetBundle - Usage", style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               FutureBuilder<String>(
                 future: DefaultAssetBundle.of(context).loadString('assets/my_text_file.txt'),

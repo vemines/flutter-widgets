@@ -16,14 +16,14 @@ class CupertinoSegmentedControlScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("Basic CupertinoSegmentedControl",
+              const Text("CupertinoSegmentedControl",
                   style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               _buildSegmentedControl(
                 {0: "Option 1", 1: "Option 2", 2: "Option 3"},
                 0,
                 (int value) {},
-                "Basic Control",
+                "Control",
               ),
               const SizedBox(height: 20),
               const Text("Segmented Control with Different Colors",

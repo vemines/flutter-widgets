@@ -15,7 +15,7 @@ class LocalizationsScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Localizations - Basic Usage", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("Localizations - Usage", style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               // Localizations widget without a child is not useful on its own.
               // It needs a child that uses the localization data.
@@ -28,7 +28,8 @@ class LocalizationsScreen extends StatelessWidget {
               //   child: Container(),
               // ),
               // SizedBox(height: 16),
-              Text("Localizations - With a child using localization data", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("Localizations - With a child using localization data",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Localizations(
                 locale: Locale('en', 'US'),
@@ -49,7 +50,8 @@ class LocalizationsScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 16),
-              Text("Localizations - With a child using localization data (Spanish)", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("Localizations - With a child using localization data (Spanish)",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Localizations(
                 locale: Locale('es', 'ES'),
@@ -70,7 +72,8 @@ class LocalizationsScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 16),
-              Text("Localizations - With a child using localization data (French)", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("Localizations - With a child using localization data (French)",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Localizations(
                 locale: Locale('fr', 'FR'),

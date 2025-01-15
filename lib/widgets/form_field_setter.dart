@@ -15,8 +15,7 @@ class FormFieldSetterScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("FormFieldSetter - Basic Usage",
-                  style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("FormFieldSetter - Usage", style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               _buildFormFieldSetterExample(
                 initialValue: 'Initial Value',

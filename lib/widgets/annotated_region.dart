@@ -16,9 +16,10 @@ class AnnotatedRegionScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("AnnotatedRegion Variations:", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              const Text("AnnotatedRegion Variations:",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               const SizedBox(height: 16),
-              const Text("AnnotatedRegion - Basic Example (No Child)"),
+              const Text("AnnotatedRegion - Example (No Child)"),
               const SizedBox(height: 16),
               const Text("AnnotatedRegion - With Container Child"),
               AnnotatedRegion<SystemUiOverlayStyle>(

@@ -15,9 +15,10 @@ class AnimatedPaddingScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("AnimatedPadding Variations:", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              const Text("AnimatedPadding Variations:",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               const SizedBox(height: 20),
-              const Text("AnimatedPadding - Basic Padding"),
+              const Text("AnimatedPadding - Padding"),
               AnimatedPadding(
                 padding: const EdgeInsets.all(20),
                 duration: const Duration(seconds: 1),

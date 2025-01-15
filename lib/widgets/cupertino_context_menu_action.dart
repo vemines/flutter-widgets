@@ -16,7 +16,7 @@ class CupertinoContextMenuActionScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("Basic CupertinoContextMenuAction",
+              const Text("CupertinoContextMenuAction",
                   style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Wrap(

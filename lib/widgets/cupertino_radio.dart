@@ -16,8 +16,7 @@ class CupertinoRadioScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("Basic CupertinoRadio",
-                  style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CupertinoRadio", style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               CupertinoRadioExample(
                 value: true,

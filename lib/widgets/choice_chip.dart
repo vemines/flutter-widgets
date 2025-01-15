@@ -15,7 +15,7 @@ class ChoiceChipScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Basic ChoiceChip", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("ChoiceChip", style: TextStyle(fontWeight: FontWeight.bold)),
               Wrap(
                 spacing: 8.0,
                 children: [
@@ -58,7 +58,8 @@ class ChoiceChipScreen extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 20),
-              Text("ChoiceChip - Different Sizes and Padding", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("ChoiceChip - Different Sizes and Padding",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               Wrap(
                 spacing: 8.0,
                 children: [
@@ -81,7 +82,8 @@ class ChoiceChipScreen extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 20),
-              Text("ChoiceChip - Different Border Radius", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("ChoiceChip - Different Border Radius",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               Wrap(
                 spacing: 8.0,
                 children: [

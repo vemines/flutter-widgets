@@ -15,12 +15,13 @@ class AnimatedListStateScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("AnimatedListState Variations:", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              const Text("AnimatedListState Variations:",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               const SizedBox(height: 16),
               _buildAnimatedListStateVariation(
-                "Basic AnimatedListState",
+                "AnimatedListState",
                 _BasicAnimatedListState(),
-                "A basic AnimatedListState with default settings.",
+                "A AnimatedListState with default settings.",
               ),
               const SizedBox(height: 20),
               _buildAnimatedListStateVariation(

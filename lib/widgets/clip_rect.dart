@@ -15,14 +15,15 @@ class ClipRectScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("ClipRect Variations:", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              const Text("ClipRect Variations:",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               const SizedBox(height: 20),
               Wrap(
                 spacing: 20,
                 runSpacing: 20,
                 children: [
                   _buildClipRectVariation(
-                    "Basic ClipRect",
+                    "ClipRect",
                     ClipRect(
                       child: Container(
                         color: Colors.blue,

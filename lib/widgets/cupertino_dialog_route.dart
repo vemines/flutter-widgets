@@ -16,7 +16,7 @@ class CupertinoDialogRouteScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("CupertinoDialogRoute - Basic Usage",
+              const Text("CupertinoDialogRoute - Usage",
                   style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               ElevatedButton(
@@ -25,8 +25,8 @@ class CupertinoDialogRouteScreen extends StatelessWidget {
                     CupertinoDialogRoute(
                       context: context,
                       builder: (context) => CupertinoAlertDialog(
-                        title: Text('Basic Dialog'),
-                        content: Text('This is a basic Cupertino dialog.'),
+                        title: Text('Dialog'),
+                        content: Text('This is a Cupertino dialog.'),
                         actions: [
                           CupertinoDialogAction(
                             child: Text('OK'),
@@ -37,7 +37,7 @@ class CupertinoDialogRouteScreen extends StatelessWidget {
                     ),
                   );
                 },
-                child: const Text('Show Basic Dialog'),
+                child: const Text('Show Dialog'),
               ),
               const SizedBox(height: 20),
               const Text("CupertinoDialogRoute - With Custom Transition",

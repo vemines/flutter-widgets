@@ -15,15 +15,17 @@ class RenderObjectScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("RenderObject - Basic Usage", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("RenderObject - Usage", style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               // RenderObject is an abstract class and cannot be instantiated directly.
               // It's used as a base for other render objects.
               // The following code would cause an error:
               // RenderObject(),
-              const Text("RenderObject is an abstract class and cannot be instantiated directly. It's used as a base for other render objects. This example shows how it's used indirectly through other widgets."),
+              const Text(
+                  "RenderObject is an abstract class and cannot be instantiated directly. It's used as a base for other render objects. This example shows how it's used indirectly through other widgets."),
               const SizedBox(height: 20),
-              const Text("Container with RenderObject", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Container with RenderObject",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Container(
                 width: 100,
@@ -36,7 +38,8 @@ class RenderObjectScreen extends StatelessWidget {
               const SizedBox(height: 8),
               const Text("This is a text widget that uses a RenderObject internally."),
               const SizedBox(height: 20),
-              const Text("Padding with RenderObject", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Padding with RenderObject",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Padding(
                 padding: const EdgeInsets.all(20.0),
@@ -65,7 +68,8 @@ class RenderObjectScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("SizedBox with RenderObject", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("SizedBox with RenderObject",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               SizedBox(
                 width: 200,
@@ -76,7 +80,8 @@ class RenderObjectScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("ConstrainedBox with RenderObject", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("ConstrainedBox with RenderObject",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               ConstrainedBox(
                 constraints: const BoxConstraints(maxWidth: 150, maxHeight: 75),

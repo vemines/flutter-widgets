@@ -15,9 +15,11 @@ class SingleChildRenderObjectElementScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("RenderObjectElement - Basic Usage", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("RenderObjectElement - Usage",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
-              const Text("RenderObjectElement is an abstract class and cannot be directly instantiated. It's the base class for elements that manage the render tree. This example shows a basic Container which uses RenderObjectElement internally."),
+              const Text(
+                  "RenderObjectElement is an abstract class and cannot be directly instantiated. It's the base class for elements that manage the render tree. This example shows a Container which uses RenderObjectElement internally."),
               const SizedBox(height: 16),
               const Text("Container - Default", style: TextStyle(fontWeight: FontWeight.bold)),
               Container(
@@ -26,7 +28,8 @@ class SingleChildRenderObjectElementScreen extends StatelessWidget {
                 child: const Text("Default Container"),
               ),
               const SizedBox(height: 16),
-              const Text("Container - Blue Background", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Container - Blue Background",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               Container(
                 color: Colors.blue,
                 padding: const EdgeInsets.all(8),
@@ -42,7 +45,8 @@ class SingleChildRenderObjectElementScreen extends StatelessWidget {
                 child: const Text("Red Border Container"),
               ),
               const SizedBox(height: 16),
-              const Text("Container - Rounded Corners", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Container - Rounded Corners",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
@@ -67,7 +71,8 @@ class SingleChildRenderObjectElementScreen extends StatelessWidget {
                 child: const Text("Container with Padding"),
               ),
               const SizedBox(height: 16),
-              const Text("Container - With Height and Width", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Container - With Height and Width",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               Container(
                 height: 100,
                 width: 200,
@@ -76,7 +81,8 @@ class SingleChildRenderObjectElementScreen extends StatelessWidget {
                 child: const Text("Fixed Size Container"),
               ),
               const SizedBox(height: 16),
-              const Text("Container - With Alignment", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Container - With Alignment",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               Container(
                 height: 100,
                 width: 200,

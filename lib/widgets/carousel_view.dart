@@ -15,16 +15,26 @@ class CarouselViewScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("CarouselView Variations:", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              const Text("CarouselView Variations:",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               const SizedBox(height: 20),
-              const Text("CarouselView - Basic Example"),
+              const Text("CarouselView - Example"),
               SizedBox(
                 height: 200,
                 child: CarouselView(
                   items: [
-                    Container(color: Colors.red, child: const Center(child: Text("Item 1", style: TextStyle(color: Colors.white)))),
-                    Container(color: Colors.blue, child: const Center(child: Text("Item 2", style: TextStyle(color: Colors.white)))),
-                    Container(color: Colors.green, child: const Center(child: Text("Item 3", style: TextStyle(color: Colors.white)))),
+                    Container(
+                        color: Colors.red,
+                        child: const Center(
+                            child: Text("Item 1", style: TextStyle(color: Colors.white)))),
+                    Container(
+                        color: Colors.blue,
+                        child: const Center(
+                            child: Text("Item 2", style: TextStyle(color: Colors.white)))),
+                    Container(
+                        color: Colors.green,
+                        child: const Center(
+                            child: Text("Item 3", style: TextStyle(color: Colors.white)))),
                   ],
                 ),
               ),
@@ -34,9 +44,18 @@ class CarouselViewScreen extends StatelessWidget {
                 height: 300,
                 child: CarouselView(
                   items: [
-                    Container(color: Colors.orange, child: const Center(child: Text("Item 1", style: TextStyle(color: Colors.white)))),
-                    Container(color: Colors.purple, child: const Center(child: Text("Item 2", style: TextStyle(color: Colors.white)))),
-                    Container(color: Colors.teal, child: const Center(child: Text("Item 3", style: TextStyle(color: Colors.white)))),
+                    Container(
+                        color: Colors.orange,
+                        child: const Center(
+                            child: Text("Item 1", style: TextStyle(color: Colors.white)))),
+                    Container(
+                        color: Colors.purple,
+                        child: const Center(
+                            child: Text("Item 2", style: TextStyle(color: Colors.white)))),
+                    Container(
+                        color: Colors.teal,
+                        child: const Center(
+                            child: Text("Item 3", style: TextStyle(color: Colors.white)))),
                   ],
                 ),
               ),
@@ -46,9 +65,21 @@ class CarouselViewScreen extends StatelessWidget {
                 height: 200,
                 child: CarouselView(
                   items: [
-                    Container(width: 100, color: Colors.pink, child: const Center(child: Text("Item 1", style: TextStyle(color: Colors.white)))),
-                    Container(width: 200, color: Colors.brown, child: const Center(child: Text("Item 2", style: TextStyle(color: Colors.white)))),
-                    Container(width: 150, color: Colors.cyan, child: const Center(child: Text("Item 3", style: TextStyle(color: Colors.white)))),
+                    Container(
+                        width: 100,
+                        color: Colors.pink,
+                        child: const Center(
+                            child: Text("Item 1", style: TextStyle(color: Colors.white)))),
+                    Container(
+                        width: 200,
+                        color: Colors.brown,
+                        child: const Center(
+                            child: Text("Item 2", style: TextStyle(color: Colors.white)))),
+                    Container(
+                        width: 150,
+                        color: Colors.cyan,
+                        child: const Center(
+                            child: Text("Item 3", style: TextStyle(color: Colors.white)))),
                   ],
                 ),
               ),
@@ -60,9 +91,18 @@ class CarouselViewScreen extends StatelessWidget {
                   height: 200,
                   child: CarouselView(
                     items: [
-                      Container(color: Colors.lime, child: const Center(child: Text("Item 1", style: TextStyle(color: Colors.white)))),
-                      Container(color: Colors.indigo, child: const Center(child: Text("Item 2", style: TextStyle(color: Colors.white)))),
-                      Container(color: Colors.amber, child: const Center(child: Text("Item 3", style: TextStyle(color: Colors.white)))),
+                      Container(
+                          color: Colors.lime,
+                          child: const Center(
+                              child: Text("Item 1", style: TextStyle(color: Colors.white)))),
+                      Container(
+                          color: Colors.indigo,
+                          child: const Center(
+                              child: Text("Item 2", style: TextStyle(color: Colors.white)))),
+                      Container(
+                          color: Colors.amber,
+                          child: const Center(
+                              child: Text("Item 3", style: TextStyle(color: Colors.white)))),
                     ],
                   ),
                 ),
@@ -92,7 +132,8 @@ class CarouselViewScreen extends StatelessWidget {
                         color: Colors.grey[300],
                         borderRadius: BorderRadius.circular(10),
                       ),
-                      child: const Center(child: Icon(Icons.thumb_up, size: 50, color: Colors.blue)),
+                      child:
+                          const Center(child: Icon(Icons.thumb_up, size: 50, color: Colors.blue)),
                     ),
                   ],
                 ),

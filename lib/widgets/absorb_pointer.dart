@@ -15,7 +15,7 @@ class AbsorbPointerScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("AbsorbPointer - Basic Example", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("AbsorbPointer - Example", style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               AbsorbPointer(
                 child: ElevatedButton(

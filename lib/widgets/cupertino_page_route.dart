@@ -16,7 +16,7 @@ class CupertinoPageRouteScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("CupertinoPageRoute - Basic Navigation",
+              const Text("CupertinoPageRoute - Navigation",
                   style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               ElevatedButton(

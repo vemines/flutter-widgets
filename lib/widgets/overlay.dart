@@ -15,7 +15,7 @@ class OverlayScreen extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("Overlay - Basic Example", style: TextStyle(fontWeight: FontWeight.bold)),
+              child: Text("Overlay - Example", style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             OverlayExample(),
             Padding(

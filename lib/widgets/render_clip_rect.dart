@@ -15,7 +15,7 @@ class RenderClipRectScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("RenderClipRect - Basic Clip"),
+              const Text("RenderClipRect - Clip"),
               const SizedBox(height: 8),
               ClipRect(
                 child: Container(

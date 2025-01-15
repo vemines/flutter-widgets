@@ -15,7 +15,7 @@ class FormScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Form - Basic Example", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("Form - Example", style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Form(
                 child: Column(
@@ -114,7 +114,8 @@ class _FormWithGlobalKeyState extends State<_FormWithGlobalKey> {
           ElevatedButton(
             onPressed: () {
               if (_formKey.currentState!.validate()) {
-                ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Processing Data')));
+                ScaffoldMessenger.of(context)
+                    .showSnackBar(SnackBar(content: Text('Processing Data')));
               }
             },
             child: Text('Validate'),
@@ -133,7 +134,8 @@ class _FormWithInitialValues extends StatefulWidget {
 class _FormWithInitialValuesState extends State<_FormWithInitialValues> {
   final _formKey = GlobalKey<FormState>();
   final TextEditingController _nameController = TextEditingController(text: 'John Doe');
-  final TextEditingController _emailController = TextEditingController(text: 'john.doe@example.com');
+  final TextEditingController _emailController =
+      TextEditingController(text: 'john.doe@example.com');
 
   @override
   void dispose() {
@@ -159,7 +161,8 @@ class _FormWithInitialValuesState extends State<_FormWithInitialValues> {
           ElevatedButton(
             onPressed: () {
               if (_formKey.currentState!.validate()) {
-                ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Data Submitted')));
+                ScaffoldMessenger.of(context)
+                    .showSnackBar(SnackBar(content: Text('Data Submitted')));
               }
             },
             child: Text('Submit'),

@@ -35,7 +35,7 @@ def text_to_json(file_path):
             elif current_group:
                 widget_name = line.strip('\t').strip() # Remove leading tab and potential extra spaces
                 data.append({
-                    "path": to_kebab_case(widget_name),
+                    "path": "/" + to_kebab_case(widget_name),
                     "route": f"{widget_name}Screen()",
                     "group": current_group,
                     "file_name": to_snake_case(widget_name) + ".dart"

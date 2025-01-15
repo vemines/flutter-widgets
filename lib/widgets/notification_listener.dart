@@ -16,7 +16,7 @@ class NotificationListenerScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("NotificationListener - Basic Usage (Wrapping Container):"),
+              const Text("NotificationListener - Usage (Wrapping Container):"),
               NotificationListener<ScrollNotification>(
                 onNotification: (notification) {
                   // Handle scroll notification here
@@ -29,7 +29,7 @@ class NotificationListenerScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("NotificationListener - Basic Usage (Wrapping Text):"),
+              const Text("NotificationListener - Usage (Wrapping Text):"),
               NotificationListener<UserScrollNotification>(
                 onNotification: (notification) {
                   // Handle user scroll notification here

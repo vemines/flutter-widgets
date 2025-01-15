@@ -25,19 +25,24 @@ class CenterScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("Center - With Alignment", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Center - With heightFactor, widthFactor",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
-              Center(
-                heightFactor: 2,
-                widthFactor: 2,
-                child: Container(
-                  color: Colors.blue[100],
-                  padding: const EdgeInsets.all(16),
-                  child: const Text("Centered Text with Alignment"),
+              Container(
+                color: Colors.green[100],
+                child: Center(
+                  heightFactor: 2,
+                  widthFactor: 2,
+                  child: Container(
+                    color: Colors.blue[100],
+                    padding: const EdgeInsets.all(16),
+                    child: const Text("Centered with heightFactor, widthFactor"),
+                  ),
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("Center - With Specific Child Size", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Center - With Specific Child Size",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Center(
                 child: SizedBox(
@@ -50,32 +55,6 @@ class CenterScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(height: 20),
-              const Text("Center - With Different Alignment", style: TextStyle(fontWeight: FontWeight.bold)),
-              const SizedBox(height: 8),
-              Center(
-                child: Container(
-                  color: Colors.orange[100],
-                  padding: const EdgeInsets.all(16),
-                  child: const Text("Centered Text with Different Alignment"),
-                ),
-              ),
-              const SizedBox(height: 20),
-              const Text("Center - Wrapping a Container", style: TextStyle(fontWeight: FontWeight.bold)),
-              const SizedBox(height: 8),
-              Center(
-                child: Container(
-                  color: Colors.purple[100],
-                  padding: const EdgeInsets.all(16),
-                  child: const Text("Wrapped Container"),
-                ),
-              ),
-              const SizedBox(height: 20),
-              const Text("Center - Without Child (Not Applicable)", style: TextStyle(fontWeight: FontWeight.bold)),
-              const SizedBox(height: 8),
-              // Center without a child is not applicable, it requires a child to center.
-              // Center(), // This would cause an error
-              const Text("Center requires a child to be centered. This example is commented out because it would cause an error.", style: TextStyle(fontStyle: FontStyle.italic, color: Colors.grey)),
             ],
           ),
         ),

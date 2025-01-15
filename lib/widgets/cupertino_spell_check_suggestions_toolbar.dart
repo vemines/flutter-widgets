@@ -16,7 +16,7 @@ class CupertinoSpellCheckSuggestionsToolbarScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("Basic Toolbar", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Toolbar", style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               _buildBasicToolbar(),
             ],
@@ -30,7 +30,7 @@ class CupertinoSpellCheckSuggestionsToolbarScreen extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text("Basic Toolbar"),
+        const Text("Toolbar"),
         CupertinoSpellCheckSuggestionsToolbar(
           anchors: TextSelectionToolbarAnchors(primaryAnchor: Offset.zero),
           buttonItems: [

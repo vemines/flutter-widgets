@@ -16,7 +16,7 @@ class UiKitViewScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("UiKitView - Basic Usage", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("UiKitView - Usage", style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               const Text(
                   "This widget is a platform view and cannot be directly styled or modified like regular Flutter widgets. It's a bridge to native UI elements."),

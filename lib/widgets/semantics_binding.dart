@@ -15,7 +15,8 @@ class SemanticsBindingScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("SemanticsBinding - Basic Usage (Not a visual widget)", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("SemanticsBinding - Usage (Not a visual widget)",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               // SemanticsBinding is not a visual widget, so we can't display it directly.
               // It's used to manage semantics for other widgets.
@@ -23,7 +24,8 @@ class SemanticsBindingScreen extends StatelessWidget {
               // SemanticsBinding(
               //   child: Container(),
               // ),
-              Text("SemanticsBinding - Wrapping a Container", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("SemanticsBinding - Wrapping a Container",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Semantics(
                 label: 'Container with semantics',
@@ -34,7 +36,8 @@ class SemanticsBindingScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-              Text("SemanticsBinding - Wrapping a Text Widget", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("SemanticsBinding - Wrapping a Text Widget",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Semantics(
                 label: 'Text with semantics',
@@ -44,7 +47,8 @@ class SemanticsBindingScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-              Text("SemanticsBinding - With custom properties", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("SemanticsBinding - With custom properties",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Semantics(
                 label: 'Custom semantics',
@@ -57,7 +61,8 @@ class SemanticsBindingScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-              Text("SemanticsBinding - With explicit properties", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("SemanticsBinding - With explicit properties",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Semantics(
                 label: 'Explicit semantics',

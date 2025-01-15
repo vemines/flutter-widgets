@@ -24,7 +24,7 @@ class _NavigatorScreenState extends State<NavigatorScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("Navigator - Basic Push"),
+              const Text("Navigator - Push"),
               ElevatedButton(
                 onPressed: () {
                   Navigator.push(

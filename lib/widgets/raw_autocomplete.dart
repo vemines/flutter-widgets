@@ -15,8 +15,7 @@ class RawAutocompleteScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("RawAutocomplete - Basic Usage",
-                  style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("RawAutocomplete - Usage", style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               const _BasicRawAutocomplete(),
               const SizedBox(height: 20),

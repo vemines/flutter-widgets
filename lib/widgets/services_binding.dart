@@ -15,14 +15,15 @@ class ServicesBindingScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("ServicesBinding - Basic Usage", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("ServicesBinding - Usage", style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               // ServicesBinding is a binding class, not a widget, so we can't display it directly.
               // It's used to manage services, not to render UI.
               // Instead, we'll show how it might be used in a simple context.
               Text("ServicesBinding is not a visual widget. It's used to manage services."),
               SizedBox(height: 16),
-              Text("Example of using ServicesBinding (Conceptual)", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("Example of using ServicesBinding (Conceptual)",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Text("This example shows how you might use a service managed by ServicesBinding."),
               SizedBox(height: 8),

@@ -23,7 +23,7 @@ class CheckboxScreen extends StatelessWidget {
                 runSpacing: 20,
                 children: [
                   _buildCheckboxVariation(
-                    title: "Basic Checkbox",
+                    title: "Checkbox",
                     widget: Checkbox(
                       value: false,
                       onChanged: (bool? value) {},
@@ -37,35 +37,27 @@ class CheckboxScreen extends StatelessWidget {
                     ),
                   ),
                   _buildCheckboxVariation(
-                    title: "Active Color Checkbox",
+                    title: "activeColor Checkbox",
                     widget: Checkbox(
-                      value: false,
+                      value: true,
                       onChanged: (bool? value) {},
                       activeColor: Colors.blue,
                     ),
                   ),
                   _buildCheckboxVariation(
-                    title: "Check Color Checkbox",
+                    title: "checkColor Checkbox",
                     widget: Checkbox(
                       value: true,
                       onChanged: (bool? value) {},
-                      checkColor: Colors.white,
+                      checkColor: Colors.red,
                     ),
                   ),
                   _buildCheckboxVariation(
-                    title: "Material Tap Target Size Checkbox",
-                    widget: Checkbox(
-                      value: false,
-                      onChanged: (bool? value) {},
-                      materialTapTargetSize: MaterialTapTargetSize.padded,
-                    ),
-                  ),
-                  _buildCheckboxVariation(
-                    title: "Tristate Checkbox",
+                    title: "Tristate Checkbox value null",
                     widget: Checkbox(
                       value: null,
-                      onChanged: (bool? value) {},
                       tristate: true,
+                      onChanged: (bool? value) {},
                     ),
                   ),
                   _buildCheckboxVariation(
@@ -73,14 +65,6 @@ class CheckboxScreen extends StatelessWidget {
                     widget: Checkbox(
                       value: false,
                       onChanged: null,
-                    ),
-                  ),
-                  _buildCheckboxVariation(
-                    title: "Focus Color Checkbox",
-                    widget: Checkbox(
-                      value: false,
-                      onChanged: (bool? value) {},
-                      focusColor: Colors.green,
                     ),
                   ),
                   _buildCheckboxVariation(
@@ -101,7 +85,7 @@ class CheckboxScreen extends StatelessWidget {
                     ),
                   ),
                   _buildCheckboxVariation(
-                    title: "Shape Checkbox",
+                    title: "Shape RoundedRectangleBorder raius 10",
                     widget: Checkbox(
                       value: false,
                       onChanged: (bool? value) {},

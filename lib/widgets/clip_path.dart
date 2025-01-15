@@ -15,7 +15,7 @@ class ClipPathScreen extends StatelessWidget {
           runSpacing: 20,
           alignment: WrapAlignment.center,
           children: [
-// Basic ClipPath with a RectangularClipper
+// ClipPath with a RectangularClipper
             Column(
               mainAxisSize: MainAxisSize.min,
               children: [

@@ -15,7 +15,7 @@ class AnimatedGridScreen extends StatelessWidget {
           children: [
             const Padding(
               padding: EdgeInsets.all(8.0),
-              child: Text('AnimatedGrid - Basic Grid'),
+              child: Text('AnimatedGrid - Grid'),
             ),
             SizedBox(
               height: 200,

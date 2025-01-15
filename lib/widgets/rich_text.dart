@@ -15,7 +15,7 @@ class RichTextScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("RichText - Basic Text", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("RichText - Text", style: TextStyle(fontWeight: FontWeight.bold)),
               RichText(
                 text: TextSpan(
                   text: 'This is ',
@@ -41,7 +41,8 @@ class RichTextScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-              Text("RichText - Different Font Sizes", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("RichText - Different Font Sizes",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               RichText(
                 text: TextSpan(
                   text: 'Small ',
@@ -59,7 +60,9 @@ class RichTextScreen extends StatelessWidget {
                   text: 'Custom ',
                   style: DefaultTextStyle.of(context).style.copyWith(fontFamily: 'Roboto'),
                   children: <TextSpan>[
-                    TextSpan(text: 'style', style: TextStyle(letterSpacing: 2, fontWeight: FontWeight.w900)),
+                    TextSpan(
+                        text: 'style',
+                        style: TextStyle(letterSpacing: 2, fontWeight: FontWeight.w900)),
                   ],
                 ),
               ),
@@ -81,14 +84,11 @@ class RichTextScreen extends StatelessWidget {
               SizedBox(height: 20),
               Text("RichText - With Multiple Spans", style: TextStyle(fontWeight: FontWeight.bold)),
               RichText(
-                text: TextSpan(
-                  children: [
-                    TextSpan(text: 'First ', style: TextStyle(color: Colors.green)),
-                    TextSpan(text: 'Second ', style: TextStyle(color: Colors.orange)),
-                    TextSpan(text: 'Third', style: TextStyle(color: Colors.purple)),
-                  ]
-                )
-              ),
+                  text: TextSpan(children: [
+                TextSpan(text: 'First ', style: TextStyle(color: Colors.green)),
+                TextSpan(text: 'Second ', style: TextStyle(color: Colors.orange)),
+                TextSpan(text: 'Third', style: TextStyle(color: Colors.purple)),
+              ])),
               SizedBox(height: 20),
               Text("RichText - With Line Height", style: TextStyle(fontWeight: FontWeight.bold)),
               RichText(

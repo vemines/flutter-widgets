@@ -15,7 +15,7 @@ class ClipRRectScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("ClipRRect - Basic Rounded Corners"),
+              const Text("ClipRRect - Rounded Corners"),
               const SizedBox(height: 8),
               ClipRRect(
                 borderRadius: BorderRadius.circular(10),

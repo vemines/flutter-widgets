@@ -1,2712 +1,2712 @@
 [
   {
-    "path": "about-list-tile",
+    "path": "/about-list-tile",
     "route": "AboutListTileScreen()",
     "group": "Data Display",
     "file_name": "about_list_tile.dart"
   },
   {
-    "path": "alert-dialog",
+    "path": "/alert-dialog",
     "route": "AlertDialogScreen()",
     "group": "Data Display",
     "file_name": "alert_dialog.dart"
   },
   {
-    "path": "simple-dialog",
+    "path": "/simple-dialog",
     "route": "SimpleDialogScreen()",
     "group": "Data Display",
     "file_name": "simple_dialog.dart"
   },
   {
-    "path": "badge",
+    "path": "/badge",
     "route": "BadgeScreen()",
     "group": "Data Display",
     "file_name": "badge.dart"
   },
   {
-    "path": "banner",
+    "path": "/banner",
     "route": "BannerScreen()",
     "group": "Data Display",
     "file_name": "banner.dart"
   },
   {
-    "path": "card",
+    "path": "/card",
     "route": "CardScreen()",
     "group": "Data Display",
     "file_name": "card.dart"
   },
   {
-    "path": "checkbox-list-tile",
+    "path": "/checkbox-list-tile",
     "route": "CheckboxListTileScreen()",
     "group": "Data Display",
     "file_name": "checkbox_list_tile.dart"
   },
   {
-    "path": "chip",
+    "path": "/chip",
     "route": "ChipScreen()",
     "group": "Data Display",
     "file_name": "chip.dart"
   },
   {
-    "path": "circle-avatar",
+    "path": "/circle-avatar",
     "route": "CircleAvatarScreen()",
     "group": "Data Display",
     "file_name": "circle_avatar.dart"
   },
   {
-    "path": "data-table",
+    "path": "/data-table",
     "route": "DataTableScreen()",
     "group": "Data Display",
     "file_name": "data_table.dart"
   },
   {
-    "path": "divider",
+    "path": "/divider",
     "route": "DividerScreen()",
     "group": "Data Display",
     "file_name": "divider.dart"
   },
   {
-    "path": "expansion-panel",
+    "path": "/expansion-panel",
     "route": "ExpansionPanelScreen()",
     "group": "Data Display",
     "file_name": "expansion_panel.dart"
   },
   {
-    "path": "expansion-panel-list",
+    "path": "/expansion-panel-list",
     "route": "ExpansionPanelListScreen()",
     "group": "Data Display",
     "file_name": "expansion_panel_list.dart"
   },
   {
-    "path": "grid-tile",
+    "path": "/grid-tile",
     "route": "GridTileScreen()",
     "group": "Data Display",
     "file_name": "grid_tile.dart"
   },
   {
-    "path": "grid-tile-bar",
+    "path": "/grid-tile-bar",
     "route": "GridTileBarScreen()",
     "group": "Data Display",
     "file_name": "grid_tile_bar.dart"
   },
   {
-    "path": "icon",
+    "path": "/icon",
     "route": "IconScreen()",
     "group": "Data Display",
     "file_name": "icon.dart"
   },
   {
-    "path": "image",
+    "path": "/image",
     "route": "ImageScreen()",
     "group": "Data Display",
     "file_name": "image.dart"
   },
   {
-    "path": "image-icon",
+    "path": "/image-icon",
     "route": "ImageIconScreen()",
     "group": "Data Display",
     "file_name": "image_icon.dart"
   },
   {
-    "path": "image-network",
+    "path": "/image-network",
     "route": "ImageNetworkScreen()",
     "group": "Data Display",
     "file_name": "image_network.dart"
   },
   {
-    "path": "list-body",
+    "path": "/list-body",
     "route": "ListBodyScreen()",
     "group": "Data Display",
     "file_name": "list_body.dart"
   },
   {
-    "path": "list-tile",
+    "path": "/list-tile",
     "route": "ListTileScreen()",
     "group": "Data Display",
     "file_name": "list_tile.dart"
   },
   {
-    "path": "radio-list-tile",
+    "path": "/radio-list-tile",
     "route": "RadioListTileScreen()",
     "group": "Data Display",
     "file_name": "radio_list_tile.dart"
   },
   {
-    "path": "selectable-text",
+    "path": "/selectable-text",
     "route": "SelectableTextScreen()",
     "group": "Data Display",
     "file_name": "selectable_text.dart"
   },
   {
-    "path": "snack-bar",
+    "path": "/snack-bar",
     "route": "SnackBarScreen()",
     "group": "Data Display",
     "file_name": "snack_bar.dart"
   },
   {
-    "path": "stepper",
+    "path": "/stepper",
     "route": "StepperScreen()",
     "group": "Data Display",
     "file_name": "stepper.dart"
   },
   {
-    "path": "switch-list-tile",
+    "path": "/switch-list-tile",
     "route": "SwitchListTileScreen()",
     "group": "Data Display",
     "file_name": "switch_list_tile.dart"
   },
   {
-    "path": "tab-controller",
+    "path": "/tab-controller",
     "route": "TabControllerScreen()",
     "group": "Data Display",
     "file_name": "tab_controller.dart"
   },
   {
-    "path": "table",
+    "path": "/table",
     "route": "TableScreen()",
     "group": "Data Display",
     "file_name": "table.dart"
   },
   {
-    "path": "tab-bar",
+    "path": "/tab-bar",
     "route": "TabBarScreen()",
     "group": "Data Display",
     "file_name": "tab_bar.dart"
   },
   {
-    "path": "tab-bar-view",
+    "path": "/tab-bar-view",
     "route": "TabBarViewScreen()",
     "group": "Data Display",
     "file_name": "tab_bar_view.dart"
   },
   {
-    "path": "text",
+    "path": "/text",
     "route": "TextScreen()",
     "group": "Data Display",
     "file_name": "text.dart"
   },
   {
-    "path": "tooltip",
+    "path": "/tooltip",
     "route": "TooltipScreen()",
     "group": "Data Display",
     "file_name": "tooltip.dart"
   },
   {
-    "path": "raw-image",
+    "path": "/raw-image",
     "route": "RawImageScreen()",
     "group": "Data Display",
     "file_name": "raw_image.dart"
   },
   {
-    "path": "user-accounts-drawer-header",
+    "path": "/user-accounts-drawer-header",
     "route": "UserAccountsDrawerHeaderScreen()",
     "group": "Data Display",
     "file_name": "user_accounts_drawer_header.dart"
   },
   {
-    "path": "vertical-divider",
+    "path": "/vertical-divider",
     "route": "VerticalDividerScreen()",
     "group": "Data Display",
     "file_name": "vertical_divider.dart"
   },
   {
-    "path": "about-dialog",
+    "path": "/about-dialog",
     "route": "AboutDialogScreen()",
     "group": "TabControllerAbout & Help",
     "file_name": "about_dialog.dart"
   },
   {
-    "path": "about-list-tile",
+    "path": "/about-list-tile",
     "route": "AboutListTileScreen()",
     "group": "TabControllerAbout & Help",
     "file_name": "about_list_tile.dart"
   },
   {
-    "path": "license-page",
+    "path": "/license-page",
     "route": "LicensePageScreen()",
     "group": "TabControllerAbout & Help",
     "file_name": "license_page.dart"
   },
   {
-    "path": "exclude-semantics",
+    "path": "/exclude-semantics",
     "route": "ExcludeSemanticsScreen()",
     "group": "Accessibility & Semantics",
     "file_name": "exclude_semantics.dart"
   },
   {
-    "path": "indexed-semantics",
+    "path": "/indexed-semantics",
     "route": "IndexedSemanticsScreen()",
     "group": "Accessibility & Semantics",
     "file_name": "indexed_semantics.dart"
   },
   {
-    "path": "merge-semantics",
+    "path": "/merge-semantics",
     "route": "MergeSemanticsScreen()",
     "group": "Accessibility & Semantics",
     "file_name": "merge_semantics.dart"
   },
   {
-    "path": "animated-align",
+    "path": "/animated-align",
     "route": "AnimatedAlignScreen()",
     "group": "Animation & Motion",
     "file_name": "animated_align.dart"
   },
   {
-    "path": "animated-builder",
+    "path": "/animated-builder",
     "route": "AnimatedBuilderScreen()",
     "group": "Animation & Motion",
     "file_name": "animated_builder.dart"
   },
   {
-    "path": "animated-container",
+    "path": "/animated-container",
     "route": "AnimatedContainerScreen()",
     "group": "Animation & Motion",
     "file_name": "animated_container.dart"
   },
   {
-    "path": "animated-cross-fade",
+    "path": "/animated-cross-fade",
     "route": "AnimatedCrossFadeScreen()",
     "group": "Animation & Motion",
     "file_name": "animated_cross_fade.dart"
   },
   {
-    "path": "animated-default-text-style",
+    "path": "/animated-default-text-style",
     "route": "AnimatedDefaultTextStyleScreen()",
     "group": "Animation & Motion",
     "file_name": "animated_default_text_style.dart"
   },
   {
-    "path": "animated-grid",
+    "path": "/animated-grid",
     "route": "AnimatedGridScreen()",
     "group": "Animation & Motion",
     "file_name": "animated_grid.dart"
   },
   {
-    "path": "animated-icon",
+    "path": "/animated-icon",
     "route": "AnimatedIconScreen()",
     "group": "Animation & Motion",
     "file_name": "animated_icon.dart"
   },
   {
-    "path": "animated-list",
+    "path": "/animated-list",
     "route": "AnimatedListScreen()",
     "group": "Animation & Motion",
     "file_name": "animated_list.dart"
   },
   {
-    "path": "animated-list-state",
+    "path": "/animated-list-state",
     "route": "AnimatedListStateScreen()",
     "group": "Animation & Motion",
     "file_name": "animated_list_state.dart"
   },
   {
-    "path": "animated-modal-barrier",
+    "path": "/animated-modal-barrier",
     "route": "AnimatedModalBarrierScreen()",
     "group": "Animation & Motion",
     "file_name": "animated_modal_barrier.dart"
   },
   {
-    "path": "animated-opacity",
+    "path": "/animated-opacity",
     "route": "AnimatedOpacityScreen()",
     "group": "Animation & Motion",
     "file_name": "animated_opacity.dart"
   },
   {
-    "path": "animated-padding",
+    "path": "/animated-padding",
     "route": "AnimatedPaddingScreen()",
     "group": "Animation & Motion",
     "file_name": "animated_padding.dart"
   },
   {
-    "path": "animated-physical-model",
+    "path": "/animated-physical-model",
     "route": "AnimatedPhysicalModelScreen()",
     "group": "Animation & Motion",
     "file_name": "animated_physical_model.dart"
   },
   {
-    "path": "animated-positioned",
+    "path": "/animated-positioned",
     "route": "AnimatedPositionedScreen()",
     "group": "Animation & Motion",
     "file_name": "animated_positioned.dart"
   },
   {
-    "path": "animated-rotation",
+    "path": "/animated-rotation",
     "route": "AnimatedRotationScreen()",
     "group": "Animation & Motion",
     "file_name": "animated_rotation.dart"
   },
   {
-    "path": "animated-size",
+    "path": "/animated-size",
     "route": "AnimatedSizeScreen()",
     "group": "Animation & Motion",
     "file_name": "animated_size.dart"
   },
   {
-    "path": "animated-switcher",
+    "path": "/animated-switcher",
     "route": "AnimatedSwitcherScreen()",
     "group": "Animation & Motion",
     "file_name": "animated_switcher.dart"
   },
   {
-    "path": "animated-widget",
+    "path": "/animated-widget",
     "route": "AnimatedWidgetScreen()",
     "group": "Animation & Motion",
     "file_name": "animated_widget.dart"
   },
   {
-    "path": "circular-progress-indicator",
+    "path": "/circular-progress-indicator",
     "route": "CircularProgressIndicatorScreen()",
     "group": "Animation & Motion",
     "file_name": "circular_progress_indicator.dart"
   },
   {
-    "path": "decorated-box-transition",
+    "path": "/decorated-box-transition",
     "route": "DecoratedBoxTransitionScreen()",
     "group": "Animation & Motion",
     "file_name": "decorated_box_transition.dart"
   },
   {
-    "path": "default-text-style-transition",
+    "path": "/default-text-style-transition",
     "route": "DefaultTextStyleTransitionScreen()",
     "group": "Animation & Motion",
     "file_name": "default_text_style_transition.dart"
   },
   {
-    "path": "fade-transition",
+    "path": "/fade-transition",
     "route": "FadeTransitionScreen()",
     "group": "Animation & Motion",
     "file_name": "fade_transition.dart"
   },
   {
-    "path": "linear-progress-indicator",
+    "path": "/linear-progress-indicator",
     "route": "LinearProgressIndicatorScreen()",
     "group": "Animation & Motion",
     "file_name": "linear_progress_indicator.dart"
   },
   {
-    "path": "positioned-transition",
+    "path": "/positioned-transition",
     "route": "PositionedTransitionScreen()",
     "group": "Animation & Motion",
     "file_name": "positioned_transition.dart"
   },
   {
-    "path": "rotation-transition",
+    "path": "/rotation-transition",
     "route": "RotationTransitionScreen()",
     "group": "Animation & Motion",
     "file_name": "rotation_transition.dart"
   },
   {
-    "path": "scale-transition",
+    "path": "/scale-transition",
     "route": "ScaleTransitionScreen()",
     "group": "Animation & Motion",
     "file_name": "scale_transition.dart"
   },
   {
-    "path": "size-transition",
+    "path": "/size-transition",
     "route": "SizeTransitionScreen()",
     "group": "Animation & Motion",
     "file_name": "size_transition.dart"
   },
   {
-    "path": "slide-transition",
+    "path": "/slide-transition",
     "route": "SlideTransitionScreen()",
     "group": "Animation & Motion",
     "file_name": "slide_transition.dart"
   },
   {
-    "path": "tween-animation-builder",
+    "path": "/tween-animation-builder",
     "route": "TweenAnimationBuilderScreen()",
     "group": "Animation & Motion",
     "file_name": "tween_animation_builder.dart"
   },
   {
-    "path": "app-bar",
+    "path": "/app-bar",
     "route": "AppBarScreen()",
     "group": "App Structure & Navigation",
     "file_name": "app_bar.dart"
   },
   {
-    "path": "back-button",
+    "path": "/back-button",
     "route": "BackButtonScreen()",
     "group": "App Structure & Navigation",
     "file_name": "back_button.dart"
   },
   {
-    "path": "bottom-app-bar",
+    "path": "/bottom-app-bar",
     "route": "BottomAppBarScreen()",
     "group": "App Structure & Navigation",
     "file_name": "bottom_app_bar.dart"
   },
   {
-    "path": "bottom-navigation-bar",
+    "path": "/bottom-navigation-bar",
     "route": "BottomNavigationBarScreen()",
     "group": "App Structure & Navigation",
     "file_name": "bottom_navigation_bar.dart"
   },
   {
-    "path": "bottom-sheet",
+    "path": "/bottom-sheet",
     "route": "BottomSheetScreen()",
     "group": "App Structure & Navigation",
     "file_name": "bottom_sheet.dart"
   },
   {
-    "path": "close-button",
+    "path": "/close-button",
     "route": "CloseButtonScreen()",
     "group": "App Structure & Navigation",
     "file_name": "close_button.dart"
   },
   {
-    "path": "cupertino-action-sheet",
+    "path": "/cupertino-action-sheet",
     "route": "CupertinoActionSheetScreen()",
     "group": "App Structure & Navigation",
     "file_name": "cupertino_action_sheet.dart"
   },
   {
-    "path": "cupertino-alert-dialog",
+    "path": "/cupertino-alert-dialog",
     "route": "CupertinoAlertDialogScreen()",
     "group": "App Structure & Navigation",
     "file_name": "cupertino_alert_dialog.dart"
   },
   {
-    "path": "cupertino-app",
+    "path": "/cupertino-app",
     "route": "CupertinoAppScreen()",
     "group": "App Structure & Navigation",
     "file_name": "cupertino_app.dart"
   },
   {
-    "path": "cupertino-dialog-route",
+    "path": "/cupertino-dialog-route",
     "route": "CupertinoDialogRouteScreen()",
     "group": "App Structure & Navigation",
     "file_name": "cupertino_dialog_route.dart"
   },
   {
-    "path": "cupertino-navigation-bar",
+    "path": "/cupertino-navigation-bar",
     "route": "CupertinoNavigationBarScreen()",
     "group": "App Structure & Navigation",
     "file_name": "cupertino_navigation_bar.dart"
   },
   {
-    "path": "cupertino-navigation-bar-back-button",
+    "path": "/cupertino-navigation-bar-back-button",
     "route": "CupertinoNavigationBarBackButtonScreen()",
     "group": "App Structure & Navigation",
     "file_name": "cupertino_navigation_bar_back_button.dart"
   },
   {
-    "path": "cupertino-page",
+    "path": "/cupertino-page",
     "route": "CupertinoPageScreen()",
     "group": "App Structure & Navigation",
     "file_name": "cupertino_page.dart"
   },
   {
-    "path": "cupertino-page-route",
+    "path": "/cupertino-page-route",
     "route": "CupertinoPageRouteScreen()",
     "group": "App Structure & Navigation",
     "file_name": "cupertino_page_route.dart"
   },
   {
-    "path": "cupertino-page-scaffold",
+    "path": "/cupertino-page-scaffold",
     "route": "CupertinoPageScaffoldScreen()",
     "group": "App Structure & Navigation",
     "file_name": "cupertino_page_scaffold.dart"
   },
   {
-    "path": "cupertino-tab-controller",
+    "path": "/cupertino-tab-controller",
     "route": "CupertinoTabControllerScreen()",
     "group": "App Structure & Navigation",
     "file_name": "cupertino_tab_controller.dart"
   },
   {
-    "path": "cupertino-tab-scaffold",
+    "path": "/cupertino-tab-scaffold",
     "route": "CupertinoTabScaffoldScreen()",
     "group": "App Structure & Navigation",
     "file_name": "cupertino_tab_scaffold.dart"
   },
   {
-    "path": "cupertino-tab-view",
+    "path": "/cupertino-tab-view",
     "route": "CupertinoTabViewScreen()",
     "group": "App Structure & Navigation",
     "file_name": "cupertino_tab_view.dart"
   },
   {
-    "path": "drawer",
+    "path": "/drawer",
     "route": "DrawerScreen()",
     "group": "App Structure & Navigation",
     "file_name": "drawer.dart"
   },
   {
-    "path": "drawer-header",
+    "path": "/drawer-header",
     "route": "DrawerHeaderScreen()",
     "group": "App Structure & Navigation",
     "file_name": "drawer_header.dart"
   },
   {
-    "path": "floating-action-button",
+    "path": "/floating-action-button",
     "route": "FloatingActionButtonScreen()",
     "group": "App Structure & Navigation",
     "file_name": "floating_action_button.dart"
   },
   {
-    "path": "material-app",
+    "path": "/material-app",
     "route": "MaterialAppScreen()",
     "group": "App Structure & Navigation",
     "file_name": "material_app.dart"
   },
   {
-    "path": "material-banner",
+    "path": "/material-banner",
     "route": "MaterialBannerScreen()",
     "group": "App Structure & Navigation",
     "file_name": "material_banner.dart"
   },
   {
-    "path": "material-page-route",
+    "path": "/material-page-route",
     "route": "MaterialPageRouteScreen()",
     "group": "App Structure & Navigation",
     "file_name": "material_page_route.dart"
   },
   {
-    "path": "menu",
+    "path": "/menu",
     "route": "MenuScreen()",
     "group": "App Structure & Navigation",
     "file_name": "menu.dart"
   },
   {
-    "path": "modal-barrier",
+    "path": "/modal-barrier",
     "route": "ModalBarrierScreen()",
     "group": "App Structure & Navigation",
     "file_name": "modal_barrier.dart"
   },
   {
-    "path": "modal-route",
+    "path": "/modal-route",
     "route": "ModalRouteScreen()",
     "group": "App Structure & Navigation",
     "file_name": "modal_route.dart"
   },
   {
-    "path": "navigation-bar",
+    "path": "/navigation-bar",
     "route": "NavigationBarScreen()",
     "group": "App Structure & Navigation",
     "file_name": "navigation_bar.dart"
   },
   {
-    "path": "navigation-drawer",
+    "path": "/navigation-drawer",
     "route": "NavigationDrawerScreen()",
     "group": "App Structure & Navigation",
     "file_name": "navigation_drawer.dart"
   },
   {
-    "path": "navigation-drawer-destination",
+    "path": "/navigation-drawer-destination",
     "route": "NavigationDrawerDestinationScreen()",
     "group": "App Structure & Navigation",
     "file_name": "navigation_drawer_destination.dart"
   },
   {
-    "path": "navigation-rail",
+    "path": "/navigation-rail",
     "route": "NavigationRailScreen()",
     "group": "App Structure & Navigation",
     "file_name": "navigation_rail.dart"
   },
   {
-    "path": "navigation-toolbar",
+    "path": "/navigation-toolbar",
     "route": "NavigationToolbarScreen()",
     "group": "App Structure & Navigation",
     "file_name": "navigation_toolbar.dart"
   },
   {
-    "path": "navigator",
+    "path": "/navigator",
     "route": "NavigatorScreen()",
     "group": "App Structure & Navigation",
     "file_name": "navigator.dart"
   },
   {
-    "path": "page-route",
+    "path": "/page-route",
     "route": "PageRouteScreen()",
     "group": "App Structure & Navigation",
     "file_name": "page_route.dart"
   },
   {
-    "path": "page-route-builder",
+    "path": "/page-route-builder",
     "route": "PageRouteBuilderScreen()",
     "group": "App Structure & Navigation",
     "file_name": "page_route_builder.dart"
   },
   {
-    "path": "popup-menu-button",
+    "path": "/popup-menu-button",
     "route": "PopupMenuButtonScreen()",
     "group": "App Structure & Navigation",
     "file_name": "popup_menu_button.dart"
   },
   {
-    "path": "scaffold",
+    "path": "/scaffold",
     "route": "ScaffoldScreen()",
     "group": "App Structure & Navigation",
     "file_name": "scaffold.dart"
   },
   {
-    "path": "show-about-dialog",
+    "path": "/show-about-dialog",
     "route": "ShowAboutDialogScreen()",
     "group": "App Structure & Navigation",
     "file_name": "show_about_dialog.dart"
   },
   {
-    "path": "show-date-picker",
+    "path": "/show-date-picker",
     "route": "ShowDatePickerScreen()",
     "group": "App Structure & Navigation",
     "file_name": "show_date_picker.dart"
   },
   {
-    "path": "show-general-dialog",
+    "path": "/show-general-dialog",
     "route": "ShowGeneralDialogScreen()",
     "group": "App Structure & Navigation",
     "file_name": "show_general_dialog.dart"
   },
   {
-    "path": "show-license-page",
+    "path": "/show-license-page",
     "route": "ShowLicensePageScreen()",
     "group": "App Structure & Navigation",
     "file_name": "show_license_page.dart"
   },
   {
-    "path": "show-modal-bottom-sheet",
+    "path": "/show-modal-bottom-sheet",
     "route": "ShowModalBottomSheetScreen()",
     "group": "App Structure & Navigation",
     "file_name": "show_modal_bottom_sheet.dart"
   },
   {
-    "path": "show-search",
+    "path": "/show-search",
     "route": "ShowSearchScreen()",
     "group": "App Structure & Navigation",
     "file_name": "show_search.dart"
   },
   {
-    "path": "show-time-picker",
+    "path": "/show-time-picker",
     "route": "ShowTimePickerScreen()",
     "group": "App Structure & Navigation",
     "file_name": "show_time_picker.dart"
   },
   {
-    "path": "system-chrome",
+    "path": "/system-chrome",
     "route": "SystemChromeScreen()",
     "group": "App Structure & Navigation",
     "file_name": "system_chrome.dart"
   },
   {
-    "path": "tab-page-selector",
+    "path": "/tab-page-selector",
     "route": "TabPageSelectorScreen()",
     "group": "App Structure & Navigation",
     "file_name": "tab_page_selector.dart"
   },
   {
-    "path": "will-pop-scope",
+    "path": "/will-pop-scope",
     "route": "WillPopScopeScreen()",
     "group": "App Structure & Navigation",
     "file_name": "will_pop_scope.dart"
   },
   {
-    "path": "action-chip",
+    "path": "/action-chip",
     "route": "ActionChipScreen()",
     "group": "Input",
     "file_name": "action_chip.dart"
   },
   {
-    "path": "checkbox",
+    "path": "/checkbox",
     "route": "CheckboxScreen()",
     "group": "Input",
     "file_name": "checkbox.dart"
   },
   {
-    "path": "choice-chip",
+    "path": "/choice-chip",
     "route": "ChoiceChipScreen()",
     "group": "Input",
     "file_name": "choice_chip.dart"
   },
   {
-    "path": "cupertino-button",
+    "path": "/cupertino-button",
     "route": "CupertinoButtonScreen()",
     "group": "Input",
     "file_name": "cupertino_button.dart"
   },
   {
-    "path": "cupertino-check-box",
+    "path": "/cupertino-check-box",
     "route": "CupertinoCheckBoxScreen()",
     "group": "Input",
     "file_name": "cupertino_check_box.dart"
   },
   {
-    "path": "cupertino-context-menu",
+    "path": "/cupertino-context-menu",
     "route": "CupertinoContextMenuScreen()",
     "group": "Input",
     "file_name": "cupertino_context_menu.dart"
   },
   {
-    "path": "cupertino-search-text-field",
+    "path": "/cupertino-search-text-field",
     "route": "CupertinoSearchTextFieldScreen()",
     "group": "Input",
     "file_name": "cupertino_search_text_field.dart"
   },
   {
-    "path": "cupertino-segmented-control",
+    "path": "/cupertino-segmented-control",
     "route": "CupertinoSegmentedControlScreen()",
     "group": "Input",
     "file_name": "cupertino_segmented_control.dart"
   },
   {
-    "path": "cupertino-slider",
+    "path": "/cupertino-slider",
     "route": "CupertinoSliderScreen()",
     "group": "Input",
     "file_name": "cupertino_slider.dart"
   },
   {
-    "path": "cupertino-sliding-segmented-control",
+    "path": "/cupertino-sliding-segmented-control",
     "route": "CupertinoSlidingSegmentedControlScreen()",
     "group": "Input",
     "file_name": "cupertino_sliding_segmented_control.dart"
   },
   {
-    "path": "cupertino-switch",
+    "path": "/cupertino-switch",
     "route": "CupertinoSwitchScreen()",
     "group": "Input",
     "file_name": "cupertino_switch.dart"
   },
   {
-    "path": "cupertino-tab-bar",
+    "path": "/cupertino-tab-bar",
     "route": "CupertinoTabBarScreen()",
     "group": "Input",
     "file_name": "cupertino_tab_bar.dart"
   },
   {
-    "path": "cupertino-text-field",
+    "path": "/cupertino-text-field",
     "route": "CupertinoTextFieldScreen()",
     "group": "Input",
     "file_name": "cupertino_text_field.dart"
   },
   {
-    "path": "cupertino-text-form-field-row",
+    "path": "/cupertino-text-form-field-row",
     "route": "CupertinoTextFormFieldRowScreen()",
     "group": "Input",
     "file_name": "cupertino_text_form_field_row.dart"
   },
   {
-    "path": "date-picker",
+    "path": "/date-picker",
     "route": "DatePickerScreen()",
     "group": "Input",
     "file_name": "date_picker.dart"
   },
   {
-    "path": "dismissible",
+    "path": "/dismissible",
     "route": "DismissibleScreen()",
     "group": "Input",
     "file_name": "dismissible.dart"
   },
   {
-    "path": "dropdown-button",
+    "path": "/dropdown-button",
     "route": "DropdownButtonScreen()",
     "group": "Input",
     "file_name": "dropdown_button.dart"
   },
   {
-    "path": "elevated-button",
+    "path": "/elevated-button",
     "route": "ElevatedButtonScreen()",
     "group": "Input",
     "file_name": "elevated_button.dart"
   },
   {
-    "path": "expand-icon",
+    "path": "/expand-icon",
     "route": "ExpandIconScreen()",
     "group": "Input",
     "file_name": "expand_icon.dart"
   },
   {
-    "path": "filled-button",
+    "path": "/filled-button",
     "route": "FilledButtonScreen()",
     "group": "Input",
     "file_name": "filled_button.dart"
   },
   {
-    "path": "filter-chip",
+    "path": "/filter-chip",
     "route": "FilterChipScreen()",
     "group": "Input",
     "file_name": "filter_chip.dart"
   },
   {
-    "path": "gesture-binding",
+    "path": "/gesture-binding",
     "route": "GestureBindingScreen()",
     "group": "Input",
     "file_name": "gesture_binding.dart"
   },
   {
-    "path": "icon-button",
+    "path": "/icon-button",
     "route": "IconButtonScreen()",
     "group": "Input",
     "file_name": "icon_button.dart"
   },
   {
-    "path": "input-chip",
+    "path": "/input-chip",
     "route": "InputChipScreen()",
     "group": "Input",
     "file_name": "input_chip.dart"
   },
   {
-    "path": "listener",
+    "path": "/listener",
     "route": "ListenerScreen()",
     "group": "Input",
     "file_name": "listener.dart"
   },
   {
-    "path": "material-button",
+    "path": "/material-button",
     "route": "MaterialButtonScreen()",
     "group": "Input",
     "file_name": "material_button.dart"
   },
   {
-    "path": "outlined-button",
+    "path": "/outlined-button",
     "route": "OutlinedButtonScreen()",
     "group": "Input",
     "file_name": "outlined_button.dart"
   },
   {
-    "path": "radio",
+    "path": "/radio",
     "route": "RadioScreen()",
     "group": "Input",
     "file_name": "radio.dart"
   },
   {
-    "path": "range-slider",
+    "path": "/range-slider",
     "route": "RangeSliderScreen()",
     "group": "Input",
     "file_name": "range_slider.dart"
   },
   {
-    "path": "raw-autocomplete",
+    "path": "/raw-autocomplete",
     "route": "RawAutocompleteScreen()",
     "group": "Input",
     "file_name": "raw_autocomplete.dart"
   },
   {
-    "path": "raw-chip",
+    "path": "/raw-chip",
     "route": "RawChipScreen()",
     "group": "Input",
     "file_name": "raw_chip.dart"
   },
   {
-    "path": "raw-material-button",
+    "path": "/raw-material-button",
     "route": "RawMaterialButtonScreen()",
     "group": "Input",
     "file_name": "raw_material_button.dart"
   },
   {
-    "path": "search-bar",
+    "path": "/search-bar",
     "route": "SearchBarScreen()",
     "group": "Input",
     "file_name": "search_bar.dart"
   },
   {
-    "path": "segmented-button",
+    "path": "/segmented-button",
     "route": "SegmentedButtonScreen()",
     "group": "Input",
     "file_name": "segmented_button.dart"
   },
   {
-    "path": "slider",
+    "path": "/slider",
     "route": "SliderScreen()",
     "group": "Input",
     "file_name": "slider.dart"
   },
   {
-    "path": "switch",
+    "path": "/switch",
     "route": "SwitchScreen()",
     "group": "Input",
     "file_name": "switch.dart"
   },
   {
-    "path": "text-button",
+    "path": "/text-button",
     "route": "TextButtonScreen()",
     "group": "Input",
     "file_name": "text_button.dart"
   },
   {
-    "path": "text-field",
+    "path": "/text-field",
     "route": "TextFieldScreen()",
     "group": "Input",
     "file_name": "text_field.dart"
   },
   {
-    "path": "text-form-field",
+    "path": "/text-form-field",
     "route": "TextFormFieldScreen()",
     "group": "Input",
     "file_name": "text_form_field.dart"
   },
   {
-    "path": "time-picker",
+    "path": "/time-picker",
     "route": "TimePickerScreen()",
     "group": "Input",
     "file_name": "time_picker.dart"
   },
   {
-    "path": "toggle-buttons",
+    "path": "/toggle-buttons",
     "route": "ToggleButtonsScreen()",
     "group": "Input",
     "file_name": "toggle_buttons.dart"
   },
   {
-    "path": "align",
+    "path": "/align",
     "route": "AlignScreen()",
     "group": "Layout",
     "file_name": "align.dart"
   },
   {
-    "path": "aspect-ratio",
+    "path": "/aspect-ratio",
     "route": "AspectRatioScreen()",
     "group": "Layout",
     "file_name": "aspect_ratio.dart"
   },
   {
-    "path": "baseline",
+    "path": "/baseline",
     "route": "BaselineScreen()",
     "group": "Layout",
     "file_name": "baseline.dart"
   },
   {
-    "path": "button-bar",
+    "path": "/button-bar",
     "route": "ButtonBarScreen()",
     "group": "Layout",
     "file_name": "button_bar.dart"
   },
   {
-    "path": "center",
+    "path": "/center",
     "route": "CenterScreen()",
     "group": "Layout",
     "file_name": "center.dart"
   },
   {
-    "path": "colored-box",
+    "path": "/colored-box",
     "route": "ColoredBoxScreen()",
     "group": "Layout",
     "file_name": "colored_box.dart"
   },
   {
-    "path": "column",
+    "path": "/column",
     "route": "ColumnScreen()",
     "group": "Layout",
     "file_name": "column.dart"
   },
   {
-    "path": "row",
+    "path": "/row",
     "route": "RowScreen()",
     "group": "Layout",
     "file_name": "row.dart"
   },
   {
-    "path": "constrained-box",
+    "path": "/constrained-box",
     "route": "ConstrainedBoxScreen()",
     "group": "Layout",
     "file_name": "constrained_box.dart"
   },
   {
-    "path": "container",
+    "path": "/container",
     "route": "ContainerScreen()",
     "group": "Layout",
     "file_name": "container.dart"
   },
   {
-    "path": "custom-single-child-layout",
+    "path": "/custom-single-child-layout",
     "route": "CustomSingleChildLayoutScreen()",
     "group": "Layout",
     "file_name": "custom_single_child_layout.dart"
   },
   {
-    "path": "expanded",
+    "path": "/expanded",
     "route": "ExpandedScreen()",
     "group": "Layout",
     "file_name": "expanded.dart"
   },
   {
-    "path": "fitted-box",
+    "path": "/fitted-box",
     "route": "FittedBoxScreen()",
     "group": "Layout",
     "file_name": "fitted_box.dart"
   },
   {
-    "path": "flexible",
+    "path": "/flexible",
     "route": "FlexibleScreen()",
     "group": "Layout",
     "file_name": "flexible.dart"
   },
   {
-    "path": "flow",
+    "path": "/flow",
     "route": "FlowScreen()",
     "group": "Layout",
     "file_name": "flow.dart"
   },
   {
-    "path": "fractionally-sized-box",
+    "path": "/fractionally-sized-box",
     "route": "FractionallySizedBoxScreen()",
     "group": "Layout",
     "file_name": "fractionally_sized_box.dart"
   },
   {
-    "path": "grid-paper",
+    "path": "/grid-paper",
     "route": "GridPaperScreen()",
     "group": "Layout",
     "file_name": "grid_paper.dart"
   },
   {
-    "path": "grid-view",
+    "path": "/grid-view",
     "route": "GridViewScreen()",
     "group": "Layout",
     "file_name": "grid_view.dart"
   },
   {
-    "path": "indexed-stack",
+    "path": "/indexed-stack",
     "route": "IndexedStackScreen()",
     "group": "Layout",
     "file_name": "indexed_stack.dart"
   },
   {
-    "path": "intrinsic-height",
+    "path": "/intrinsic-height",
     "route": "IntrinsicHeightScreen()",
     "group": "Layout",
     "file_name": "intrinsic_height.dart"
   },
   {
-    "path": "intrinsic-width",
+    "path": "/intrinsic-width",
     "route": "IntrinsicWidthScreen()",
     "group": "Layout",
     "file_name": "intrinsic_width.dart"
   },
   {
-    "path": "layout-builder",
+    "path": "/layout-builder",
     "route": "LayoutBuilderScreen()",
     "group": "Layout",
     "file_name": "layout_builder.dart"
   },
   {
-    "path": "layout-id",
+    "path": "/layout-id",
     "route": "LayoutIdScreen()",
     "group": "Layout",
     "file_name": "layout_id.dart"
   },
   {
-    "path": "limited-box",
+    "path": "/limited-box",
     "route": "LimitedBoxScreen()",
     "group": "Layout",
     "file_name": "limited_box.dart"
   },
   {
-    "path": "list-body",
+    "path": "/list-body",
     "route": "ListBodyScreen()",
     "group": "Layout",
     "file_name": "list_body.dart"
   },
   {
-    "path": "list-view",
+    "path": "/list-view",
     "route": "ListViewScreen()",
     "group": "Layout",
     "file_name": "list_view.dart"
   },
   {
-    "path": "media-query",
+    "path": "/media-query",
     "route": "MediaQueryScreen()",
     "group": "Layout",
     "file_name": "media_query.dart"
   },
   {
-    "path": "multi-child-render-object-element",
+    "path": "/multi-child-render-object-element",
     "route": "MultiChildRenderObjectElementScreen()",
     "group": "Layout",
     "file_name": "multi_child_render_object_element.dart"
   },
   {
-    "path": "offstage",
+    "path": "/offstage",
     "route": "OffstageScreen()",
     "group": "Layout",
     "file_name": "offstage.dart"
   },
   {
-    "path": "overflow-bar",
+    "path": "/overflow-bar",
     "route": "OverflowBarScreen()",
     "group": "Layout",
     "file_name": "overflow_bar.dart"
   },
   {
-    "path": "overflow-box",
+    "path": "/overflow-box",
     "route": "OverflowBoxScreen()",
     "group": "Layout",
     "file_name": "overflow_box.dart"
   },
   {
-    "path": "padding",
+    "path": "/padding",
     "route": "PaddingScreen()",
     "group": "Layout",
     "file_name": "padding.dart"
   },
   {
-    "path": "placeholder",
+    "path": "/placeholder",
     "route": "PlaceholderScreen()",
     "group": "Layout",
     "file_name": "placeholder.dart"
   },
   {
-    "path": "positioned",
+    "path": "/positioned",
     "route": "PositionedScreen()",
     "group": "Layout",
     "file_name": "positioned.dart"
   },
   {
-    "path": "safe-area",
+    "path": "/safe-area",
     "route": "SafeAreaScreen()",
     "group": "Layout",
     "file_name": "safe_area.dart"
   },
   {
-    "path": "single-child-render-object-element",
+    "path": "/single-child-render-object-element",
     "route": "SingleChildRenderObjectElementScreen()",
     "group": "Layout",
     "file_name": "single_child_render_object_element.dart"
   },
   {
-    "path": "sized-box",
+    "path": "/sized-box",
     "route": "SizedBoxScreen()",
     "group": "Layout",
     "file_name": "sized_box.dart"
   },
   {
-    "path": "sized-overflow-box",
+    "path": "/sized-overflow-box",
     "route": "SizedOverflowBoxScreen()",
     "group": "Layout",
     "file_name": "sized_overflow_box.dart"
   },
   {
-    "path": "spacer",
+    "path": "/spacer",
     "route": "SpacerScreen()",
     "group": "Layout",
     "file_name": "spacer.dart"
   },
   {
-    "path": "stack",
+    "path": "/stack",
     "route": "StackScreen()",
     "group": "Layout",
     "file_name": "stack.dart"
   },
   {
-    "path": "table-cell",
+    "path": "/table-cell",
     "route": "TableCellScreen()",
     "group": "Layout",
     "file_name": "table_cell.dart"
   },
   {
-    "path": "table-row",
+    "path": "/table-row",
     "route": "TableRowScreen()",
     "group": "Layout",
     "file_name": "table_row.dart"
   },
   {
-    "path": "unconstrained-box",
+    "path": "/unconstrained-box",
     "route": "UnconstrainedBoxScreen()",
     "group": "Layout",
     "file_name": "unconstrained_box.dart"
   },
   {
-    "path": "visibility",
+    "path": "/visibility",
     "route": "VisibilityScreen()",
     "group": "Layout",
     "file_name": "visibility.dart"
   },
   {
-    "path": "wrap",
+    "path": "/wrap",
     "route": "WrapScreen()",
     "group": "Layout",
     "file_name": "wrap.dart"
   },
   {
-    "path": "always-scrollable-scroll-physics",
+    "path": "/always-scrollable-scroll-physics",
     "route": "AlwaysScrollableScrollPhysicsScreen()",
     "group": "Lists & Scrolling",
     "file_name": "always_scrollable_scroll_physics.dart"
   },
   {
-    "path": "bouncing-scroll-physics",
+    "path": "/bouncing-scroll-physics",
     "route": "BouncingScrollPhysicsScreen()",
     "group": "Lists & Scrolling",
     "file_name": "bouncing_scroll_physics.dart"
   },
   {
-    "path": "carousel-view",
+    "path": "/carousel-view",
     "route": "CarouselViewScreen()",
     "group": "Lists & Scrolling",
     "file_name": "carousel_view.dart"
   },
   {
-    "path": "clamping-scroll-physics",
+    "path": "/clamping-scroll-physics",
     "route": "ClampingScrollPhysicsScreen()",
     "group": "Lists & Scrolling",
     "file_name": "clamping_scroll_physics.dart"
   },
   {
-    "path": "cupertino-list-section",
+    "path": "/cupertino-list-section",
     "route": "CupertinoListSectionScreen()",
     "group": "Lists & Scrolling",
     "file_name": "cupertino_list_section.dart"
   },
   {
-    "path": "cupertino-list-tile",
+    "path": "/cupertino-list-tile",
     "route": "CupertinoListTileScreen()",
     "group": "Lists & Scrolling",
     "file_name": "cupertino_list_tile.dart"
   },
   {
-    "path": "cupertino-scrollbar",
+    "path": "/cupertino-scrollbar",
     "route": "CupertinoScrollbarScreen()",
     "group": "Lists & Scrolling",
     "file_name": "cupertino_scrollbar.dart"
   },
   {
-    "path": "cupertino-scroll-behavior",
+    "path": "/cupertino-scroll-behavior",
     "route": "CupertinoScrollBehaviorScreen()",
     "group": "Lists & Scrolling",
     "file_name": "cupertino_scroll_behavior.dart"
   },
   {
-    "path": "cupertino-sliver-navigation-bar",
+    "path": "/cupertino-sliver-navigation-bar",
     "route": "CupertinoSliverNavigationBarScreen()",
     "group": "Lists & Scrolling",
     "file_name": "cupertino_sliver_navigation_bar.dart"
   },
   {
-    "path": "cupertino-sliver-refresh-control",
+    "path": "/cupertino-sliver-refresh-control",
     "route": "CupertinoSliverRefreshControlScreen()",
     "group": "Lists & Scrolling",
     "file_name": "cupertino_sliver_refresh_control.dart"
   },
   {
-    "path": "custom-scroll-view",
+    "path": "/custom-scroll-view",
     "route": "CustomScrollViewScreen()",
     "group": "Lists & Scrolling",
     "file_name": "custom_scroll_view.dart"
   },
   {
-    "path": "draggable-scrollable-sheet",
+    "path": "/draggable-scrollable-sheet",
     "route": "DraggableScrollableSheetScreen()",
     "group": "Lists & Scrolling",
     "file_name": "draggable_scrollable_sheet.dart"
   },
   {
-    "path": "grid-view",
+    "path": "/grid-view",
     "route": "GridViewScreen()",
     "group": "Lists & Scrolling",
     "file_name": "grid_view.dart"
   },
   {
-    "path": "list-wheel-scroll-view",
+    "path": "/list-wheel-scroll-view",
     "route": "ListWheelScrollViewScreen()",
     "group": "Lists & Scrolling",
     "file_name": "list_wheel_scroll_view.dart"
   },
   {
-    "path": "list-view",
+    "path": "/list-view",
     "route": "ListViewScreen()",
     "group": "Lists & Scrolling",
     "file_name": "list_view.dart"
   },
   {
-    "path": "never-scrollable-scroll-physics",
+    "path": "/never-scrollable-scroll-physics",
     "route": "NeverScrollableScrollPhysicsScreen()",
     "group": "Lists & Scrolling",
     "file_name": "never_scrollable_scroll_physics.dart"
   },
   {
-    "path": "nested-scroll-view",
+    "path": "/nested-scroll-view",
     "route": "NestedScrollViewScreen()",
     "group": "Lists & Scrolling",
     "file_name": "nested_scroll_view.dart"
   },
   {
-    "path": "page-scroll-physics",
+    "path": "/page-scroll-physics",
     "route": "PageScrollPhysicsScreen()",
     "group": "Lists & Scrolling",
     "file_name": "page_scroll_physics.dart"
   },
   {
-    "path": "page-view",
+    "path": "/page-view",
     "route": "PageViewScreen()",
     "group": "Lists & Scrolling",
     "file_name": "page_view.dart"
   },
   {
-    "path": "reorderable-list-view",
+    "path": "/reorderable-list-view",
     "route": "ReorderableListViewScreen()",
     "group": "Lists & Scrolling",
     "file_name": "reorderable_list_view.dart"
   },
   {
-    "path": "scrollable",
+    "path": "/scrollable",
     "route": "ScrollableScreen()",
     "group": "Lists & Scrolling",
     "file_name": "scrollable.dart"
   },
   {
-    "path": "scroll-configuration",
+    "path": "/scroll-configuration",
     "route": "ScrollConfigurationScreen()",
     "group": "Lists & Scrolling",
     "file_name": "scroll_configuration.dart"
   },
   {
-    "path": "scroll-controller",
+    "path": "/scroll-controller",
     "route": "ScrollControllerScreen()",
     "group": "Lists & Scrolling",
     "file_name": "scroll_controller.dart"
   },
   {
-    "path": "scroll-physics",
+    "path": "/scroll-physics",
     "route": "ScrollPhysicsScreen()",
     "group": "Lists & Scrolling",
     "file_name": "scroll_physics.dart"
   },
   {
-    "path": "scrollbar",
+    "path": "/scrollbar",
     "route": "ScrollbarScreen()",
     "group": "Lists & Scrolling",
     "file_name": "scrollbar.dart"
   },
   {
-    "path": "single-child-scroll-view",
+    "path": "/single-child-scroll-view",
     "route": "SingleChildScrollViewScreen()",
     "group": "Lists & Scrolling",
     "file_name": "single_child_scroll_view.dart"
   },
   {
-    "path": "sliver-animated-grid",
+    "path": "/sliver-animated-grid",
     "route": "SliverAnimatedGridScreen()",
     "group": "Lists & Scrolling",
     "file_name": "sliver_animated_grid.dart"
   },
   {
-    "path": "sliver-animated-list",
+    "path": "/sliver-animated-list",
     "route": "SliverAnimatedListScreen()",
     "group": "Lists & Scrolling",
     "file_name": "sliver_animated_list.dart"
   },
   {
-    "path": "sliver-app-bar",
+    "path": "/sliver-app-bar",
     "route": "SliverAppBarScreen()",
     "group": "Lists & Scrolling",
     "file_name": "sliver_app_bar.dart"
   },
   {
-    "path": "sliver-fill-remaining",
+    "path": "/sliver-fill-remaining",
     "route": "SliverFillRemainingScreen()",
     "group": "Lists & Scrolling",
     "file_name": "sliver_fill_remaining.dart"
   },
   {
-    "path": "sliver-fill-viewport",
+    "path": "/sliver-fill-viewport",
     "route": "SliverFillViewportScreen()",
     "group": "Lists & Scrolling",
     "file_name": "sliver_fill_viewport.dart"
   },
   {
-    "path": "sliver-fixed-extent-list",
+    "path": "/sliver-fixed-extent-list",
     "route": "SliverFixedExtentListScreen()",
     "group": "Lists & Scrolling",
     "file_name": "sliver_fixed_extent_list.dart"
   },
   {
-    "path": "sliver-grid",
+    "path": "/sliver-grid",
     "route": "SliverGridScreen()",
     "group": "Lists & Scrolling",
     "file_name": "sliver_grid.dart"
   },
   {
-    "path": "sliver-list",
+    "path": "/sliver-list",
     "route": "SliverListScreen()",
     "group": "Lists & Scrolling",
     "file_name": "sliver_list.dart"
   },
   {
-    "path": "sliver-multi-box-adaptor-element",
+    "path": "/sliver-multi-box-adaptor-element",
     "route": "SliverMultiBoxAdaptorElementScreen()",
     "group": "Lists & Scrolling",
     "file_name": "sliver_multi_box_adaptor_element.dart"
   },
   {
-    "path": "sliver-opacity",
+    "path": "/sliver-opacity",
     "route": "SliverOpacityScreen()",
     "group": "Lists & Scrolling",
     "file_name": "sliver_opacity.dart"
   },
   {
-    "path": "sliver-padding",
+    "path": "/sliver-padding",
     "route": "SliverPaddingScreen()",
     "group": "Lists & Scrolling",
     "file_name": "sliver_padding.dart"
   },
   {
-    "path": "sliver-persistent-header",
+    "path": "/sliver-persistent-header",
     "route": "SliverPersistentHeaderScreen()",
     "group": "Lists & Scrolling",
     "file_name": "sliver_persistent_header.dart"
   },
   {
-    "path": "sliver-prototype-extent-list",
+    "path": "/sliver-prototype-extent-list",
     "route": "SliverPrototypeExtentListScreen()",
     "group": "Lists & Scrolling",
     "file_name": "sliver_prototype_extent_list.dart"
   },
   {
-    "path": "sliver-to-box-adapter",
+    "path": "/sliver-to-box-adapter",
     "route": "SliverToBoxAdapterScreen()",
     "group": "Lists & Scrolling",
     "file_name": "sliver_to_box_adapter.dart"
   },
   {
-    "path": "absorb-pointer",
+    "path": "/absorb-pointer",
     "route": "AbsorbPointerScreen()",
     "group": "Painting & Effects",
     "file_name": "absorb_pointer.dart"
   },
   {
-    "path": "backdrop-filter",
+    "path": "/backdrop-filter",
     "route": "BackdropFilterScreen()",
     "group": "Painting & Effects",
     "file_name": "backdrop_filter.dart"
   },
   {
-    "path": "blend-mode",
+    "path": "/blend-mode",
     "route": "BlendModeScreen()",
     "group": "Painting & Effects",
     "file_name": "blend_mode.dart"
   },
   {
-    "path": "clip-oval",
+    "path": "/clip-oval",
     "route": "ClipOvalScreen()",
     "group": "Painting & Effects",
     "file_name": "clip_oval.dart"
   },
   {
-    "path": "clip-path",
+    "path": "/clip-path",
     "route": "ClipPathScreen()",
     "group": "Painting & Effects",
     "file_name": "clip_path.dart"
   },
   {
-    "path": "clip-rect",
+    "path": "/clip-rect",
     "route": "ClipRectScreen()",
     "group": "Painting & Effects",
     "file_name": "clip_rect.dart"
   },
   {
-    "path": "clip-r-rect",
+    "path": "/clip-r-rect",
     "route": "ClipRRectScreen()",
     "group": "Painting & Effects",
     "file_name": "clip_r_rect.dart"
   },
   {
-    "path": "color-filtered",
+    "path": "/color-filtered",
     "route": "ColorFilteredScreen()",
     "group": "Painting & Effects",
     "file_name": "color_filtered.dart"
   },
   {
-    "path": "colored-box",
+    "path": "/colored-box",
     "route": "ColoredBoxScreen()",
     "group": "Painting & Effects",
     "file_name": "colored_box.dart"
   },
   {
-    "path": "custom-paint",
+    "path": "/custom-paint",
     "route": "CustomPaintScreen()",
     "group": "Painting & Effects",
     "file_name": "custom_paint.dart"
   },
   {
-    "path": "decorated-box",
+    "path": "/decorated-box",
     "route": "DecoratedBoxScreen()",
     "group": "Painting & Effects",
     "file_name": "decorated_box.dart"
   },
   {
-    "path": "exclude-semantics",
+    "path": "/exclude-semantics",
     "route": "ExcludeSemanticsScreen()",
     "group": "Painting & Effects",
     "file_name": "exclude_semantics.dart"
   },
   {
-    "path": "fractional-translation",
+    "path": "/fractional-translation",
     "route": "FractionalTranslationScreen()",
     "group": "Painting & Effects",
     "file_name": "fractional_translation.dart"
   },
   {
-    "path": "fade-in-image",
+    "path": "/fade-in-image",
     "route": "FadeInImageScreen()",
     "group": "Painting & Effects",
     "file_name": "fade_in_image.dart"
   },
   {
-    "path": "ignore-pointer",
+    "path": "/ignore-pointer",
     "route": "IgnorePointerScreen()",
     "group": "Painting & Effects",
     "file_name": "ignore_pointer.dart"
   },
   {
-    "path": "opacity",
+    "path": "/opacity",
     "route": "OpacityScreen()",
     "group": "Painting & Effects",
     "file_name": "opacity.dart"
   },
   {
-    "path": "physical-model",
+    "path": "/physical-model",
     "route": "PhysicalModelScreen()",
     "group": "Painting & Effects",
     "file_name": "physical_model.dart"
   },
   {
-    "path": "physical-shape",
+    "path": "/physical-shape",
     "route": "PhysicalShapeScreen()",
     "group": "Painting & Effects",
     "file_name": "physical_shape.dart"
   },
   {
-    "path": "repaint-boundary",
+    "path": "/repaint-boundary",
     "route": "RepaintBoundaryScreen()",
     "group": "Painting & Effects",
     "file_name": "repaint_boundary.dart"
   },
   {
-    "path": "rotated-box",
+    "path": "/rotated-box",
     "route": "RotatedBoxScreen()",
     "group": "Painting & Effects",
     "file_name": "rotated_box.dart"
   },
   {
-    "path": "shader",
+    "path": "/shader",
     "route": "ShaderScreen()",
     "group": "Painting & Effects",
     "file_name": "shader.dart"
   },
   {
-    "path": "shader-mask",
+    "path": "/shader-mask",
     "route": "ShaderMaskScreen()",
     "group": "Painting & Effects",
     "file_name": "shader_mask.dart"
   },
   {
-    "path": "transform",
+    "path": "/transform",
     "route": "TransformScreen()",
     "group": "Painting & Effects",
     "file_name": "transform.dart"
   },
   {
-    "path": "cupertino-action-sheet-action",
+    "path": "/cupertino-action-sheet-action",
     "route": "CupertinoActionSheetActionScreen()",
     "group": "Platform Integration",
     "file_name": "cupertino_action_sheet_action.dart"
   },
   {
-    "path": "cupertino-activity-indicator",
+    "path": "/cupertino-activity-indicator",
     "route": "CupertinoActivityIndicatorScreen()",
     "group": "Platform Integration",
     "file_name": "cupertino_activity_indicator.dart"
   },
   {
-    "path": "cupertino-adaptive-text-selection-toolbar",
+    "path": "/cupertino-adaptive-text-selection-toolbar",
     "route": "CupertinoAdaptiveTextSelectionToolbarScreen()",
     "group": "Platform Integration",
     "file_name": "cupertino_adaptive_text_selection_toolbar.dart"
   },
   {
-    "path": "cupertino-context-menu-action",
+    "path": "/cupertino-context-menu-action",
     "route": "CupertinoContextMenuActionScreen()",
     "group": "Platform Integration",
     "file_name": "cupertino_context_menu_action.dart"
   },
   {
-    "path": "cupertino-date-picker",
+    "path": "/cupertino-date-picker",
     "route": "CupertinoDatePickerScreen()",
     "group": "Platform Integration",
     "file_name": "cupertino_date_picker.dart"
   },
   {
-    "path": "cupertino-desktop-text-selection-controls",
+    "path": "/cupertino-desktop-text-selection-controls",
     "route": "CupertinoDesktopTextSelectionControlsScreen()",
     "group": "Platform Integration",
     "file_name": "cupertino_desktop_text_selection_controls.dart"
   },
   {
-    "path": "cupertino-desktop-text-selection-toolbar",
+    "path": "/cupertino-desktop-text-selection-toolbar",
     "route": "CupertinoDesktopTextSelectionToolbarScreen()",
     "group": "Platform Integration",
     "file_name": "cupertino_desktop_text_selection_toolbar.dart"
   },
   {
-    "path": "cupertino-desktop-text-selection-toolbar-button",
+    "path": "/cupertino-desktop-text-selection-toolbar-button",
     "route": "CupertinoDesktopTextSelectionToolbarButtonScreen()",
     "group": "Platform Integration",
     "file_name": "cupertino_desktop_text_selection_toolbar_button.dart"
   },
   {
-    "path": "cupertino-dialog-action",
+    "path": "/cupertino-dialog-action",
     "route": "CupertinoDialogActionScreen()",
     "group": "Platform Integration",
     "file_name": "cupertino_dialog_action.dart"
   },
   {
-    "path": "cupertino-dynamic-color",
+    "path": "/cupertino-dynamic-color",
     "route": "CupertinoDynamicColorScreen()",
     "group": "Platform Integration",
     "file_name": "cupertino_dynamic_color.dart"
   },
   {
-    "path": "cupertino-form-row",
+    "path": "/cupertino-form-row",
     "route": "CupertinoFormRowScreen()",
     "group": "Platform Integration",
     "file_name": "cupertino_form_row.dart"
   },
   {
-    "path": "cupertino-form-section",
+    "path": "/cupertino-form-section",
     "route": "CupertinoFormSectionScreen()",
     "group": "Platform Integration",
     "file_name": "cupertino_form_section.dart"
   },
   {
-    "path": "cupertino-localizations",
+    "path": "/cupertino-localizations",
     "route": "CupertinoLocalizationsScreen()",
     "group": "Platform Integration",
     "file_name": "cupertino_localizations.dart"
   },
   {
-    "path": "cupertino-modal-popup-route",
+    "path": "/cupertino-modal-popup-route",
     "route": "CupertinoModalPopupRouteScreen()",
     "group": "Platform Integration",
     "file_name": "cupertino_modal_popup_route.dart"
   },
   {
-    "path": "cupertino-page-transition",
+    "path": "/cupertino-page-transition",
     "route": "CupertinoPageTransitionScreen()",
     "group": "Platform Integration",
     "file_name": "cupertino_page_transition.dart"
   },
   {
-    "path": "cupertino-picker",
+    "path": "/cupertino-picker",
     "route": "CupertinoPickerScreen()",
     "group": "Platform Integration",
     "file_name": "cupertino_picker.dart"
   },
   {
-    "path": "cupertino-picker-default-selection-overlay",
+    "path": "/cupertino-picker-default-selection-overlay",
     "route": "CupertinoPickerDefaultSelectionOverlayScreen()",
     "group": "Platform Integration",
     "file_name": "cupertino_picker_default_selection_overlay.dart"
   },
   {
-    "path": "cupertino-popup-surface",
+    "path": "/cupertino-popup-surface",
     "route": "CupertinoPopupSurfaceScreen()",
     "group": "Platform Integration",
     "file_name": "cupertino_popup_surface.dart"
   },
   {
-    "path": "cupertino-radio",
+    "path": "/cupertino-radio",
     "route": "CupertinoRadioScreen()",
     "group": "Platform Integration",
     "file_name": "cupertino_radio.dart"
   },
   {
-    "path": "cupertino-scroll-behavior",
+    "path": "/cupertino-scroll-behavior",
     "route": "CupertinoScrollBehaviorScreen()",
     "group": "Platform Integration",
     "file_name": "cupertino_scroll_behavior.dart"
   },
   {
-    "path": "cupertino-sliver-navigation-bar",
+    "path": "/cupertino-sliver-navigation-bar",
     "route": "CupertinoSliverNavigationBarScreen()",
     "group": "Platform Integration",
     "file_name": "cupertino_sliver_navigation_bar.dart"
   },
   {
-    "path": "cupertino-sliver-refresh-control",
+    "path": "/cupertino-sliver-refresh-control",
     "route": "CupertinoSliverRefreshControlScreen()",
     "group": "Platform Integration",
     "file_name": "cupertino_sliver_refresh_control.dart"
   },
   {
-    "path": "cupertino-spell-check-suggestions-toolbar",
+    "path": "/cupertino-spell-check-suggestions-toolbar",
     "route": "CupertinoSpellCheckSuggestionsToolbarScreen()",
     "group": "Platform Integration",
     "file_name": "cupertino_spell_check_suggestions_toolbar.dart"
   },
   {
-    "path": "cupertino-text-magnifier",
+    "path": "/cupertino-text-magnifier",
     "route": "CupertinoTextMagnifierScreen()",
     "group": "Platform Integration",
     "file_name": "cupertino_text_magnifier.dart"
   },
   {
-    "path": "cupertino-text-selection-toolbar",
+    "path": "/cupertino-text-selection-toolbar",
     "route": "CupertinoTextSelectionToolbarScreen()",
     "group": "Platform Integration",
     "file_name": "cupertino_text_selection_toolbar.dart"
   },
   {
-    "path": "cupertino-text-selection-toolbar-button",
+    "path": "/cupertino-text-selection-toolbar-button",
     "route": "CupertinoTextSelectionToolbarButtonScreen()",
     "group": "Platform Integration",
     "file_name": "cupertino_text_selection_toolbar_button.dart"
   },
   {
-    "path": "cupertino-timer-picker",
+    "path": "/cupertino-timer-picker",
     "route": "CupertinoTimerPickerScreen()",
     "group": "Platform Integration",
     "file_name": "cupertino_timer_picker.dart"
   },
   {
-    "path": "cupertino-text-field",
+    "path": "/cupertino-text-field",
     "route": "CupertinoTextFieldScreen()",
     "group": "Platform Integration",
     "file_name": "cupertino_text_field.dart"
   },
   {
-    "path": "image-icon",
+    "path": "/image-icon",
     "route": "ImageIconScreen()",
     "group": "Platform Integration",
     "file_name": "image_icon.dart"
   },
   {
-    "path": "image-network",
+    "path": "/image-network",
     "route": "ImageNetworkScreen()",
     "group": "Platform Integration",
     "file_name": "image_network.dart"
   },
   {
-    "path": "ui-kit-view",
+    "path": "/ui-kit-view",
     "route": "UiKitViewScreen()",
     "group": "Platform Integration",
     "file_name": "ui_kit_view.dart"
   },
   {
-    "path": "animated-builder",
+    "path": "/animated-builder",
     "route": "AnimatedBuilderScreen()",
     "group": "State & Data Management",
     "file_name": "animated_builder.dart"
   },
   {
-    "path": "autocomplete",
+    "path": "/autocomplete",
     "route": "AutocompleteScreen()",
     "group": "State & Data Management",
     "file_name": "autocomplete.dart"
   },
   {
-    "path": "component-element",
+    "path": "/component-element",
     "route": "ComponentElementScreen()",
     "group": "State & Data Management",
     "file_name": "component_element.dart"
   },
   {
-    "path": "default-asset-bundle",
+    "path": "/default-asset-bundle",
     "route": "DefaultAssetBundleScreen()",
     "group": "State & Data Management",
     "file_name": "default_asset_bundle.dart"
   },
   {
-    "path": "form",
+    "path": "/form",
     "route": "FormScreen()",
     "group": "State & Data Management",
     "file_name": "form.dart"
   },
   {
-    "path": "form-field",
+    "path": "/form-field",
     "route": "FormFieldScreen()",
     "group": "State & Data Management",
     "file_name": "form_field.dart"
   },
   {
-    "path": "form-field-builder",
+    "path": "/form-field-builder",
     "route": "FormFieldBuilderScreen()",
     "group": "State & Data Management",
     "file_name": "form_field_builder.dart"
   },
   {
-    "path": "form-field-setter",
+    "path": "/form-field-setter",
     "route": "FormFieldSetterScreen()",
     "group": "State & Data Management",
     "file_name": "form_field_setter.dart"
   },
   {
-    "path": "form-field-validator",
+    "path": "/form-field-validator",
     "route": "FormFieldValidatorScreen()",
     "group": "State & Data Management",
     "file_name": "form_field_validator.dart"
   },
   {
-    "path": "future-builder",
+    "path": "/future-builder",
     "route": "FutureBuilderScreen()",
     "group": "State & Data Management",
     "file_name": "future_builder.dart"
   },
   {
-    "path": "inherited-element",
+    "path": "/inherited-element",
     "route": "InheritedElementScreen()",
     "group": "State & Data Management",
     "file_name": "inherited_element.dart"
   },
   {
-    "path": "inherited-widget",
+    "path": "/inherited-widget",
     "route": "InheritedWidgetScreen()",
     "group": "State & Data Management",
     "file_name": "inherited_widget.dart"
   },
   {
-    "path": "stream-builder",
+    "path": "/stream-builder",
     "route": "StreamBuilderScreen()",
     "group": "State & Data Management",
     "file_name": "stream_builder.dart"
   },
   {
-    "path": "value-listenable-builder",
+    "path": "/value-listenable-builder",
     "route": "ValueListenableBuilderScreen()",
     "group": "State & Data Management",
     "file_name": "value_listenable_builder.dart"
   },
   {
-    "path": "button-style",
+    "path": "/button-style",
     "route": "ButtonStyleScreen()",
     "group": "Styling & Theming",
     "file_name": "button_style.dart"
   },
   {
-    "path": "card-theme",
+    "path": "/card-theme",
     "route": "CardThemeScreen()",
     "group": "Styling & Theming",
     "file_name": "card_theme.dart"
   },
   {
-    "path": "checkbox-theme-data",
+    "path": "/checkbox-theme-data",
     "route": "CheckboxThemeDataScreen()",
     "group": "Styling & Theming",
     "file_name": "checkbox_theme_data.dart"
   },
   {
-    "path": "chip-theme-data",
+    "path": "/chip-theme-data",
     "route": "ChipThemeDataScreen()",
     "group": "Styling & Theming",
     "file_name": "chip_theme_data.dart"
   },
   {
-    "path": "color-scheme",
+    "path": "/color-scheme",
     "route": "ColorSchemeScreen()",
     "group": "Styling & Theming",
     "file_name": "color_scheme.dart"
   },
   {
-    "path": "cupertino-colors",
+    "path": "/cupertino-colors",
     "route": "CupertinoColorsScreen()",
     "group": "Styling & Theming",
     "file_name": "cupertino_colors.dart"
   },
   {
-    "path": "cupertino-text-theme-data",
+    "path": "/cupertino-text-theme-data",
     "route": "CupertinoTextThemeDataScreen()",
     "group": "Styling & Theming",
     "file_name": "cupertino_text_theme_data.dart"
   },
   {
-    "path": "cupertino-theme",
+    "path": "/cupertino-theme",
     "route": "CupertinoThemeScreen()",
     "group": "Styling & Theming",
     "file_name": "cupertino_theme.dart"
   },
   {
-    "path": "cupertino-theme-data",
+    "path": "/cupertino-theme-data",
     "route": "CupertinoThemeDataScreen()",
     "group": "Styling & Theming",
     "file_name": "cupertino_theme_data.dart"
   },
   {
-    "path": "date-picker-theme",
+    "path": "/date-picker-theme",
     "route": "DatePickerThemeScreen()",
     "group": "Styling & Theming",
     "file_name": "date_picker_theme.dart"
   },
   {
-    "path": "default-text-style",
+    "path": "/default-text-style",
     "route": "DefaultTextStyleScreen()",
     "group": "Styling & Theming",
     "file_name": "default_text_style.dart"
   },
   {
-    "path": "divider-theme",
+    "path": "/divider-theme",
     "route": "DividerThemeScreen()",
     "group": "Styling & Theming",
     "file_name": "divider_theme.dart"
   },
   {
-    "path": "drawer-theme",
+    "path": "/drawer-theme",
     "route": "DrawerThemeScreen()",
     "group": "Styling & Theming",
     "file_name": "drawer_theme.dart"
   },
   {
-    "path": "elevated-button-theme-data",
+    "path": "/elevated-button-theme-data",
     "route": "ElevatedButtonThemeDataScreen()",
     "group": "Styling & Theming",
     "file_name": "elevated_button_theme_data.dart"
   },
   {
-    "path": "floating-action-button-theme-data",
+    "path": "/floating-action-button-theme-data",
     "route": "FloatingActionButtonThemeDataScreen()",
     "group": "Styling & Theming",
     "file_name": "floating_action_button_theme_data.dart"
   },
   {
-    "path": "icon-theme",
+    "path": "/icon-theme",
     "route": "IconThemeScreen()",
     "group": "Styling & Theming",
     "file_name": "icon_theme.dart"
   },
   {
-    "path": "input-decorator",
+    "path": "/input-decorator",
     "route": "InputDecoratorScreen()",
     "group": "Styling & Theming",
     "file_name": "input_decorator.dart"
   },
   {
-    "path": "material-banner-theme-data",
+    "path": "/material-banner-theme-data",
     "route": "MaterialBannerThemeDataScreen()",
     "group": "Styling & Theming",
     "file_name": "material_banner_theme_data.dart"
   },
   {
-    "path": "navigation-bar-theme",
+    "path": "/navigation-bar-theme",
     "route": "NavigationBarThemeScreen()",
     "group": "Styling & Theming",
     "file_name": "navigation_bar_theme.dart"
   },
   {
-    "path": "outlined-button-theme-data",
+    "path": "/outlined-button-theme-data",
     "route": "OutlinedButtonThemeDataScreen()",
     "group": "Styling & Theming",
     "file_name": "outlined_button_theme_data.dart"
   },
   {
-    "path": "popup-menu-theme-data",
+    "path": "/popup-menu-theme-data",
     "route": "PopupMenuThemeDataScreen()",
     "group": "Styling & Theming",
     "file_name": "popup_menu_theme_data.dart"
   },
   {
-    "path": "progress-indicator-theme-data",
+    "path": "/progress-indicator-theme-data",
     "route": "ProgressIndicatorThemeDataScreen()",
     "group": "Styling & Theming",
     "file_name": "progress_indicator_theme_data.dart"
   },
   {
-    "path": "radio-theme-data",
+    "path": "/radio-theme-data",
     "route": "RadioThemeDataScreen()",
     "group": "Styling & Theming",
     "file_name": "radio_theme_data.dart"
   },
   {
-    "path": "range-slider-track-shape",
+    "path": "/range-slider-track-shape",
     "route": "RangeSliderTrackShapeScreen()",
     "group": "Styling & Theming",
     "file_name": "range_slider_track_shape.dart"
   },
   {
-    "path": "scrollbar-theme-data",
+    "path": "/scrollbar-theme-data",
     "route": "ScrollbarThemeDataScreen()",
     "group": "Styling & Theming",
     "file_name": "scrollbar_theme_data.dart"
   },
   {
-    "path": "slider-theme",
+    "path": "/slider-theme",
     "route": "SliderThemeScreen()",
     "group": "Styling & Theming",
     "file_name": "slider_theme.dart"
   },
   {
-    "path": "tab-bar-theme",
+    "path": "/tab-bar-theme",
     "route": "TabBarThemeScreen()",
     "group": "Styling & Theming",
     "file_name": "tab_bar_theme.dart"
   },
   {
-    "path": "text-button-theme-data",
+    "path": "/text-button-theme-data",
     "route": "TextButtonThemeDataScreen()",
     "group": "Styling & Theming",
     "file_name": "text_button_theme_data.dart"
   },
   {
-    "path": "text-selection-theme-data",
+    "path": "/text-selection-theme-data",
     "route": "TextSelectionThemeDataScreen()",
     "group": "Styling & Theming",
     "file_name": "text_selection_theme_data.dart"
   },
   {
-    "path": "text-theme",
+    "path": "/text-theme",
     "route": "TextThemeScreen()",
     "group": "Styling & Theming",
     "file_name": "text_theme.dart"
   },
   {
-    "path": "tooltip-theme",
+    "path": "/tooltip-theme",
     "route": "TooltipThemeScreen()",
     "group": "Styling & Theming",
     "file_name": "tooltip_theme.dart"
   },
   {
-    "path": "underline-tab-indicator",
+    "path": "/underline-tab-indicator",
     "route": "UnderlineTabIndicatorScreen()",
     "group": "Styling & Theming",
     "file_name": "underline_tab_indicator.dart"
   },
   {
-    "path": "cupertino-text-field",
+    "path": "/cupertino-text-field",
     "route": "CupertinoTextFieldScreen()",
     "group": "Text & Typography",
     "file_name": "cupertino_text_field.dart"
   },
   {
-    "path": "cupertino-text-form-field-row",
+    "path": "/cupertino-text-form-field-row",
     "route": "CupertinoTextFormFieldRowScreen()",
     "group": "Text & Typography",
     "file_name": "cupertino_text_form_field_row.dart"
   },
   {
-    "path": "cupertino-text-selection-toolbar",
+    "path": "/cupertino-text-selection-toolbar",
     "route": "CupertinoTextSelectionToolbarScreen()",
     "group": "Text & Typography",
     "file_name": "cupertino_text_selection_toolbar.dart"
   },
   {
-    "path": "cupertino-text-selection-toolbar-button",
+    "path": "/cupertino-text-selection-toolbar-button",
     "route": "CupertinoTextSelectionToolbarButtonScreen()",
     "group": "Text & Typography",
     "file_name": "cupertino_text_selection_toolbar_button.dart"
   },
   {
-    "path": "default-text-style",
+    "path": "/default-text-style",
     "route": "DefaultTextStyleScreen()",
     "group": "Text & Typography",
     "file_name": "default_text_style.dart"
   },
   {
-    "path": "placeholder-span",
+    "path": "/placeholder-span",
     "route": "PlaceholderSpanScreen()",
     "group": "Text & Typography",
     "file_name": "placeholder_span.dart"
   },
   {
-    "path": "rich-text",
+    "path": "/rich-text",
     "route": "RichTextScreen()",
     "group": "Text & Typography",
     "file_name": "rich_text.dart"
   },
   {
-    "path": "selectable-text",
+    "path": "/selectable-text",
     "route": "SelectableTextScreen()",
     "group": "Text & Typography",
     "file_name": "selectable_text.dart"
   },
   {
-    "path": "text",
+    "path": "/text",
     "route": "TextScreen()",
     "group": "Text & Typography",
     "file_name": "text.dart"
   },
   {
-    "path": "text-align",
+    "path": "/text-align",
     "route": "TextAlignScreen()",
     "group": "Text & Typography",
     "file_name": "text_align.dart"
   },
   {
-    "path": "text-form-field",
+    "path": "/text-form-field",
     "route": "TextFormFieldScreen()",
     "group": "Text & Typography",
     "file_name": "text_form_field.dart"
   },
   {
-    "path": "text-overflow",
+    "path": "/text-overflow",
     "route": "TextOverflowScreen()",
     "group": "Text & Typography",
     "file_name": "text_overflow.dart"
   },
   {
-    "path": "text-span",
+    "path": "/text-span",
     "route": "TextSpanScreen()",
     "group": "Text & Typography",
     "file_name": "text_span.dart"
   },
   {
-    "path": "text-style",
+    "path": "/text-style",
     "route": "TextStyleScreen()",
     "group": "Text & Typography",
     "file_name": "text_style.dart"
   },
   {
-    "path": "text-field",
+    "path": "/text-field",
     "route": "TextFieldScreen()",
     "group": "Text & Typography",
     "file_name": "text_field.dart"
   },
   {
-    "path": "underline-tab-indicator",
+    "path": "/underline-tab-indicator",
     "route": "UnderlineTabIndicatorScreen()",
     "group": "Text & Typography",
     "file_name": "underline_tab_indicator.dart"
   },
   {
-    "path": "widget-span",
+    "path": "/widget-span",
     "route": "WidgetSpanScreen()",
     "group": "Text & Typography",
     "file_name": "widget_span.dart"
   },
   {
-    "path": "annotated-region",
+    "path": "/annotated-region",
     "route": "AnnotatedRegionScreen()",
     "group": "Utilities & Helpers",
     "file_name": "annotated_region.dart"
   },
   {
-    "path": "asset-bundle",
+    "path": "/asset-bundle",
     "route": "AssetBundleScreen()",
     "group": "Utilities & Helpers",
     "file_name": "asset_bundle.dart"
   },
   {
-    "path": "automatic-keep-alive-client-mixin",
+    "path": "/automatic-keep-alive-client-mixin",
     "route": "AutomaticKeepAliveClientMixinScreen()",
     "group": "Utilities & Helpers",
     "file_name": "automatic_keep_alive_client_mixin.dart"
   },
   {
-    "path": "builder",
+    "path": "/builder",
     "route": "BuilderScreen()",
     "group": "Utilities & Helpers",
     "file_name": "builder.dart"
   },
   {
-    "path": "default-asset-bundle",
+    "path": "/default-asset-bundle",
     "route": "DefaultAssetBundleScreen()",
     "group": "Utilities & Helpers",
     "file_name": "default_asset_bundle.dart"
   },
   {
-    "path": "default-material-localizations",
+    "path": "/default-material-localizations",
     "route": "DefaultMaterialLocalizationsScreen()",
     "group": "Utilities & Helpers",
     "file_name": "default_material_localizations.dart"
   },
   {
-    "path": "default-widgets-localizations",
+    "path": "/default-widgets-localizations",
     "route": "DefaultWidgetsLocalizationsScreen()",
     "group": "Utilities & Helpers",
     "file_name": "default_widgets_localizations.dart"
   },
   {
-    "path": "directionality",
+    "path": "/directionality",
     "route": "DirectionalityScreen()",
     "group": "Utilities & Helpers",
     "file_name": "directionality.dart"
   },
   {
-    "path": "drag-target",
+    "path": "/drag-target",
     "route": "DragTargetScreen()",
     "group": "Utilities & Helpers",
     "file_name": "drag_target.dart"
   },
   {
-    "path": "draggable",
+    "path": "/draggable",
     "route": "DraggableScreen()",
     "group": "Utilities & Helpers",
     "file_name": "draggable.dart"
   },
   {
-    "path": "error-widget",
+    "path": "/error-widget",
     "route": "ErrorWidgetScreen()",
     "group": "Utilities & Helpers",
     "file_name": "error_widget.dart"
   },
   {
-    "path": "export",
+    "path": "/export",
     "route": "ExportScreen()",
     "group": "Utilities & Helpers",
     "file_name": "export.dart"
   },
   {
-    "path": "extended-floating-action-button",
+    "path": "/extended-floating-action-button",
     "route": "ExtendedFloatingActionButtonScreen()",
     "group": "Utilities & Helpers",
     "file_name": "extended_floating_action_button.dart"
   },
   {
-    "path": "flutter-error-details",
+    "path": "/flutter-error-details",
     "route": "FlutterErrorDetailsScreen()",
     "group": "Utilities & Helpers",
     "file_name": "flutter_error_details.dart"
   },
   {
-    "path": "flutter-logo",
+    "path": "/flutter-logo",
     "route": "FlutterLogoScreen()",
     "group": "Utilities & Helpers",
     "file_name": "flutter_logo.dart"
   },
   {
-    "path": "focus",
+    "path": "/focus",
     "route": "FocusScreen()",
     "group": "Utilities & Helpers",
     "file_name": "focus.dart"
   },
   {
-    "path": "focus-traversal-group",
+    "path": "/focus-traversal-group",
     "route": "FocusTraversalGroupScreen()",
     "group": "Utilities & Helpers",
     "file_name": "focus_traversal_group.dart"
   },
   {
-    "path": "focus-traversal-order",
+    "path": "/focus-traversal-order",
     "route": "FocusTraversalOrderScreen()",
     "group": "Utilities & Helpers",
     "file_name": "focus_traversal_order.dart"
   },
   {
-    "path": "gesture-detector",
+    "path": "/gesture-detector",
     "route": "GestureDetectorScreen()",
     "group": "Utilities & Helpers",
     "file_name": "gesture_detector.dart"
   },
   {
-    "path": "hero",
+    "path": "/hero",
     "route": "HeroScreen()",
     "group": "Utilities & Helpers",
     "file_name": "hero.dart"
   },
   {
-    "path": "ignore-pointer",
+    "path": "/ignore-pointer",
     "route": "IgnorePointerScreen()",
     "group": "Utilities & Helpers",
     "file_name": "ignore_pointer.dart"
   },
   {
-    "path": "implicitly-animated-widget",
+    "path": "/implicitly-animated-widget",
     "route": "ImplicitlyAnimatedWidgetScreen()",
     "group": "Utilities & Helpers",
     "file_name": "implicitly_animated_widget.dart"
   },
   {
-    "path": "ink-well",
+    "path": "/ink-well",
     "route": "InkWellScreen()",
     "group": "Utilities & Helpers",
     "file_name": "ink_well.dart"
   },
   {
-    "path": "interactive-viewer",
+    "path": "/interactive-viewer",
     "route": "InteractiveViewerScreen()",
     "group": "Utilities & Helpers",
     "file_name": "interactive_viewer.dart"
   },
   {
-    "path": "keyed-subtree",
+    "path": "/keyed-subtree",
     "route": "KeyedSubtreeScreen()",
     "group": "Utilities & Helpers",
     "file_name": "keyed_subtree.dart"
   },
   {
-    "path": "keyboard-listener",
+    "path": "/keyboard-listener",
     "route": "KeyboardListenerScreen()",
     "group": "Utilities & Helpers",
     "file_name": "keyboard_listener.dart"
   },
   {
-    "path": "leaf-render-object-widget",
+    "path": "/leaf-render-object-widget",
     "route": "LeafRenderObjectWidgetScreen()",
     "group": "Utilities & Helpers",
     "file_name": "leaf_render_object_widget.dart"
   },
   {
-    "path": "locale-list-resolution-callback",
+    "path": "/locale-list-resolution-callback",
     "route": "LocaleListResolutionCallbackScreen()",
     "group": "Utilities & Helpers",
     "file_name": "locale_list_resolution_callback.dart"
   },
   {
-    "path": "locale-resolution-callback",
+    "path": "/locale-resolution-callback",
     "route": "LocaleResolutionCallbackScreen()",
     "group": "Utilities & Helpers",
     "file_name": "locale_resolution_callback.dart"
   },
   {
-    "path": "localizations",
+    "path": "/localizations",
     "route": "LocalizationsScreen()",
     "group": "Utilities & Helpers",
     "file_name": "localizations.dart"
   },
   {
-    "path": "localizations-delegate",
+    "path": "/localizations-delegate",
     "route": "LocalizationsDelegateScreen()",
     "group": "Utilities & Helpers",
     "file_name": "localizations_delegate.dart"
   },
   {
-    "path": "long-press-draggable",
+    "path": "/long-press-draggable",
     "route": "LongPressDraggableScreen()",
     "group": "Utilities & Helpers",
     "file_name": "long_press_draggable.dart"
   },
   {
-    "path": "mouse-cursor",
+    "path": "/mouse-cursor",
     "route": "MouseCursorScreen()",
     "group": "Utilities & Helpers",
     "file_name": "mouse_cursor.dart"
   },
   {
-    "path": "mouse-region",
+    "path": "/mouse-region",
     "route": "MouseRegionScreen()",
     "group": "Utilities & Helpers",
     "file_name": "mouse_region.dart"
   },
   {
-    "path": "notification-listener",
+    "path": "/notification-listener",
     "route": "NotificationListenerScreen()",
     "group": "Utilities & Helpers",
     "file_name": "notification_listener.dart"
   },
   {
-    "path": "overlay",
+    "path": "/overlay",
     "route": "OverlayScreen()",
     "group": "Utilities & Helpers",
     "file_name": "overlay.dart"
   },
   {
-    "path": "overlay-entry",
+    "path": "/overlay-entry",
     "route": "OverlayEntryScreen()",
     "group": "Utilities & Helpers",
     "file_name": "overlay_entry.dart"
   },
   {
-    "path": "platform-menu",
+    "path": "/platform-menu",
     "route": "PlatformMenuScreen()",
     "group": "Utilities & Helpers",
     "file_name": "platform_menu.dart"
   },
   {
-    "path": "preferred-size",
+    "path": "/preferred-size",
     "route": "PreferredSizeScreen()",
     "group": "Utilities & Helpers",
     "file_name": "preferred_size.dart"
   },
   {
-    "path": "progress-indicator-theme-data",
+    "path": "/progress-indicator-theme-data",
     "route": "ProgressIndicatorThemeDataScreen()",
     "group": "Utilities & Helpers",
     "file_name": "progress_indicator_theme_data.dart"
   },
   {
-    "path": "refresh-indicator",
+    "path": "/refresh-indicator",
     "route": "RefreshIndicatorScreen()",
     "group": "Utilities & Helpers",
     "file_name": "refresh_indicator.dart"
   },
   {
-    "path": "render-absorb-pointer",
+    "path": "/render-absorb-pointer",
     "route": "RenderAbsorbPointerScreen()",
     "group": "Utilities & Helpers",
     "file_name": "render_absorb_pointer.dart"
   },
   {
-    "path": "render-android-view",
+    "path": "/render-android-view",
     "route": "RenderAndroidViewScreen()",
     "group": "Utilities & Helpers",
     "file_name": "render_android_view.dart"
   },
   {
-    "path": "render-annotated-region",
+    "path": "/render-annotated-region",
     "route": "RenderAnnotatedRegionScreen()",
     "group": "Utilities & Helpers",
     "file_name": "render_annotated_region.dart"
   },
   {
-    "path": "render-backdrop-filter",
+    "path": "/render-backdrop-filter",
     "route": "RenderBackdropFilterScreen()",
     "group": "Utilities & Helpers",
     "file_name": "render_backdrop_filter.dart"
   },
   {
-    "path": "render-box",
+    "path": "/render-box",
     "route": "RenderBoxScreen()",
     "group": "Utilities & Helpers",
     "file_name": "render_box.dart"
   },
   {
-    "path": "render-clip-oval",
+    "path": "/render-clip-oval",
     "route": "RenderClipOvalScreen()",
     "group": "Utilities & Helpers",
     "file_name": "render_clip_oval.dart"
   },
   {
-    "path": "render-clip-path",
+    "path": "/render-clip-path",
     "route": "RenderClipPathScreen()",
     "group": "Utilities & Helpers",
     "file_name": "render_clip_path.dart"
   },
   {
-    "path": "render-clip-rect",
+    "path": "/render-clip-rect",
     "route": "RenderClipRectScreen()",
     "group": "Utilities & Helpers",
     "file_name": "render_clip_rect.dart"
   },
   {
-    "path": "render-clip-r-rect",
+    "path": "/render-clip-r-rect",
     "route": "RenderClipRRectScreen()",
     "group": "Utilities & Helpers",
     "file_name": "render_clip_r_rect.dart"
   },
   {
-    "path": "render-color-filtered",
+    "path": "/render-color-filtered",
     "route": "RenderColorFilteredScreen()",
     "group": "Utilities & Helpers",
     "file_name": "render_color_filtered.dart"
   },
   {
-    "path": "render-constrained-box",
+    "path": "/render-constrained-box",
     "route": "RenderConstrainedBoxScreen()",
     "group": "Utilities & Helpers",
     "file_name": "render_constrained_box.dart"
   },
   {
-    "path": "render-custom-paint",
+    "path": "/render-custom-paint",
     "route": "RenderCustomPaintScreen()",
     "group": "Utilities & Helpers",
     "file_name": "render_custom_paint.dart"
   },
   {
-    "path": "render-decorated-box",
+    "path": "/render-decorated-box",
     "route": "RenderDecoratedBoxScreen()",
     "group": "Utilities & Helpers",
     "file_name": "render_decorated_box.dart"
   },
   {
-    "path": "render-flex",
+    "path": "/render-flex",
     "route": "RenderFlexScreen()",
     "group": "Utilities & Helpers",
     "file_name": "render_flex.dart"
   },
   {
-    "path": "render-ignore-pointer",
+    "path": "/render-ignore-pointer",
     "route": "RenderIgnorePointerScreen()",
     "group": "Utilities & Helpers",
     "file_name": "render_ignore_pointer.dart"
   },
   {
-    "path": "render-indexed-semantics",
+    "path": "/render-indexed-semantics",
     "route": "RenderIndexedSemanticsScreen()",
     "group": "Utilities & Helpers",
     "file_name": "render_indexed_semantics.dart"
   },
   {
-    "path": "render-object",
+    "path": "/render-object",
     "route": "RenderObjectScreen()",
     "group": "Utilities & Helpers",
     "file_name": "render_object.dart"
   },
   {
-    "path": "render-object-element",
+    "path": "/render-object-element",
     "route": "RenderObjectElementScreen()",
     "group": "Utilities & Helpers",
     "file_name": "render_object_element.dart"
   },
   {
-    "path": "render-paragraph",
+    "path": "/render-paragraph",
     "route": "RenderParagraphScreen()",
     "group": "Utilities & Helpers",
     "file_name": "render_paragraph.dart"
   },
   {
-    "path": "render-platform-view",
+    "path": "/render-platform-view",
     "route": "RenderPlatformViewScreen()",
     "group": "Utilities & Helpers",
     "file_name": "render_platform_view.dart"
   },
   {
-    "path": "render-positioned-box",
+    "path": "/render-positioned-box",
     "route": "RenderPositionedBoxScreen()",
     "group": "Utilities & Helpers",
     "file_name": "render_positioned_box.dart"
   },
   {
-    "path": "render-proxy-box",
+    "path": "/render-proxy-box",
     "route": "RenderProxyBoxScreen()",
     "group": "Utilities & Helpers",
     "file_name": "render_proxy_box.dart"
   },
   {
-    "path": "render-shader-mask",
+    "path": "/render-shader-mask",
     "route": "RenderShaderMaskScreen()",
     "group": "Utilities & Helpers",
     "file_name": "render_shader_mask.dart"
   },
   {
-    "path": "render-shifted-box",
+    "path": "/render-shifted-box",
     "route": "RenderShiftedBoxScreen()",
     "group": "Utilities & Helpers",
     "file_name": "render_shifted_box.dart"
   },
   {
-    "path": "render-sized-box",
+    "path": "/render-sized-box",
     "route": "RenderSizedBoxScreen()",
     "group": "Utilities & Helpers",
     "file_name": "render_sized_box.dart"
   },
   {
-    "path": "render-sliver-fill-remaining",
+    "path": "/render-sliver-fill-remaining",
     "route": "RenderSliverFillRemainingScreen()",
     "group": "Utilities & Helpers",
     "file_name": "render_sliver_fill_remaining.dart"
   },
   {
-    "path": "render-sliver-grid",
+    "path": "/render-sliver-grid",
     "route": "RenderSliverGridScreen()",
     "group": "Utilities & Helpers",
     "file_name": "render_sliver_grid.dart"
   },
   {
-    "path": "render-sliver-list",
+    "path": "/render-sliver-list",
     "route": "RenderSliverListScreen()",
     "group": "Utilities & Helpers",
     "file_name": "render_sliver_list.dart"
   },
   {
-    "path": "render-sliver-padding",
+    "path": "/render-sliver-padding",
     "route": "RenderSliverPaddingScreen()",
     "group": "Utilities & Helpers",
     "file_name": "render_sliver_padding.dart"
   },
   {
-    "path": "render-stack",
+    "path": "/render-stack",
     "route": "RenderStackScreen()",
     "group": "Utilities & Helpers",
     "file_name": "render_stack.dart"
   },
   {
-    "path": "render-ui-kit-view",
+    "path": "/render-ui-kit-view",
     "route": "RenderUiKitViewScreen()",
     "group": "Utilities & Helpers",
     "file_name": "render_ui_kit_view.dart"
   },
   {
-    "path": "render-view",
+    "path": "/render-view",
     "route": "RenderViewScreen()",
     "group": "Utilities & Helpers",
     "file_name": "render_view.dart"
   },
   {
-    "path": "render-viewport",
+    "path": "/render-viewport",
     "route": "RenderViewportScreen()",
     "group": "Utilities & Helpers",
     "file_name": "render_viewport.dart"
   },
   {
-    "path": "scheduler-binding",
+    "path": "/scheduler-binding",
     "route": "SchedulerBindingScreen()",
     "group": "Utilities & Helpers",
     "file_name": "scheduler_binding.dart"
   },
   {
-    "path": "scroll-controller",
+    "path": "/scroll-controller",
     "route": "ScrollControllerScreen()",
     "group": "Utilities & Helpers",
     "file_name": "scroll_controller.dart"
   },
   {
-    "path": "scroll-physics",
+    "path": "/scroll-physics",
     "route": "ScrollPhysicsScreen()",
     "group": "Utilities & Helpers",
     "file_name": "scroll_physics.dart"
   },
   {
-    "path": "semantics",
+    "path": "/semantics",
     "route": "SemanticsScreen()",
     "group": "Utilities & Helpers",
     "file_name": "semantics.dart"
   },
   {
-    "path": "semantics-binding",
+    "path": "/semantics-binding",
     "route": "SemanticsBindingScreen()",
     "group": "Utilities & Helpers",
     "file_name": "semantics_binding.dart"
   },
   {
-    "path": "services-binding",
+    "path": "/services-binding",
     "route": "ServicesBindingScreen()",
     "group": "Utilities & Helpers",
     "file_name": "services_binding.dart"
   },
   {
-    "path": "shortcuts",
+    "path": "/shortcuts",
     "route": "ShortcutsScreen()",
     "group": "Utilities & Helpers",
     "file_name": "shortcuts.dart"
   },
   {
-    "path": "sliver-child-builder-delegate",
+    "path": "/sliver-child-builder-delegate",
     "route": "SliverChildBuilderDelegateScreen()",
     "group": "Utilities & Helpers",
     "file_name": "sliver_child_builder_delegate.dart"
   },
   {
-    "path": "sliver-child-list-delegate",
+    "path": "/sliver-child-list-delegate",
     "route": "SliverChildListDelegateScreen()",
     "group": "Utilities & Helpers",
     "file_name": "sliver_child_list_delegate.dart"
   },
   {
-    "path": "stateful-builder",
+    "path": "/stateful-builder",
     "route": "StatefulBuilderScreen()",
     "group": "Utilities & Helpers",
     "file_name": "stateful_builder.dart"
   },
   {
-    "path": "stateful-element",
+    "path": "/stateful-element",
     "route": "StatefulElementScreen()",
     "group": "Utilities & Helpers",
     "file_name": "stateful_element.dart"
   },
   {
-    "path": "stateless-element",
+    "path": "/stateless-element",
     "route": "StatelessElementScreen()",
     "group": "Utilities & Helpers",
     "file_name": "stateless_element.dart"
   },
   {
-    "path": "stream-builder",
+    "path": "/stream-builder",
     "route": "StreamBuilderScreen()",
     "group": "Utilities & Helpers",
     "file_name": "stream_builder.dart"
   },
   {
-    "path": "ticker-provider-state-mixin",
+    "path": "/ticker-provider-state-mixin",
     "route": "TickerProviderStateMixinScreen()",
     "group": "Utilities & Helpers",
     "file_name": "ticker_provider_state_mixin.dart"
   },
   {
-    "path": "tooltip-theme",
+    "path": "/tooltip-theme",
     "route": "TooltipThemeScreen()",
     "group": "Utilities & Helpers",
     "file_name": "tooltip_theme.dart"
   },
   {
-    "path": "transform",
+    "path": "/transform",
     "route": "TransformScreen()",
     "group": "Utilities & Helpers",
     "file_name": "transform.dart"
   },
   {
-    "path": "tween-animation-builder",
+    "path": "/tween-animation-builder",
     "route": "TweenAnimationBuilderScreen()",
     "group": "Utilities & Helpers",
     "file_name": "tween_animation_builder.dart"
   },
   {
-    "path": "widgets-binding",
+    "path": "/widgets-binding",
     "route": "WidgetsBindingScreen()",
     "group": "Utilities & Helpers",
     "file_name": "widgets_binding.dart"

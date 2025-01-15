@@ -15,7 +15,7 @@ class TabBarViewScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("TabBarView - Basic Example", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("TabBarView - Example", style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               SizedBox(
                 height: 200,
@@ -33,9 +33,12 @@ class TabBarViewScreen extends StatelessWidget {
                       Expanded(
                         child: TabBarView(
                           children: [
-                            Container(color: Colors.red, child: const Center(child: Text('Content 1'))),
-                            Container(color: Colors.green, child: const Center(child: Text('Content 2'))),
-                            Container(color: Colors.blue, child: const Center(child: Text('Content 3'))),
+                            Container(
+                                color: Colors.red, child: const Center(child: Text('Content 1'))),
+                            Container(
+                                color: Colors.green, child: const Center(child: Text('Content 2'))),
+                            Container(
+                                color: Colors.blue, child: const Center(child: Text('Content 3'))),
                           ],
                         ),
                       ),
@@ -44,7 +47,8 @@ class TabBarViewScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("TabBarView - Different Height", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("TabBarView - Different Height",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               SizedBox(
                 height: 300,
@@ -62,9 +66,14 @@ class TabBarViewScreen extends StatelessWidget {
                       Expanded(
                         child: TabBarView(
                           children: [
-                            Container(color: Colors.orange, child: const Center(child: Text('Content 1'))),
-                            Container(color: Colors.purple, child: const Center(child: Text('Content 2'))),
-                            Container(color: Colors.teal, child: const Center(child: Text('Content 3'))),
+                            Container(
+                                color: Colors.orange,
+                                child: const Center(child: Text('Content 1'))),
+                            Container(
+                                color: Colors.purple,
+                                child: const Center(child: Text('Content 2'))),
+                            Container(
+                                color: Colors.teal, child: const Center(child: Text('Content 3'))),
                           ],
                         ),
                       ),
@@ -73,7 +82,8 @@ class TabBarViewScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("TabBarView - With Custom TabBar", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("TabBarView - With Custom TabBar",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               SizedBox(
                 height: 200,
@@ -97,9 +107,13 @@ class TabBarViewScreen extends StatelessWidget {
                       Expanded(
                         child: TabBarView(
                           children: [
-                            Container(color: Colors.pink, child: const Center(child: Text('Content A'))),
-                            Container(color: Colors.lime, child: const Center(child: Text('Content B'))),
-                            Container(color: Colors.indigo, child: const Center(child: Text('Content C'))),
+                            Container(
+                                color: Colors.pink, child: const Center(child: Text('Content A'))),
+                            Container(
+                                color: Colors.lime, child: const Center(child: Text('Content B'))),
+                            Container(
+                                color: Colors.indigo,
+                                child: const Center(child: Text('Content C'))),
                           ],
                         ),
                       ),

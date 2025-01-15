@@ -15,7 +15,7 @@ class FocusScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Focus - Basic Example", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("Focus - Example", style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Focus(
                 child: Container(
@@ -78,7 +78,8 @@ class FocusScreen extends StatelessWidget {
                   child: Container(
                     padding: EdgeInsets.all(10),
                     color: Colors.grey[700],
-                    child: Text("Click to focus (focusable child)", style: TextStyle(color: Colors.white)),
+                    child: Text("Click to focus (focusable child)",
+                        style: TextStyle(color: Colors.white)),
                   ),
                 ),
               ),
@@ -90,18 +91,21 @@ class FocusScreen extends StatelessWidget {
                 child: Container(
                   padding: EdgeInsets.all(10),
                   color: Colors.grey[800],
-                  child: Text("Click to focus (skipTraversal)", style: TextStyle(color: Colors.white)),
+                  child:
+                      Text("Click to focus (skipTraversal)", style: TextStyle(color: Colors.white)),
                 ),
               ),
               SizedBox(height: 20),
-              Text("Focus - With descendantsAreFocusable", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("Focus - With descendantsAreFocusable",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Focus(
                 descendantsAreFocusable: true,
                 child: Container(
                   padding: EdgeInsets.all(10),
                   color: Colors.grey[900],
-                  child: Text("Click to focus (descendantsAreFocusable)", style: TextStyle(color: Colors.white)),
+                  child: Text("Click to focus (descendantsAreFocusable)",
+                      style: TextStyle(color: Colors.white)),
                 ),
               ),
             ],

@@ -15,42 +15,47 @@ class CustomPaintScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("CustomPaint - Basic Example", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CustomPaint - Example", style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               CustomPaint(
                 size: const Size(100, 100),
                 painter: MyPainter(),
               ),
               const SizedBox(height: 20),
-              const Text("CustomPaint - Larger Size", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CustomPaint - Larger Size",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               CustomPaint(
                 size: const Size(200, 150),
                 painter: MyPainter(),
               ),
               const SizedBox(height: 20),
-              const Text("CustomPaint - Different Color", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CustomPaint - Different Color",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               CustomPaint(
                 size: const Size(100, 100),
                 painter: MyPainter(color: Colors.red),
               ),
               const SizedBox(height: 20),
-              const Text("CustomPaint - Thicker Stroke", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CustomPaint - Thicker Stroke",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               CustomPaint(
                 size: const Size(100, 100),
                 painter: MyPainter(strokeWidth: 5),
               ),
               const SizedBox(height: 20),
-              const Text("CustomPaint - Rounded Stroke", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CustomPaint - Rounded Stroke",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               CustomPaint(
                 size: const Size(100, 100),
                 painter: MyPainter(strokeCap: StrokeCap.round),
               ),
               const SizedBox(height: 20),
-              const Text("CustomPaint - With Child (Not Applicable)", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CustomPaint - With Child (Not Applicable)",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               // CustomPaint does not directly take a child, so this is not applicable.
               // If you need to draw on top of a child, use a Stack with CustomPaint as one of the children.
@@ -91,7 +96,7 @@ class MyPainter extends CustomPainter {
     final radius = size.width / 3;
 
     canvas.drawCircle(center, radius, paint);
-    canvas.drawLine(Offset(0, size.height/2), Offset(size.width, size.height/2), paint);
+    canvas.drawLine(Offset(0, size.height / 2), Offset(size.width, size.height / 2), paint);
   }
 
   @override

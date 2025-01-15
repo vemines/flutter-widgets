@@ -16,10 +16,10 @@ class CupertinoSwitchScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("Basic CupertinoSwitch", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CupertinoSwitch", style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               const CupertinoSwitchExample(
-                title: "Basic Switch",
+                title: "Switch",
               ),
               const SizedBox(height: 20),
               const Text("CupertinoSwitch with different colors",

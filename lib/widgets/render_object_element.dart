@@ -15,7 +15,7 @@ class RenderObjectElementScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("RenderObjectElement - Basic Usage (Not Directly Visible)"),
+              const Text("RenderObjectElement - Usage (Not Directly Visible)"),
               const SizedBox(height: 8),
               // RenderObjectElement is an abstract class and cannot be directly instantiated.
               // It's a core part of Flutter's rendering pipeline and not a widget.

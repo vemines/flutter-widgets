@@ -24,7 +24,7 @@ class MaterialButtonScreen extends StatelessWidget {
                 children: [
                   _buildMaterialButtonVariation(
                     label: "Default MaterialButton",
-                    description: "Basic MaterialButton with default styling.",
+                    description: "MaterialButton with default styling.",
                     child: MaterialButton(
                       onPressed: () {},
                       child: const Text("Button"),

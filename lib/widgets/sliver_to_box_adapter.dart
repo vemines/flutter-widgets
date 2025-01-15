@@ -22,7 +22,7 @@ class SliverToBoxAdapterScreen extends StatelessWidget {
                 height: 100,
                 color: Colors.blue.shade100,
                 alignment: Alignment.center,
-                child: const Text('Basic SliverToBoxAdapter'),
+                child: const Text('SliverToBoxAdapter'),
               ),
             ),
             const Padding(

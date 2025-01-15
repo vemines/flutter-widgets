@@ -15,16 +15,18 @@ class RotationTransitionScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("RotationTransition Variations:", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              const Text("RotationTransition Variations:",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               const SizedBox(height: 20),
-              const Text("RotationTransition - Basic Rotation"),
+              const Text("RotationTransition - Rotation"),
               RotationTransition(
                 turns: const AlwaysStoppedAnimation(0.5),
                 child: Container(
                   width: 100,
                   height: 100,
                   color: Colors.blue,
-                  child: const Center(child: Text("Rotate Me", style: TextStyle(color: Colors.white))),
+                  child:
+                      const Center(child: Text("Rotate Me", style: TextStyle(color: Colors.white))),
                 ),
               ),
               const SizedBox(height: 20),
@@ -32,7 +34,7 @@ class RotationTransitionScreen extends StatelessWidget {
               RotationTransition(
                 turns: Tween(begin: 0.0, end: 1.0).animate(
                   CurvedAnimation(
-                    parent:  AnimationController(
+                    parent: AnimationController(
                       duration: const Duration(seconds: 2),
                       vsync: Navigator.of(context),
                     )..repeat(),
@@ -43,7 +45,8 @@ class RotationTransitionScreen extends StatelessWidget {
                   width: 100,
                   height: 100,
                   color: Colors.green,
-                  child: const Center(child: Text("Animated", style: TextStyle(color: Colors.white))),
+                  child:
+                      const Center(child: Text("Animated", style: TextStyle(color: Colors.white))),
                 ),
               ),
               const SizedBox(height: 20),
@@ -55,7 +58,8 @@ class RotationTransitionScreen extends StatelessWidget {
                   width: 100,
                   height: 100,
                   color: Colors.red,
-                  child: const Center(child: Text("Aligned", style: TextStyle(color: Colors.white))),
+                  child:
+                      const Center(child: Text("Aligned", style: TextStyle(color: Colors.white))),
                 ),
               ),
               const SizedBox(height: 20),

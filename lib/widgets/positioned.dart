@@ -10,12 +10,13 @@ class PositionedScreen extends StatelessWidget {
         title: Text("Positioned Showcase"),
       ),
       body: SingleChildScrollView(
-        child: Padding(
+        child: Container(
+          width: MediaQuery.of(context).size.width,
           padding: const EdgeInsets.all(16.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Positioned - Basic Example", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("Positioned - Example", style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Container(
                 height: 150,
@@ -36,7 +37,8 @@ class PositionedScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-              Text("Positioned - Different Positions", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("Positioned - Different Positions",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Container(
                 height: 150,
@@ -75,27 +77,6 @@ class PositionedScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-              Text("Positioned - With Width and Height", style: TextStyle(fontWeight: FontWeight.bold)),
-              SizedBox(height: 8),
-              Container(
-                height: 150,
-                width: 200,
-                color: Colors.grey[300],
-                child: Stack(
-                  children: [
-                    Positioned(
-                      top: 50,
-                      left: 50,
-                      width: 80,
-                      height: 40,
-                      child: Container(
-                        color: Colors.purple,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(height: 20),
               Text("Positioned - With Alignment", style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Container(
@@ -122,7 +103,8 @@ class PositionedScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-              Text("Positioned - With Specific Edges", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("Positioned - With Specific Edges (Child size by tlrb)",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Container(
                 height: 150,

@@ -15,7 +15,8 @@ class StreamBuilderScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("StreamBuilder - Basic Usage with Initial Data", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("StreamBuilder - Usage with Initial Data",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               StreamBuilder<int>(
                 initialData: 0,
@@ -31,7 +32,8 @@ class StreamBuilderScreen extends StatelessWidget {
                 },
               ),
               const SizedBox(height: 20),
-              const Text("StreamBuilder - Loading and Error States", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("StreamBuilder - Loading and Error States",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               StreamBuilder<String>(
                 stream: _errorStream(),
@@ -48,7 +50,8 @@ class StreamBuilderScreen extends StatelessWidget {
                 },
               ),
               const SizedBox(height: 20),
-              const Text("StreamBuilder - With Different Data Types", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("StreamBuilder - With Different Data Types",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               StreamBuilder<bool>(
                 stream: Stream.value(true),
@@ -61,7 +64,8 @@ class StreamBuilderScreen extends StatelessWidget {
                 },
               ),
               const SizedBox(height: 20),
-              const Text("StreamBuilder - No Initial Data", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("StreamBuilder - No Initial Data",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               StreamBuilder<int>(
                 stream: Stream.periodic(const Duration(seconds: 2), (count) => count * 2),
@@ -76,7 +80,8 @@ class StreamBuilderScreen extends StatelessWidget {
                 },
               ),
               const SizedBox(height: 20),
-              const Text("StreamBuilder - With a Stream that completes", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("StreamBuilder - With a Stream that completes",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               StreamBuilder<int>(
                 stream: _completingStream(),
@@ -98,6 +103,7 @@ class StreamBuilderScreen extends StatelessWidget {
       ),
     );
   }
+
   Stream<String> _errorStream() async* {
     await Future.delayed(const Duration(seconds: 1));
     yield 'Initial Data';

@@ -23,7 +23,7 @@ class AnimatedContainerScreen extends StatelessWidget {
                 runSpacing: 16,
                 children: [
                   _buildAnimatedContainerVariation(
-                    name: "Basic AnimatedContainer",
+                    name: "AnimatedContainer",
                     description: "Default size and color.",
                     child: AnimatedContainer(
                       duration: const Duration(seconds: 1),

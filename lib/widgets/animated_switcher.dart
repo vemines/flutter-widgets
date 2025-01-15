@@ -15,9 +15,9 @@ class AnimatedSwitcherScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("AnimatedSwitcher - Basic Usage", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("AnimatedSwitcher - Usage", style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
-              const Tooltip(message: "Basic AnimatedSwitcher with a Container"),
+              const Tooltip(message: "AnimatedSwitcher with a Container"),
               AnimatedSwitcher(
                 duration: const Duration(milliseconds: 300),
                 child: Container(
@@ -28,17 +28,20 @@ class AnimatedSwitcherScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("AnimatedSwitcher - Changing Child", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("AnimatedSwitcher - Changing Child",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               const Tooltip(message: "AnimatedSwitcher with a button to change the child"),
               _AnimatedSwitcherChangeChild(),
               const SizedBox(height: 20),
-              const Text("AnimatedSwitcher - Different Transitions", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("AnimatedSwitcher - Different Transitions",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               const Tooltip(message: "AnimatedSwitcher with different transition types"),
               _AnimatedSwitcherTransitions(),
               const SizedBox(height: 20),
-              const Text("AnimatedSwitcher - Custom Transition", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("AnimatedSwitcher - Custom Transition",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               const Tooltip(message: "AnimatedSwitcher with a custom transition"),
               _AnimatedSwitcherCustomTransition(),
@@ -102,7 +105,8 @@ class _AnimatedSwitcherTransitionsState extends State<_AnimatedSwitcherTransitio
     (child, animation) => FadeTransition(opacity: animation, child: child),
     (child, animation) => ScaleTransition(scale: animation, child: child),
     (child, animation) => RotationTransition(turns: animation, child: child),
-    (child, animation) => SizeTransition(sizeFactor: animation, axis: Axis.horizontal, child: child),
+    (child, animation) =>
+        SizeTransition(sizeFactor: animation, axis: Axis.horizontal, child: child),
   ];
 
   @override
@@ -122,14 +126,16 @@ class _AnimatedSwitcherTransitionsState extends State<_AnimatedSwitcherTransitio
         const SizedBox(height: 10),
         Wrap(
           spacing: 8,
-          children: List.generate(_transitions.length, (index) => ElevatedButton(
-            onPressed: () {
-              setState(() {
-                _transitionIndex = index;
-              });
-            },
-            child: Text('Transition ${index + 1}'),
-          )),
+          children: List.generate(
+              _transitions.length,
+              (index) => ElevatedButton(
+                    onPressed: () {
+                      setState(() {
+                        _transitionIndex = index;
+                      });
+                    },
+                    child: Text('Transition ${index + 1}'),
+                  )),
         ),
       ],
     );

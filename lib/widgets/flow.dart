@@ -15,7 +15,7 @@ class FlowScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Flow - Basic Example", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("Flow - Example", style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Flow(
                 delegate: MyFlowDelegate(),
@@ -48,7 +48,8 @@ class FlowScreen extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 20),
-              Text("Flow - With Different Alignment", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("Flow - With Different Alignment",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Flow(
                 delegate: AlignedFlowDelegate(),

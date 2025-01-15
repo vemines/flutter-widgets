@@ -15,7 +15,7 @@ class InheritedElementScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("InheritedElement - Basic Usage (No Child)"),
+              const Text("InheritedElement - Usage (No Child)"),
               // InheritedElement cannot be used directly without a child.
               // It's designed to pass data down the widget tree.
               // The following code would cause an error:
@@ -36,29 +36,28 @@ class InheritedElementScreen extends StatelessWidget {
   Widget _buildInheritedElementWithChild() {
     return InheritedTheme(
       data: ThemeData(primarySwatch: Colors.blue),
-      child: Builder(
-        builder: (context) {
-          return Container(
-            padding: const EdgeInsets.all(10),
-            color: Theme.of(context).primaryColor,
-            child: const Text("Container with Inherited Theme", style: TextStyle(color: Colors.white)),
-          );
-        }
-      ),
+      child: Builder(builder: (context) {
+        return Container(
+          padding: const EdgeInsets.all(10),
+          color: Theme.of(context).primaryColor,
+          child:
+              const Text("Container with Inherited Theme", style: TextStyle(color: Colors.white)),
+        );
+      }),
     );
   }
 
   Widget _buildInheritedElementWithTextChild() {
     return InheritedTheme(
-      data: ThemeData(textTheme: const TextTheme(bodyMedium: TextStyle(fontSize: 20, color: Colors.green))),
-      child: Builder(
-        builder: (context) {
-          return Text("Text with Inherited Theme", style: Theme.of(context).textTheme.bodyMedium);
-        }
-      ),
+      data: ThemeData(
+          textTheme: const TextTheme(bodyMedium: TextStyle(fontSize: 20, color: Colors.green))),
+      child: Builder(builder: (context) {
+        return Text("Text with Inherited Theme", style: Theme.of(context).textTheme.bodyMedium);
+      }),
     );
   }
 }
+
 class InheritedTheme extends InheritedWidget {
   const InheritedTheme({
     super.key,

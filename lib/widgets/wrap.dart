@@ -15,7 +15,7 @@ class WrapScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Wrap - Basic Usage", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("Wrap - Usage", style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Wrap(
                 spacing: 8.0,
@@ -129,7 +129,8 @@ class WrapScreen extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 20),
-              Text("Wrap - With Vertical Direction and Alignment", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("Wrap - With Vertical Direction and Alignment",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Wrap(
                 spacing: 8.0,

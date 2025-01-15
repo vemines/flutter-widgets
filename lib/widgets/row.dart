@@ -15,8 +15,6 @@ class RowScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("Row Variations:", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-              const SizedBox(height: 16),
               const Text("Row - Default"),
               Row(
                 children: [
@@ -66,18 +64,10 @@ class RowScreen extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 16),
-              const Text("Row - With Expanded"),
+              const Text("Row - With Expanded / Flexible / Spacer"),
               Row(
                 children: [
                   Expanded(child: Container(height: 50, color: Colors.red)),
-                  Container(width: 50, height: 50, color: Colors.green),
-                ],
-              ),
-              const SizedBox(height: 16),
-              const Text("Row - With Flexible"),
-              Row(
-                children: [
-                  Flexible(child: Container(height: 50, color: Colors.red)),
                   Container(width: 50, height: 50, color: Colors.green),
                 ],
               ),

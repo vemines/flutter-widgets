@@ -5,135 +5,196 @@ class TextButtonScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final widthScreen = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
-        title: Text("TextButton Showcase"),
+        title: const Text("TextButton Showcase"),
       ),
       body: SingleChildScrollView(
-        child: Padding(
+        child: Container(
           padding: const EdgeInsets.all(16.0),
+          width: widthScreen,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("TextButton - Default", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("TextButton - Default"),
               TextButton(
                 onPressed: () {},
-                child: Text("Default Button"),
+                child: const Text("Default Button"),
               ),
-              SizedBox(height: 20),
-              Text("TextButton - Primary Color", style: TextStyle(fontWeight: FontWeight.bold)),
+              const SizedBox(height: 20),
+              const Text("TextButton - Blue Background"),
               TextButton(
                 onPressed: () {},
                 style: TextButton.styleFrom(
-                  foregroundColor: Colors.white,
                   backgroundColor: Colors.blue,
                 ),
-                child: Text("Primary Button"),
+                child: const Text("Blue Button", style: TextStyle(color: Colors.white)),
               ),
-              SizedBox(height: 20),
-              Text("TextButton - Disabled", style: TextStyle(fontWeight: FontWeight.bold)),
+              const SizedBox(height: 20),
+              const Text("TextButton - Large Padding"),
+              TextButton(
+                onPressed: () {},
+                style: TextButton.styleFrom(
+                  padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+                ),
+                child: const Text("Large Padding Button"),
+              ),
+              const SizedBox(height: 20),
+              const Text("TextButton - Rounded Corners"),
+              TextButton(
+                onPressed: () {},
+                style: TextButton.styleFrom(
+                  padding: EdgeInsets.all(16),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(4),
+                  ),
+                ),
+                child: const Text("Less Rounded Button"),
+              ),
+              const SizedBox(height: 20),
+              const Text(
+                  "TextButton - Block 1. width: infinity (Make sure parrent widget have constraint)"),
+              TextButton(
+                onPressed: () {},
+                child: Container(
+                  width: double.infinity,
+                  padding: EdgeInsets.symmetric(vertical: 12),
+                  child: const Text(
+                    "Full width 1",
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ),
+              const Text("TextButton - Block 2 minimumSize = widthScreen"),
+              TextButton(
+                onPressed: () {},
+                style: TextButton.styleFrom(minimumSize: Size(widthScreen - 32, 50)),
+                child: const Text(
+                  "Full width 1",
+                  textAlign: TextAlign.center,
+                ),
+              ),
+              const SizedBox(height: 20),
+              const Text("TextButton - Custom Text Style"),
+              TextButton(
+                onPressed: () {},
+                child: const Text(
+                  "Custom Style",
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    fontStyle: FontStyle.italic,
+                  ),
+                ),
+              ),
+              const SizedBox(height: 20),
+              const Text("TextButton - Minimum Size"),
+              TextButton(
+                onPressed: () {},
+                style: TextButton.styleFrom(
+                  minimumSize: const Size(200, 50),
+                ),
+                child: const Text("Minimum Size Button"),
+              ),
+              const SizedBox(height: 20),
+              const Text("TextButton - Disabled"),
               TextButton(
                 onPressed: null,
-                child: Text("Disabled Button"),
+                child: const Text("onPressed null Button"),
               ),
-              SizedBox(height: 20),
-              Text("TextButton - Custom Padding", style: TextStyle(fontWeight: FontWeight.bold)),
+              const SizedBox(height: 20),
+              const Text("TextButton - With Shadow"),
               TextButton(
                 onPressed: () {},
                 style: TextButton.styleFrom(
-                  padding: EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+                  elevation: 10,
                 ),
-                child: Text("Padded Button"),
+                child: const Text("Shadow Button"),
               ),
-              SizedBox(height: 20),
-              Text("TextButton - Custom Text Style", style: TextStyle(fontWeight: FontWeight.bold)),
-              TextButton(
-                onPressed: () {},
-                style: TextButton.styleFrom(
-                  textStyle: TextStyle(fontSize: 20, fontStyle: FontStyle.italic),
+              const SizedBox(height: 20),
+              _buildTextButtonIcon(
+                "Default",
+                TextButton.icon(
+                  onPressed: () {},
+                  icon: Icon(Icons.add),
+                  label: Text("TextButton.icon"),
                 ),
-                child: Text("Styled Button"),
-              ),
-              SizedBox(height: 20),
-              _buildTextButtonIcon(
-                label: "Default",
-                icon: Icons.add,
-                onPressed: () {},
               ),
               _buildTextButtonIcon(
-                label: "Primary Color",
-                icon: Icons.star,
-                textColor: Theme.of(context).colorScheme.primary,
-                onPressed: () {},
-              ),
-              _buildTextButtonIcon(
-                label: "Custom Colors",
-                icon: Icons.favorite,
-                textColor: Colors.white,
-                backgroundColor: Colors.deepPurple,
-                onPressed: () {},
-              ),
-              _buildTextButtonIcon(
-                label: "Large Padding",
-                icon: Icons.settings,
-                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
-                onPressed: () {},
-              ),
-              _buildTextButtonIcon(
-                label: "Small Padding",
-                icon: Icons.search,
-                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                onPressed: () {},
-              ),
-              _buildTextButtonIcon(
-                label: "Rounded Borders",
-                icon: Icons.check,
-                borderRadius: BorderRadius.circular(10),
-                onPressed: () {},
-              ),
-              _buildTextButtonIcon(
-                label: "Custom Text Style",
-                icon: Icons.info,
-                textStyle: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                onPressed: () {},
-              ),
-              _buildTextButtonIcon(
-                label: "Icon Color",
-                icon: Icons.notifications,
-                iconColor: Colors.orange,
-                onPressed: () {},
-              ),
-              _buildTextButtonIcon(
-                label: "Disabled",
-                icon: Icons.block,
-                onPressed: null,
-              ),
-              SizedBox(height: 20),
-              Text("TextButton - Minimum Size", style: TextStyle(fontWeight: FontWeight.bold)),
-              TextButton(
-                onPressed: () {},
-                style: TextButton.styleFrom(
-                  minimumSize: Size(150, 50),
+                "Blue Background",
+                TextButton.icon(
+                  onPressed: () {},
+                  icon: Icon(Icons.favorite, color: Colors.white),
+                  label: Text("Like", style: TextStyle(color: Colors.white)),
+                  style: TextButton.styleFrom(
+                    backgroundColor: Colors.blue,
+                  ),
                 ),
-                child: Text("Minimum Size Button"),
               ),
-              SizedBox(height: 20),
-              Text("TextButton - Bordered", style: TextStyle(fontWeight: FontWeight.bold)),
-              TextButton(
-                onPressed: () {},
-                style: TextButton.styleFrom(
-                  side: BorderSide(color: Colors.black, width: 2),
+              _buildTextButtonIcon(
+                "Less Rounded",
+                TextButton.icon(
+                  onPressed: () {},
+                  icon: Icon(Icons.settings),
+                  label: Text("Settings"),
+                  style: TextButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(4),
+                    ),
+                  ),
                 ),
-                child: Text("Bordered Button"),
               ),
-              SizedBox(height: 20),
-              Text("TextButton - Rounded Border", style: TextStyle(fontWeight: FontWeight.bold)),
-              TextButton(
-                onPressed: () {},
-                style: TextButton.styleFrom(
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+              _buildTextButtonIcon(
+                "Large Padding",
+                TextButton.icon(
+                  onPressed: () {},
+                  icon: Icon(Icons.shopping_cart),
+                  label: Text("Cart"),
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+                  ),
                 ),
-                child: Text("Rounded Button"),
+              ),
+              _buildTextButtonIcon(
+                "Text Style",
+                TextButton.icon(
+                  onPressed: () {},
+                  icon: Icon(Icons.info),
+                  label: Text("Info",
+                      style: TextStyle(
+                          fontSize: 18, fontWeight: FontWeight.bold, color: Colors.black)),
+                  style: TextButton.styleFrom(
+                    backgroundColor: Colors.grey[200],
+                  ),
+                ),
+              ),
+              _buildTextButtonIcon(
+                "Custom Icon Color",
+                TextButton.icon(
+                  onPressed: () {},
+                  icon: Icon(Icons.star, color: Colors.yellow),
+                  label: Text("Rate"),
+                ),
+              ),
+              _buildTextButtonIcon(
+                "Minimum Size",
+                TextButton.icon(
+                  onPressed: () {},
+                  icon: Icon(Icons.check),
+                  label: Text("Check"),
+                  style: TextButton.styleFrom(
+                    minimumSize: Size(150, 50),
+                  ),
+                ),
+              ),
+              _buildTextButtonIcon(
+                "Disabled Button",
+                TextButton.icon(
+                  onPressed: null,
+                  icon: Icon(Icons.block),
+                  label: Text("Disabled"),
+                ),
               ),
             ],
           ),
@@ -142,51 +203,14 @@ class TextButtonScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildTextButtonIcon({
-    required String label,
-    required IconData icon,
-    VoidCallback? onPressed,
-    Color? textColor,
-    Color? backgroundColor,
-    EdgeInsetsGeometry? padding,
-    BorderRadius? borderRadius,
-    TextStyle? textStyle,
-    Color? iconColor,
-  }) {
+  Widget _buildTextButtonIcon(String name, Widget widget) {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Tooltip(
-          message: label,
-          child: TextButton.icon(
-            onPressed: onPressed,
-            icon: Icon(icon, color: iconColor),
-            label: Text(
-              label,
-              style: textStyle,
-            ),
-            style: ButtonStyle(
-              foregroundColor: WidgetStateProperty.resolveWith<Color?>((states) {
-                if (states.contains(WidgetState.disabled)) {
-                  return Colors.grey;
-                }
-                return textColor;
-              }),
-              backgroundColor: WidgetStateProperty.resolveWith<Color?>((states) {
-                if (states.contains(WidgetState.disabled)) {
-                  return Colors.grey[300];
-                }
-                return backgroundColor;
-              }),
-              padding: WidgetStateProperty.all(padding),
-              shape: WidgetStateProperty.all(
-                RoundedRectangleBorder(
-                  borderRadius: borderRadius ?? BorderRadius.zero,
-                ),
-              ),
-            ),
-          ),
-        ),
+        Tooltip(message: name, child: widget),
+        SizedBox(height: 5),
+        Text(name, style: TextStyle(fontSize: 12)),
+        SizedBox(height: 10),
       ],
     );
   }

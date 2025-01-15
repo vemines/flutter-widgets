@@ -25,10 +25,11 @@ class ScaffoldScreen extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("Scaffold - With AppBar and Drawer", style: TextStyle(fontWeight: FontWeight.bold)),
+              child: Text("Scaffold - With AppBar and Drawer",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             SizedBox(
-              height: 100,
+              height: 200,
               child: Scaffold(
                 appBar: AppBar(title: Text("AppBar")),
                 drawer: Drawer(child: Center(child: Text("Drawer"))),
@@ -37,7 +38,8 @@ class ScaffoldScreen extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("Scaffold - With BottomNavigationBar", style: TextStyle(fontWeight: FontWeight.bold)),
+              child: Text("Scaffold - With BottomNavigationBar",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             SizedBox(
               height: 100,
@@ -53,7 +55,8 @@ class ScaffoldScreen extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("Scaffold - With FloatingActionButton", style: TextStyle(fontWeight: FontWeight.bold)),
+              child: Text("Scaffold - With FloatingActionButton",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             SizedBox(
               height: 100,
@@ -67,7 +70,8 @@ class ScaffoldScreen extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("Scaffold - With backgroundColor", style: TextStyle(fontWeight: FontWeight.bold)),
+              child:
+                  Text("Scaffold backgroundColor", style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             SizedBox(
               height: 100,
@@ -78,10 +82,11 @@ class ScaffoldScreen extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("Scaffold - With different appBar color", style: TextStyle(fontWeight: FontWeight.bold)),
+              child: Text("Scaffold - With different appBar color",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             SizedBox(
-              height: 100,
+              height: 150,
               child: Scaffold(
                 appBar: AppBar(
                   title: Text("AppBar with different color"),
@@ -92,14 +97,15 @@ class ScaffoldScreen extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("Scaffold - With a persistent footer buttons", style: TextStyle(fontWeight: FontWeight.bold)),
+              child: Text("Scaffold - With a persistentFooterButtons",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             SizedBox(
-              height: 100,
+              height: 150,
               child: Scaffold(
                 persistentFooterButtons: [
-                  ElevatedButton(onPressed: (){}, child: Text("Button 1")),
-                  ElevatedButton(onPressed: (){}, child: Text("Button 2")),
+                  ElevatedButton(onPressed: () {}, child: Text("Button 1")),
+                  ElevatedButton(onPressed: () {}, child: Text("Button 2")),
                 ],
                 body: Center(child: Text("Scaffold with persistent footer buttons")),
               ),

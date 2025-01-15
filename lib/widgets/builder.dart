@@ -15,14 +15,14 @@ class BuilderScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("Builder - Basic Usage", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Builder - Usage", style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Builder(
                 builder: (BuildContext context) {
                   return Container(
                     padding: const EdgeInsets.all(10),
                     color: Colors.grey[200],
-                    child: const Text("This is a basic Builder example."),
+                    child: const Text("This is a Builder example."),
                   );
                 },
               ),

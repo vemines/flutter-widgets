@@ -15,13 +15,13 @@ class RenderBoxScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("RenderBox - Basic Example", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("RenderBox - Example", style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Container(
                 width: 100,
                 height: 100,
                 color: Colors.blue,
-                child: Center(child: Text("Basic Box", style: TextStyle(color: Colors.white))),
+                child: Center(child: Text("Box", style: TextStyle(color: Colors.white))),
               ),
               SizedBox(height: 20),
               Text("RenderBox - Different Size", style: TextStyle(fontWeight: FontWeight.bold)),
@@ -73,7 +73,8 @@ class RenderBoxScreen extends StatelessWidget {
                 child: Center(child: Text("Bordered", style: TextStyle(color: Colors.black))),
               ),
               SizedBox(height: 20),
-              Text("RenderBox - With Alignment (using Align)", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("RenderBox - With Alignment (using Align)",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Container(
                 height: 150,
@@ -89,7 +90,8 @@ class RenderBoxScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-              Text("RenderBox - Wrapped in a Container", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("RenderBox - Wrapped in a Container",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Container(
                 color: Colors.lightBlue[100],

@@ -15,7 +15,8 @@ class ValueListenableBuilderScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("ValueListenableBuilder Variations:", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              const Text("ValueListenableBuilder Variations:",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               const SizedBox(height: 16),
               _buildValueListenableBuilderVariation1(),
               const SizedBox(height: 16),
@@ -36,7 +37,8 @@ class ValueListenableBuilderScreen extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text("ValueListenableBuilder - Basic Counter", style: TextStyle(fontWeight: FontWeight.bold)),
+        const Text("ValueListenableBuilder - Counter",
+            style: TextStyle(fontWeight: FontWeight.bold)),
         ValueListenableBuilder<int>(
           valueListenable: counter,
           builder: (BuildContext context, int value, Widget? child) {
@@ -56,7 +58,8 @@ class ValueListenableBuilderScreen extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text("ValueListenableBuilder - Text Update", style: TextStyle(fontWeight: FontWeight.bold)),
+        const Text("ValueListenableBuilder - Text Update",
+            style: TextStyle(fontWeight: FontWeight.bold)),
         ValueListenableBuilder<String>(
           valueListenable: textValue,
           builder: (BuildContext context, String value, Widget? child) {
@@ -76,13 +79,15 @@ class ValueListenableBuilderScreen extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text("ValueListenableBuilder - Toggle Visibility", style: TextStyle(fontWeight: FontWeight.bold)),
+        const Text("ValueListenableBuilder - Toggle Visibility",
+            style: TextStyle(fontWeight: FontWeight.bold)),
         ValueListenableBuilder<bool>(
           valueListenable: toggle,
           builder: (BuildContext context, bool value, Widget? child) {
             return Visibility(
               visible: value,
-              child: const Text("I am visible!", style: TextStyle(fontSize: 20, color: Colors.green)),
+              child:
+                  const Text("I am visible!", style: TextStyle(fontSize: 20, color: Colors.green)),
             );
           },
         ),
@@ -99,11 +104,13 @@ class ValueListenableBuilderScreen extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text("ValueListenableBuilder - Slider Value", style: TextStyle(fontWeight: FontWeight.bold)),
+        const Text("ValueListenableBuilder - Slider Value",
+            style: TextStyle(fontWeight: FontWeight.bold)),
         ValueListenableBuilder<double>(
           valueListenable: sliderValue,
           builder: (BuildContext context, double value, Widget? child) {
-            return Text('Slider Value: ${value.toStringAsFixed(2)}', style: const TextStyle(fontSize: 16, color: Colors.purple));
+            return Text('Slider Value: ${value.toStringAsFixed(2)}',
+                style: const TextStyle(fontSize: 16, color: Colors.purple));
           },
         ),
         Slider(

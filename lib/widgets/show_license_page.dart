@@ -15,7 +15,7 @@ class ShowLicensePageScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("ShowLicensePage - Basic Usage", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("ShowLicensePage - Usage", style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               ElevatedButton(
                 onPressed: () {
@@ -41,7 +41,8 @@ class ShowLicensePageScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-              Text("ShowLicensePage - Custom Application Icon", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("ShowLicensePage - Custom Application Icon",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               ElevatedButton(
                 onPressed: () {
@@ -53,7 +54,8 @@ class ShowLicensePageScreen extends StatelessWidget {
                 child: Text("Show License Page (Custom Icon)"),
               ),
               SizedBox(height: 20),
-              Text("ShowLicensePage - Custom Application Name", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("ShowLicensePage - Custom Application Name",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               ElevatedButton(
                 onPressed: () {
@@ -65,7 +67,8 @@ class ShowLicensePageScreen extends StatelessWidget {
                 child: Text("Show License Page (Custom Name)"),
               ),
               SizedBox(height: 20),
-              Text("ShowLicensePage - Custom Application Version", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("ShowLicensePage - Custom Application Version",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               ElevatedButton(
                 onPressed: () {
@@ -77,7 +80,8 @@ class ShowLicensePageScreen extends StatelessWidget {
                 child: Text("Show License Page (Custom Version)"),
               ),
               SizedBox(height: 20),
-              Text("ShowLicensePage - Custom Application Legalese", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("ShowLicensePage - Custom Application Legalese",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               ElevatedButton(
                 onPressed: () {
@@ -89,7 +93,8 @@ class ShowLicensePageScreen extends StatelessWidget {
                 child: Text("Show License Page (Custom Legalese)"),
               ),
               SizedBox(height: 20),
-              Text("ShowLicensePage - All Custom Properties", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("ShowLicensePage - All Custom Properties",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Theme(
                 data: ThemeData(

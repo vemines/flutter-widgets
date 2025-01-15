@@ -32,7 +32,7 @@ def load_screen_data(filepath):
               if line: # Ignore empty lines
                 widget_name = line
                 screen_data.append({
-                    "path": to_kebab_case(widget_name),
+                    "path": "/" + to_kebab_case(widget_name),
                     "route": f"{line}Screen()",
                     "file_name": to_snake_case(widget_name) + ".dart"
                 })

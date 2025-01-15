@@ -15,7 +15,7 @@ class ListViewScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("ListView.builder - Basic List", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("ListView.builder - List", style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(
                 height: 150,
                 child: ListView.builder(
@@ -28,7 +28,8 @@ class ListViewScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("ListView.builder - Separated List", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("ListView.separated - Divider",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(
                 height: 150,
                 child: ListView.separated(
@@ -42,39 +43,48 @@ class ListViewScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("ListView - Horizontal List", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("ListView - scrollDirection Horizontal",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(
                 height: 100,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
-                  children: List.generate(5, (index) => Container(
-                    width: 100,
-                    margin: const EdgeInsets.all(8),
-                    color: Colors.blue[100 * (index + 1)],
-                    child: Center(child: Text('Item $index')),
-                  )),
+                  children: List.generate(
+                      5,
+                      (index) => Container(
+                            width: 100,
+                            margin: const EdgeInsets.all(8),
+                            color: Colors.blue[100 * (index + 1)],
+                            child: Center(child: Text('Item $index')),
+                          )),
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("ListView - Custom Scroll Physics", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("ListView - NeverScrollableScrollPhysics",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(
                 height: 150,
                 child: ListView(
-                  physics: const BouncingScrollPhysics(),
-                  children: List.generate(5, (index) => ListTile(
-                    title: Text('Item $index'),
-                  )),
+                  physics: const NeverScrollableScrollPhysics(),
+                  children: List.generate(
+                      5,
+                      (index) => ListTile(
+                            title: Text('Item $index'),
+                          )),
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("ListView - Reverse List", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("ListView - reverse: true,",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(
                 height: 150,
                 child: ListView(
                   reverse: true,
-                  children: List.generate(5, (index) => ListTile(
-                    title: Text('Item $index'),
-                  )),
+                  children: List.generate(
+                      5,
+                      (index) => ListTile(
+                            title: Text('Item $index'),
+                          )),
                 ),
               ),
               const SizedBox(height: 20),
@@ -83,10 +93,11 @@ class ListViewScreen extends StatelessWidget {
                 height: 150,
                 child: ListView(
                   shrinkWrap: true,
-                  physics: const NeverScrollableScrollPhysics(),
-                  children: List.generate(3, (index) => ListTile(
-                    title: Text('Item $index'),
-                  )),
+                  children: List.generate(
+                      5,
+                      (index) => ListTile(
+                            title: Text('Item $index'),
+                          )),
                 ),
               ),
               const SizedBox(height: 20),
@@ -95,9 +106,11 @@ class ListViewScreen extends StatelessWidget {
                 height: 150,
                 child: ListView(
                   padding: const EdgeInsets.all(20),
-                  children: List.generate(3, (index) => ListTile(
-                    title: Text('Item $index'),
-                  )),
+                  children: List.generate(
+                      5,
+                      (index) => ListTile(
+                            title: Text('Item $index'),
+                          )),
                 ),
               ),
             ],

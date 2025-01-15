@@ -16,7 +16,8 @@ class CupertinoSliverRefreshControlScreen extends StatelessWidget {
           children: [
             const Padding(
               padding: EdgeInsets.all(8.0),
-              child: Text("Basic CupertinoSliverRefreshControl", style: TextStyle(fontWeight: FontWeight.bold)),
+              child: Text("CupertinoSliverRefreshControl",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             SizedBox(
               height: 200,
@@ -42,7 +43,8 @@ class CupertinoSliverRefreshControlScreen extends StatelessWidget {
             ),
             const Padding(
               padding: EdgeInsets.all(8.0),
-              child: Text("CupertinoSliverRefreshControl with different colors", style: TextStyle(fontWeight: FontWeight.bold)),
+              child: Text("CupertinoSliverRefreshControl with different colors",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             SizedBox(
               height: 200,
@@ -54,7 +56,11 @@ class CupertinoSliverRefreshControlScreen extends StatelessWidget {
                     onRefresh: () async {
                       await Future.delayed(const Duration(seconds: 1));
                     },
-                    builder: (BuildContext context, RefreshIndicatorMode refreshState, double pulledExtent, double refreshTriggerPullDistance, double refreshIndicatorExtent) {
+                    builder: (BuildContext context,
+                        RefreshIndicatorMode refreshState,
+                        double pulledExtent,
+                        double refreshTriggerPullDistance,
+                        double refreshIndicatorExtent) {
                       const double opacity = 1.0;
                       return Opacity(
                         opacity: opacity,
@@ -83,7 +89,9 @@ class CupertinoSliverRefreshControlScreen extends StatelessWidget {
             ),
             const Padding(
               padding: EdgeInsets.all(8.0),
-              child: Text("CupertinoSliverRefreshControl with custom refreshTriggerPullDistance and refreshIndicatorExtent", style: TextStyle(fontWeight: FontWeight.bold)),
+              child: Text(
+                  "CupertinoSliverRefreshControl with custom refreshTriggerPullDistance and refreshIndicatorExtent",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             SizedBox(
               height: 200,

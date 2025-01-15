@@ -5,186 +5,196 @@ class OutlinedButtonScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final widthScreen = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
         title: const Text("OutlinedButton Showcase"),
       ),
       body: SingleChildScrollView(
-        child: Padding(
+        child: Container(
           padding: const EdgeInsets.all(16.0),
+          width: widthScreen,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("OutlinedButton Variations",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-              const SizedBox(height: 16),
-              Wrap(
-                spacing: 16,
-                runSpacing: 16,
-                children: [
-                  _buildOutlinedButton(
-                    label: "Default OutlinedButton",
-                    description: "Default appearance",
-                    onPressed: () {},
+              const Text("OutlinedButton - Default"),
+              OutlinedButton(
+                onPressed: () {},
+                child: const Text("Default Button"),
+              ),
+              const SizedBox(height: 20),
+              const Text("OutlinedButton - Blue Background"),
+              OutlinedButton(
+                onPressed: () {},
+                style: OutlinedButton.styleFrom(
+                  backgroundColor: Colors.blue,
+                ),
+                child: const Text("Blue Button", style: TextStyle(color: Colors.white)),
+              ),
+              const SizedBox(height: 20),
+              const Text("OutlinedButton - Large Padding"),
+              OutlinedButton(
+                onPressed: () {},
+                style: OutlinedButton.styleFrom(
+                  padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+                ),
+                child: const Text("Large Padding Button"),
+              ),
+              const SizedBox(height: 20),
+              const Text("OutlinedButton - Rounded Corners"),
+              OutlinedButton(
+                onPressed: () {},
+                style: OutlinedButton.styleFrom(
+                  padding: EdgeInsets.all(16),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(4),
                   ),
-                  _buildOutlinedButton(
-                    label: "OutlinedButton - Primary Color",
-                    description: "Primary color border and text",
-                    borderColor: Theme.of(context).primaryColor,
-                    textColor: Theme.of(context).primaryColor,
-                    onPressed: () {},
+                ),
+                child: const Text("Less Rounded Button"),
+              ),
+              const SizedBox(height: 20),
+              const Text(
+                  "OutlinedButton - Block 1. width: infinity (Make sure parrent widget have constraint)"),
+              OutlinedButton(
+                onPressed: () {},
+                child: Container(
+                  width: double.infinity,
+                  padding: EdgeInsets.symmetric(vertical: 12),
+                  child: const Text(
+                    "Full width 1",
+                    textAlign: TextAlign.center,
                   ),
-                  _buildOutlinedButton(
-                    label: "OutlinedButton - Custom Colors",
-                    description: "Custom border and text colors",
-                    borderColor: Colors.green,
-                    textColor: Colors.purple,
-                    onPressed: () {},
+                ),
+              ),
+              const Text("OutlinedButton - Block 2 minimumSize = widthScreen"),
+              OutlinedButton(
+                onPressed: () {},
+                style: OutlinedButton.styleFrom(minimumSize: Size(widthScreen - 32, 50)),
+                child: const Text(
+                  "Full width 1",
+                  textAlign: TextAlign.center,
+                ),
+              ),
+              const SizedBox(height: 20),
+              const Text("OutlinedButton - Custom Text Style"),
+              OutlinedButton(
+                onPressed: () {},
+                child: const Text(
+                  "Custom Style",
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    fontStyle: FontStyle.italic,
                   ),
-                  _buildOutlinedButton(
-                    label: "OutlinedButton - Large Padding",
-                    description: "Increased padding",
-                    padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
-                    onPressed: () {},
+                ),
+              ),
+              const SizedBox(height: 20),
+              const Text("OutlinedButton - Minimum Size"),
+              OutlinedButton(
+                onPressed: () {},
+                style: OutlinedButton.styleFrom(
+                  minimumSize: const Size(200, 50),
+                ),
+                child: const Text("Minimum Size Button"),
+              ),
+              const SizedBox(height: 20),
+              const Text("OutlinedButton - Disabled"),
+              OutlinedButton(
+                onPressed: null,
+                child: const Text("onPressed null Button"),
+              ),
+              const SizedBox(height: 20),
+              const Text("OutlinedButton - With Shadow"),
+              OutlinedButton(
+                onPressed: () {},
+                style: OutlinedButton.styleFrom(
+                  elevation: 10,
+                ),
+                child: const Text("Shadow Button"),
+              ),
+              const SizedBox(height: 20),
+              _buildOutlinedButtonIcon(
+                "Default",
+                OutlinedButton.icon(
+                  onPressed: () {},
+                  icon: Icon(Icons.add),
+                  label: Text("OutlinedButton.icon"),
+                ),
+              ),
+              _buildOutlinedButtonIcon(
+                "Blue Background",
+                OutlinedButton.icon(
+                  onPressed: () {},
+                  icon: Icon(Icons.favorite, color: Colors.white),
+                  label: Text("Like", style: TextStyle(color: Colors.white)),
+                  style: OutlinedButton.styleFrom(
+                    backgroundColor: Colors.blue,
                   ),
-                  _buildOutlinedButton(
-                    label: "OutlinedButton - Rounded Border",
-                    description: "Rounded border radius",
-                    borderRadius: BorderRadius.circular(10),
-                    onPressed: () {},
-                  ),
-                  _buildOutlinedButton(
-                    label: "OutlinedButton - Bold Text",
-                    description: "Bold text style",
-                    textStyle: const TextStyle(fontWeight: FontWeight.bold),
-                    onPressed: () {},
-                  ),
-                  _buildOutlinedButton(
-                    label: "OutlinedButton - Icon",
-                    description: "With an icon",
-                    icon: Icons.add,
-                    onPressed: () {},
-                  ),
-                  _buildOutlinedButton(
-                    label: "OutlinedButton - Icon and Text",
-                    description: "With an icon and text",
-                    icon: Icons.favorite,
-                    onPressed: () {},
-                  ),
-                  _buildOutlinedButton(
-                    label: "OutlinedButton - Disabled",
-                    description: "Disabled button",
-                    onPressed: null,
-                  ),
-                  _buildOutlinedButton(
-                    label: "OutlinedButton - Custom Border Width",
-                    description: "Custom border width",
-                    borderWidth: 3.0,
-                    onPressed: () {},
-                  ),
-                  Tooltip(
-                    message: "OutlinedButton.icon - Default",
-                    child: OutlinedButton.icon(
-                      onPressed: () {},
-                      icon: Icon(Icons.add),
-                      label: Text("Add"),
+                ),
+              ),
+              _buildOutlinedButtonIcon(
+                "Less Rounded",
+                OutlinedButton.icon(
+                  onPressed: () {},
+                  icon: Icon(Icons.settings),
+                  label: Text("Settings"),
+                  style: OutlinedButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(4),
                     ),
                   ),
-                  Tooltip(
-                    message: "OutlinedButton.icon - Primary Color",
-                    child: OutlinedButton.icon(
-                      onPressed: () {},
-                      icon: Icon(Icons.edit, color: Colors.blue),
-                      label: Text("Edit", style: TextStyle(color: Colors.blue)),
-                      style: OutlinedButton.styleFrom(
-                        foregroundColor: Colors.blue,
-                        side: BorderSide(color: Colors.blue),
-                      ),
-                    ),
+                ),
+              ),
+              _buildOutlinedButtonIcon(
+                "Large Padding",
+                OutlinedButton.icon(
+                  onPressed: () {},
+                  icon: Icon(Icons.shopping_cart),
+                  label: Text("Cart"),
+                  style: OutlinedButton.styleFrom(
+                    padding: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
                   ),
-                  Tooltip(
-                    message: "OutlinedButton.icon - Custom Border",
-                    child: OutlinedButton.icon(
-                      onPressed: () {},
-                      icon: Icon(Icons.delete, color: Colors.red),
-                      label: Text("Delete", style: TextStyle(color: Colors.red)),
-                      style: OutlinedButton.styleFrom(
-                        side: BorderSide(color: Colors.red, width: 2),
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-                      ),
-                    ),
+                ),
+              ),
+              _buildOutlinedButtonIcon(
+                "Text Style",
+                OutlinedButton.icon(
+                  onPressed: () {},
+                  icon: Icon(Icons.info),
+                  label: Text("Info",
+                      style: TextStyle(
+                          fontSize: 18, fontWeight: FontWeight.bold, color: Colors.black)),
+                  style: OutlinedButton.styleFrom(
+                    backgroundColor: Colors.grey[200],
                   ),
-                  Tooltip(
-                    message: "OutlinedButton.icon - Large Padding",
-                    child: OutlinedButton.icon(
-                      onPressed: () {},
-                      icon: Icon(Icons.settings),
-                      label: Text("Settings"),
-                      style: OutlinedButton.styleFrom(
-                        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
-                      ),
-                    ),
+                ),
+              ),
+              _buildOutlinedButtonIcon(
+                "Custom Icon Color",
+                OutlinedButton.icon(
+                  onPressed: () {},
+                  icon: Icon(Icons.star, color: Colors.yellow),
+                  label: Text("Rate"),
+                ),
+              ),
+              _buildOutlinedButtonIcon(
+                "Minimum Size",
+                OutlinedButton.icon(
+                  onPressed: () {},
+                  icon: Icon(Icons.check),
+                  label: Text("Check"),
+                  style: OutlinedButton.styleFrom(
+                    minimumSize: Size(150, 50),
                   ),
-                  Tooltip(
-                    message: "OutlinedButton.icon - Different Icon Size",
-                    child: OutlinedButton.icon(
-                      onPressed: () {},
-                      icon: Icon(Icons.star, size: 30),
-                      label: Text("Star"),
-                    ),
-                  ),
-                  Tooltip(
-                    message: "OutlinedButton.icon - Text Style",
-                    child: OutlinedButton.icon(
-                      onPressed: () {},
-                      icon: Icon(Icons.info),
-                      label:
-                          Text("Info", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
-                    ),
-                  ),
-                  Tooltip(
-                    message: "OutlinedButton.icon - Disabled",
-                    child: OutlinedButton.icon(
-                      onPressed: null,
-                      icon: Icon(Icons.block),
-                      label: Text("Disabled"),
-                    ),
-                  ),
-                  Tooltip(
-                    message: "OutlinedButton.icon - Minimum Size",
-                    child: OutlinedButton.icon(
-                      onPressed: () {},
-                      icon: Icon(Icons.minimize),
-                      label: Text("Min"),
-                      style: OutlinedButton.styleFrom(
-                        minimumSize: Size(50, 30),
-                      ),
-                    ),
-                  ),
-                  Tooltip(
-                    message: "OutlinedButton.icon - Fixed Size",
-                    child: OutlinedButton.icon(
-                      onPressed: () {},
-                      icon: Icon(Icons.zoom_in),
-                      label: Text("Zoom"),
-                      style: OutlinedButton.styleFrom(
-                        fixedSize: Size(100, 40),
-                      ),
-                    ),
-                  ),
-                  Tooltip(
-                    message: "OutlinedButton.icon - Icon and Text Color",
-                    child: OutlinedButton.icon(
-                      onPressed: () {},
-                      icon: Icon(Icons.color_lens, color: Colors.purple),
-                      label: Text("Color", style: TextStyle(color: Colors.purple)),
-                      style: OutlinedButton.styleFrom(
-                        foregroundColor: Colors.purple,
-                        side: BorderSide(color: Colors.purple),
-                      ),
-                    ),
-                  ),
-                ],
+                ),
+              ),
+              _buildOutlinedButtonIcon(
+                "Disabled Button",
+                OutlinedButton.icon(
+                  onPressed: null,
+                  icon: Icon(Icons.block),
+                  label: Text("Disabled"),
+                ),
               ),
             ],
           ),
@@ -193,42 +203,15 @@ class OutlinedButtonScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildOutlinedButton({
-    required String label,
-    required String description,
-    VoidCallback? onPressed,
-    Color? borderColor,
-    Color? textColor,
-    EdgeInsetsGeometry? padding,
-    BorderRadius? borderRadius,
-    TextStyle? textStyle,
-    IconData? icon,
-    double? borderWidth,
-  }) {
-    return Tooltip(
-      message: description,
-      child: OutlinedButton(
-        onPressed: onPressed,
-        style: OutlinedButton.styleFrom(
-          side: borderColor != null
-              ? BorderSide(color: borderColor, width: borderWidth ?? 1.0)
-              : null,
-          padding: padding,
-          shape: borderRadius != null ? RoundedRectangleBorder(borderRadius: borderRadius) : null,
-          foregroundColor: textColor,
-        ),
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            if (icon != null) Icon(icon, color: textColor),
-            if (icon != null && label.isNotEmpty) const SizedBox(width: 4),
-            Text(
-              label,
-              style: textStyle,
-            ),
-          ],
-        ),
-      ),
+  Widget _buildOutlinedButtonIcon(String name, Widget widget) {
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Tooltip(message: name, child: widget),
+        SizedBox(height: 5),
+        Text(name, style: TextStyle(fontSize: 12)),
+        SizedBox(height: 10),
+      ],
     );
   }
 }

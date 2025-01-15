@@ -1,7 +1,17 @@
 import 'package:flutter/material.dart';
 
-class SliderScreen extends StatelessWidget {
+class SliderScreen extends StatefulWidget {
   const SliderScreen({super.key});
+
+  @override
+  State<SliderScreen> createState() => _SliderScreenState();
+}
+
+class _SliderScreenState extends State<SliderScreen> {
+  double value = 0.5;
+  double minMaxValue = 10;
+  void onChanged(newValue) => setState(() => value = newValue);
+  void onChangedMM(newValue) => setState(() => minMaxValue = newValue);
 
   @override
   Widget build(BuildContext context) {
@@ -15,65 +25,68 @@ class SliderScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Slider - Basic", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("Slider 0.5", style: TextStyle(fontWeight: FontWeight.bold)),
               Slider(
-                value: 0.5,
-                onChanged: (value) {},
+                value: value,
+                onChanged: onChanged,
               ),
               SizedBox(height: 20),
               Text("Slider - Active Color", style: TextStyle(fontWeight: FontWeight.bold)),
               Slider(
-                value: 0.7,
+                value: value,
                 activeColor: Colors.blue,
-                onChanged: (value) {},
+                onChanged: onChanged,
               ),
               SizedBox(height: 20),
               Text("Slider - Inactive Color", style: TextStyle(fontWeight: FontWeight.bold)),
               Slider(
-                value: 0.3,
+                value: value,
                 inactiveColor: Colors.grey,
-                onChanged: (value) {},
+                onChanged: onChanged,
               ),
               SizedBox(height: 20),
               Text("Slider - Min/Max Values", style: TextStyle(fontWeight: FontWeight.bold)),
               Slider(
-                value: 25,
+                value: minMaxValue,
                 min: 0,
-                max: 100,
-                onChanged: (value) {},
+                max: 20,
+                onChanged: onChangedMM,
               ),
               SizedBox(height: 20),
               Text("Slider - Divisions", style: TextStyle(fontWeight: FontWeight.bold)),
               Slider(
-                value: 2,
+                value: minMaxValue,
                 min: 0,
-                max: 5,
+                max: 20,
                 divisions: 5,
-                onChanged: (value) {},
+                onChanged: onChangedMM,
               ),
               SizedBox(height: 20),
               Text("Slider - Thumb Color", style: TextStyle(fontWeight: FontWeight.bold)),
               Slider(
-                value: 0.6,
+                value: value,
                 thumbColor: Colors.red,
-                onChanged: (value) {},
+                onChanged: onChanged,
               ),
               SizedBox(height: 20),
               Text("Slider - Overlay Color", style: TextStyle(fontWeight: FontWeight.bold)),
               Slider(
-                value: 0.8,
+                value: value,
                 overlayColor: WidgetStateColor.resolveWith((states) =>
                     states.contains(WidgetState.hovered)
                         ? Colors.green.withValues(alpha: 255 * 0.4)
                         : Colors.transparent),
-                onChanged: (value) {},
+                onChanged: onChanged,
               ),
               SizedBox(height: 20),
               Text("Slider - With Label", style: TextStyle(fontWeight: FontWeight.bold)),
               Slider(
-                value: 0.4,
-                label: '40%',
-                onChanged: (value) {},
+                min: 0,
+                max: 20,
+                divisions: 5,
+                value: minMaxValue,
+                label: minMaxValue.toStringAsFixed(0),
+                onChanged: onChangedMM,
               ),
               SizedBox(height: 20),
               Text("Slider - Custom Height", style: TextStyle(fontWeight: FontWeight.bold)),
@@ -82,14 +95,14 @@ class SliderScreen extends StatelessWidget {
                   trackHeight: 10,
                 ),
                 child: Slider(
-                  value: 0.5,
-                  onChanged: (value) {},
+                  value: value,
+                  onChanged: onChanged,
                 ),
               ),
               SizedBox(height: 20),
               Text("Slider - Disabled", style: TextStyle(fontWeight: FontWeight.bold)),
               Slider(
-                value: 0.5,
+                value: value,
                 onChanged: null,
               ),
             ],

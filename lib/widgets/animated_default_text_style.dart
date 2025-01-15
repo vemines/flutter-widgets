@@ -15,10 +15,11 @@ class AnimatedDefaultTextStyleScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("AnimatedDefaultTextStyle Variations:", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+              const Text("AnimatedDefaultTextStyle Variations:",
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
               const SizedBox(height: 16),
               _buildVariation(
-                "Basic - Default Style",
+                "- Default Style",
                 AnimatedDefaultTextStyle(
                   duration: const Duration(milliseconds: 300),
                   style: const TextStyle(fontSize: 20),
@@ -57,7 +58,8 @@ class AnimatedDefaultTextStyleScreen extends StatelessWidget {
                 "Multiple Style Changes",
                 AnimatedDefaultTextStyle(
                   duration: const Duration(milliseconds: 300),
-                  style: const TextStyle(fontSize: 25, color: Colors.green, fontWeight: FontWeight.w500),
+                  style: const TextStyle(
+                      fontSize: 25, color: Colors.green, fontWeight: FontWeight.w500),
                   child: const Text("Hello World"),
                 ),
               ),

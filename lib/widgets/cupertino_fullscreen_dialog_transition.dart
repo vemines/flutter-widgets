@@ -16,13 +16,15 @@ class CupertinoFullscreenDialogTransitionScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("CupertinoFullscreenDialogTransition - Basic Transition", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CupertinoFullscreenDialogTransition - Transition",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               ElevatedButton(
                 onPressed: () {
                   Navigator.of(context).push(
                     PageRouteBuilder(
-                      pageBuilder: (context, animation, secondaryAnimation) => const _DialogContent(),
+                      pageBuilder: (context, animation, secondaryAnimation) =>
+                          const _DialogContent(),
                       transitionsBuilder: (context, animation, secondaryAnimation, child) {
                         return CupertinoFullscreenDialogTransition(
                           primaryRouteAnimation: animation,
@@ -37,13 +39,15 @@ class CupertinoFullscreenDialogTransitionScreen extends StatelessWidget {
                 child: const Text("Show Dialog"),
               ),
               const SizedBox(height: 20),
-              const Text("CupertinoFullscreenDialogTransition - Custom Transition", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CupertinoFullscreenDialogTransition - Custom Transition",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               ElevatedButton(
                 onPressed: () {
                   Navigator.of(context).push(
                     PageRouteBuilder(
-                      pageBuilder: (context, animation, secondaryAnimation) => const _DialogContent(),
+                      pageBuilder: (context, animation, secondaryAnimation) =>
+                          const _DialogContent(),
                       transitionsBuilder: (context, animation, secondaryAnimation, child) {
                         return CupertinoFullscreenDialogTransition(
                           primaryRouteAnimation: animation,
@@ -58,13 +62,15 @@ class CupertinoFullscreenDialogTransitionScreen extends StatelessWidget {
                 child: const Text("Show Custom Dialog"),
               ),
               const SizedBox(height: 20),
-              const Text("CupertinoFullscreenDialogTransition - With Different Child", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CupertinoFullscreenDialogTransition - With Different Child",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               ElevatedButton(
                 onPressed: () {
                   Navigator.of(context).push(
                     PageRouteBuilder(
-                      pageBuilder: (context, animation, secondaryAnimation) => const _DifferentDialogContent(),
+                      pageBuilder: (context, animation, secondaryAnimation) =>
+                          const _DifferentDialogContent(),
                       transitionsBuilder: (context, animation, secondaryAnimation, child) {
                         return CupertinoFullscreenDialogTransition(
                           primaryRouteAnimation: animation,

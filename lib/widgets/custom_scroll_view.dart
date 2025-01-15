@@ -13,7 +13,7 @@ class CustomScrollViewScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text("CustomScrollView - Basic Example", style: TextStyle(fontWeight: FontWeight.bold)),
+            Text("CustomScrollView - Example", style: TextStyle(fontWeight: FontWeight.bold)),
             SizedBox(height: 10),
             SizedBox(
               height: 200,
@@ -38,7 +38,8 @@ class CustomScrollViewScreen extends StatelessWidget {
               ),
             ),
             SizedBox(height: 20),
-            Text("CustomScrollView - With Different Scroll Direction", style: TextStyle(fontWeight: FontWeight.bold)),
+            Text("CustomScrollView - With Different Scroll Direction",
+                style: TextStyle(fontWeight: FontWeight.bold)),
             SizedBox(height: 10),
             SizedBox(
               height: 150,
@@ -88,7 +89,8 @@ class CustomScrollViewScreen extends StatelessWidget {
               ),
             ),
             SizedBox(height: 20),
-            Text("CustomScrollView - With Header and Footer", style: TextStyle(fontWeight: FontWeight.bold)),
+            Text("CustomScrollView - With Header and Footer",
+                style: TextStyle(fontWeight: FontWeight.bold)),
             SizedBox(height: 10),
             SizedBox(
               height: 200,

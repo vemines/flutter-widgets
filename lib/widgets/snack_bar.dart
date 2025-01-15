@@ -18,10 +18,10 @@ class SnackBarScreen extends StatelessWidget {
             ElevatedButton(
               onPressed: () {
                 ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text('Basic SnackBar')),
+                  const SnackBar(content: Text('SnackBar')),
                 );
               },
-              child: const Text('Show Basic SnackBar'),
+              child: const Text('Show SnackBar'),
             ),
             const SizedBox(height: 20),
             const Text("SnackBar - With Action"),
@@ -60,7 +60,8 @@ class SnackBarScreen extends StatelessWidget {
               onPressed: () {
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
-                    content: const Text('Custom Text Color SnackBar', style: TextStyle(color: Colors.white)),
+                    content: const Text('Custom Text Color SnackBar',
+                        style: TextStyle(color: Colors.white)),
                     backgroundColor: Colors.grey,
                   ),
                 );

@@ -15,10 +15,11 @@ class FadeInImageScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("FadeInImage - Basic Usage", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("FadeInImage - Usage", style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               FadeInImage(
-                placeholder: AssetImage('assets/placeholder.png'), // Replace with your placeholder asset
+                placeholder:
+                    AssetImage('assets/placeholder.png'), // Replace with your placeholder asset
                 image: NetworkImage('https://via.placeholder.com/150'),
                 width: 150,
                 height: 150,
@@ -27,16 +28,19 @@ class FadeInImageScreen extends StatelessWidget {
               Text("FadeInImage - Different Size", style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               FadeInImage(
-                placeholder: AssetImage('assets/placeholder.png'), // Replace with your placeholder asset
+                placeholder:
+                    AssetImage('assets/placeholder.png'), // Replace with your placeholder asset
                 image: NetworkImage('https://via.placeholder.com/200'),
                 width: 200,
                 height: 100,
               ),
               SizedBox(height: 20),
-              Text("FadeInImage - With Error Widget", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("FadeInImage - With Error Widget",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               FadeInImage(
-                placeholder: AssetImage('assets/placeholder.png'), // Replace with your placeholder asset
+                placeholder:
+                    AssetImage('assets/placeholder.png'), // Replace with your placeholder asset
                 image: NetworkImage('invalid_url'),
                 width: 150,
                 height: 150,
@@ -56,7 +60,8 @@ class FadeInImageScreen extends StatelessWidget {
                 width: 150,
                 height: 150,
                 child: FadeInImage(
-                  placeholder: AssetImage('assets/placeholder.png'), // Replace with your placeholder asset
+                  placeholder:
+                      AssetImage('assets/placeholder.png'), // Replace with your placeholder asset
                   image: NetworkImage('https://via.placeholder.com/300'),
                   fit: BoxFit.cover,
                 ),
@@ -68,23 +73,27 @@ class FadeInImageScreen extends StatelessWidget {
                 width: 150,
                 height: 150,
                 child: FadeInImage(
-                  placeholder: AssetImage('assets/placeholder.png'), // Replace with your placeholder asset
+                  placeholder:
+                      AssetImage('assets/placeholder.png'), // Replace with your placeholder asset
                   image: NetworkImage('https://via.placeholder.com/300'),
                   fit: BoxFit.contain,
                 ),
               ),
               SizedBox(height: 20),
-              Text("FadeInImage - With Placeholder Size", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("FadeInImage - With Placeholder Size",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               FadeInImage(
-                placeholder: AssetImage('assets/placeholder.png'), // Replace with your placeholder asset
+                placeholder:
+                    AssetImage('assets/placeholder.png'), // Replace with your placeholder asset
                 image: NetworkImage('https://via.placeholder.com/150'),
                 width: 150,
                 height: 150,
                 placeholderFit: BoxFit.cover,
               ),
               SizedBox(height: 20),
-              Text("FadeInImage - With Different Placeholder", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("FadeInImage - With Different Placeholder",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               FadeInImage(
                 placeholder: NetworkImage('https://via.placeholder.com/50'),

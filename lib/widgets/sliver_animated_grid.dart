@@ -15,8 +15,7 @@ class SliverAnimatedGridScreen extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child:
-                  Text('Basic SliverAnimatedGrid', style: TextStyle(fontWeight: FontWeight.bold)),
+              child: Text('SliverAnimatedGrid', style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             SizedBox(
               height: 200,

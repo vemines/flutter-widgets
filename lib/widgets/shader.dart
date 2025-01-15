@@ -15,13 +15,14 @@ class ShaderScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("Shader - Basic Example", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Shader - Example", style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               // Shader widget without wrapping another widget.
               // This is not applicable as Shader requires a child.
               // Shader(), // This would cause an error.
               const SizedBox(height: 16),
-              const Text("Shader - With Container Child", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Shader - With Container Child",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               ShaderMask(
                 shaderCallback: (Rect bounds) {
@@ -56,7 +57,8 @@ class ShaderScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 16),
-              const Text("Shader - Different Blend Mode", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Shader - Different Blend Mode",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               ShaderMask(
                 shaderCallback: (Rect bounds) {
@@ -74,7 +76,8 @@ class ShaderScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 16),
-              const Text("Shader - With Custom Gradient", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Shader - With Custom Gradient",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               ShaderMask(
                 shaderCallback: (Rect bounds) {
@@ -89,7 +92,8 @@ class ShaderScreen extends StatelessWidget {
                   width: 150,
                   height: 50,
                   color: Colors.white,
-                  child: const Center(child: Text("Gradient Text", style: TextStyle(color: Colors.black))),
+                  child: const Center(
+                      child: Text("Gradient Text", style: TextStyle(color: Colors.black))),
                 ),
               ),
             ],

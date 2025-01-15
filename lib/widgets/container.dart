@@ -13,11 +13,6 @@ class ContainerScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Padding(
-              padding: EdgeInsets.all(8.0),
-              child: Text("Container Variations:",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-            ),
             Wrap(
               spacing: 10,
               runSpacing: 10,
@@ -83,7 +78,7 @@ class ContainerScreen extends StatelessWidget {
                   ),
                 ),
                 Tooltip(
-                  message: "Container - With Alignment",
+                  message: "Container - With alignment",
                   child: Container(
                     alignment: Alignment.bottomRight,
                     color: Colors.brown,
@@ -94,7 +89,7 @@ class ContainerScreen extends StatelessWidget {
             ),
             const Padding(
               padding: EdgeInsets.all(8.0),
-              child: Text("Container as a Wrapper:",
+              child: Text("Container in Container:",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
             ),
             // Container without wrapping another widget is not very useful, so we show it with a child.
@@ -103,12 +98,12 @@ class ContainerScreen extends StatelessWidget {
             // ),
             Container(
               color: Colors.grey[200],
-              padding: const EdgeInsets.all(10),
+              padding: const EdgeInsets.all(16),
               child: Container(
                 color: Colors.yellow,
                 child: const Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: Text("Wrapped Container"),
+                  padding: EdgeInsets.all(10),
+                  child: Text("Inside Container"),
                 ),
               ),
             ),

@@ -21,20 +21,20 @@ class ExpandedScreen extends StatelessWidget {
                 height: 100,
                 child: Row(
                   children: [
-                    Container(width: 50, color: Colors.red),
                     Expanded(child: Container(color: Colors.blue)),
+                    Container(width: 50, color: Colors.red),
                   ],
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("Expanded - Flex 2"),
+              const Text("Expanded - Flex 2 and Flex 1"),
               Container(
                 color: Colors.grey[200],
                 height: 100,
                 child: Row(
                   children: [
-                    Container(width: 50, color: Colors.red),
                     Expanded(flex: 2, child: Container(color: Colors.green)),
+                    Expanded(flex: 1, child: Container(color: Colors.red)),
                   ],
                 ),
               ),
@@ -45,9 +45,9 @@ class ExpandedScreen extends StatelessWidget {
                 height: 100,
                 child: Row(
                   children: [
-                    Container(width: 50, color: Colors.red),
                     Expanded(flex: 1, child: Container(color: Colors.orange)),
                     Expanded(child: Container(color: Colors.purple)),
+                    Container(width: 50, color: Colors.red),
                   ],
                 ),
               ),
@@ -58,8 +58,8 @@ class ExpandedScreen extends StatelessWidget {
                 height: 100,
                 child: Row(
                   children: [
+                    Expanded(child: Center(child: Text("Expanded Text"))),
                     Container(width: 50, color: Colors.red),
-                    Expanded(child: Center(child: Text("Expanded Text", style: TextStyle(color: Colors.white)))),
                   ],
                 ),
               ),
@@ -70,13 +70,13 @@ class ExpandedScreen extends StatelessWidget {
                 height: 100,
                 child: Row(
                   children: [
-                    Container(width: 50, color: Colors.red),
                     Expanded(
                       child: Padding(
-                        padding: const EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.all(16.0),
                         child: Container(color: Colors.yellow),
                       ),
                     ),
+                    Container(width: 50, color: Colors.red),
                   ],
                 ),
               ),
@@ -87,13 +87,13 @@ class ExpandedScreen extends StatelessWidget {
                 height: 100,
                 child: Row(
                   children: [
-                    Container(width: 50, color: Colors.red),
                     Expanded(
                       child: Container(
-                        margin: const EdgeInsets.all(8.0),
+                        margin: const EdgeInsets.all(16.0),
                         color: Colors.teal,
                       ),
                     ),
+                    Container(width: 50, color: Colors.red),
                   ],
                 ),
               ),

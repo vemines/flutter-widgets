@@ -15,14 +15,16 @@ class DefaultWidgetsLocalizationsScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("DefaultWidgetsLocalizations - Basic Usage", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("DefaultWidgetsLocalizations - Usage",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               const Tooltip(
                 message: "DefaultWidgetsLocalizations without wrapping another widget.",
                 child: DefaultWidgetsLocalizations(),
               ),
               const SizedBox(height: 20),
-              const Text("DefaultWidgetsLocalizations - Wrapped with Text", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("DefaultWidgetsLocalizations - Wrapped with Text",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Tooltip(
                 message: "DefaultWidgetsLocalizations wrapping a Text widget.",
@@ -31,7 +33,8 @@ class DefaultWidgetsLocalizationsScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("DefaultWidgetsLocalizations - Wrapped with Container", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("DefaultWidgetsLocalizations - Wrapped with Container",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Tooltip(
                 message: "DefaultWidgetsLocalizations wrapping a Container widget.",
@@ -44,20 +47,24 @@ class DefaultWidgetsLocalizationsScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("DefaultWidgetsLocalizations - With Custom Locale", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("DefaultWidgetsLocalizations - With Custom Locale",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Tooltip(
-                message: "DefaultWidgetsLocalizations with a custom locale (e.g., Spanish). Note that this will only affect the text if the app is configured to use the specified locale.",
+                message:
+                    "DefaultWidgetsLocalizations with a custom locale (e.g., Spanish). Note that this will only affect the text if the app is configured to use the specified locale.",
                 child: DefaultWidgetsLocalizations(
                   locale: const Locale('es'),
                   child: const Text("Localized Text (Spanish)"),
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("DefaultWidgetsLocalizations - With Custom Text Direction", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("DefaultWidgetsLocalizations - With Custom Text Direction",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Tooltip(
-                message: "DefaultWidgetsLocalizations with a custom text direction (e.g., Right-to-Left). Note that this will only affect the text if the app is configured to use the specified text direction.",
+                message:
+                    "DefaultWidgetsLocalizations with a custom text direction (e.g., Right-to-Left). Note that this will only affect the text if the app is configured to use the specified text direction.",
                 child: DefaultWidgetsLocalizations(
                   textDirection: TextDirection.rtl,
                   child: const Text("Localized Text (RTL)"),
@@ -70,6 +77,7 @@ class DefaultWidgetsLocalizationsScreen extends StatelessWidget {
     );
   }
 }
+
 class DefaultWidgetsLocalizations extends StatelessWidget {
   final Widget? child;
   final Locale? locale;

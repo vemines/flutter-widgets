@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'routes.dart'; // Import your AppRoutes class
+import 'routes.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized(); // Ensure Flutter is initialized
+  WidgetsFlutterBinding.ensureInitialized();
   final appRoutes = AppRoutes();
-  await appRoutes.init(); // Load route data
+  await appRoutes.init(); // Init route data
 
   runApp(MyApp(appRoutes: appRoutes));
 }
@@ -23,6 +23,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: HomeScreen(appRoutes: appRoutes),
+      routes: appRoutes.appRoutes(),
     );
   }
 }
@@ -38,8 +39,6 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   String _searchQuery = '';
   String? _routeSelectOption = 'default';
-  // prevent: The targeted input element must be the active input element
-  // when input, hover out still error. Downgrade 3.24.5 or wait hot fix
   final FocusNode _focusNode = FocusNode();
 
   @override
@@ -92,7 +91,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Widget _widgetByRouteOption() {
     if (_filteredRoutes.isEmpty) {
-      return Center(
+      return const Center(
         child: CircularProgressIndicator(),
       );
     }
@@ -105,10 +104,12 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final TextEditingController indexController = TextEditingController();
+
     return Scaffold(
       appBar: AppBar(
         title: Container(
-          constraints: BoxConstraints(maxWidth: 600),
+          constraints: const BoxConstraints(maxWidth: 600),
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(8.0),
@@ -116,12 +117,11 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           child: TextField(
             onChanged: _filterWidgets,
-            focusNode: _focusNode,
-            decoration: InputDecoration(
+            decoration: const InputDecoration(
               hintText: 'Search Widget...',
-              prefixIcon: const Icon(Icons.search, color: Colors.grey),
+              prefixIcon: Icon(Icons.search, color: Colors.grey),
               border: InputBorder.none,
-              contentPadding: const EdgeInsets.all(12.0),
+              contentPadding: EdgeInsets.all(12.0),
             ),
           ),
         ),
@@ -131,7 +131,7 @@ class _HomeScreenState extends State<HomeScreen> {
             icon: const Icon(Icons.sort),
             iconSize: 24,
             elevation: 8,
-            padding: EdgeInsets.all(10),
+            padding: const EdgeInsets.all(10),
             style: const TextStyle(color: Colors.black),
             underline: Container(height: 2, color: Colors.grey.shade300),
             onChanged: _sortWidgets,
@@ -158,6 +158,51 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       ),
       body: _widgetByRouteOption(),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          showDialog(
+            context: context,
+            builder: (BuildContext context) {
+              // Request focus inside the builder
+              WidgetsBinding.instance.addPostFrameCallback((_) => _focusNode.requestFocus());
+              return AlertDialog(
+                title: const Text('Go to Route by Index'),
+                content: TextField(
+                  focusNode: _focusNode,
+                  controller: indexController,
+                  keyboardType: TextInputType.number,
+                  decoration: const InputDecoration(hintText: 'Enter index number'),
+                ),
+                actions: <Widget>[
+                  TextButton(
+                    child: const Text('Cancel'),
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
+                  ),
+                  TextButton(
+                    child: const Text('Go'),
+                    onPressed: () {
+                      final index = int.tryParse(indexController.text);
+                      if (index != null && index >= 1 && index <= _filteredRoutes.length) {
+                        Navigator.of(context).pop();
+                        final route = _filteredRoutes[index - 1];
+                        Navigator.pushNamed(context, route.path);
+                      } else {
+                        // Show an error message if the index is invalid
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          const SnackBar(content: Text('Invalid index')),
+                        );
+                      }
+                    },
+                  ),
+                ],
+              );
+            },
+          );
+        },
+        child: const Icon(Icons.navigation),
+      ),
     );
   }
 }
@@ -179,12 +224,14 @@ class _RoutesWidget extends StatelessWidget {
         final route = _sortedRoutes[index];
         return ListTile(
           title: Text(route.route.replaceAll("Screen()", '')),
+          trailing: Text(
+            (index + 1).toString(),
+            style: const TextStyle(fontSize: 16),
+          ),
           onTap: () {
-            Navigator.push(
+            Navigator.pushNamed(
               context,
-              MaterialPageRoute(
-                builder: (context) => widget.appRoutes.stringToRoute(route.route),
-              ),
+              route.path,
             );
           },
         );
@@ -221,7 +268,7 @@ class _GroupRoutesWidget extends StatelessWidget {
 
         return Container(
           margin: const EdgeInsets.only(bottom: 16),
-          decoration: BoxDecoration(border: Border(bottom: BorderSide())),
+          decoration: const BoxDecoration(border: Border(bottom: BorderSide())),
           child: ExpansionTile(
             title: Text(groupName),
             childrenPadding: const EdgeInsets.only(left: 16),
@@ -229,11 +276,9 @@ class _GroupRoutesWidget extends StatelessWidget {
               return ListTile(
                 title: Text(route.route.replaceAll("Screen()", '')),
                 onTap: () {
-                  Navigator.push(
+                  Navigator.pushNamed(
                     context,
-                    MaterialPageRoute(
-                      builder: (context) => widget.appRoutes.stringToRoute(route.route),
-                    ),
+                    route.path,
                   );
                 },
               );

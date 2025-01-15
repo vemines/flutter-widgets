@@ -15,66 +15,62 @@ class FloatingActionButtonScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("FloatingActionButton Variations:", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              Text("FloatingActionButton Variations:",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               SizedBox(height: 16),
               Wrap(
-                spacing: 16,
-                runSpacing: 16,
+                spacing: 24,
+                runSpacing: 24,
                 children: [
-                  Column(
-                    children: [
-                      Tooltip(message: "FloatingActionButton - Default", child: FloatingActionButton(onPressed: () {}, child: Icon(Icons.add))),
-                      Text("Default"),
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      Tooltip(message: "FloatingActionButton - Blue Background", child: FloatingActionButton(onPressed: () {}, backgroundColor: Colors.blue, child: Icon(Icons.add))),
-                      Text("Blue Background"),
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      Tooltip(message: "FloatingActionButton - Red Icon", child: FloatingActionButton(onPressed: () {}, child: Icon(Icons.add, color: Colors.red))),
-                      Text("Red Icon"),
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      Tooltip(message: "FloatingActionButton - Large Size", child: FloatingActionButton(onPressed: () {}, mini: false, shape: CircleBorder(), child: Icon(Icons.add),)),
-                      Text("Large Size"),
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      Tooltip(message: "FloatingActionButton - Small Size", child: FloatingActionButton(onPressed: () {}, mini: true, child: Icon(Icons.add))),
-                      Text("Small Size"),
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      Tooltip(message: "FloatingActionButton - Extended", child: FloatingActionButton.extended(onPressed: () {}, label: Text("Add"), icon: Icon(Icons.add))),
-                      Text("Extended"),
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      Tooltip(message: "FloatingActionButton - Rounded Shape", child: FloatingActionButton(onPressed: () {}, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)), child: Icon(Icons.add))),
-                      Text("Rounded Shape"),
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      Tooltip(message: "FloatingActionButton - Custom Elevation", child: FloatingActionButton(onPressed: () {}, elevation: 10, child: Icon(Icons.add))),
-                      Text("Custom Elevation"),
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      Tooltip(message: "FloatingActionButton - Disabled", child: FloatingActionButton(onPressed: null, child: Icon(Icons.add))),
-                      Text("Disabled"),
-                    ],
-                  ),
+                  Tooltip(
+                      message: "FloatingActionButton - Default",
+                      child: FloatingActionButton(
+                          heroTag: "1", onPressed: () {}, child: Icon(Icons.add))),
+                  Tooltip(
+                      message: "FloatingActionButton - Blue Background",
+                      child: FloatingActionButton(
+                          heroTag: "2",
+                          onPressed: () {},
+                          backgroundColor: Colors.blue,
+                          child: Icon(Icons.add))),
+                  Tooltip(
+                      message: "FloatingActionButton - Red Icon",
+                      child: FloatingActionButton(
+                          heroTag: "3",
+                          onPressed: () {},
+                          child: Icon(Icons.add, color: Colors.red))),
+                  Tooltip(
+                      message: "FloatingActionButton - shape: CircleBorder",
+                      child: FloatingActionButton(
+                        heroTag: "4",
+                        onPressed: () {},
+                        shape: CircleBorder(),
+                        child: Icon(Icons.add),
+                      )),
+                  Tooltip(
+                      message: "FloatingActionButton - mini: true",
+                      child: FloatingActionButton(
+                          heroTag: "5", onPressed: () {}, mini: true, child: Icon(Icons.add))),
+                  Tooltip(
+                      message: "FloatingActionButton - Extended",
+                      child: FloatingActionButton.extended(
+                          onPressed: () {}, label: Text("Add"), icon: Icon(Icons.add))),
+                  Tooltip(
+                      message: "FloatingActionButton - BorderRadius 30",
+                      child: FloatingActionButton.extended(
+                          heroTag: "6",
+                          label: Text("add"),
+                          onPressed: () {},
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+                          icon: Icon(Icons.add))),
+                  Tooltip(
+                      message: "FloatingActionButton - elevation 10",
+                      child: FloatingActionButton(
+                          heroTag: "7", onPressed: () {}, elevation: 10, child: Icon(Icons.add))),
+                  Tooltip(
+                      message: "FloatingActionButton - Disabled",
+                      child: FloatingActionButton(
+                          heroTag: "8", onPressed: null, child: Icon(Icons.add))),
                 ],
               ),
             ],
@@ -82,7 +78,9 @@ class FloatingActionButtonScreen extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
+        heroTag: "9",
         onPressed: () {},
+        tooltip: "Scaffold floatingActionButton",
         child: Icon(Icons.add),
       ),
     );

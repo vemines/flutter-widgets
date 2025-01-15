@@ -16,14 +16,15 @@ class CupertinoCheckBoxScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("Basic Cupertino Checkbox", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Cupertino Checkbox", style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               const _CupertinoCheckBoxVariation(
-                description: "Basic Checkbox",
+                description: "Checkbox",
                 child: CupertinoCheckbox(value: false, onChanged: null),
               ),
               const SizedBox(height: 16),
-              const Text("Cupertino Checkbox Variations", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Cupertino Checkbox Variations",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Wrap(
                 spacing: 16,

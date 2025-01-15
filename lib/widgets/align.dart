@@ -15,9 +15,11 @@ class AlignScreen extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("Align - Default Alignment", style: TextStyle(fontWeight: FontWeight.bold)),
+              child:
+                  Text("Align - Default Alignment", style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             Align(
+              heightFactor: 2,
               child: Container(
                 width: 50,
                 height: 50,
@@ -26,9 +28,11 @@ class AlignScreen extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("Align - Top Left Alignment", style: TextStyle(fontWeight: FontWeight.bold)),
+              child:
+                  Text("Align - Top Left Alignment", style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             Align(
+              heightFactor: 2,
               alignment: Alignment.topLeft,
               child: Container(
                 width: 50,
@@ -38,9 +42,11 @@ class AlignScreen extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("Align - Bottom Right Alignment", style: TextStyle(fontWeight: FontWeight.bold)),
+              child: Text("Align - Bottom Right Alignment",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             Align(
+              heightFactor: 2,
               alignment: Alignment.bottomRight,
               child: Container(
                 width: 50,
@@ -50,9 +56,11 @@ class AlignScreen extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("Align - Center Alignment", style: TextStyle(fontWeight: FontWeight.bold)),
+              child:
+                  Text("Align - Center Alignment", style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             Align(
+              heightFactor: 2,
               alignment: Alignment.center,
               child: Container(
                 width: 50,
@@ -62,9 +70,11 @@ class AlignScreen extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("Align - Center Left Alignment", style: TextStyle(fontWeight: FontWeight.bold)),
+              child: Text("Align - Center Left Alignment",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             Align(
+              heightFactor: 2,
               alignment: Alignment.centerLeft,
               child: Container(
                 width: 50,
@@ -74,9 +84,11 @@ class AlignScreen extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("Align - Center Right Alignment", style: TextStyle(fontWeight: FontWeight.bold)),
+              child: Text("Align - Center Right Alignment",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             Align(
+              heightFactor: 2,
               alignment: Alignment.centerRight,
               child: Container(
                 width: 50,
@@ -86,9 +98,11 @@ class AlignScreen extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("Align - Top Center Alignment", style: TextStyle(fontWeight: FontWeight.bold)),
+              child: Text("Align - Top Center Alignment",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             Align(
+              heightFactor: 2,
               alignment: Alignment.topCenter,
               child: Container(
                 width: 50,
@@ -98,9 +112,11 @@ class AlignScreen extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("Align - Bottom Center Alignment", style: TextStyle(fontWeight: FontWeight.bold)),
+              child: Text("Align - Bottom Center Alignment",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             Align(
+              heightFactor: 2,
               alignment: Alignment.bottomCenter,
               child: Container(
                 width: 50,
@@ -110,14 +126,14 @@ class AlignScreen extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("Align - With Text", style: TextStyle(fontWeight: FontWeight.bold)),
+              child:
+                  Text("Align - Text bottomRight", style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             Align(
+              heightFactor: 2,
               alignment: Alignment.bottomRight,
               child: Text("Aligned Text", style: TextStyle(fontSize: 20)),
             ),
-            // The following would cause an error because Align needs a child.
-            // Align(),
           ],
         ),
       ),

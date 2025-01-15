@@ -24,7 +24,7 @@ class FormFieldBuilderScreen extends StatelessWidget {
                 children: [
                   _buildFormFieldBuilderVariation(
                     label: "Default FormFieldBuilder",
-                    description: "Basic FormFieldBuilder with default styling.",
+                    description: "FormFieldBuilder with default styling.",
                     child: FormFieldBuilder<String>(
                       initialValue: 'Initial Value',
                       builder: (FormFieldState<String> field) {

@@ -20,7 +20,7 @@ class CupertinoModalPopupRouteScreen extends StatelessWidget {
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               const SizedBox(height: 20),
               const Text(
-                  "CupertinoModalPopupRoute - Basic Usage (Not directly visible, used to show a modal)",
+                  "CupertinoModalPopupRoute - Usage (Not directly visible, used to show a modal)",
                   style: TextStyle(fontSize: 16)),
               const SizedBox(height: 10),
               ElevatedButton(

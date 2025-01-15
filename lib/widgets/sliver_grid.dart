@@ -15,7 +15,7 @@ class SliverGridScreen extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("SliverGrid - Basic Grid", style: TextStyle(fontWeight: FontWeight.bold)),
+              child: Text("SliverGrid - Grid", style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             SizedBox(
               height: 200,
@@ -44,7 +44,8 @@ class SliverGridScreen extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("SliverGrid - Different Cross Axis Count", style: TextStyle(fontWeight: FontWeight.bold)),
+              child: Text("SliverGrid - Different Cross Axis Count",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             SizedBox(
               height: 200,
@@ -102,7 +103,8 @@ class SliverGridScreen extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("SliverGrid - Different Child Aspect Ratio", style: TextStyle(fontWeight: FontWeight.bold)),
+              child: Text("SliverGrid - Different Child Aspect Ratio",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             SizedBox(
               height: 200,

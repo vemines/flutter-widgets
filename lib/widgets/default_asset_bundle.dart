@@ -15,14 +15,16 @@ class DefaultAssetBundleScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("DefaultAssetBundle - Basic Usage", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("DefaultAssetBundle - Usage",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               DefaultAssetBundle(
                 bundle: DefaultAssetBundle.of(context),
                 child: const Text("Text from default asset bundle"),
               ),
               const SizedBox(height: 16),
-              const Text("DefaultAssetBundle - With Container", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("DefaultAssetBundle - With Container",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               DefaultAssetBundle(
                 bundle: DefaultAssetBundle.of(context),
@@ -33,9 +35,11 @@ class DefaultAssetBundleScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 16),
-              const Text("DefaultAssetBundle - With Custom Bundle (Not Applicable)", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("DefaultAssetBundle - With Custom Bundle (Not Applicable)",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
-              const Text("DefaultAssetBundle does not have many visual properties. It's a wrapper for asset loading. The variations above show its basic usage with and without a container. Custom bundles are not demonstrated here as they require external asset loading which is outside the scope of this showcase."),
+              const Text(
+                  "DefaultAssetBundle does not have many visual properties. It's a wrapper for asset loading. The variations above show its usage with and without a container. Custom bundles are not demonstrated here as they require external asset loading which is outside the scope of this showcase."),
             ],
           ),
         ),

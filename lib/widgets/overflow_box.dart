@@ -15,7 +15,7 @@ class OverflowBoxScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("OverflowBox - Basic Example", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("OverflowBox - Example", style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               OverflowBox(
                 maxWidth: 100,
@@ -27,7 +27,8 @@ class OverflowBoxScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 16),
-              const Text("OverflowBox - Min Width/Height", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("OverflowBox - Min Width/Height",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               OverflowBox(
                 minWidth: 150,
@@ -39,7 +40,8 @@ class OverflowBoxScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 16),
-              const Text("OverflowBox - Alignment Top Left", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("OverflowBox - Alignment Top Left",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               OverflowBox(
                 maxWidth: 100,
@@ -52,7 +54,8 @@ class OverflowBoxScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 16),
-              const Text("OverflowBox - Alignment Bottom Right", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("OverflowBox - Alignment Bottom Right",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               OverflowBox(
                 maxWidth: 100,
@@ -65,7 +68,8 @@ class OverflowBoxScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 16),
-              const Text("OverflowBox - With different child size", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("OverflowBox - With different child size",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               OverflowBox(
                 maxWidth: 100,
@@ -77,7 +81,8 @@ class OverflowBoxScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 16),
-              const Text("OverflowBox - With different child size and alignment", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("OverflowBox - With different child size and alignment",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               OverflowBox(
                 maxWidth: 100,
@@ -90,7 +95,8 @@ class OverflowBoxScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 16),
-              const Text("OverflowBox - No wrapping widget", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("OverflowBox - No wrapping widget",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               // OverflowBox(
               //   maxWidth: 100,
@@ -98,7 +104,8 @@ class OverflowBoxScreen extends StatelessWidget {
               // ), // This will cause an error because OverflowBox requires a child.
               const Text("OverflowBox requires a child, so this example is commented out."),
               const SizedBox(height: 16),
-              const Text("OverflowBox - Wrapping a Text widget", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("OverflowBox - Wrapping a Text widget",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               OverflowBox(
                 maxWidth: 100,

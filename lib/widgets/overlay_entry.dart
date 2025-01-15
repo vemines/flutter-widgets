@@ -15,7 +15,7 @@ class OverlayEntryScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("OverlayEntry - Basic Usage", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("OverlayEntry - Usage", style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               ElevatedButton(
                 onPressed: () {
@@ -38,7 +38,8 @@ class OverlayEntryScreen extends StatelessWidget {
                 child: const Text('Show Overlay'),
               ),
               const SizedBox(height: 20),
-              const Text("OverlayEntry - Custom Position", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("OverlayEntry - Custom Position",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               ElevatedButton(
                 onPressed: () {
@@ -49,7 +50,8 @@ class OverlayEntryScreen extends StatelessWidget {
                       child: Container(
                         padding: const EdgeInsets.all(16),
                         color: Colors.green,
-                        child: const Text('Overlay Content Bottom Right', style: TextStyle(color: Colors.white)),
+                        child: const Text('Overlay Content Bottom Right',
+                            style: TextStyle(color: Colors.white)),
                       ),
                     ),
                   );
@@ -61,7 +63,8 @@ class OverlayEntryScreen extends StatelessWidget {
                 child: const Text('Show Overlay Bottom Right'),
               ),
               const SizedBox(height: 20),
-              const Text("OverlayEntry - With a Dismiss Button", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("OverlayEntry - With a Dismiss Button",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               ElevatedButton(
                 onPressed: () {
@@ -81,7 +84,8 @@ class OverlayEntryScreen extends StatelessWidget {
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              const Text('Overlay Content with Dismiss', style: TextStyle(color: Colors.white)),
+                              const Text('Overlay Content with Dismiss',
+                                  style: TextStyle(color: Colors.white)),
                               ElevatedButton(
                                 onPressed: () {
                                   overlayEntry.remove();
@@ -99,7 +103,8 @@ class OverlayEntryScreen extends StatelessWidget {
                 child: const Text('Show Overlay with Dismiss'),
               ),
               const SizedBox(height: 20),
-              const Text("OverlayEntry - Using a GestureDetector to Dismiss", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("OverlayEntry - Using a GestureDetector to Dismiss",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               ElevatedButton(
                 onPressed: () {
@@ -120,7 +125,8 @@ class OverlayEntryScreen extends StatelessWidget {
                               color: Colors.purple,
                               borderRadius: BorderRadius.circular(8),
                             ),
-                            child: const Text('Tap to Dismiss', style: TextStyle(color: Colors.white)),
+                            child:
+                                const Text('Tap to Dismiss', style: TextStyle(color: Colors.white)),
                           ),
                         ),
                       ),

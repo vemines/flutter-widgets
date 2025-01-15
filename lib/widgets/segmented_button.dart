@@ -18,7 +18,7 @@ class SegmentedButtonScreen extends StatelessWidget {
               const Text("SegmentedButton Variations",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               const SizedBox(height: 20),
-              const Text("Basic SegmentedButton"),
+              const Text("SegmentedButton"),
               const SizedBox(height: 8),
               SegmentedButton<int>(
                 segments: const <ButtonSegment<int>>[

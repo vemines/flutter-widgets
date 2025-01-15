@@ -15,7 +15,7 @@ class ShowGeneralDialogScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("ShowGeneralDialog - Basic Dialog",
+              const Text("ShowGeneralDialog - Dialog",
                   style: TextStyle(fontWeight: FontWeight.bold)),
               ElevatedButton(
                 onPressed: () {
@@ -36,14 +36,14 @@ class ShowGeneralDialogScreen extends StatelessWidget {
                         child: Card(
                           child: Padding(
                             padding: EdgeInsets.all(20),
-                            child: Text("Basic Dialog Content"),
+                            child: Text("Dialog Content"),
                           ),
                         ),
                       );
                     },
                   );
                 },
-                child: const Text("Show Basic Dialog"),
+                child: const Text("Show Dialog"),
               ),
               const SizedBox(height: 20),
               const Text("ShowGeneralDialog - Custom Transition",

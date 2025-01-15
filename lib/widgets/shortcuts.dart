@@ -16,7 +16,7 @@ class ShortcutsScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("Shortcuts - Basic Usage", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Shortcuts - Usage", style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               // Shortcuts without a child widget
               // This will cause an error because Shortcuts requires a child

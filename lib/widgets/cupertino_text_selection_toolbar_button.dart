@@ -16,14 +16,14 @@ class CupertinoTextSelectionToolbarButtonScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("Basic Button:", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Button:", style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Wrap(
                 spacing: 8,
                 runSpacing: 8,
                 children: [
                   Tooltip(
-                    message: "Basic Button",
+                    message: "Button",
                     child: CupertinoTextSelectionToolbarButton(
                       onPressed: () {},
                       child: const Text('Button'),

@@ -5,13 +5,15 @@ class ElevatedButtonScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final widthScreen = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
         title: const Text("ElevatedButton Showcase"),
       ),
       body: SingleChildScrollView(
-        child: Padding(
+        child: Container(
           padding: const EdgeInsets.all(16.0),
+          width: widthScreen,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -30,15 +32,6 @@ class ElevatedButtonScreen extends StatelessWidget {
                 child: const Text("Blue Button", style: TextStyle(color: Colors.white)),
               ),
               const SizedBox(height: 20),
-              const Text("ElevatedButton - Red Text"),
-              ElevatedButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                  foregroundColor: Colors.red,
-                ),
-                child: const Text("Red Text Button"),
-              ),
-              const SizedBox(height: 20),
               const Text("ElevatedButton - Large Padding"),
               ElevatedButton(
                 onPressed: () {},
@@ -52,11 +45,72 @@ class ElevatedButtonScreen extends StatelessWidget {
               ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
+                  padding: EdgeInsets.all(16),
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(15),
+                    borderRadius: BorderRadius.circular(4),
                   ),
                 ),
-                child: const Text("Rounded Button"),
+                child: const Text("Less Rounded Button"),
+              ),
+              const SizedBox(height: 20),
+              const Text(
+                  "ElevatedButton - Block 1. width: infinity (Make sure parrent widget have constraint)"),
+              ElevatedButton(
+                onPressed: () {},
+                child: Container(
+                  width: double.infinity,
+                  padding: EdgeInsets.symmetric(vertical: 12),
+                  child: const Text(
+                    "Full width 1",
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ),
+              const Text("ElevatedButton - Block 2 minimumSize = widthScreen"),
+              ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(minimumSize: Size(widthScreen - 32, 50)),
+                child: const Text(
+                  "Full width 1",
+                  textAlign: TextAlign.center,
+                ),
+              ),
+              const SizedBox(height: 20),
+              const Text("ElevatedButton - Custom Text Style"),
+              ElevatedButton(
+                onPressed: () {},
+                child: const Text(
+                  "Custom Style",
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    fontStyle: FontStyle.italic,
+                  ),
+                ),
+              ),
+              const SizedBox(height: 20),
+              const Text("ElevatedButton - Minimum Size"),
+              ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  minimumSize: const Size(200, 50),
+                ),
+                child: const Text("Minimum Size Button"),
+              ),
+              const SizedBox(height: 20),
+              const Text("ElevatedButton - Disabled"),
+              ElevatedButton(
+                onPressed: null,
+                child: const Text("Disabled Button"),
+              ),
+              const SizedBox(height: 20),
+              const Text("ElevatedButton - With Shadow"),
+              ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  elevation: 10,
+                ),
+                child: const Text("Shadow Button"),
               ),
               const SizedBox(height: 20),
               _buildElevatedButtonIcon(
@@ -64,7 +118,7 @@ class ElevatedButtonScreen extends StatelessWidget {
                 ElevatedButton.icon(
                   onPressed: () {},
                   icon: Icon(Icons.add),
-                  label: Text("Add"),
+                  label: Text("ElevatedButton.icon"),
                 ),
               ),
               _buildElevatedButtonIcon(
@@ -79,14 +133,14 @@ class ElevatedButtonScreen extends StatelessWidget {
                 ),
               ),
               _buildElevatedButtonIcon(
-                "Rounded Corners",
+                "Less Rounded",
                 ElevatedButton.icon(
                   onPressed: () {},
                   icon: Icon(Icons.settings),
                   label: Text("Settings"),
                   style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20),
+                      borderRadius: BorderRadius.circular(4),
                     ),
                   ),
                 ),
@@ -106,7 +160,7 @@ class ElevatedButtonScreen extends StatelessWidget {
                 "Text Style",
                 ElevatedButton.icon(
                   onPressed: () {},
-                  icon: Icon(Icons.info, color: Colors.black),
+                  icon: Icon(Icons.info),
                   label: Text("Info",
                       style: TextStyle(
                           fontSize: 18, fontWeight: FontWeight.bold, color: Colors.black)),
@@ -165,43 +219,6 @@ class ElevatedButtonScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(height: 20),
-              const Text("ElevatedButton - Custom Text Style"),
-              ElevatedButton(
-                onPressed: () {},
-                child: const Text(
-                  "Custom Style",
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                    fontStyle: FontStyle.italic,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 20),
-              const Text("ElevatedButton - Minimum Size"),
-              ElevatedButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                  minimumSize: const Size(200, 50),
-                ),
-                child: const Text("Minimum Size Button"),
-              ),
-              const SizedBox(height: 20),
-              const Text("ElevatedButton - Disabled"),
-              ElevatedButton(
-                onPressed: null,
-                child: const Text("Disabled Button"),
-              ),
-              const SizedBox(height: 20),
-              const Text("ElevatedButton - With Shadow"),
-              ElevatedButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                  elevation: 10,
-                ),
-                child: const Text("Shadow Button"),
-              ),
             ],
           ),
         ),
@@ -216,6 +233,7 @@ class ElevatedButtonScreen extends StatelessWidget {
         Tooltip(message: name, child: widget),
         SizedBox(height: 5),
         Text(name, style: TextStyle(fontSize: 12)),
+        SizedBox(height: 10),
       ],
     );
   }

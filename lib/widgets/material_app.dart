@@ -15,10 +15,10 @@ class MaterialAppScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("MaterialApp - Basic Usage", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("MaterialApp - Usage", style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Tooltip(
-                message: "A basic MaterialApp with a home screen.",
+                message: "A MaterialApp with a home screen.",
                 child: Container(
                   decoration: BoxDecoration(border: Border.all(color: Colors.grey)),
                   padding: EdgeInsets.all(8),
@@ -61,8 +61,12 @@ class MaterialAppScreen extends StatelessWidget {
                   child: MaterialApp(
                     initialRoute: '/',
                     routes: {
-                      '/': (context) => Scaffold(appBar: AppBar(title: Text("Home")), body: Center(child: Text("Home Screen"))),
-                      '/second': (context) => Scaffold(appBar: AppBar(title: Text("Second")), body: Center(child: Text("Second Screen"))),
+                      '/': (context) => Scaffold(
+                          appBar: AppBar(title: Text("Home")),
+                          body: Center(child: Text("Home Screen"))),
+                      '/second': (context) => Scaffold(
+                          appBar: AppBar(title: Text("Second")),
+                          body: Center(child: Text("Second Screen"))),
                     },
                     home: Scaffold(
                       body: Center(
@@ -95,7 +99,8 @@ class MaterialAppScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-              Text("MaterialApp - With debugShowCheckedModeBanner", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("MaterialApp - With debugShowCheckedModeBanner",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Tooltip(
                 message: "MaterialApp with debugShowCheckedModeBanner set to false.",
@@ -112,7 +117,8 @@ class MaterialAppScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-              Text("MaterialApp - With ThemeData and dark mode", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("MaterialApp - With ThemeData and dark mode",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Tooltip(
                 message: "MaterialApp with a dark theme.",
@@ -129,7 +135,8 @@ class MaterialAppScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-              Text("MaterialApp - With ThemeData and custom colorScheme", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("MaterialApp - With ThemeData and custom colorScheme",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Tooltip(
                 message: "MaterialApp with a custom colorScheme.",

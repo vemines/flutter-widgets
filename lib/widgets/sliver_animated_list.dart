@@ -31,7 +31,7 @@ class SliverAnimatedListScreen extends StatelessWidget {
       children: [
         Padding(
           padding: const EdgeInsets.all(8.0),
-          child: Text("Basic SliverAnimatedList",
+          child: Text("SliverAnimatedList",
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
         ),
         SizedBox(

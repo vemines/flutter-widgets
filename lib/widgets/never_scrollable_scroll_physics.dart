@@ -15,7 +15,7 @@ class NeverScrollableScrollPhysicsScreen extends StatelessWidget {
           children: [
             const Padding(
               padding: EdgeInsets.all(8.0),
-              child: Text("NeverScrollableScrollPhysics - Basic Example"),
+              child: Text("NeverScrollableScrollPhysics - Example"),
             ),
             SizedBox(
               height: 200,

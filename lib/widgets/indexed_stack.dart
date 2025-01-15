@@ -15,7 +15,7 @@ class IndexedStackScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("IndexedStack - Basic Example", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("IndexedStack - Example", style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               SizedBox(
                 height: 100,
@@ -57,21 +57,30 @@ class IndexedStackScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("IndexedStack - Different Heights", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("IndexedStack - Different Heights",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               SizedBox(
                 height: 150,
                 child: IndexedStack(
                   index: 0,
                   children: [
-                    Container(height: 50, color: Colors.red, child: const Center(child: Text("Item 1"))),
-                    Container(height: 100, color: Colors.green, child: const Center(child: Text("Item 2"))),
-                    Container(height: 150, color: Colors.blue, child: const Center(child: Text("Item 3"))),
+                    Container(
+                        height: 50, color: Colors.red, child: const Center(child: Text("Item 1"))),
+                    Container(
+                        height: 100,
+                        color: Colors.green,
+                        child: const Center(child: Text("Item 2"))),
+                    Container(
+                        height: 150,
+                        color: Colors.blue,
+                        child: const Center(child: Text("Item 3"))),
                   ],
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("IndexedStack - With Alignment", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("IndexedStack - With Alignment",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               SizedBox(
                 height: 100,

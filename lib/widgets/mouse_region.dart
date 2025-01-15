@@ -25,7 +25,7 @@ class MouseRegionScreen extends StatelessWidget {
                 runSpacing: 16,
                 children: [
                   _buildMouseRegionVariation(
-                    "Basic MouseRegion",
+                    "MouseRegion",
                     MouseRegion(
                       onEnter: (event) => {print("Mouse Entered")},
                       onExit: (event) => print("Mouse Exited"),

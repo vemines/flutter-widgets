@@ -15,7 +15,7 @@ class ListenerScreen extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("Listener - Basic Example", style: TextStyle(fontWeight: FontWeight.bold)),
+              child: Text("Listener - Example", style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             Listener(
               onPointerDown: (event) {
@@ -29,7 +29,8 @@ class ListenerScreen extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("Listener - With Pointer Up", style: TextStyle(fontWeight: FontWeight.bold)),
+              child:
+                  Text("Listener - With Pointer Up", style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             Listener(
               onPointerUp: (event) {
@@ -43,7 +44,8 @@ class ListenerScreen extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("Listener - With Pointer Move", style: TextStyle(fontWeight: FontWeight.bold)),
+              child: Text("Listener - With Pointer Move",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             Listener(
               onPointerMove: (event) {
@@ -57,7 +59,8 @@ class ListenerScreen extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("Listener - With Pointer Signal", style: TextStyle(fontWeight: FontWeight.bold)),
+              child: Text("Listener - With Pointer Signal",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             Listener(
               onPointerSignal: (event) {
@@ -71,7 +74,8 @@ class ListenerScreen extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("Listener - With Behavior", style: TextStyle(fontWeight: FontWeight.bold)),
+              child:
+                  Text("Listener - With Behavior", style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             Listener(
               behavior: HitTestBehavior.opaque,
@@ -102,14 +106,16 @@ class ListenerScreen extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("Listener - Without Child (Not Recommended)", style: TextStyle(fontWeight: FontWeight.bold)),
+              child: Text("Listener - Without Child (Not Recommended)",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             // Listener(
             //   onPointerDown: (event) {
             //     print("Pointer Down without child: ${event.position}");
             //   },
             // ), // This will not be visible as it has no child to render and will not receive events.
-            Text("Listener without child is not visible and will not receive events. It needs a child to be interactive."),
+            Text(
+                "Listener without child is not visible and will not receive events. It needs a child to be interactive."),
           ],
         ),
       ),

@@ -15,7 +15,8 @@ class NestedScrollViewScreen extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("NestedScrollView - Basic Example", style: TextStyle(fontWeight: FontWeight.bold)),
+              child:
+                  Text("NestedScrollView - Example", style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             SizedBox(
               height: 200,
@@ -40,7 +41,8 @@ class NestedScrollViewScreen extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("NestedScrollView - With Custom Scroll Physics", style: TextStyle(fontWeight: FontWeight.bold)),
+              child: Text("NestedScrollView - With Custom Scroll Physics",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             SizedBox(
               height: 200,
@@ -65,7 +67,8 @@ class NestedScrollViewScreen extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("NestedScrollView - With Different Header", style: TextStyle(fontWeight: FontWeight.bold)),
+              child: Text("NestedScrollView - With Different Header",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             SizedBox(
               height: 200,
@@ -78,7 +81,8 @@ class NestedScrollViewScreen extends StatelessWidget {
                         maxHeight: 100.0,
                         child: Container(
                           color: Colors.blue,
-                          child: Center(child: Text('Custom Header', style: TextStyle(color: Colors.white))),
+                          child: Center(
+                              child: Text('Custom Header', style: TextStyle(color: Colors.white))),
                         ),
                       ),
                       pinned: true,
@@ -94,7 +98,8 @@ class NestedScrollViewScreen extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("NestedScrollView - With Different Body", style: TextStyle(fontWeight: FontWeight.bold)),
+              child: Text("NestedScrollView - With Different Body",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
             ),
             SizedBox(
               height: 200,

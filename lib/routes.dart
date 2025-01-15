@@ -62,6 +62,13 @@ class AppRoutes {
     groupRoutesData = groupRouteJson.map((item) => GroupRouteItem.fromJson(item)).toList();
   }
 
+  Map<String, Widget Function(BuildContext)> appRoutes() {
+    return {
+      for (var item in normalRoutesData)
+        item.path: (BuildContext context) => stringToRoute(item.route)
+    };
+  }
+
 // Use "Ctrl Shilt L" + "Ctrl L" in vscode for quick remove
   Widget stringToRoute(String widgetString) {
     switch (widgetString) {

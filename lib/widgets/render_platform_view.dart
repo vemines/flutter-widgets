@@ -15,14 +15,15 @@ class RenderPlatformViewScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("RenderPlatformView Variations:", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              const Text("RenderPlatformView Variations:",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               const SizedBox(height: 16),
-              const Text("RenderPlatformView - Basic Example"),
+              const Text("RenderPlatformView - Example"),
               const SizedBox(height: 8),
               SizedBox(
                 height: 200,
                 width: 200,
-                child:  PlatformViewExample(),
+                child: PlatformViewExample(),
               ),
               const SizedBox(height: 16),
               const Text("RenderPlatformView - With Background Color"),
@@ -32,7 +33,7 @@ class RenderPlatformViewScreen extends StatelessWidget {
                 child: SizedBox(
                   height: 200,
                   width: 200,
-                  child:  PlatformViewExample(),
+                  child: PlatformViewExample(),
                 ),
               ),
               const SizedBox(height: 16),
@@ -45,7 +46,7 @@ class RenderPlatformViewScreen extends StatelessWidget {
                 child: SizedBox(
                   height: 200,
                   width: 200,
-                  child:  PlatformViewExample(),
+                  child: PlatformViewExample(),
                 ),
               ),
               const SizedBox(height: 16),
@@ -56,7 +57,7 @@ class RenderPlatformViewScreen extends StatelessWidget {
                 child: SizedBox(
                   height: 200,
                   width: 200,
-                  child:  PlatformViewExample(),
+                  child: PlatformViewExample(),
                 ),
               ),
               const SizedBox(height: 16),
@@ -67,7 +68,7 @@ class RenderPlatformViewScreen extends StatelessWidget {
                 child: SizedBox(
                   height: 200,
                   width: 200,
-                  child:  PlatformViewExample(),
+                  child: PlatformViewExample(),
                 ),
               ),
               const SizedBox(height: 16),
@@ -76,7 +77,7 @@ class RenderPlatformViewScreen extends StatelessWidget {
               SizedBox(
                 height: 100,
                 width: 100,
-                child:  PlatformViewExample(),
+                child: PlatformViewExample(),
               ),
               const SizedBox(height: 16),
               const Text("RenderPlatformView - With Different Size 2"),
@@ -84,7 +85,7 @@ class RenderPlatformViewScreen extends StatelessWidget {
               SizedBox(
                 height: 300,
                 width: 300,
-                child:  PlatformViewExample(),
+                child: PlatformViewExample(),
               ),
             ],
           ),

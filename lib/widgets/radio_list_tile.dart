@@ -15,7 +15,8 @@ class RadioListTileScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("RadioListTile Variations", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              Text("RadioListTile Variations",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               SizedBox(height: 20),
               Wrap(
                 spacing: 20,
@@ -23,7 +24,7 @@ class RadioListTileScreen extends StatelessWidget {
                 children: [
                   _buildRadioListTileVariation(
                     title: "Default RadioListTile",
-                    description: "Basic RadioListTile with default styling.",
+                    description: "RadioListTile with default styling.",
                     radioListTile: RadioListTile(
                       title: Text("Option 1"),
                       value: 1,
@@ -79,7 +80,8 @@ class RadioListTileScreen extends StatelessWidget {
                     title: "RadioListTile - Custom Text Style",
                     description: "RadioListTile with a custom text style.",
                     radioListTile: RadioListTile(
-                      title: Text("Option 6", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue)),
+                      title: Text("Option 6",
+                          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue)),
                       value: 6,
                       groupValue: 1,
                       onChanged: (value) {},
@@ -128,11 +130,14 @@ class RadioListTileScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildRadioListTileVariation({required String title, required String description, required Widget radioListTile}) {
+  Widget _buildRadioListTileVariation(
+      {required String title, required String description, required Widget radioListTile}) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Tooltip(message: description, child: Text(title, style: TextStyle(fontWeight: FontWeight.bold))),
+        Tooltip(
+            message: description,
+            child: Text(title, style: TextStyle(fontWeight: FontWeight.bold))),
         SizedBox(height: 8),
         radioListTile,
       ],

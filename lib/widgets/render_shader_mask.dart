@@ -16,8 +16,7 @@ class RenderShaderMaskScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("RenderShaderMask - Basic Example",
-                  style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("RenderShaderMask - Example", style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               ShaderMask(
                 shaderCallback: (Rect bounds) {

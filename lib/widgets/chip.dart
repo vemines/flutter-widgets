@@ -15,11 +15,11 @@ class ChipScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Basic Chip", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("Chip", style: TextStyle(fontWeight: FontWeight.bold)),
               Wrap(
                 spacing: 8.0,
                 children: [
-                  Chip(label: Text("Basic Chip")),
+                  Chip(label: Text("Chip")),
                 ],
               ),
               SizedBox(height: 20),
@@ -124,7 +124,8 @@ class ChipScreen extends StatelessWidget {
                 spacing: 8.0,
                 children: [
                   Chip(
-                    label: Text("Styled Label", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.green)),
+                    label: Text("Styled Label",
+                        style: TextStyle(fontWeight: FontWeight.bold, color: Colors.green)),
                   ),
                 ],
               ),

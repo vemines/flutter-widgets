@@ -16,7 +16,7 @@ class RenderViewScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("RenderView - Basic Usage", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("RenderView - Usage", style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               const Text(
                   "RenderView requires a child. The following shows RenderView wrapping a Container."),

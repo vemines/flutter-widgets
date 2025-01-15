@@ -15,10 +15,11 @@ class SimpleDialogScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("SimpleDialog Variations", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              Text("SimpleDialog Variations",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               SizedBox(height: 20),
-              
-              // Variation 1: Basic SimpleDialog
+
+              // Variation 1: SimpleDialog
               Text("SimpleDialog - Basic", style: TextStyle(fontWeight: FontWeight.bold)),
               ElevatedButton(
                 onPressed: () {
@@ -26,14 +27,18 @@ class SimpleDialogScreen extends StatelessWidget {
                     context: context,
                     builder: (BuildContext context) {
                       return SimpleDialog(
-                        title: Text('Basic Dialog'),
+                        title: Text('Dialog'),
                         children: <Widget>[
                           SimpleDialogOption(
-                            onPressed: () { Navigator.pop(context); },
+                            onPressed: () {
+                              Navigator.pop(context);
+                            },
                             child: const Text('Option 1'),
                           ),
                           SimpleDialogOption(
-                            onPressed: () { Navigator.pop(context); },
+                            onPressed: () {
+                              Navigator.pop(context);
+                            },
                             child: const Text('Option 2'),
                           ),
                         ],
@@ -41,12 +46,13 @@ class SimpleDialogScreen extends StatelessWidget {
                     },
                   );
                 },
-                child: Text("Show Basic Dialog"),
+                child: Text("Show Dialog"),
               ),
               SizedBox(height: 20),
 
               // Variation 2: SimpleDialog with Custom Background Color
-              Text("SimpleDialog - Custom Background Color", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("SimpleDialog - Custom Background Color",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               ElevatedButton(
                 onPressed: () {
                   showDialog(
@@ -57,11 +63,15 @@ class SimpleDialogScreen extends StatelessWidget {
                         title: Text('Custom Background Dialog'),
                         children: <Widget>[
                           SimpleDialogOption(
-                            onPressed: () { Navigator.pop(context); },
+                            onPressed: () {
+                              Navigator.pop(context);
+                            },
                             child: const Text('Option 1'),
                           ),
                           SimpleDialogOption(
-                            onPressed: () { Navigator.pop(context); },
+                            onPressed: () {
+                              Navigator.pop(context);
+                            },
                             child: const Text('Option 2'),
                           ),
                         ],
@@ -74,21 +84,27 @@ class SimpleDialogScreen extends StatelessWidget {
               SizedBox(height: 20),
 
               // Variation 3: SimpleDialog with Custom Title Text Style
-              Text("SimpleDialog - Custom Title Text Style", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("SimpleDialog - Custom Title Text Style",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               ElevatedButton(
                 onPressed: () {
                   showDialog(
                     context: context,
                     builder: (BuildContext context) {
                       return SimpleDialog(
-                        title: Text('Styled Title Dialog', style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold)),
+                        title: Text('Styled Title Dialog',
+                            style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold)),
                         children: <Widget>[
                           SimpleDialogOption(
-                            onPressed: () { Navigator.pop(context); },
+                            onPressed: () {
+                              Navigator.pop(context);
+                            },
                             child: const Text('Option 1'),
                           ),
                           SimpleDialogOption(
-                            onPressed: () { Navigator.pop(context); },
+                            onPressed: () {
+                              Navigator.pop(context);
+                            },
                             child: const Text('Option 2'),
                           ),
                         ],
@@ -101,7 +117,8 @@ class SimpleDialogScreen extends StatelessWidget {
               SizedBox(height: 20),
 
               // Variation 4: SimpleDialog with Custom Option Text Style
-              Text("SimpleDialog - Custom Option Text Style", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("SimpleDialog - Custom Option Text Style",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               ElevatedButton(
                 onPressed: () {
                   showDialog(
@@ -111,12 +128,18 @@ class SimpleDialogScreen extends StatelessWidget {
                         title: Text('Styled Option Dialog'),
                         children: <Widget>[
                           SimpleDialogOption(
-                            onPressed: () { Navigator.pop(context); },
-                            child: Text('Option 1', style: TextStyle(color: Colors.green, fontStyle: FontStyle.italic)),
+                            onPressed: () {
+                              Navigator.pop(context);
+                            },
+                            child: Text('Option 1',
+                                style: TextStyle(color: Colors.green, fontStyle: FontStyle.italic)),
                           ),
                           SimpleDialogOption(
-                            onPressed: () { Navigator.pop(context); },
-                            child: Text('Option 2', style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold)),
+                            onPressed: () {
+                              Navigator.pop(context);
+                            },
+                            child: Text('Option 2',
+                                style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold)),
                           ),
                         ],
                       );
@@ -139,11 +162,15 @@ class SimpleDialogScreen extends StatelessWidget {
                         title: Text('Elevation Dialog'),
                         children: <Widget>[
                           SimpleDialogOption(
-                            onPressed: () { Navigator.pop(context); },
+                            onPressed: () {
+                              Navigator.pop(context);
+                            },
                             child: const Text('Option 1'),
                           ),
                           SimpleDialogOption(
-                            onPressed: () { Navigator.pop(context); },
+                            onPressed: () {
+                              Navigator.pop(context);
+                            },
                             child: const Text('Option 2'),
                           ),
                         ],

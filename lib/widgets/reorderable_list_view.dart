@@ -15,8 +15,7 @@ class ReorderableListViewScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("ReorderableListView - Basic Example",
-                  style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("ReorderableListView - Example", style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               _buildReorderableListViewBasic(),
               SizedBox(height: 20),

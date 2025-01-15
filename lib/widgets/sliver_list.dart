@@ -15,14 +15,15 @@ class SliverListScreen extends StatelessWidget {
           children: [
             const Padding(
               padding: EdgeInsets.all(8.0),
-              child: Text('SliverList Variations', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              child: Text('SliverList Variations',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
             ),
             Wrap(
               spacing: 10,
               runSpacing: 10,
               children: [
                 _buildSliverListVariation(
-                  'Basic SliverList',
+                  'SliverList',
                   SliverList(
                     delegate: SliverChildBuilderDelegate(
                       (BuildContext context, int index) {

@@ -15,7 +15,7 @@ class PositionedTransitionScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("PositionedTransition - Basic Usage", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("PositionedTransition - Usage", style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Container(
                 height: 100,
@@ -38,7 +38,8 @@ class PositionedTransitionScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-              Text("PositionedTransition - Different Animation", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("PositionedTransition - Different Animation",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Container(
                 height: 100,
@@ -61,7 +62,8 @@ class PositionedTransitionScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-              Text("PositionedTransition - With Different Begin/End", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("PositionedTransition - With Different Begin/End",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Container(
                 height: 150,
@@ -84,7 +86,8 @@ class PositionedTransitionScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-              Text("PositionedTransition - With Larger Container", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("PositionedTransition - With Larger Container",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Container(
                 height: 200,

@@ -24,7 +24,7 @@ class ShowAboutDialogScreen extends StatelessWidget {
                     applicationVersion: '1.0.0',
                     applicationIcon: const FlutterLogo(),
                     children: const [
-                      Text('This is a basic about dialog.'),
+                      Text('This is a about dialog.'),
                     ],
                   );
                 },
@@ -77,8 +77,6 @@ class ShowAboutDialogScreen extends StatelessWidget {
                     children: const [
                       Text('This dialog includes legalese.'),
                     ],
-                    
-                    
                   );
                 },
                 child: const Text('Show About Dialog with Custom Theme'),

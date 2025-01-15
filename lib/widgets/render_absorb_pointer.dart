@@ -15,7 +15,7 @@ class RenderAbsorbPointerScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("AbsorbPointer - Basic Example", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("AbsorbPointer - Example", style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               AbsorbPointer(
                 absorbing: true,
@@ -25,7 +25,8 @@ class RenderAbsorbPointerScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 16),
-              const Text("AbsorbPointer - Not Absorbing", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("AbsorbPointer - Not Absorbing",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               AbsorbPointer(
                 absorbing: false,
@@ -35,7 +36,8 @@ class RenderAbsorbPointerScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 16),
-              const Text("AbsorbPointer - With Container", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("AbsorbPointer - With Container",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               AbsorbPointer(
                 absorbing: true,
@@ -46,7 +48,8 @@ class RenderAbsorbPointerScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 16),
-              const Text("AbsorbPointer - With Opacity", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("AbsorbPointer - With Opacity",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               AbsorbPointer(
                 absorbing: true,
@@ -59,21 +62,24 @@ class RenderAbsorbPointerScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 16),
-              const Text("AbsorbPointer - With Different Child", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("AbsorbPointer - With Different Child",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               AbsorbPointer(
                 absorbing: true,
                 child: const Icon(Icons.star, size: 50, color: Colors.orange),
               ),
               const SizedBox(height: 16),
-              const Text("AbsorbPointer - With GestureDetector", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("AbsorbPointer - With GestureDetector",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               AbsorbPointer(
                 absorbing: true,
                 child: GestureDetector(
                   onTap: () {
                     // This onTap will not be triggered because of AbsorbPointer
-                    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Gesture Detected")));
+                    ScaffoldMessenger.of(context)
+                        .showSnackBar(const SnackBar(content: Text("Gesture Detected")));
                   },
                   child: Container(
                     color: Colors.green.shade100,
@@ -83,13 +89,15 @@ class RenderAbsorbPointerScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 16),
-              const Text("AbsorbPointer - With GestureDetector (Not Absorbed)", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("AbsorbPointer - With GestureDetector (Not Absorbed)",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               AbsorbPointer(
                 absorbing: false,
                 child: GestureDetector(
                   onTap: () {
-                    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Gesture Detected")));
+                    ScaffoldMessenger.of(context)
+                        .showSnackBar(const SnackBar(content: Text("Gesture Detected")));
                   },
                   child: Container(
                     color: Colors.green.shade100,

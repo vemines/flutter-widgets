@@ -22,12 +22,12 @@ class CardScreen extends StatelessWidget {
                 runSpacing: 16,
                 children: [
                   _buildCardVariation(
-                    title: "Basic Card",
+                    title: "Card",
                     description: "Default card with no styling.",
                     child: Card(
                       child: Padding(
                         padding: const EdgeInsets.all(16.0),
-                        child: Text("Basic Card Content"),
+                        child: Text("Card Content"),
                       ),
                     ),
                   ),
@@ -107,8 +107,8 @@ class CardScreen extends StatelessWidget {
                     title: "Card with Shadow",
                     description: "Card with a custom shadow.",
                     child: Card(
-                      shadowColor: Colors.grey.withValues(alpha: 255 * 0.5),
-                      elevation: 5,
+                      shadowColor: Colors.red[200],
+                      elevation: 8,
                       child: Padding(
                         padding: const EdgeInsets.all(16.0),
                         child: Text("Card with Shadow"),

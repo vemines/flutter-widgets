@@ -3,7 +3,7 @@
 A collection of Flutter widgets and some variations, demonstrating various UI components.
 This is for learning Flutter purpose, Code is generated, check carefully before use.
 
-Flutter 3.27.1
+Flutter 3.28.0-2.0.pre.38691
 Dart 3.6.0
 
 You can view a live demo of the project at: [Live demo](https://vemines.github.io/flutter-widgets)
@@ -13,8 +13,8 @@ You can view a live demo of the project at: [Live demo](https://vemines.github.i
 - [x] Generate widgets
 - [x] Fixing error problems for run able
 - [x] Add route, home screen
-- [x] Search, Grouping, sort A -> Z. Search InputField error with input but still work [checkissue](https://github.com/flutter/flutter/issues/160155)
-- [ ] Checking visual manual. Checked to: None
+- [x] Search, Grouping, sort A -> Z. Search InputField error with input but still work [checkissue](https://github.com/flutter/flutter/issues/156842). Switch channel master for downgrade for fix it
+- [ ] Checking visual manual. Checked to: Visibility 32
 - [ ] Fixing left error
 
 ## Contributors

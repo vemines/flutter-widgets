@@ -15,7 +15,7 @@ class KeyedSubtreeScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("KeyedSubtree - Basic Usage (Wrapping Container):"),
+              const Text("KeyedSubtree - Usage (Wrapping Container):"),
               const SizedBox(height: 8),
               KeyedSubtree(
                 key: const ValueKey('container_key'),
@@ -26,7 +26,7 @@ class KeyedSubtreeScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("KeyedSubtree - Basic Usage (Wrapping Text):"),
+              const Text("KeyedSubtree - Usage (Wrapping Text):"),
               const SizedBox(height: 8),
               KeyedSubtree(
                 key: const ValueKey('text_key'),

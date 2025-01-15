@@ -15,7 +15,7 @@ class FutureBuilderScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("FutureBuilder - Basic Usage with Text"),
+              const Text("FutureBuilder - Usage with Text"),
               FutureBuilder<String>(
                 future: Future.delayed(const Duration(seconds: 2), () => "Data Loaded!"),
                 builder: (context, snapshot) {
@@ -63,7 +63,8 @@ class FutureBuilderScreen extends StatelessWidget {
               const SizedBox(height: 20),
               const Text("FutureBuilder - Error Handling with Icon"),
               FutureBuilder<String>(
-                future: Future.delayed(const Duration(seconds: 1), () => throw Exception("Failed to load")),
+                future: Future.delayed(
+                    const Duration(seconds: 1), () => throw Exception("Failed to load")),
                 builder: (context, snapshot) {
                   if (snapshot.hasError) {
                     return Row(
@@ -90,7 +91,8 @@ class FutureBuilderScreen extends StatelessWidget {
               //     }
               //   },
               // ),
-              const Text("The above FutureBuilder is commented out because it will cause an error if no future is provided."),
+              const Text(
+                  "The above FutureBuilder is commented out because it will cause an error if no future is provided."),
               const SizedBox(height: 20),
               const Text("FutureBuilder - With a Future that returns null"),
               FutureBuilder<String?>(

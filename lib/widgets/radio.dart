@@ -39,30 +39,12 @@ class RadioScreen extends StatelessWidget {
                     ),
                   ),
                   _buildRadioVariation(
-                    title: "Radio - Focus Color Green",
-                    child: Radio(
-                      value: 1,
-                      groupValue: 1,
-                      onChanged: (value) {},
-                      focusColor: Colors.green,
-                    ),
-                  ),
-                  _buildRadioVariation(
                     title: "Radio - Hover Color Blue",
                     child: Radio(
                       value: 1,
                       groupValue: 1,
                       onChanged: (value) {},
                       hoverColor: Colors.blue,
-                    ),
-                  ),
-                  _buildRadioVariation(
-                    title: "Radio - Material Tap Target Size Shrink",
-                    child: Radio(
-                      value: 1,
-                      groupValue: 1,
-                      onChanged: (value) {},
-                      materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
                     ),
                   ),
                   _buildRadioVariation(

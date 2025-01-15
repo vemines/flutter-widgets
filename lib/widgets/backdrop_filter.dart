@@ -16,8 +16,7 @@ class BackdropFilterScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("BackdropFilter - Basic Blur",
-                  style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("BackdropFilter - Blur", style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Container(
                 width: 200,

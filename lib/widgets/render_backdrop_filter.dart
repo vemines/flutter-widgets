@@ -16,8 +16,7 @@ class RenderBackdropFilterScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("RenderBackdropFilter - Basic Blur",
-                  style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("RenderBackdropFilter - Blur", style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Container(
                 width: 200,

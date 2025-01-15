@@ -15,21 +15,23 @@ class AnimatedListScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("AnimatedList - Basic Example", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("AnimatedList - Example", style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               SizedBox(
                 height: 200,
                 child: _buildAnimatedListBasic(),
               ),
               SizedBox(height: 20),
-              Text("AnimatedList - With Custom Animation", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("AnimatedList - With Custom Animation",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               SizedBox(
                 height: 200,
                 child: _buildAnimatedListCustomAnimation(),
               ),
               SizedBox(height: 20),
-              Text("AnimatedList - With Different Item Heights", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("AnimatedList - With Different Item Heights",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               SizedBox(
                 height: 200,

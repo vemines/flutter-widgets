@@ -16,7 +16,8 @@ class CupertinoTabScaffoldScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("CupertinoTabScaffold - Basic Example", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CupertinoTabScaffold - Example",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               SizedBox(
                 height: 200,
@@ -45,7 +46,8 @@ class CupertinoTabScaffoldScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("CupertinoTabScaffold - Custom Colors", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CupertinoTabScaffold - Custom Colors",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               SizedBox(
                 height: 200,
@@ -69,7 +71,8 @@ class CupertinoTabScaffoldScreen extends StatelessWidget {
                     return CupertinoTabView(
                       builder: (BuildContext context) {
                         return Center(
-                          child: Text('Tab $index Content', style: const TextStyle(color: Colors.white)),
+                          child: Text('Tab $index Content',
+                              style: const TextStyle(color: Colors.white)),
                         );
                       },
                     );
@@ -77,7 +80,8 @@ class CupertinoTabScaffoldScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("CupertinoTabScaffold - With Custom Tab Bar Height", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CupertinoTabScaffold - With Custom Tab Bar Height",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               SizedBox(
                 height: 200,
@@ -107,7 +111,8 @@ class CupertinoTabScaffoldScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("CupertinoTabScaffold - With Different Icons", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("CupertinoTabScaffold - With Different Icons",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               SizedBox(
                 height: 200,

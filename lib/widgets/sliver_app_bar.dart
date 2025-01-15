@@ -13,14 +13,14 @@ class SliverAppBarScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text("SliverAppBar - Basic Example", style: TextStyle(fontWeight: FontWeight.bold)),
+            Text("SliverAppBar - Example", style: TextStyle(fontWeight: FontWeight.bold)),
             SizedBox(height: 10),
             SizedBox(
               height: 200,
               child: CustomScrollView(
                 slivers: <Widget>[
                   SliverAppBar(
-                    title: Text('Basic SliverAppBar'),
+                    title: Text('SliverAppBar'),
                     expandedHeight: 150.0,
                     flexibleSpace: FlexibleSpaceBar(
                       background: Image.network(

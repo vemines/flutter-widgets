@@ -16,7 +16,7 @@ class CupertinoSlidingSegmentedControlScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text('Basic CupertinoSlidingSegmentedControl',
+              const Text('CupertinoSlidingSegmentedControl',
                   style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               const _BasicSegmentedControl(),
@@ -73,7 +73,7 @@ class _BasicSegmentedControlState extends State<_BasicSegmentedControl> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text('Basic Segmented Control'),
+        const Text('Segmented Control'),
         CupertinoSlidingSegmentedControl<int>(
           children: const {
             0: Text('Option 1'),
@@ -87,8 +87,7 @@ class _BasicSegmentedControlState extends State<_BasicSegmentedControl> {
           },
           groupValue: _currentValue,
         ),
-        if (_currentValue != null)
-          Text('Selected: Option ${_currentValue! + 1}'),
+        if (_currentValue != null) Text('Selected: Option ${_currentValue! + 1}'),
       ],
     );
   }
@@ -98,8 +97,7 @@ class _ColoredSegmentedControl extends StatefulWidget {
   const _ColoredSegmentedControl();
 
   @override
-  _ColoredSegmentedControlState createState() =>
-      _ColoredSegmentedControlState();
+  _ColoredSegmentedControlState createState() => _ColoredSegmentedControlState();
 }
 
 class _ColoredSegmentedControlState extends State<_ColoredSegmentedControl> {
@@ -126,8 +124,7 @@ class _ColoredSegmentedControlState extends State<_ColoredSegmentedControl> {
           },
           groupValue: _currentValue,
         ),
-        if (_currentValue != null)
-          Text('Selected: Option ${_currentValue! + 1}'),
+        if (_currentValue != null) Text('Selected: Option ${_currentValue! + 1}'),
       ],
     );
   }
@@ -163,8 +160,7 @@ class _PaddedSegmentedControlState extends State<_PaddedSegmentedControl> {
           },
           groupValue: _currentValue,
         ),
-        if (_currentValue != null)
-          Text('Selected: Option ${_currentValue! + 1}'),
+        if (_currentValue != null) Text('Selected: Option ${_currentValue! + 1}'),
       ],
     );
   }
@@ -174,12 +170,10 @@ class _TextStyledSegmentedControl extends StatefulWidget {
   const _TextStyledSegmentedControl();
 
   @override
-  _TextStyledSegmentedControlState createState() =>
-      _TextStyledSegmentedControlState();
+  _TextStyledSegmentedControlState createState() => _TextStyledSegmentedControlState();
 }
 
-class _TextStyledSegmentedControlState
-    extends State<_TextStyledSegmentedControl> {
+class _TextStyledSegmentedControlState extends State<_TextStyledSegmentedControl> {
   int? _currentValue;
 
   @override
@@ -201,8 +195,7 @@ class _TextStyledSegmentedControlState
           },
           groupValue: _currentValue,
         ),
-        if (_currentValue != null)
-          Text('Selected: Option ${_currentValue! + 1}'),
+        if (_currentValue != null) Text('Selected: Option ${_currentValue! + 1}'),
       ],
     );
   }
@@ -212,12 +205,10 @@ class _InitialValueSegmentedControl extends StatefulWidget {
   const _InitialValueSegmentedControl();
 
   @override
-  _InitialValueSegmentedControlState createState() =>
-      _InitialValueSegmentedControlState();
+  _InitialValueSegmentedControlState createState() => _InitialValueSegmentedControlState();
 }
 
-class _InitialValueSegmentedControlState
-    extends State<_InitialValueSegmentedControl> {
+class _InitialValueSegmentedControlState extends State<_InitialValueSegmentedControl> {
   int _currentValue = 1;
 
   @override
@@ -249,8 +240,7 @@ class _DisabledSegmentedControl extends StatefulWidget {
   const _DisabledSegmentedControl();
 
   @override
-  _DisabledSegmentedControlState createState() =>
-      _DisabledSegmentedControlState();
+  _DisabledSegmentedControlState createState() => _DisabledSegmentedControlState();
 }
 
 class _DisabledSegmentedControlState extends State<_DisabledSegmentedControl> {
@@ -276,8 +266,7 @@ class _DisabledSegmentedControlState extends State<_DisabledSegmentedControl> {
           groupValue: _currentValue,
           disabledChildren: {_currentValue!},
         ),
-        if (_currentValue != null)
-          Text('Selected: Option ${_currentValue! + 1}'),
+        if (_currentValue != null) Text('Selected: Option ${_currentValue! + 1}'),
       ],
     );
   }
@@ -287,12 +276,10 @@ class _CustomChildrenSegmentedControl extends StatefulWidget {
   const _CustomChildrenSegmentedControl();
 
   @override
-  _CustomChildrenSegmentedControlState createState() =>
-      _CustomChildrenSegmentedControlState();
+  _CustomChildrenSegmentedControlState createState() => _CustomChildrenSegmentedControlState();
 }
 
-class _CustomChildrenSegmentedControlState
-    extends State<_CustomChildrenSegmentedControl> {
+class _CustomChildrenSegmentedControlState extends State<_CustomChildrenSegmentedControl> {
   int? _currentValue;
 
   @override
@@ -314,8 +301,7 @@ class _CustomChildrenSegmentedControlState
           },
           groupValue: _currentValue,
         ),
-        if (_currentValue != null)
-          Text('Selected: Option ${_currentValue! + 1}'),
+        if (_currentValue != null) Text('Selected: Option ${_currentValue! + 1}'),
       ],
     );
   }

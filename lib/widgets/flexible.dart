@@ -107,7 +107,7 @@ class FlexibleScreen extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("Flexible - With Min/Max Size"),
+              child: Text("Flexible - With ConstrainedBox"),
             ),
             Row(
               children: [
@@ -117,7 +117,8 @@ class FlexibleScreen extends StatelessWidget {
                     child: Container(
                       color: Colors.lime,
                       height: 50,
-                      child: Center(child: Text("Min/Max Size", style: TextStyle(color: Colors.black))),
+                      child: Center(
+                          child: Text("Min/Max Size", style: TextStyle(color: Colors.black))),
                     ),
                   ),
                 ),
@@ -125,7 +126,8 @@ class FlexibleScreen extends StatelessWidget {
                   child: Container(
                     color: Colors.cyan,
                     height: 50,
-                    child: Center(child: Text("Flexible", style: TextStyle(color: Colors.white))),
+                    child: Center(
+                        child: Text("Another Flexible", style: TextStyle(color: Colors.white))),
                   ),
                 ),
               ],

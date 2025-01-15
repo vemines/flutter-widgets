@@ -18,7 +18,7 @@ class NavigationDrawerScreen extends StatelessWidget {
               Text("NavigationDrawer - Default", style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Tooltip(
-                message: "A basic NavigationDrawer with default styling.",
+                message: "A NavigationDrawer with default styling.",
                 child: Builder(
                   builder: (context) => ElevatedButton(
                     onPressed: () {
@@ -29,7 +29,8 @@ class NavigationDrawerScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-              Text("NavigationDrawer - Custom Background Color", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("NavigationDrawer - Custom Background Color",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Tooltip(
                 message: "NavigationDrawer with a custom background color.",
@@ -44,7 +45,8 @@ class NavigationDrawerScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-              Text("NavigationDrawer - Custom Text Color and Padding", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("NavigationDrawer - Custom Text Color and Padding",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Tooltip(
                 message: "NavigationDrawer with custom text color and padding.",
@@ -61,7 +63,8 @@ class NavigationDrawerScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-              Text("NavigationDrawer - Custom Border Radius", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("NavigationDrawer - Custom Border Radius",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Tooltip(
                 message: "NavigationDrawer with a custom border radius.",

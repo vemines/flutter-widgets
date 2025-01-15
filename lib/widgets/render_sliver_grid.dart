@@ -15,14 +15,15 @@ class RenderSliverGridScreen extends StatelessWidget {
           children: [
             const Padding(
               padding: EdgeInsets.all(8.0),
-              child: Text('RenderSliverGrid Variations', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              child: Text('RenderSliverGrid Variations',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
             ),
             Wrap(
               spacing: 10,
               runSpacing: 10,
               children: [
                 _buildGridVariation(
-                  'Basic Grid',
+                  'Grid',
                   SliverGrid(
                     gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 3,
@@ -38,7 +39,7 @@ class RenderSliverGridScreen extends StatelessWidget {
                       childCount: 9,
                     ),
                   ),
-                  'A basic grid with 3 columns.',
+                  'A grid with 3 columns.',
                 ),
                 _buildGridVariation(
                   'Grid with Max Extent',

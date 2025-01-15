@@ -15,7 +15,8 @@ class CheckboxListTileScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("CheckboxListTile Variations", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              Text("CheckboxListTile Variations",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               SizedBox(height: 20),
               Wrap(
                 spacing: 20,
@@ -23,7 +24,7 @@ class CheckboxListTileScreen extends StatelessWidget {
                 children: [
                   _buildCheckboxListTileVariation(
                     title: "Default CheckboxListTile",
-                    description: "Basic CheckboxListTile with default styling.",
+                    description: "CheckboxListTile with default styling.",
                     checkboxListTile: CheckboxListTile(
                       title: Text("Default"),
                       value: false,
@@ -83,7 +84,8 @@ class CheckboxListTileScreen extends StatelessWidget {
                     title: "CheckboxListTile - Custom Text Style",
                     description: "CheckboxListTile with a custom text style.",
                     checkboxListTile: CheckboxListTile(
-                      title: Text("Custom Text", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue)),
+                      title: Text("Custom Text",
+                          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue)),
                       value: false,
                       onChanged: (bool? value) {},
                     ),
@@ -127,11 +129,16 @@ class CheckboxListTileScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildCheckboxListTileVariation({required String title, required String description, required CheckboxListTile checkboxListTile}) {
+  Widget _buildCheckboxListTileVariation(
+      {required String title,
+      required String description,
+      required CheckboxListTile checkboxListTile}) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Tooltip(message: description, child: Text(title, style: TextStyle(fontWeight: FontWeight.bold))),
+        Tooltip(
+            message: description,
+            child: Text(title, style: TextStyle(fontWeight: FontWeight.bold))),
         SizedBox(height: 8),
         checkboxListTile,
       ],

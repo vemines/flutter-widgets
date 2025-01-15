@@ -16,7 +16,7 @@ class KeyboardListenerScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("KeyboardListener - Basic Usage:",
+              const Text("KeyboardListener - Usage:",
                   style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               const Text(

@@ -16,17 +16,19 @@ class CupertinoTabControllerScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("CupertinoTabController Variations:", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              const Text("CupertinoTabController Variations:",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               const SizedBox(height: 20),
               _buildTabControllerVariation(
-                title: "Basic CupertinoTabController",
-                description: "A basic CupertinoTabController with default settings.",
+                title: "CupertinoTabController",
+                description: "A CupertinoTabController with default settings.",
                 child: _buildBasicTabController(),
               ),
               const SizedBox(height: 20),
               _buildTabControllerVariation(
                 title: "CupertinoTabController with Custom Colors",
-                description: "A CupertinoTabController with custom background and active tab colors.",
+                description:
+                    "A CupertinoTabController with custom background and active tab colors.",
                 child: _buildCustomColorTabController(),
               ),
               const SizedBox(height: 20),
@@ -60,12 +62,15 @@ class CupertinoTabControllerScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildTabControllerVariation({required String title, required String description, required Widget child}) {
+  Widget _buildTabControllerVariation(
+      {required String title, required String description, required Widget child}) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(title, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-        Tooltip(message: description, child: Text(description, style: const TextStyle(fontSize: 12, color: Colors.grey))),
+        Tooltip(
+            message: description,
+            child: Text(description, style: const TextStyle(fontSize: 12, color: Colors.grey))),
         const SizedBox(height: 8),
         child,
         const SizedBox(height: 16),

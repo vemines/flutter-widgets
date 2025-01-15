@@ -15,7 +15,8 @@ class TweenAnimationBuilderScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("TweenAnimationBuilder - Basic Example", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("TweenAnimationBuilder - Example",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               TweenAnimationBuilder<double>(
                 tween: Tween<double>(begin: 0, end: 1),
@@ -32,7 +33,8 @@ class TweenAnimationBuilderScreen extends StatelessWidget {
                 },
               ),
               const SizedBox(height: 20),
-              const Text("TweenAnimationBuilder - Animated Size", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("TweenAnimationBuilder - Animated Size",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               TweenAnimationBuilder<double>(
                 tween: Tween<double>(begin: 50, end: 150),
@@ -46,7 +48,8 @@ class TweenAnimationBuilderScreen extends StatelessWidget {
                 },
               ),
               const SizedBox(height: 20),
-              const Text("TweenAnimationBuilder - Animated Color", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("TweenAnimationBuilder - Animated Color",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               TweenAnimationBuilder<Color?>(
                 tween: ColorTween(begin: Colors.red, end: Colors.yellow),
@@ -60,7 +63,8 @@ class TweenAnimationBuilderScreen extends StatelessWidget {
                 },
               ),
               const SizedBox(height: 20),
-              const Text("TweenAnimationBuilder - Custom Curve", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("TweenAnimationBuilder - Custom Curve",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               TweenAnimationBuilder<double>(
                 tween: Tween<double>(begin: 0, end: 1),
@@ -78,7 +82,8 @@ class TweenAnimationBuilderScreen extends StatelessWidget {
                 },
               ),
               const SizedBox(height: 20),
-              const Text("TweenAnimationBuilder - With Child Widget", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("TweenAnimationBuilder - With Child Widget",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               TweenAnimationBuilder<double>(
                 tween: Tween<double>(begin: 0, end: 1),

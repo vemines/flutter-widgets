@@ -16,7 +16,7 @@ class RenderProxyBoxScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("RenderProxyBox - Basic Container"),
+              const Text("RenderProxyBox - Container"),
               SizedBox(
                 width: 100,
                 height: 100,

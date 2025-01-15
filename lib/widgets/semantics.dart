@@ -15,14 +15,14 @@ class SemanticsScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Semantics - Basic Example", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("Semantics - Example", style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Semantics(
-                label: 'This is a basic semantics example',
+                label: 'This is a semantics example',
                 child: Container(
                   padding: EdgeInsets.all(10),
                   color: Colors.blue[100],
-                  child: Text('Basic Semantics', style: TextStyle(color: Colors.black)),
+                  child: Text('Semantics', style: TextStyle(color: Colors.black)),
                 ),
               ),
               SizedBox(height: 20),
@@ -61,7 +61,8 @@ class SemanticsScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-              Text("Semantics - With Custom Properties", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("Semantics - With Custom Properties",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               Semantics(
                 label: 'Custom semantics properties',

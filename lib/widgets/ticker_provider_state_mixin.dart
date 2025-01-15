@@ -15,11 +15,14 @@ class TickerProviderStateMixinScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("TickerProviderStateMixin - Basic Usage (Not directly visible)", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("TickerProviderStateMixin - Usage (Not directly visible)",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
-              const Text("TickerProviderStateMixin is a mixin, not a widget. It's used to provide Ticker objects for animations. This example shows a basic StatefulWidget that uses it."),
+              const Text(
+                  "TickerProviderStateMixin is a mixin, not a widget. It's used to provide Ticker objects for animations. This example shows a StatefulWidget that uses it."),
               const SizedBox(height: 16),
-              const Text("Example StatefulWidget using TickerProviderStateMixin:", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Example StatefulWidget using TickerProviderStateMixin:",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               _TickerProviderExample(),
             ],
@@ -37,7 +40,8 @@ class _TickerProviderExample extends StatefulWidget {
   _TickerProviderExampleState createState() => _TickerProviderExampleState();
 }
 
-class _TickerProviderExampleState extends State<_TickerProviderExample> with TickerProviderStateMixin {
+class _TickerProviderExampleState extends State<_TickerProviderExample>
+    with TickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _animation;
 

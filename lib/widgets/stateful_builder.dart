@@ -24,7 +24,7 @@ class _StatefulBuilderScreenState extends State<StatefulBuilderScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("StatefulBuilder - Basic Usage", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("StatefulBuilder - Usage", style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               StatefulBuilder(
                 builder: (BuildContext context, StateSetter setState) {

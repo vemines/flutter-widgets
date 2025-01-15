@@ -25,47 +25,33 @@ class VisibilityScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("Visibility - Invisible"),
+              const Text("Visibility - (Invisible)"),
               const SizedBox(height: 8),
-              Visibility(
-                visible: false,
-                child: Container(
-                  padding: const EdgeInsets.all(10),
-                  color: Colors.red.shade100,
-                  child: const Text("I am invisible!"),
+              Container(
+                decoration: BoxDecoration(border: Border.all()),
+                child: Visibility(
+                  visible: false,
+                  child: Container(
+                    padding: const EdgeInsets.all(10),
+                    color: Colors.red.shade100,
+                    child: const Text("I am invisible!"),
+                  ),
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("Visibility - Maintain Size (Invisible)"),
+              const Text(
+                  "Visibility - Maintain Size (Invisible)\nmaintainSize, maintainAnimation, maintainState: true"),
               const SizedBox(height: 8),
               Visibility(
                 visible: false,
                 maintainSize: true,
+                maintainAnimation: true,
+                maintainState: true,
                 child: Container(
                   padding: const EdgeInsets.all(10),
                   color: Colors.green.shade100,
                   child: const Text("I am invisible, but I take up space!"),
                 ),
-              ),
-              const SizedBox(height: 20),
-              const Text("Visibility - Maintain Animation (Invisible)"),
-              const SizedBox(height: 8),
-              Visibility(
-                visible: false,
-                maintainAnimation: true,
-                child: Container(
-                  padding: const EdgeInsets.all(10),
-                  color: Colors.orange.shade100,
-                  child: const Text("I am invisible, but I animate!"),
-                ),
-              ),
-              const SizedBox(height: 20),
-              const Text("Visibility - Maintain State (Invisible)"),
-              const SizedBox(height: 8),
-              Visibility(
-                visible: false,
-                maintainState: true,
-                child: StatefulVisibilityExample(),
               ),
               const SizedBox(height: 20),
               const Text("Visibility - Replacement Widget (Invisible)"),
@@ -75,12 +61,13 @@ class VisibilityScreen extends StatelessWidget {
                 replacement: Container(
                   padding: const EdgeInsets.all(10),
                   color: Colors.grey.shade300,
-                  child: const Text("I am the replacement!"),
+                  child: const Text(
+                      "I am the replacement, not invisible!\nI display when visible: false"),
                 ),
                 child: Container(
                   padding: const EdgeInsets.all(10),
                   color: Colors.purple.shade100,
-                  child: const Text("I am replaced!"),
+                  child: const Text("I am invisible!"),
                 ),
               ),
               const SizedBox(height: 20),

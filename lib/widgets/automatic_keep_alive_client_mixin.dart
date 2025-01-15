@@ -18,8 +18,8 @@ class AutomaticKeepAliveClientMixinScreen extends StatelessWidget {
               child: Text(
                   "AutomaticKeepAliveClientMixin is a mixin, not a widget. It's used to keep a stateful widget alive when it's part of a list or other scrollable view. It doesn't have visual properties itself. The following examples show how it might be used in a stateful widget."),
             ),
-            _buildExample("Example 1: Basic Stateful Widget with AutomaticKeepAliveClientMixin",
-                _ExampleWidget()),
+            _buildExample(
+                "Example 1: Stateful Widget with AutomaticKeepAliveClientMixin", _ExampleWidget()),
             _buildExample(
                 "Example 2: Stateful Widget with AutomaticKeepAliveClientMixin and different text",
                 _ExampleWidget(text: "Different Text")),

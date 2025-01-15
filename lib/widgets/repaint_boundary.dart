@@ -15,7 +15,7 @@ class RepaintBoundaryScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("RepaintBoundary - Basic Usage (wrapping Container)"),
+              const Text("RepaintBoundary - Usage (wrapping Container)"),
               RepaintBoundary(
                 child: Container(
                   color: Colors.blue.shade100,
@@ -52,7 +52,7 @@ class RepaintBoundaryScreen extends StatelessWidget {
                     children: [
                       const Text("Complex Child"),
                       const SizedBox(height: 5),
-                      ElevatedButton(onPressed: (){}, child: const Text("Button")),
+                      ElevatedButton(onPressed: () {}, child: const Text("Button")),
                     ],
                   ),
                 ),

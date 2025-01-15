@@ -15,9 +15,11 @@ class RefreshIndicatorScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("RefreshIndicator Variations:", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              const Text("RefreshIndicator Variations:",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               const SizedBox(height: 20),
-              const Text("Basic RefreshIndicator:", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+              const Text("RefreshIndicator:",
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
               RefreshIndicator(
                 onRefresh: () async {
                   await Future.delayed(const Duration(seconds: 1));
@@ -33,7 +35,8 @@ class RefreshIndicatorScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("RefreshIndicator - Custom Color:", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+              const Text("RefreshIndicator - Custom Color:",
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
               RefreshIndicator(
                 onRefresh: () async {
                   await Future.delayed(const Duration(seconds: 1));
@@ -51,7 +54,8 @@ class RefreshIndicatorScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("RefreshIndicator - Displacement:", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+              const Text("RefreshIndicator - Displacement:",
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
               RefreshIndicator(
                 onRefresh: () async {
                   await Future.delayed(const Duration(seconds: 1));
@@ -68,7 +72,8 @@ class RefreshIndicatorScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("RefreshIndicator - Edge Offset:", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+              const Text("RefreshIndicator - Edge Offset:",
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
               RefreshIndicator(
                 onRefresh: () async {
                   await Future.delayed(const Duration(seconds: 1));
@@ -85,7 +90,8 @@ class RefreshIndicatorScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("RefreshIndicator - Custom Indicator:", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+              const Text("RefreshIndicator - Custom Indicator:",
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
               RefreshIndicator(
                 onRefresh: () async {
                   await Future.delayed(const Duration(seconds: 1));

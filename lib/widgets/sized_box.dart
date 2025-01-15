@@ -15,7 +15,7 @@ class SizedBoxScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("SizedBox - Basic Size", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("SizedBox - Size", style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               SizedBox(
                 width: 100,
@@ -23,7 +23,8 @@ class SizedBoxScreen extends StatelessWidget {
                 child: Container(color: Colors.blue),
               ),
               const SizedBox(height: 16),
-              const Text("SizedBox - Different Size", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("SizedBox - Different Size",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               SizedBox(
                 width: 200,
@@ -44,20 +45,22 @@ class SizedBoxScreen extends StatelessWidget {
               SizedBox(
                 width: 150,
                 height: 75,
-                child: Center(child: Text("Child Text", style: TextStyle(color: Colors.white))),
-                
+                child: Center(child: Text("Center Text", style: TextStyle(color: Colors.black))),
               ),
               const SizedBox(height: 16),
-              const Text("SizedBox - With Infinite Width (Will cause layout error if not wrapped)", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("SizedBox - With Infinite Width (Column wraper)",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
-              // SizedBox(
-              //   width: double.infinity,
-              //   height: 50,
-              //   child: Container(color: Colors.purple),
-              // ),
-              const Text("SizedBox with infinite width will cause layout error if not wrapped in a widget that provides constraints, such as a Container or Expanded. Commented out to prevent error."),
+              SizedBox(
+                width: double.infinity,
+                height: 50,
+                child: Container(color: Colors.purple),
+              ),
+              const Text(
+                  "SizedBox with infinite width will cause layout error if not wrapped in a widget that provides constraints"),
               const SizedBox(height: 16),
-              const Text("SizedBox - Used as Spacer", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("SizedBox - Used as Spacer",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Row(
                 children: [
@@ -67,7 +70,8 @@ class SizedBoxScreen extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 16),
-              const Text("SizedBox - Used as Vertical Spacer", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("SizedBox - Used as Vertical Spacer",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Column(
                 children: [

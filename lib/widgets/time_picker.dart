@@ -34,7 +34,7 @@ class _TimePickerScreenState extends State<TimePickerScreen> {
                 runSpacing: 20,
                 children: [
                   _buildTimePickerVariation(
-                    label: "Basic TimePicker",
+                    label: "TimePicker",
                     child: _buildTimePicker(),
                   ),
                   _buildTimePickerVariation(

@@ -15,8 +15,7 @@ class AnimatedPositionedScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("AnimatedPositioned - Basic Example",
-                  style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("AnimatedPositioned - Example", style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               AnimatedPositionedExample(),
               SizedBox(height: 20),

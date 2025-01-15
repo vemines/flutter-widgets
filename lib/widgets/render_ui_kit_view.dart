@@ -15,11 +15,12 @@ class RenderUiKitViewScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("RenderUiKitView - Basic Usage", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("RenderUiKitView - Usage", style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               const RenderUiKitView(),
               const SizedBox(height: 20),
-              const Text("RenderUiKitView - With Container", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("RenderUiKitView - With Container",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Container(
                 color: Colors.grey[200],
@@ -29,7 +30,8 @@ class RenderUiKitViewScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("RenderUiKitView - With Different Background Color", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("RenderUiKitView - With Different Background Color",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Container(
                 color: Colors.blue[100],
@@ -40,7 +42,8 @@ class RenderUiKitViewScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("RenderUiKitView - With Custom Padding", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("RenderUiKitView - With Custom Padding",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Container(
                 color: Colors.grey[200],
@@ -51,7 +54,8 @@ class RenderUiKitViewScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("RenderUiKitView - With Custom Border Radius", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("RenderUiKitView - With Custom Border Radius",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Container(
                 color: Colors.grey[200],
@@ -62,7 +66,8 @@ class RenderUiKitViewScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("RenderUiKitView - With Custom Border", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("RenderUiKitView - With Custom Border",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Container(
                 color: Colors.grey[200],
@@ -73,7 +78,8 @@ class RenderUiKitViewScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("RenderUiKitView - With Custom Width and Height", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("RenderUiKitView - With Custom Width and Height",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               Container(
                 color: Colors.grey[200],
