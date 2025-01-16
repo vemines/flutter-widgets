@@ -43,7 +43,7 @@ class SemanticsScreen extends StatelessWidget {
                 label: 'This is an image with semantics',
                 image: true,
                 child: Image.network(
-                  'https://via.placeholder.com/150',
+                  'https://placehold.co/150x150',
                   width: 150,
                   height: 150,
                 ),

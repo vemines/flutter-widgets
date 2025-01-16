@@ -10,12 +10,13 @@ class ClipRRectScreen extends StatelessWidget {
         title: const Text("ClipRRect Showcase"),
       ),
       body: SingleChildScrollView(
-        child: Padding(
+        child: Container(
+          width: MediaQuery.of(context).size.width,
           padding: const EdgeInsets.all(16.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("ClipRRect - Rounded Corners"),
+              const Text("ClipRRect - BorderRadius 10"),
               const SizedBox(height: 8),
               ClipRRect(
                 borderRadius: BorderRadius.circular(10),
@@ -26,7 +27,7 @@ class ClipRRectScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("ClipRRect - Different Corner Radii"),
+              const Text("ClipRRect - topLeft bottomRight Radius"),
               const SizedBox(height: 8),
               ClipRRect(
                 borderRadius: const BorderRadius.only(
@@ -40,7 +41,7 @@ class ClipRRectScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("ClipRRect - Circular Clip"),
+              const Text("ClipRRect - Circular Clip 50% width and height"),
               const SizedBox(height: 8),
               ClipRRect(
                 borderRadius: BorderRadius.circular(50),
@@ -56,10 +57,10 @@ class ClipRRectScreen extends StatelessWidget {
               ClipRRect(
                 borderRadius: BorderRadius.circular(15),
                 child: Image.network(
-                  'https://via.placeholder.com/150',
+                  'https://placehold.co/150x150',
+                  fit: BoxFit.cover,
                   width: 150,
                   height: 150,
-                  fit: BoxFit.cover,
                 ),
               ),
               const SizedBox(height: 20),
@@ -70,32 +71,14 @@ class ClipRRectScreen extends StatelessWidget {
                   border: Border.all(color: Colors.black, width: 2),
                 ),
                 child: ClipRRect(
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(20),
                   child: Container(
                     width: 100,
                     height: 100,
-                    color: Colors.yellow,
+                    color: Colors.blue,
                   ),
                 ),
               ),
-              const SizedBox(height: 20),
-              const Text("ClipRRect - Wrapping a Text Widget"),
-              const SizedBox(height: 8),
-              ClipRRect(
-                borderRadius: BorderRadius.circular(8),
-                child: Container(
-                  color: Colors.grey[200],
-                  padding: const EdgeInsets.all(8),
-                  child: const Text("Clipped Text"),
-                ),
-              ),
-              const SizedBox(height: 20),
-              // The following variation is commented out because ClipRRect without a child will not render anything visually.
-              // const Text("ClipRRect - No Child (Will not be visible)"),
-              // const SizedBox(height: 8),
-              // ClipRRect(
-              //   borderRadius: BorderRadius.circular(10),
-              // ),
             ],
           ),
         ),

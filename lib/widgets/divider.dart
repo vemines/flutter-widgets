@@ -21,7 +21,7 @@ class DividerScreen extends StatelessWidget {
               Text("Divider - Color and Thickness", style: TextStyle(fontWeight: FontWeight.bold)),
               Divider(
                 color: Colors.blue,
-                thickness: 3,
+                thickness: 10,
               ),
               SizedBox(height: 20),
               Text("Divider - Indent and EndIndent", style: TextStyle(fontWeight: FontWeight.bold)),
@@ -30,23 +30,13 @@ class DividerScreen extends StatelessWidget {
                 endIndent: 50,
               ),
               SizedBox(height: 20),
-              Text("Divider - Color, Thickness, Indent, EndIndent", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("Divider - Color, Thickness, Indent, EndIndent",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               Divider(
                 color: Colors.red,
                 thickness: 5,
                 indent: 20,
                 endIndent: 80,
-              ),
-              SizedBox(height: 20),
-              Text("Divider - Height", style: TextStyle(fontWeight: FontWeight.bold)),
-              SizedBox(height: 10),
-              SizedBox(
-                height: 50,
-                child: Center(
-                  child: Divider(
-                    height: 30,
-                  ),
-                ),
               ),
               SizedBox(height: 20),
               Text("Divider - With Container", style: TextStyle(fontWeight: FontWeight.bold)),
@@ -58,19 +48,6 @@ class DividerScreen extends StatelessWidget {
                     Text("Above Divider"),
                     Divider(),
                     Text("Below Divider"),
-                  ],
-                ),
-              ),
-              SizedBox(height: 20),
-              Text("Divider - With Custom Height Container", style: TextStyle(fontWeight: FontWeight.bold)),
-              SizedBox(
-                height: 100,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    Text("Top"),
-                    Divider(),
-                    Text("Bottom"),
                   ],
                 ),
               ),

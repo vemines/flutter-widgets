@@ -15,7 +15,8 @@ class ClipOvalScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("ClipOval Variations:", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              const Text("ClipOval Variations:",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               const SizedBox(height: 16),
               Wrap(
                 spacing: 16,
@@ -50,9 +51,9 @@ class ClipOvalScreen extends StatelessWidget {
                       const Text("ClipOval - Image"),
                       ClipOval(
                         child: Image.network(
-                          'https://via.placeholder.com/150',
+                          'https://placehold.co/150x150',
                           width: 100,
-                          height: 100,
+                          height: 120,
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -64,8 +65,8 @@ class ClipOvalScreen extends StatelessWidget {
                       ClipOval(
                         child: Container(
                           color: Colors.green,
-                          width: 60,
-                          height: 60,
+                          width: 80,
+                          height: 40,
                         ),
                       ),
                     ],
@@ -82,7 +83,7 @@ class ClipOvalScreen extends StatelessWidget {
                           child: Container(
                             color: Colors.yellow,
                             width: 70,
-                            height: 70,
+                            height: 90,
                           ),
                         ),
                       ),
@@ -91,13 +92,17 @@ class ClipOvalScreen extends StatelessWidget {
                   Column(
                     children: [
                       const Text("ClipOval - With Padding"),
-                      Padding(
+                      Container(
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          border: Border.all(color: Colors.black, width: 2),
+                        ),
                         padding: const EdgeInsets.all(10),
                         child: ClipOval(
                           child: Container(
                             color: Colors.purple,
                             width: 80,
-                            height: 80,
+                            height: 100,
                           ),
                         ),
                       ),
@@ -107,12 +112,16 @@ class ClipOvalScreen extends StatelessWidget {
                     children: [
                       const Text("ClipOval - With Margin"),
                       Container(
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          border: Border.all(color: Colors.black, width: 2),
+                        ),
                         margin: const EdgeInsets.all(10),
                         child: ClipOval(
                           child: Container(
                             color: Colors.orange,
                             width: 90,
-                            height: 90,
+                            height: 60,
                           ),
                         ),
                       ),

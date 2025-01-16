@@ -15,7 +15,8 @@ class FadeTransitionScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("FadeTransition Variations:", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              const Text("FadeTransition Variations:",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               const SizedBox(height: 20),
               Wrap(
                 spacing: 20,
@@ -50,7 +51,7 @@ class FadeTransitionScreen extends StatelessWidget {
                     child: FadeTransition(
                       opacity: const AlwaysStoppedAnimation(0.3),
                       child: Image.network(
-                        'https://via.placeholder.com/100',
+                        'https://placehold.co/100x100',
                         width: 100,
                         height: 100,
                       ),

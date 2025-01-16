@@ -15,7 +15,8 @@ class AspectRatioScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("AspectRatio - 16:9 Aspect Ratio", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("AspectRatio - 16:9 Aspect Ratio",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               AspectRatio(
                 aspectRatio: 16 / 9,
@@ -25,7 +26,8 @@ class AspectRatioScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("AspectRatio - 4:3 Aspect Ratio", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("AspectRatio - 4:3 Aspect Ratio",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               AspectRatio(
                 aspectRatio: 4 / 3,
@@ -35,7 +37,8 @@ class AspectRatioScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("AspectRatio - 1:1 Aspect Ratio", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("AspectRatio - 1:1 Aspect Ratio",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               AspectRatio(
                 aspectRatio: 1,
@@ -45,7 +48,8 @@ class AspectRatioScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("AspectRatio - Custom Aspect Ratio (2:1)", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("AspectRatio - Custom Aspect Ratio (2:1)",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               AspectRatio(
                 aspectRatio: 2,
@@ -55,17 +59,19 @@ class AspectRatioScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              const Text("AspectRatio - With different child", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("AspectRatio - With different child",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               AspectRatio(
-                aspectRatio: 16/9,
-                child: Image.network('https://via.placeholder.com/150', fit: BoxFit.cover),
+                aspectRatio: 16 / 9,
+                child: Image.network('https://placehold.co/150x150', fit: BoxFit.cover),
               ),
               const SizedBox(height: 20),
-              const Text("AspectRatio - With a very tall child", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("AspectRatio - With a very tall child",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               AspectRatio(
-                aspectRatio: 16/9,
+                aspectRatio: 16 / 9,
                 child: Container(
                   color: Colors.purple,
                   child: const Column(

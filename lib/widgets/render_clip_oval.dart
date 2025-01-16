@@ -50,7 +50,7 @@ class RenderClipOvalScreen extends StatelessWidget {
               const SizedBox(height: 8),
               ClipOval(
                 child: Image.network(
-                  'https://via.placeholder.com/150',
+                  'https://placehold.co/150x150',
                   width: 100,
                   height: 100,
                   fit: BoxFit.cover,

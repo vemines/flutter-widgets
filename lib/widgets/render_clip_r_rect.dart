@@ -74,7 +74,7 @@ class RenderClipRRectScreen extends StatelessWidget {
                     ClipRRect(
                       borderRadius: BorderRadius.circular(12.0),
                       child: Image.network(
-                        'https://via.placeholder.com/100',
+                        'https://placehold.co/100x100',
                         width: 100,
                         height: 100,
                         fit: BoxFit.cover,

@@ -97,13 +97,14 @@ class SnackBarScreen extends StatelessWidget {
               child: const Text('Show SnackBar with Padding'),
             ),
             const SizedBox(height: 20),
-            const Text("SnackBar - With Margin"),
+            const Text("SnackBar - With Margin require SnackBarBehavior.floating"),
             ElevatedButton(
               onPressed: () {
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
+                    behavior: SnackBarBehavior.floating,
                     content: const Text('SnackBar with Margin'),
-                    margin: const EdgeInsets.all(20),
+                    margin: const EdgeInsets.all(60),
                   ),
                 );
               },

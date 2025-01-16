@@ -24,7 +24,7 @@ class SliverAppBarScreen extends StatelessWidget {
                     expandedHeight: 150.0,
                     flexibleSpace: FlexibleSpaceBar(
                       background: Image.network(
-                        'https://via.placeholder.com/200x150',
+                        'https://placehold.co/200x200x150',
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -53,7 +53,7 @@ class SliverAppBarScreen extends StatelessWidget {
                     expandedHeight: 150.0,
                     flexibleSpace: FlexibleSpaceBar(
                       background: Image.network(
-                        'https://via.placeholder.com/200x150',
+                        'https://placehold.co/200x200x150',
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -82,7 +82,7 @@ class SliverAppBarScreen extends StatelessWidget {
                     expandedHeight: 150.0,
                     flexibleSpace: FlexibleSpaceBar(
                       background: Image.network(
-                        'https://via.placeholder.com/200x150',
+                        'https://placehold.co/200x200x150',
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -112,7 +112,7 @@ class SliverAppBarScreen extends StatelessWidget {
                     expandedHeight: 150.0,
                     flexibleSpace: FlexibleSpaceBar(
                       background: Image.network(
-                        'https://via.placeholder.com/200x150',
+                        'https://placehold.co/200x200x150',
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -140,7 +140,7 @@ class SliverAppBarScreen extends StatelessWidget {
                     expandedHeight: 150.0,
                     flexibleSpace: FlexibleSpaceBar(
                       background: Image.network(
-                        'https://via.placeholder.com/200x150',
+                        'https://placehold.co/200x200x150',
                         fit: BoxFit.cover,
                       ),
                     ),

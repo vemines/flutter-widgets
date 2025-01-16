@@ -53,7 +53,7 @@ class ColorFilteredScreen extends StatelessWidget {
               ColorFiltered(
                 colorFilter: const ColorFilter.mode(Colors.yellow, BlendMode.modulate),
                 child: Image.network(
-                  'https://via.placeholder.com/100',
+                  'https://placehold.co/100x100',
                   width: 100,
                   height: 100,
                 ),

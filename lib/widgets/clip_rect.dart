@@ -33,7 +33,7 @@ class ClipRectScreen extends StatelessWidget {
                     ),
                   ),
                   _buildClipRectVariation(
-                    "ClipRect with Rounded Corners",
+                    "ClipRect with BorderRadius",
                     ClipRRect(
                       borderRadius: BorderRadius.circular(20),
                       child: Container(
@@ -43,58 +43,6 @@ class ClipRectScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  _buildClipRectVariation(
-                    "ClipRect with Custom Clipper",
-                    ClipPath(
-                      clipper: const _TriangleClipper(),
-                      child: Container(
-                        color: Colors.orange,
-                        width: 100,
-                        height: 100,
-                      ),
-                    ),
-                  ),
-                  _buildClipRectVariation(
-                    "ClipRect with Different Size",
-                    ClipRect(
-                      child: Container(
-                        color: Colors.red,
-                        width: 150,
-                        height: 75,
-                      ),
-                    ),
-                  ),
-                  _buildClipRectVariation(
-                    "ClipRect with Alignment",
-                    Align(
-                      alignment: Alignment.bottomRight,
-                      child: ClipRect(
-                        child: Container(
-                          color: Colors.purple,
-                          width: 100,
-                          height: 100,
-                        ),
-                      ),
-                    ),
-                  ),
-                  _buildClipRectVariation(
-                    "ClipRect with Padding",
-                    Padding(
-                      padding: const EdgeInsets.all(10),
-                      child: ClipRect(
-                        child: Container(
-                          color: Colors.teal,
-                          width: 100,
-                          height: 100,
-                        ),
-                      ),
-                    ),
-                  ),
-                  // ClipRect without a child will cause an error, so it's commented out.
-                  // _buildClipRectVariation(
-                  //   "ClipRect without child (Error)",
-                  //   ClipRect(),
-                  // ),
                 ],
               ),
             ],
@@ -111,23 +59,5 @@ class ClipRectScreen extends StatelessWidget {
         Text(name, style: const TextStyle(fontSize: 12)),
       ],
     );
-  }
-}
-
-class _TriangleClipper extends CustomClipper<Path> {
-  const _TriangleClipper();
-  @override
-  Path getClip(Size size) {
-    final path = Path();
-    path.moveTo(size.width / 2, 0);
-    path.lineTo(0, size.height);
-    path.lineTo(size.width, size.height);
-    path.close();
-    return path;
-  }
-
-  @override
-  bool shouldReclip(covariant CustomClipper<Path> oldClipper) {
-    return false;
   }
 }

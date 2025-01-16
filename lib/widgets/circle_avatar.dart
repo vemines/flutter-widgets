@@ -15,7 +15,8 @@ class CircleAvatarScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("CircleAvatar Variations", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              Text("CircleAvatar Variations",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               SizedBox(height: 20),
               Wrap(
                 spacing: 20,
@@ -47,7 +48,7 @@ class CircleAvatarScreen extends StatelessWidget {
                     children: [
                       Text("CircleAvatar - Image Background"),
                       CircleAvatar(
-                        backgroundImage: NetworkImage('https://via.placeholder.com/150'),
+                        backgroundImage: NetworkImage('https://placehold.co/150x150'),
                       ),
                     ],
                   ),
@@ -116,7 +117,7 @@ class CircleAvatarScreen extends StatelessWidget {
                         backgroundColor: Colors.grey,
                         child: CircleAvatar(
                           radius: 30,
-                          backgroundImage: NetworkImage('https://via.placeholder.com/100'),
+                          backgroundImage: NetworkImage('https://placehold.co/100x100'),
                         ),
                       ),
                     ],

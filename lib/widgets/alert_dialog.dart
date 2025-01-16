@@ -40,7 +40,8 @@ class AlertDialogScreen extends StatelessWidget {
                 child: Text("Show Default Alert"),
               ),
               SizedBox(height: 20),
-              Text("AlertDialog - Custom Title and Content", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("AlertDialog - Custom Title and Content",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               ElevatedButton(
                 onPressed: () {
@@ -48,8 +49,10 @@ class AlertDialogScreen extends StatelessWidget {
                     context: context,
                     builder: (BuildContext context) {
                       return AlertDialog(
-                        title: Text('Custom Title', style: TextStyle(color: Colors.blue, fontSize: 20)),
-                        content: Text('This alert has a custom title and content.', style: TextStyle(color: Colors.green)),
+                        title: Text('Custom Title',
+                            style: TextStyle(color: Colors.blue, fontSize: 20)),
+                        content: Text('This alert has a custom title and content.',
+                            style: TextStyle(color: Colors.green)),
                         actions: <Widget>[
                           TextButton(
                             child: Text('Close', style: TextStyle(color: Colors.red)),
@@ -96,7 +99,8 @@ class AlertDialogScreen extends StatelessWidget {
                 child: Text("Show Custom Actions Alert"),
               ),
               SizedBox(height: 20),
-              Text("AlertDialog - With Scrollable Content", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("AlertDialog - With Scrollable Content",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               ElevatedButton(
                 onPressed: () {
@@ -107,7 +111,12 @@ class AlertDialogScreen extends StatelessWidget {
                         title: Text('Scrollable Content'),
                         content: SingleChildScrollView(
                           child: ListBody(
-                            children: List.generate(20, (index) => Text('Item $index')),
+                            children: List.generate(
+                                20,
+                                (index) => Padding(
+                                      padding: const EdgeInsets.symmetric(vertical: 8),
+                                      child: Text('Item $index'),
+                                    )),
                           ),
                         ),
                         actions: <Widget>[
@@ -125,7 +134,8 @@ class AlertDialogScreen extends StatelessWidget {
                 child: Text("Show Scrollable Content Alert"),
               ),
               SizedBox(height: 20),
-              Text("AlertDialog - With Shape", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("AlertDialog - With BorderRadius",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               ElevatedButton(
                 onPressed: () {
@@ -135,7 +145,7 @@ class AlertDialogScreen extends StatelessWidget {
                       return AlertDialog(
                         title: Text('Shaped Alert'),
                         content: Text('This alert has a custom shape.'),
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
                         actions: <Widget>[
                           TextButton(
                             child: Text('OK'),
@@ -148,7 +158,7 @@ class AlertDialogScreen extends StatelessWidget {
                     },
                   );
                 },
-                child: Text("Show Shaped Alert"),
+                child: Text("Show BorderRadius Alert"),
               ),
             ],
           ),

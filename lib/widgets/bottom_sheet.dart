@@ -15,7 +15,8 @@ class BottomSheetScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("Modal Bottom Sheet - Default", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Modal Bottom Sheet - Default",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               ElevatedButton(
                 onPressed: () {
                   showModalBottomSheet(
@@ -33,25 +34,29 @@ class BottomSheetScreen extends StatelessWidget {
                 child: const Text('Show Modal Bottom Sheet'),
               ),
               const SizedBox(height: 20),
-              const Text("Persistent Bottom Sheet - Default", style: TextStyle(fontWeight: FontWeight.bold)),
-              ElevatedButton(
-                onPressed: () {
-                  showBottomSheet(
-                    context: context,
-                    builder: (BuildContext context) {
-                      return const SizedBox(
-                        height: 100,
-                        child: Center(
-                          child: Text('This is a persistent bottom sheet'),
-                        ),
-                      );
-                    },
-                  );
-                },
-                child: const Text('Show Persistent Bottom Sheet'),
+              const Text("Persistent Bottom Sheet - Default",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
+              Builder(
+                builder: (context) => ElevatedButton(
+                  onPressed: () {
+                    showBottomSheet(
+                      context: context,
+                      builder: (BuildContext context) {
+                        return const SizedBox(
+                          height: 100,
+                          child: Center(
+                            child: Text('This is a persistent BottomSheet (not modal)'),
+                          ),
+                        );
+                      },
+                    );
+                  },
+                  child: const Text('Show Persistent Bottom Sheet'),
+                ),
               ),
               const SizedBox(height: 20),
-              const Text("Modal Bottom Sheet - Custom Height", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Modal Bottom Sheet - Custom Height",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               ElevatedButton(
                 onPressed: () {
                   showModalBottomSheet(
@@ -69,32 +74,37 @@ class BottomSheetScreen extends StatelessWidget {
                 child: const Text('Show Modal Bottom Sheet - Custom Height'),
               ),
               const SizedBox(height: 20),
-              const Text("Persistent Bottom Sheet - Custom Background Color", style: TextStyle(fontWeight: FontWeight.bold)),
-              ElevatedButton(
-                onPressed: () {
-                  showBottomSheet(
-                    context: context,
-                    builder: (BuildContext context) {
-                      return Container(
-                        color: Colors.amber,
-                        height: 100,
-                        child: const Center(
-                          child: Text('This is a persistent bottom sheet with custom background color'),
-                        ),
-                      );
-                    },
-                  );
-                },
-                child: const Text('Show Persistent Bottom Sheet - Custom Background Color'),
+              const Text("Persistent Bottom Sheet - Custom Background Color",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
+              Builder(
+                builder: (context) => ElevatedButton(
+                  onPressed: () {
+                    showBottomSheet(
+                      context: context,
+                      builder: (BuildContext context) {
+                        return Container(
+                          color: Colors.amber,
+                          height: 100,
+                          child: const Center(
+                            child: Text(
+                                'This is a persistent bottom sheet with custom background color'),
+                          ),
+                        );
+                      },
+                    );
+                  },
+                  child: const Text('Show Persistent Bottom Sheet - Custom Background Color'),
+                ),
               ),
               const SizedBox(height: 20),
-              const Text("Modal Bottom Sheet - Custom Shape", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Modal Bottom Sheet - Custom Shape",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               ElevatedButton(
                 onPressed: () {
                   showModalBottomSheet(
                     context: context,
                     shape: const RoundedRectangleBorder(
-                      borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+                      borderRadius: BorderRadius.vertical(top: Radius.circular(50)),
                     ),
                     builder: (BuildContext context) {
                       return const SizedBox(
@@ -109,26 +119,30 @@ class BottomSheetScreen extends StatelessWidget {
                 child: const Text('Show Modal Bottom Sheet - Custom Shape'),
               ),
               const SizedBox(height: 20),
-              const Text("Persistent Bottom Sheet - Custom Elevation", style: TextStyle(fontWeight: FontWeight.bold)),
-              ElevatedButton(
-                onPressed: () {
-                  showBottomSheet(
-                    context: context,
-                    elevation: 10,
-                    builder: (BuildContext context) {
-                      return const SizedBox(
-                        height: 100,
-                        child: Center(
-                          child: Text('This is a persistent bottom sheet with custom elevation'),
-                        ),
-                      );
-                    },
-                  );
-                },
-                child: const Text('Show Persistent Bottom Sheet - Custom Elevation'),
+              const Text("Persistent Bottom Sheet - Custom Elevation",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
+              Builder(
+                builder: (context) => ElevatedButton(
+                  onPressed: () {
+                    showBottomSheet(
+                      context: context,
+                      elevation: 10,
+                      builder: (BuildContext context) {
+                        return const SizedBox(
+                          height: 100,
+                          child: Center(
+                            child: Text('This is a persistent bottom sheet with custom elevation'),
+                          ),
+                        );
+                      },
+                    );
+                  },
+                  child: const Text('Show Persistent Bottom Sheet - Custom Elevation'),
+                ),
               ),
               const SizedBox(height: 20),
-              const Text("Modal Bottom Sheet - Draggable", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Modal Bottom Sheet - Draggable",
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               ElevatedButton(
                 onPressed: () {
                   showModalBottomSheet(

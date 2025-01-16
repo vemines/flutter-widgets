@@ -94,7 +94,7 @@ class DecoratedBoxScreen extends StatelessWidget {
                       DecoratedBox(
                         decoration: const BoxDecoration(
                           image: DecorationImage(
-                            image: NetworkImage("https://via.placeholder.com/100"),
+                            image: NetworkImage("https://placehold.co/100x100"),
                             fit: BoxFit.cover,
                           ),
                         ),

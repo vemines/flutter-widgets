@@ -18,7 +18,7 @@ class ImageNetworkScreen extends StatelessWidget {
               child: Text("ImageNetwork - Basic"),
             ),
             Image.network(
-              'https://via.placeholder.com/150',
+              'https://placehold.co/150x150',
               width: 150,
               height: 150,
             ),
@@ -27,7 +27,7 @@ class ImageNetworkScreen extends StatelessWidget {
               child: Text("ImageNetwork - Different Size"),
             ),
             Image.network(
-              'https://via.placeholder.com/200',
+              'https://placehold.co/200x200',
               width: 200,
               height: 100,
             ),
@@ -36,7 +36,7 @@ class ImageNetworkScreen extends StatelessWidget {
               child: Text("ImageNetwork - With BoxFit.cover"),
             ),
             Image.network(
-              'https://via.placeholder.com/100x200',
+              'https://placehold.co/100x100x200',
               width: 100,
               height: 200,
               fit: BoxFit.cover,
@@ -46,7 +46,7 @@ class ImageNetworkScreen extends StatelessWidget {
               child: Text("ImageNetwork - With BoxFit.contain"),
             ),
             Image.network(
-              'https://via.placeholder.com/200x100',
+              'https://placehold.co/200x200x100',
               width: 200,
               height: 100,
               fit: BoxFit.contain,
@@ -75,7 +75,7 @@ class ImageNetworkScreen extends StatelessWidget {
               child: Text("ImageNetwork - Loading Builder"),
             ),
             Image.network(
-              'https://via.placeholder.com/150',
+              'https://placehold.co/150x150',
               width: 150,
               height: 150,
               loadingBuilder: (context, child, loadingProgress) {
@@ -101,7 +101,7 @@ class ImageNetworkScreen extends StatelessWidget {
               child: Align(
                 alignment: Alignment.bottomRight,
                 child: Image.network(
-                  'https://via.placeholder.com/50',
+                  'https://placehold.co/50x50',
                   width: 50,
                   height: 50,
                 ),

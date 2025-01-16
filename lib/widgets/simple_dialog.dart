@@ -148,39 +148,6 @@ class SimpleDialogScreen extends StatelessWidget {
                 },
                 child: Text("Show Styled Option Dialog"),
               ),
-              SizedBox(height: 20),
-
-              // Variation 5: SimpleDialog with Elevation
-              Text("SimpleDialog - Elevation", style: TextStyle(fontWeight: FontWeight.bold)),
-              ElevatedButton(
-                onPressed: () {
-                  showDialog(
-                    context: context,
-                    builder: (BuildContext context) {
-                      return SimpleDialog(
-                        elevation: 10,
-                        title: Text('Elevation Dialog'),
-                        children: <Widget>[
-                          SimpleDialogOption(
-                            onPressed: () {
-                              Navigator.pop(context);
-                            },
-                            child: const Text('Option 1'),
-                          ),
-                          SimpleDialogOption(
-                            onPressed: () {
-                              Navigator.pop(context);
-                            },
-                            child: const Text('Option 2'),
-                          ),
-                        ],
-                      );
-                    },
-                  );
-                },
-                child: Text("Show Elevation Dialog"),
-              ),
-              SizedBox(height: 20),
             ],
           ),
         ),
